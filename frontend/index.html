@@ -152,18 +152,30 @@ function trail(c) {
     return `<li class="t-note"><b>Note</b>${who(x.by)}<div class="kv">${esc(x.text)}</div></li>`;
   }).join("") || "<li class='t-note'><b>Out of scope</b><div class='kv'>Conclusion about wrongdoing or a private individual: attributed, never researched, never verified.</div></li>";
 }
+const RING = {"A-106":["Real mule ring","4 accounts share one device and 3 of them pay the same new payee (Velo Holdings). Each account alone looks harmless."],
+  "A-107":["Look-alike (family pair)","2 accounts share a device but pay different payees. Should NOT be escalated."],
+  "A-104":["Account takeover (regression)","Foreign device + MFA reset + new payee + large transfer. No device sharing."],
+  "A-105":["Benign lookalike (regression)","Similar surface activity, nothing suspicious. No device sharing."]};
 function nplus() {
   const n = D.n_plus_1; if (!n) { $("nplus").innerHTML = "<p class='kv'>No N+1 run recorded.</p>"; return; }
   const a = n.N_val, b = n.N_plus_1_val;
-  const rows = n.rows_N.map((r,i) => { const q = n.rows_N_plus_1[i]; return `<tr><td>${esc(r.case)}</td><td>${esc(r.expected)}</td><td class="${r.correct?"pass":"fail"}">${esc(r.outcome)}</td><td class="${q.correct?"pass":"fail"}">${esc(q.outcome)}</td></tr>`; }).join("");
-  $("nplus").innerHTML = `<div class="grid3">
+  const rows = n.rows_N.map((r,i) => { const q = n.rows_N_plus_1[i], k = RING[r.case.split("-s")[0]] || ["",""], used = (q.tools||[]).includes("get_device_sharing");
+    return `<tr><td>${esc(r.case)}<div class="kv">${esc(k[0])}</div></td><td>${esc(k[1])}</td><td>${esc(r.expected)}</td><td class="${r.correct?"pass":"fail"}">${esc(r.outcome)}</td><td class="${q.correct?"pass":"fail"}">${esc(q.outcome)}</td><td>${used?"yes":"no"}</td></tr>`; }).join("");
+  $("nplus").innerHTML = `
+    <div class="kv" style="margin-bottom:10px"><b>The test.</b> Synthetic data with a hidden pattern: a <b>mule ring</b>. Several accounts share one device and all pay the same new payee.
+    Each account on its own looks harmless (a known device in the home country, a small transfer under the $1,000 threshold), so an investigation that looks at one account at a time cannot see the ring.
+    A look-alike (a family pair sharing a device) checks that the improved agent does not simply escalate everything.</div>
+    <div class="kv" style="margin-bottom:10px"><b>Who did what.</b> <b>We designed</b> the ring scenario, the read-only <span class="mono">get_device_sharing</span> tool (also exposed as an MCP server) and policy p2.
+    <b>Nemotron Lightning</b> (Crusoe) ran every investigation for N and N+1; N closed all three rings as benign. <b>Nemotron Super VL</b> (Crusoe) read N's audited failures and <b>drafted the N+1 playbook</b>.
+    <b>Code</b> (verifier, Gate, promotion gate) decided; Nemotron did not discover the ring on its own.</div>
+    <div class="grid3">
     <div class="stat"><b>${a.correct}/${a.n}</b><span>N correct · ${a.false_completions} false completions</span></div>
     <div class="stat"><b>${b.correct}/${b.n}</b><span>N+1 correct · ${b.false_completions} false completions</span></div>
     <div class="stat"><b class="${n.promoted?"pass":"rej"}">${n.promoted?"PROMOTED":"REJECTED"}</b><span>promotion gate · approver ${esc(n.promoted?n.approver:"none")}</span></div></div>
-    <p class="kv"><b>Candidate playbook</b> (${n.fallback_text?"fallback text":"drafted by the improver agent from audited failures of N"}): ${esc(n.playbook)}</p>
+    <p class="kv"><b>Candidate playbook</b> (${n.fallback_text?"fallback text":"drafted by Nemotron Super VL from audited failures of N"}): ${esc(n.playbook)}</p>
     <p class="kv"><b>Gate checks:</b> ${Object.entries(n.checks).map(([k,v]) => `<span class="${v?"pass":"fail"}">${v?"✓":"✗"} ${esc(k)}</span>`).join(" · ")}</p>
-    <p class="kv">Result: N+1 removed every false completion (${a.false_completions} → ${b.false_completions}) by using the new read-only device-sharing tool, but it also answered <i>insufficient_evidence</i> on cases N got right, so correct dispositions did not strictly improve. The gate therefore kept N certified. The edit changes only investigator prompt text plus a read-only tool; completion checks, Gate rules and masking are untouched, and policy p1→p2 needs separate policy-owner sign-off.</p>
-    <table><thead><tr><th>validation case</th><th>expected</th><th>N</th><th>N+1</th></tr></thead><tbody>${rows}</tbody></table>`;
+    <p class="kv">Result: N+1 removed every false completion (${a.false_completions} → ${b.false_completions}) by using the new read-only device-sharing tool, but it also answered <i>insufficient_evidence</i> on cases N got right, so correct dispositions did not strictly improve. The gate therefore kept N certified. The edit changes only investigator prompt text plus a read-only tool; completion checks, Gate rules and masking are untouched, and policy p1→p2 needs separate policy-owner sign-off. Synthetic data, 10 cases, not a held-out result.</p>
+    <table><thead><tr><th>validation case</th><th>what the data contains</th><th>expected</th><th>N</th><th>N+1</th><th>N+1 used device-sharing tool</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 nplus();
 $("foot").innerHTML = "Replays real persisted artifacts from the 2026-10-17 runs (public-records cases via You.com Search → exact-URL Contents; names pseudonymized by default). Not a legal finding: Casefile checks attributed statements against cited records and never concludes wrongdoing. N+1 section uses synthetic mock data, not a held-out benchmark.";
