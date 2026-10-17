@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/fraud-transaction-v1.json",
+  "title": "Canonical billing, payment, invoice, and procurement transaction",
+  "description": "A normalized event for deterministic rules and model features. Sensitive identifiers should be tokenized before storage or embedding.",
+  "type": "object",
+  "required": ["transaction_id", "event_time", "amount", "currency", "transaction_type"],
+  "properties": {
+    "transaction_id": {"type": "string"},
+    "invoice_id": {"type": ["string", "null"]},
+    "purchase_order_id": {"type": ["string", "null"]},
+    "contract_id": {"type": ["string", "null"]},
+    "event_time": {"type": "string", "format": "date-time"},
+    "transaction_type": {"type": "string", "enum": ["purchase", "invoice", "payment", "refund", "credit", "transfer", "award", "amendment", "other"]},
+    "amount": {"type": "number"},
+    "currency": {"type": "string", "pattern": "^[A-Z]{3}$"},
+    "quantity": {"type": ["number", "null"]},
+    "unit_price": {"type": ["number", "null"]},
+    "line_total": {"type": ["number", "null"]},
+    "vendor_id": {"type": ["string", "null"], "description": "Tokenized vendor identifier."},
+    "customer_id": {"type": ["string", "null"], "description": "Tokenized customer identifier."},
+    "merchant_id": {"type": ["string", "null"]},
+    "product_id": {"type": ["string", "null"]},
+    "product_category": {"type": ["string", "null"]},
+    "payment_method": {"type": ["string", "null"]},
+    "beneficiary_account_token": {"type": ["string", "null"]},
+    "country": {"type": ["string", "null"]},
+    "mcc": {"type": ["string", "null"]},
+    "channel": {"type": ["string", "null"]},
+    "device_token": {"type": ["string", "null"]},
+    "ip_country": {"type": ["string", "null"]},
+    "approval_status": {"type": ["string", "null"]},
+    "approver_ids": {"type": "array", "items": {"type": "string"}},
+    "contract_amount": {"type": ["number", "null"]},
+    "specification_reference": {"type": ["string", "null"]},
+    "delivery_quality_status": {"type": ["string", "null"]},
+    "source_system": {"type": ["string", "null"]},
+    "source_record_uri": {"type": ["string", "null"]},
+    "labels": {
+      "type": "object",
+      "properties": {
+        "fraud_confirmed": {"type": ["boolean", "null"]},
+        "label_source": {"type": ["string", "null"]},
+        "reviewed_at": {"type": ["string", "null"], "format": "date-time"}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
+

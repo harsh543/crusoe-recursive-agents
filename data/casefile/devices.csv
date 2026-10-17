@@ -1,0 +1,50 @@
+device_id,account_id,model,first_seen,country,city
+dev_00014,acc_037091,iPhone 14,2025-01-14T00:00:00Z,US,Williamsburg
+dev_00036,acc_037091,Galaxy A14,2026-09-14T20:00:00Z,RO,Bucharest
+dev_00005,acc_052116,iPhone 15,2025-08-17T00:00:00Z,US,Topanga
+dev_00039,acc_052116,Windows Chrome,2026-09-25T06:00:00Z,BR,Sao Paulo
+dev_00008,acc_104406,iPhone 15,2025-12-06T00:00:00Z,US,Eastaboga
+dev_00049,acc_104406,Windows Chrome,2026-09-26T06:00:00Z,NG,Lagos
+dev_00016,acc_121383,Pixel 7a,2025-08-17T00:00:00Z,US,Lake Charles
+dev_00012,acc_164447,Pixel 7a,2024-09-13T00:00:00Z,US,Sacramento
+dev_00007,acc_180672,Pixel 8,2024-12-07T00:00:00Z,US,Sandwich
+dev_00040,acc_180672,Galaxy A54,2026-09-24T02:00:00Z,US,Sandwich
+dev_00022,acc_239225,iPhone 14,2025-11-29T00:00:00Z,US,Burlington
+dev_00026,acc_277935,Galaxy S24,2025-01-20T00:00:00Z,US,Lindsay
+dev_00037,acc_277935,Pixel 8,2026-09-26T02:00:00Z,US,Lindsay
+dev_00020,acc_288813,Galaxy A54,2024-10-10T00:00:00Z,US,Pittsburgh
+dev_00035,acc_288813,Galaxy S24,2026-09-15T01:00:00Z,US,Pittsburgh
+dev_00021,acc_315787,iPhone 15,2025-11-07T00:00:00Z,US,Jacksonville
+dev_00006,acc_387114,iPhone 15,2026-01-18T00:00:00Z,US,Lancaster
+dev_00025,acc_406434,Galaxy A54,2024-09-07T00:00:00Z,US,Fayetteville
+dev_00003,acc_419795,Pixel 7a,2026-01-20T00:00:00Z,US,Aurora
+dev_00034,acc_419795,Windows Chrome,2026-10-01T09:00:00Z,BR,Sao Paulo
+dev_00015,acc_440405,iPhone 15,2025-11-28T00:00:00Z,US,Missouri City
+dev_00048,acc_440405,Windows Chrome,2026-09-20T22:00:00Z,RO,Bucharest
+dev_00018,acc_450881,Pixel 8,2024-10-21T00:00:00Z,US,Houston
+dev_00047,acc_450881,iPhone 14,2026-09-20T02:00:00Z,US,Houston
+dev_00001,acc_455424,iPhone 14,2025-01-10T00:00:00Z,US,Philadelphia
+dev_00045,acc_455424,Galaxy A54,2026-09-15T09:00:00Z,US,Philadelphia
+dev_00027,acc_608167,iPhone 14,2025-03-27T00:00:00Z,US,Leetonia
+dev_00031,acc_608167,Windows Chrome,2026-10-03T14:00:00Z,VN,Ho Chi Minh City
+dev_00019,acc_636625,iPhone 14,2024-10-23T00:00:00Z,US,Jacksonville
+dev_00038,acc_636625,Galaxy A14,2026-10-01T20:00:00Z,ID,Jakarta
+dev_00017,acc_762479,iPhone 15,2025-05-07T00:00:00Z,US,Cheshire
+dev_00024,acc_790398,Pixel 8,2025-03-22T00:00:00Z,US,Eagle Mountain
+dev_00042,acc_790398,iPhone 15,2026-09-24T06:00:00Z,US,Eagle Mountain
+dev_00013,acc_808653,iPhone 15,2025-06-14T00:00:00Z,US,Anchorage
+dev_00046,acc_808653,Galaxy A14,2026-10-04T10:00:00Z,BR,Sao Paulo
+dev_00029,acc_810049,iPhone 15,2025-07-12T00:00:00Z,US,Ypsilanti
+dev_00033,acc_810049,Galaxy A14,2026-10-04T10:00:00Z,PH,Manila
+dev_00009,acc_814698,Pixel 7a,2025-10-26T00:00:00Z,US,Atlanta
+dev_00002,acc_867170,Galaxy S24,2025-01-14T00:00:00Z,US,Loma
+dev_00032,acc_867170,Pixel 8,2026-10-02T18:00:00Z,US,Loma
+dev_00030,acc_879843,Galaxy A54,2024-09-17T00:00:00Z,US,Vista
+dev_00004,acc_882397,Galaxy S24,2025-03-22T00:00:00Z,US,Elgin
+dev_00044,acc_882397,Galaxy A14,2026-09-24T09:00:00Z,NG,Lagos
+dev_00028,acc_892251,iPhone 14,2025-09-04T00:00:00Z,US,Miami Beach
+dev_00011,acc_913341,iPhone 14,2024-12-12T00:00:00Z,US,Altamont
+dev_00041,acc_913341,Galaxy A14,2026-09-30T12:00:00Z,ID,Jakarta
+dev_00023,acc_916954,Pixel 7a,2024-12-15T00:00:00Z,US,Prentice
+dev_00043,acc_916954,Windows Chrome,2026-10-04T17:00:00Z,ID,Jakarta
+dev_00010,acc_979513,iPhone 15,2025-12-07T00:00:00Z,US,Grapeville

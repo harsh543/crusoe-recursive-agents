@@ -1,0 +1,281 @@
+[
+  {
+    "alert_id": "A-104",
+    "split": "dev",
+    "story": "ato",
+    "disposition": "escalate",
+    "account_id": "acc_608167",
+    "faults": [
+      "wrong_identifier"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_device_history"
+  },
+  {
+    "alert_id": "A-105",
+    "split": "dev",
+    "story": "new_phone",
+    "disposition": "close_benign",
+    "account_id": "acc_867170",
+    "faults": [],
+    "faulty_agent": null,
+    "faulty_step": null
+  },
+  {
+    "alert_id": "A-106",
+    "split": "dev",
+    "story": "ato",
+    "disposition": "escalate",
+    "account_id": "acc_810049",
+    "faults": [],
+    "faulty_agent": null,
+    "faulty_step": null
+  },
+  {
+    "alert_id": "A-107",
+    "split": "dev",
+    "story": "travel",
+    "disposition": "close_benign",
+    "account_id": "acc_121383",
+    "faults": [
+      "wrong_identifier"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_device_history"
+  },
+  {
+    "alert_id": "A-108",
+    "split": "dev",
+    "story": "ato",
+    "disposition": "escalate",
+    "account_id": "acc_419795",
+    "faults": [
+      "stale_records"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_transactions"
+  },
+  {
+    "alert_id": "A-109",
+    "split": "dev",
+    "story": "new_phone",
+    "disposition": "close_benign",
+    "account_id": "acc_288813",
+    "faults": [
+      "timezone_shift"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_auth_events"
+  },
+  {
+    "alert_id": "A-110",
+    "split": "dev",
+    "story": "ato",
+    "disposition": "escalate",
+    "account_id": "acc_037091",
+    "faults": [
+      "interrupted_write"
+    ],
+    "faulty_agent": "gate",
+    "faulty_step": "commit_disposition"
+  },
+  {
+    "alert_id": "A-111",
+    "split": "dev",
+    "story": "travel",
+    "disposition": "close_benign",
+    "account_id": "acc_387114",
+    "faults": [],
+    "faulty_agent": null,
+    "faulty_step": null
+  },
+  {
+    "alert_id": "A-112",
+    "split": "dev",
+    "story": "new_phone",
+    "disposition": "close_benign",
+    "account_id": "acc_277935",
+    "faults": [
+      "missing_device_evidence"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_device_history"
+  },
+  {
+    "alert_id": "A-113",
+    "split": "dev",
+    "story": "ato",
+    "disposition": "escalate",
+    "account_id": "acc_636625",
+    "faults": [
+      "timezone_shift"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_auth_events"
+  },
+  {
+    "alert_id": "A-114",
+    "split": "dev",
+    "story": "ato",
+    "disposition": "insufficient_evidence",
+    "account_id": "acc_052116",
+    "faults": [
+      "device_source_down"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_device_history"
+  },
+  {
+    "alert_id": "A-115",
+    "split": "dev",
+    "story": "new_phone",
+    "disposition": "insufficient_evidence",
+    "account_id": "acc_180672",
+    "faults": [
+      "device_source_down"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_device_history"
+  },
+  {
+    "alert_id": "A-201",
+    "split": "heldout",
+    "story": "ato",
+    "disposition": "escalate",
+    "account_id": "acc_913341",
+    "faults": [
+      "wrong_identifier"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_device_history"
+  },
+  {
+    "alert_id": "A-202",
+    "split": "heldout",
+    "story": "new_phone",
+    "disposition": "close_benign",
+    "account_id": "acc_790398",
+    "faults": [
+      "wrong_identifier"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_device_history"
+  },
+  {
+    "alert_id": "A-203",
+    "split": "heldout",
+    "story": "ato",
+    "disposition": "escalate",
+    "account_id": "acc_916954",
+    "faults": [],
+    "faulty_agent": null,
+    "faulty_step": null
+  },
+  {
+    "alert_id": "A-204",
+    "split": "heldout",
+    "story": "travel",
+    "disposition": "close_benign",
+    "account_id": "acc_315787",
+    "faults": [
+      "stale_records"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_transactions"
+  },
+  {
+    "alert_id": "A-205",
+    "split": "heldout",
+    "story": "ato",
+    "disposition": "escalate",
+    "account_id": "acc_882397",
+    "faults": [
+      "missing_device_evidence"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_device_history"
+  },
+  {
+    "alert_id": "A-206",
+    "split": "heldout",
+    "story": "new_phone",
+    "disposition": "close_benign",
+    "account_id": "acc_455424",
+    "faults": [],
+    "faulty_agent": null,
+    "faulty_step": null
+  },
+  {
+    "alert_id": "A-207",
+    "split": "heldout",
+    "story": "ato",
+    "disposition": "escalate",
+    "account_id": "acc_808653",
+    "faults": [
+      "interrupted_write"
+    ],
+    "faulty_agent": "gate",
+    "faulty_step": "commit_disposition"
+  },
+  {
+    "alert_id": "A-208",
+    "split": "heldout",
+    "story": "travel",
+    "disposition": "close_benign",
+    "account_id": "acc_406434",
+    "faults": [
+      "timezone_shift"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_auth_events"
+  },
+  {
+    "alert_id": "A-209",
+    "split": "heldout",
+    "story": "new_phone",
+    "disposition": "close_benign",
+    "account_id": "acc_450881",
+    "faults": [
+      "stale_records"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_transactions"
+  },
+  {
+    "alert_id": "A-210",
+    "split": "heldout",
+    "story": "ato",
+    "disposition": "escalate",
+    "account_id": "acc_440405",
+    "faults": [
+      "wrong_identifier",
+      "timezone_shift"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_device_history"
+  },
+  {
+    "alert_id": "A-211",
+    "split": "heldout",
+    "story": "ato",
+    "disposition": "insufficient_evidence",
+    "account_id": "acc_104406",
+    "faults": [
+      "device_source_down"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_device_history"
+  },
+  {
+    "alert_id": "A-212",
+    "split": "heldout",
+    "story": "travel",
+    "disposition": "insufficient_evidence",
+    "account_id": "acc_814698",
+    "faults": [
+      "device_source_down"
+    ],
+    "faulty_agent": "investigator",
+    "faulty_step": "get_device_history"
+  }
+]

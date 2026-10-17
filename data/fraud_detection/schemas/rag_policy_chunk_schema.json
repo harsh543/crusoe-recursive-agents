@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/fraud-policy-chunk-v1.json",
+  "title": "Grounded fraud-policy RAG chunk",
+  "type": "object",
+  "required": ["chunk_id", "text", "source_title", "source_url", "authority_level", "retrieved_at"],
+  "properties": {
+    "chunk_id": {"type": "string"},
+    "rule_id": {"type": ["string", "null"]},
+    "text": {"type": "string"},
+    "domain": {"type": "string"},
+    "source_title": {"type": "string"},
+    "source_url": {"type": "string", "format": "uri"},
+    "source_date": {"type": ["string", "null"]},
+    "source_page": {"type": ["string", "null"]},
+    "source_section": {"type": ["string", "null"]},
+    "authority_level": {"type": "string", "enum": ["law_or_regulation", "government_guidance", "multilateral_guidance", "industry_rulebook", "company_policy", "internal_policy", "research"]},
+    "jurisdiction": {"type": ["string", "null"]},
+    "effective_from": {"type": ["string", "null"]},
+    "effective_to": {"type": ["string", "null"]},
+    "access_scope": {"type": "string", "enum": ["public", "organization", "restricted"]},
+    "retrieved_at": {"type": "string", "format": "date-time"},
+    "content_hash": {"type": ["string", "null"]},
+    "supersedes_chunk_id": {"type": ["string", "null"]},
+    "review_status": {"type": "string", "enum": ["unreviewed", "reviewed", "approved", "retired"]}
+  },
+  "additionalProperties": true
+}
+

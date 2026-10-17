@@ -1,0 +1,36 @@
+{
+  "provider": "you.com",
+  "retrieval_flow": "search_then_exact_url_contents",
+  "queries": [
+    "submitted case summary inflate fuel tariff port-service invoices inflated calculated",
+    "Navy personnel confidential ship-schedule competitor-pricing Leonard Glenn Francis"
+  ],
+  "accepted_urls": [
+    "https://www.justice.gov/usao-sdca/pr/leonard-glenn-francis-sentenced-15-years-prison-massive-bribery-fraud-and",
+    "https://www.justice.gov/usao-sdca/pr/malaysian-defense-contractor-leonard-francis-pleads-guilty-corruption-conspiracy",
+    "https://www.justice.gov/usao-sdca/pr/us-navy-admiral-sentenced-lying-feds-about-his-relationship-foreign-defense-contractor",
+    "https://justice.gov/criminal/criminal-fraud/file/788861/dl?inline=",
+    "https://www.freightwaves.com/checkpoint/fuel-surcharge-in-trucking/",
+    "https://www.ooida.com/trucking-tools/fuel-surcharge-calculator/",
+    "https://www.shippypro.com/blog/en/fuel-surcharge-shipping-what-it-is-how-it-works-and-how-to-stop-overpaying",
+    "https://www.whyloyalty.com/blog/how-to-calculate-fuel-surcharge/",
+    "https://contractorplus.app/blog/essential-fuel-surcharge-tactics-for-invoices",
+    "https://owlery.ai/blogs/4-ways-shippers-can-fight-rising-fuel-surcharges",
+    "https://www.wwex.com/shipping-resources/getting-to-know-your-freight-fuel-surcharges",
+    "https://www.lawinsider.com/clause/fuel-surcharge",
+    "https://allpronow.net/blog/what-is-a-fuel-surcharge-in-shipping-and-how-is-it-calculated/",
+    "https://baike.baidu.com/en/item/Leonard%20Glenn%20Francis/3440087",
+    "https://en.wikipedia.org/wiki/Fat_Leonard_scandal",
+    "https://www.washingtonpost.com/graphics/investigations/seducing-the-seventh-fleet/",
+    "https://www.civilbeat.org/2026/09/fat-leonard-corrupted-the-navy-will-trump-pardon-him/",
+    "https://corruption-tracker.org/case/glenn-defense-marine-asia-and-the-us-7th-fleet-the-fat-leonard-scandal",
+    "https://foreignpolicy.com/2024/05/11/fat-leonard-scandal-us-navy-malaysian-defense-contractor-scam-venezuela-pacific-security/",
+    "https://nationalsecurityjournal.org/35000000-gone-fat-leonard-bribed-60-u-s-navy-admirals-with-prostitutes-and-michelin-dinners/",
+    "https://www.hbs.edu/faculty/Pages/item.aspx?num=56821",
+    "https://www.cato.org/blog/navy-corruption-scandal"
+  ],
+  "rejected_urls": [],
+  "errors": [
+    "contents: URL returned no extractable document: https://www.efis.psc.mo.gov/Document/Display/158054"
+  ]
+}

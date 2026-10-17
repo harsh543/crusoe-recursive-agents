@@ -1,0 +1,2153 @@
+{
+ "case": "mississippi_tanf",
+ "mode": "live",
+ "seconds": 236.3,
+ "cost_usd": 0.013871,
+ "models": {
+  "intake": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+  "records_investigator": "nvidia/Nemotron-3.5-Lightning-30B-A3B"
+ },
+ "run_id": "a908e998-b397-466f-8c3c-aedb01e0def0",
+ "case_uuid": "8be1d5b7-252a-4e8c-ae3c-14d96771ecfe",
+ "claims": [
+  {
+   "id": "c1",
+   "text": "The office demanded repayment of more than $77 million in misspent TANF funds.",
+   "attributed_to": "Official A",
+   "claim_type": "amount",
+   "verdict": "insufficient_evidence",
+   "explanation": "Could not be verified from the available records within the allowed attempts.",
+   "conflicts": [],
+   "replans": 2,
+   "refusals": [
+    "cannot record supported for c1: quotes_verbatim: finding award_amount: value '$77 million' is not in its quote; computation_correct: recomputed total 173,313,000; claim says 77,000,000 -> code expects contradicted, got supported",
+    "cannot record contradicted for c1: quotes_verbatim: finding award_amount: value '$77 million' is not in its quote; computation_correct: recomputed total 77,000,000; claim says 77,000,000 -> code expects supported, got contradicted",
+    "cannot record supported for c1: quotes_verbatim: finding award_amount: value '$77 million' is not in its quote"
+   ],
+   "trail": [
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "Mississippi TANF $77 million office demanded repayment",
+     "hits": [
+      {
+       "id": "ydc_c2116db032043e6c6110",
+       "title": "Multiple audits now confirm millions of dollars",
+       "publisher": "osa.ms.gov",
+       "url": "https://www.osa.ms.gov/news/auditor-demands-repayment-misspent-welfare-money",
+       "doc_type": "primary",
+       "sha256": "bccb009f89361e63fe6cd58d4d292ad49d9e090e64932de43f5c8b68d959d92d",
+       "retrieved_at": "2026-10-17T21:48:07.031699+00:00"
+      },
+      {
+       "id": "ydc_1365fa52d23926215215",
+       "title": "https://www.osa.ms.gov/news/state-auditor-shad-white-testifies-us-house-ways-means-committee-welfare-case",
+       "publisher": "osa.ms.gov",
+       "url": "https://www.osa.ms.gov/news/state-auditor-shad-white-testifies-us-house-ways-means-committee-welfare-case",
+       "doc_type": "primary",
+       "sha256": "1da0a84f7a3daa01866d55ba44d1a6102edff9854abb6e37c0687abd4ae38fe7",
+       "retrieved_at": "2026-10-17T21:48:07.220862+00:00"
+      },
+      {
+       "id": "ydc_7cbde40950b52721d633",
+       "title": "John Davis Pleads Guilty in Welfare Scandal",
+       "publisher": "osa.ms.gov",
+       "url": "https://www.osa.ms.gov/news/john-davis-pleads-guilty-welfare-scandal",
+       "doc_type": "primary",
+       "sha256": "72b87419ce31fbb2a57ebaf4c3e6a74096bb79a0ff76b83d56c89d8aa50050d7",
+       "retrieved_at": "2026-10-17T21:48:07.432593+00:00"
+      },
+      {
+       "id": "ydc_d71c3c6fd3371dbfa821",
+       "title": "Mississippi welfare funds scandal \u2014 Grokipedia",
+       "publisher": "grokipedia.com",
+       "url": "https://grokipedia.com/page/Mississippi_welfare_funds_scandal",
+       "doc_type": "secondary",
+       "sha256": "be1b5dfc0787ad10a74fe7cbaaac724add5235b7471d76e3584a37740b7cf502",
+       "retrieved_at": "2026-10-17T23:09:33.609725+00:00"
+      },
+      {
+       "id": "ydc_5ab65d4f252fb9364d45",
+       "title": "404 / Page Not Found",
+       "publisher": "wtva.com",
+       "url": "https://www.wtva.com/news/local/mississippi-auditor-demands-77-million-repayment-of-misspent-welfare-money/article_19fa3e77-6217-52d8-aea1-c1000df5a573.html",
+       "doc_type": "secondary",
+       "sha256": "edf007e3cd04cece387e1180ca4b2ca0a6c96ce42c98eeb248a770f6e0445e5d",
+       "retrieved_at": "2026-10-17T23:09:33.967804+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_c2116db032043e6c6110",
+      "title": "Multiple audits now confirm millions of dollars",
+      "publisher": "osa.ms.gov",
+      "url": "https://www.osa.ms.gov/news/auditor-demands-repayment-misspent-welfare-money",
+      "doc_type": "primary",
+      "sha256": "bccb009f89361e63fe6cd58d4d292ad49d9e090e64932de43f5c8b68d959d92d",
+      "retrieved_at": "2026-10-17T21:48:07.031699+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "supported",
+     "explanation": "The State Auditor's office demanded repayment of more than $77 million in misspent TANF funds, consistent with the claim of over $77 million.",
+     "findings": [
+      {
+       "field": "award_amount",
+       "value": "$77 million",
+       "quote": "millions of dollars intended for the poor were spent illegally",
+       "doc": {
+        "id": "ydc_c2116db032043e6c6110",
+        "title": "Multiple audits now confirm millions of dollars",
+        "publisher": "osa.ms.gov",
+        "url": "https://www.osa.ms.gov/news/auditor-demands-repayment-misspent-welfare-money",
+        "doc_type": "primary",
+        "sha256": "bccb009f89361e63fe6cd58d4d292ad49d9e090e64932de43f5c8b68d959d92d",
+        "retrieved_at": "2026-10-17T21:48:07.031699+00:00"
+       }
+      },
+      {
+       "field": "award_amount",
+       "value": "$96.313 million",
+       "quote": "The Auditor\u2019s office issued a demand to Davis for $96.313 million \u2013 which includes interest \u2013 for his role authorizing over $77 million in illegal TANF spending.",
+       "doc": {
+        "id": "ydc_c2116db032043e6c6110",
+        "title": "Multiple audits now confirm millions of dollars",
+        "publisher": "osa.ms.gov",
+        "url": "https://www.osa.ms.gov/news/auditor-demands-repayment-misspent-welfare-money",
+        "doc_type": "primary",
+        "sha256": "bccb009f89361e63fe6cd58d4d292ad49d9e090e64932de43f5c8b68d959d92d",
+        "retrieved_at": "2026-10-17T21:48:07.031699+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "quotes_verbatim",
+       "reason": "finding award_amount: value '$77 million' is not in its quote"
+      },
+      {
+       "check": "computation_correct",
+       "reason": "recomputed total 173,313,000; claim says 77,000,000 -> code expects contradicted, got supported"
+      }
+     ]
+    },
+    {
+     "type": "gate_refused",
+     "by": "Gate (code)",
+     "verdict": "supported",
+     "reason": "cannot record supported for c1: quotes_verbatim: finding award_amount: value '$77 million' is not in its quote; computation_correct: recomputed total 173,313,000; claim says 77,000,000 -> code expects contradicted, got supported"
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "contradicted",
+     "explanation": "The document states the office found \"tens of millions of dollars in misspending.\" The claimed amount of $77\u202fmillion is a specific figure that does not appear verbatim in the quoted passage; the document uses the broader term \"tens of millions\" rather than the exact $77\u202fmillion claimed.",
+     "findings": [
+      {
+       "field": "award_amount",
+       "value": "$77 million",
+       "quote": "we found tens of millions of dollars in misspending. Those findings have now been confirmed, this month, by an independent forensic audit commissioned by DHS.",
+       "doc": {
+        "id": "ydc_c2116db032043e6c6110",
+        "title": "Multiple audits now confirm millions of dollars",
+        "publisher": "osa.ms.gov",
+        "url": "https://www.osa.ms.gov/news/auditor-demands-repayment-misspent-welfare-money",
+        "doc_type": "primary",
+        "sha256": "bccb009f89361e63fe6cd58d4d292ad49d9e090e64932de43f5c8b68d959d92d",
+        "retrieved_at": "2026-10-17T21:48:07.031699+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "quotes_verbatim",
+       "reason": "finding award_amount: value '$77 million' is not in its quote"
+      },
+      {
+       "check": "computation_correct",
+       "reason": "recomputed total 77,000,000; claim says 77,000,000 -> code expects supported, got contradicted"
+      }
+     ]
+    },
+    {
+     "type": "gate_refused",
+     "by": "Gate (code)",
+     "verdict": "contradicted",
+     "reason": "cannot record contradicted for c1: quotes_verbatim: finding award_amount: value '$77 million' is not in its quote; computation_correct: recomputed total 77,000,000; claim says 77,000,000 -> code expects supported, got contradicted"
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "supported",
+     "explanation": "The document states the State Auditor\u2019s office demanded repayment of more than $77 million in misspent TANF funds. The claim\u2019s claimed_total of 77,000,000 matches the document\u2019s reference to $77 million in misspent funds.",
+     "findings": [
+      {
+       "field": "award_amount",
+       "value": "$77 million",
+       "quote": "money was ultimately misspent by a vendor to the nonprofit. As a result, the board and leadership of MCEC (Nancy New, Zach New, Jess New, Brian Bledsoe, Susan Floyd, Virgil \"Buddy\" Strickland, and Beth Purifoy) were served with a demand for $68.159 million. FRC\u2019s board and leadership (Christy Webb, Jerry Bailey, Debbie Pickens, Jimmy Pappas, Amanda Angle, and Steven Blaylock) were served with a demand for $15.549 million.",
+       "doc": {
+        "id": "ydc_c2116db032043e6c6110",
+        "title": "Multiple audits now confirm millions of dollars",
+        "publisher": "osa.ms.gov",
+        "url": "https://www.osa.ms.gov/news/auditor-demands-repayment-misspent-welfare-money",
+        "doc_type": "primary",
+        "sha256": "bccb009f89361e63fe6cd58d4d292ad49d9e090e64932de43f5c8b68d959d92d",
+        "retrieved_at": "2026-10-17T21:48:07.031699+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "quotes_verbatim",
+       "reason": "finding award_amount: value '$77 million' is not in its quote"
+      }
+     ]
+    },
+    {
+     "type": "gate_refused",
+     "by": "Gate (code)",
+     "verdict": "supported",
+     "reason": "cannot record supported for c1: quotes_verbatim: finding award_amount: value '$77 million' is not in its quote"
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "insufficient_evidence"
+    }
+   ],
+   "attributions": [
+    {
+     "agent": "investigator",
+     "step": "s004",
+     "category": "task_verification"
+    },
+    {
+     "agent": "investigator",
+     "step": "s006",
+     "category": "task_verification"
+    },
+    {
+     "agent": "investigator",
+     "step": "s006",
+     "category": "task_verification"
+    }
+   ],
+   "findings": []
+  },
+  {
+   "id": "c2",
+   "text": "TANF funds passed through Contractor A and Contractor B.",
+   "attributed_to": "Body A",
+   "claim_type": "flow_through",
+   "verdict": "insufficient_evidence",
+   "explanation": "",
+   "conflicts": [],
+   "replans": 0,
+   "refusals": [],
+   "trail": [
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "Contractor A TANF Family Resource Center North Mississippi",
+     "hits": [
+      {
+       "id": "ydc_6f7620f9a491c12f0f11",
+       "title": "September 2024 1 The Contractor B",
+       "publisher": "acf.gov",
+       "url": "https://acf.gov/sites/default/files/documents/opre/opre-cwcc-ms-sept24.pdf",
+       "doc_type": "primary",
+       "sha256": "16995ec86a467f5e55bbb08505184a96f8c0d9663fae570cfe4302af3ddb5dbb",
+       "retrieved_at": "2026-10-17T23:04:32.215514+00:00"
+      },
+      {
+       "id": "ydc_c2116db032043e6c6110",
+       "title": "Multiple audits now confirm millions of dollars",
+       "publisher": "osa.ms.gov",
+       "url": "https://www.osa.ms.gov/news/auditor-demands-repayment-misspent-welfare-money",
+       "doc_type": "primary",
+       "sha256": "bccb009f89361e63fe6cd58d4d292ad49d9e090e64932de43f5c8b68d959d92d",
+       "retrieved_at": "2026-10-17T21:48:07.031699+00:00"
+      },
+      {
+       "id": "ydc_1365fa52d23926215215",
+       "title": "https://www.osa.ms.gov/news/state-auditor-shad-white-testifies-us-house-ways-means-committee-welfare-case",
+       "publisher": "osa.ms.gov",
+       "url": "https://www.osa.ms.gov/news/state-auditor-shad-white-testifies-us-house-ways-means-committee-welfare-case",
+       "doc_type": "primary",
+       "sha256": "1da0a84f7a3daa01866d55ba44d1a6102edff9854abb6e37c0687abd4ae38fe7",
+       "retrieved_at": "2026-10-17T21:48:07.220862+00:00"
+      },
+      {
+       "id": "ydc_7cbde40950b52721d633",
+       "title": "John Davis Pleads Guilty in Welfare Scandal",
+       "publisher": "osa.ms.gov",
+       "url": "https://www.osa.ms.gov/news/john-davis-pleads-guilty-welfare-scandal",
+       "doc_type": "primary",
+       "sha256": "72b87419ce31fbb2a57ebaf4c3e6a74096bb79a0ff76b83d56c89d8aa50050d7",
+       "retrieved_at": "2026-10-17T21:48:07.432593+00:00"
+      },
+      {
+       "id": "ydc_d5ebfa2df8a2a1144379",
+       "title": "Contractor B",
+       "publisher": "facebook.com",
+       "url": "https://www.facebook.com/FRCNMS/",
+       "doc_type": "secondary",
+       "sha256": "84d9753be5519067a4fb38164bd894ddd5cb8f8deb74c346424119639a37c43b",
+       "retrieved_at": "2026-10-17T23:10:15.072771+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_6f7620f9a491c12f0f11",
+      "title": "September 2024 1 The Contractor B",
+      "publisher": "acf.gov",
+      "url": "https://acf.gov/sites/default/files/documents/opre/opre-cwcc-ms-sept24.pdf",
+      "doc_type": "primary",
+      "sha256": "16995ec86a467f5e55bbb08505184a96f8c0d9663fae570cfe4302af3ddb5dbb",
+      "retrieved_at": "2026-10-17T23:04:32.215514+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "TANF Contractor A prime award amount subaward",
+     "hits": [
+      {
+       "id": "ydc_3f70319fefc2dcae3ccf",
+       "title": "workforce training and education programs",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://www.mdhs.ms.gov/wp-content/uploads/2021/11/FFY-2022-TANF-Sub-Grantee-Workforce-Training-Education-Programs.pdf",
+       "doc_type": "primary",
+       "sha256": "bb9ddf7838635438894fb037552a0bc018aeaaf90e0df8599bca2e092098dc53",
+       "retrieved_at": "2026-10-17T23:10:27.381308+00:00"
+      },
+      {
+       "id": "ydc_a04d1035fc27776c4abb",
+       "title": "MDHS issues Request For Proposals (RFP) to award up to $36 million ...",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://www.mdhs.ms.gov/mdhs-issues-request-for-proposals-rfp-to-award-up-to-36-million-in-tanf-services-across-mississippi/",
+       "doc_type": "primary",
+       "sha256": "0f21085f8f7a4ab7643fe3459ceb5feec47f5adc695e421c82a30db60e5d97ab",
+       "retrieved_at": "2026-10-17T23:04:41.982640+00:00"
+      },
+      {
+       "id": "ydc_0300a5d0e9ce32a656e2",
+       "title": "Mississippi TANF Work Program | Peer TA Network - TANF",
+       "publisher": "peerta.acf.hhs.gov",
+       "url": "https://peerta.acf.hhs.gov/upitoolkit/content/mississippi-tanf-work-program",
+       "doc_type": "primary",
+       "sha256": "85de5aa4af05d94cebbfd73d1c28aa8f14ddd54e21a306113c563d463195d0cc",
+       "retrieved_at": "2026-10-17T23:10:28.030250+00:00"
+      },
+      {
+       "id": "ydc_487f3c48bd7e5d3fc6ff",
+       "title": "TANF - Temporary Assistance for Needy Families - Mississippi ...",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://www.mdhs.ms.gov/help/tanf/",
+       "doc_type": "primary",
+       "sha256": "b622e7c2f1b4930aa2bb9c447b3e7f2b5a147223fa632f2c8f0829ae004fd0d4",
+       "retrieved_at": "2026-10-17T23:05:10.792229+00:00"
+      },
+      {
+       "id": "ydc_c2116db032043e6c6110",
+       "title": "Multiple audits now confirm millions of dollars",
+       "publisher": "osa.ms.gov",
+       "url": "https://www.osa.ms.gov/news/auditor-demands-repayment-misspent-welfare-money",
+       "doc_type": "primary",
+       "sha256": "bccb009f89361e63fe6cd58d4d292ad49d9e090e64932de43f5c8b68d959d92d",
+       "retrieved_at": "2026-10-17T21:48:07.031699+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_a04d1035fc27776c4abb",
+      "title": "MDHS issues Request For Proposals (RFP) to award up to $36 million ...",
+      "publisher": "mdhs.ms.gov",
+      "url": "https://www.mdhs.ms.gov/mdhs-issues-request-for-proposals-rfp-to-award-up-to-36-million-in-tanf-services-across-mississippi/",
+      "doc_type": "primary",
+      "sha256": "0f21085f8f7a4ab7643fe3459ceb5feec47f5adc695e421c82a30db60e5d97ab",
+      "retrieved_at": "2026-10-17T23:04:41.982640+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_487f3c48bd7e5d3fc6ff",
+      "title": "TANF - Temporary Assistance for Needy Families - Mississippi ...",
+      "publisher": "mdhs.ms.gov",
+      "url": "https://www.mdhs.ms.gov/help/tanf/",
+      "doc_type": "primary",
+      "sha256": "b622e7c2f1b4930aa2bb9c447b3e7f2b5a147223fa632f2c8f0829ae004fd0d4",
+      "retrieved_at": "2026-10-17T23:05:10.792229+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "Contractor A TANF subaward prime award amount",
+     "hits": [
+      {
+       "id": "ydc_56bdadeb1a935c8fb01c",
+       "title": "en+ HALTING THE POVERTY CYCLE BY PROVIDING A PATH OF UPWARD MOBILITY",
+       "publisher": "peerta.acf.hhs.gov",
+       "url": "https://www.peerta.acf.hhs.gov/sites/default/files/public/uploaded_files/New%20MCEC%20Gen%20+%20Halting%20the%20Poverty%20Cycle%20PPT.pdf",
+       "doc_type": "primary",
+       "sha256": "44f011b084ac66ec1a3c94831c97f57b361914902cbebe949849d11426d90045",
+       "retrieved_at": "2026-10-17T23:04:31.925544+00:00"
+      },
+      {
+       "id": "ydc_a04d1035fc27776c4abb",
+       "title": "MDHS issues Request For Proposals (RFP) to award up to $36 million ...",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://www.mdhs.ms.gov/mdhs-issues-request-for-proposals-rfp-to-award-up-to-36-million-in-tanf-services-across-mississippi/",
+       "doc_type": "primary",
+       "sha256": "0f21085f8f7a4ab7643fe3459ceb5feec47f5adc695e421c82a30db60e5d97ab",
+       "retrieved_at": "2026-10-17T23:04:41.982640+00:00"
+      },
+      {
+       "id": "ydc_3f70319fefc2dcae3ccf",
+       "title": "workforce training and education programs",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://www.mdhs.ms.gov/wp-content/uploads/2021/11/FFY-2022-TANF-Sub-Grantee-Workforce-Training-Education-Programs.pdf",
+       "doc_type": "primary",
+       "sha256": "bb9ddf7838635438894fb037552a0bc018aeaaf90e0df8599bca2e092098dc53",
+       "retrieved_at": "2026-10-17T23:10:27.381308+00:00"
+      },
+      {
+       "id": "ydc_0300a5d0e9ce32a656e2",
+       "title": "Mississippi TANF Work Program | Peer TA Network - TANF",
+       "publisher": "peerta.acf.hhs.gov",
+       "url": "https://peerta.acf.hhs.gov/upitoolkit/content/mississippi-tanf-work-program",
+       "doc_type": "primary",
+       "sha256": "85de5aa4af05d94cebbfd73d1c28aa8f14ddd54e21a306113c563d463195d0cc",
+       "retrieved_at": "2026-10-17T23:10:28.030250+00:00"
+      },
+      {
+       "id": "ydc_c2116db032043e6c6110",
+       "title": "Multiple audits now confirm millions of dollars",
+       "publisher": "osa.ms.gov",
+       "url": "https://www.osa.ms.gov/news/auditor-demands-repayment-misspent-welfare-money",
+       "doc_type": "primary",
+       "sha256": "bccb009f89361e63fe6cd58d4d292ad49d9e090e64932de43f5c8b68d959d92d",
+       "retrieved_at": "2026-10-17T21:48:07.031699+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_56bdadeb1a935c8fb01c",
+      "title": "en+ HALTING THE POVERTY CYCLE BY PROVIDING A PATH OF UPWARD MOBILITY",
+      "publisher": "peerta.acf.hhs.gov",
+      "url": "https://www.peerta.acf.hhs.gov/sites/default/files/public/uploaded_files/New%20MCEC%20Gen%20+%20Halting%20the%20Poverty%20Cycle%20PPT.pdf",
+      "doc_type": "primary",
+      "sha256": "44f011b084ac66ec1a3c94831c97f57b361914902cbebe949849d11426d90045",
+      "retrieved_at": "2026-10-17T23:04:31.925544+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "osa.ms.gov Mississippi TANF audit Community Education Center",
+     "hits": [
+      {
+       "id": "ydc_c2116db032043e6c6110",
+       "title": "Multiple audits now confirm millions of dollars",
+       "publisher": "osa.ms.gov",
+       "url": "https://www.osa.ms.gov/news/auditor-demands-repayment-misspent-welfare-money",
+       "doc_type": "primary",
+       "sha256": "bccb009f89361e63fe6cd58d4d292ad49d9e090e64932de43f5c8b68d959d92d",
+       "retrieved_at": "2026-10-17T21:48:07.031699+00:00"
+      },
+      {
+       "id": "ydc_d9f6e141f8375f72c5a6",
+       "title": "Audit of DHS Reveals Millions Wasted",
+       "publisher": "osa.ms.gov",
+       "url": "https://www.osa.ms.gov/news/audit-dhs-reveals-millions-wasted",
+       "doc_type": "primary",
+       "sha256": "388d0c0e74b966da5f16d7923cc33731aa8a0dd4b7d5bce7c4ab79f83b3439d4",
+       "retrieved_at": "2026-10-17T23:10:57.176066+00:00"
+      },
+      {
+       "id": "ydc_c2c407ffc8e4e17be607",
+       "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://www.mdhs.ms.gov/wp-content/uploads/2023/09/tanf-forensics-email-review.pdf",
+       "doc_type": "primary",
+       "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed",
+       "retrieved_at": "2026-10-17T23:10:57.614731+00:00"
+      },
+      {
+       "id": "ydc_2948e59d30aba92c1377",
+       "title": "Review of TANF-funded Afterschool Care Programs | MS State Auditor",
+       "publisher": "osa.ms.gov",
+       "url": "https://www.osa.ms.gov/node/18966",
+       "doc_type": "primary",
+       "sha256": "6037c61c2ba55982783d9d45d0b7c6b0f98e12b96fe6ef818b5d90ff43c7476c",
+       "retrieved_at": "2026-10-17T23:10:58.437164+00:00"
+      },
+      {
+       "id": "ydc_c849fa22a086211d2514",
+       "title": "Full Pay for Half-Empty Classrooms: Millions in TANF Childcare Funds Spent Without Tracking Daily Attendance or Outcomes",
+       "publisher": "osa.ms.gov",
+       "url": "https://www.osa.ms.gov/news/full-pay-half-empty-classrooms-millions-tanf-childcare-funds-spent-without-tracking-daily",
+       "doc_type": "primary",
+       "sha256": "d1f6a74b3afdda0838f5860867d7ff822c5108b5add1fbb7baa523aa53a8a821",
+       "retrieved_at": "2026-10-17T23:10:57.332545+00:00"
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "text": "no final answer within 8 steps"
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": true,
+     "failures": []
+    },
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "insufficient_evidence"
+    }
+   ],
+   "attributions": [],
+   "findings": []
+  },
+  {
+   "id": "c3",
+   "text": "TANF funds passed through Contractor A and Contractor B.",
+   "attributed_to": "Body A",
+   "claim_type": "flow_through",
+   "verdict": "insufficient_evidence",
+   "explanation": "The documents do not contain any references to the Contractor B, TANF funds passing through that entity, or the named subawardee. Consequently, the required fields prime_total and subaward_total cannot be established, and the verdict is insufficient_evidence.",
+   "conflicts": [],
+   "replans": 2,
+   "refusals": [
+    "cannot record supported for c3: quotes_verbatim: finding prime_total: value '$143 million' is not in its quote; quotes_verbatim: finding prime_total: value '$143 million' is not in its quote; quotes_verbatim: finding prime_total: quote not found verbatim in ydc_66df1f67c3fea09db0cf; closest line in the document: 'In doing so, Congress must stop states from exploiting TANF\u2019s broad reporting requirements. For instance, in 2020, Mississippi reported spending $22.7 million on \u201cwork, education, and training services.\u201d S o u n d s g o o d u n t i l y o u l o o k u n d e r t h e h o o d. O ver $18 million of that sum was spent on a scholarship program, available to people with incomes up to 350 percent of the federal poverty level\u2078.'; quotes_verbatim: finding prime_total: value '$94 million' is not in its quote; quotes_verbatim: finding subaward_total: quote not found verbatim in ydc_66df1f67c3fea09db0cf; quotes_verbatim: finding subaward_total: quote not found verbatim in ydc_66df1f67c3fea09db0cf; entity_match: no cited document mentions 'Contractor B'; conflicts_addressed: sources disagree on prime_total: ['$143 million', '$18 million', '$22.7 million', '$53 million', '$94 million']; list it in conflicts; conflicts_addressed: sources disagree on subaward_total: ['$2.2 million', '$250,000']; list it in conflicts"
+   ],
+   "trail": [
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "TANF funds passed through Contractor A and Contractor B",
+     "hits": [
+      {
+       "id": "ydc_22f4370e3475a47a3bed",
+       "title": "TANF Archives",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://www.mdhs.ms.gov/post/tag/tanf/",
+       "doc_type": "primary",
+       "sha256": "6609bd53c47f695d2722201b6137eeb23d6602288372dced519c46147a1830db",
+       "retrieved_at": "2026-10-17T21:48:18.927493+00:00"
+      },
+      {
+       "id": "ydc_66df1f67c3fea09db0cf",
+       "title": "1 WRITTEN TESTIMONY FOR THE RECORD",
+       "publisher": "waysandmeans.house.gov",
+       "url": "https://waysandmeans.house.gov/wp-content/uploads/2024/09/Dortch-Testimony.pdf",
+       "doc_type": "primary",
+       "sha256": "5281c7adc2f47b5412b94502b067a1584595d1fb4bbe21b598a5492bb09d4946",
+       "retrieved_at": "2026-10-17T23:11:05.146451+00:00"
+      },
+      {
+       "id": "ydc_487f3c48bd7e5d3fc6ff",
+       "title": "TANF - Temporary Assistance for Needy Families - Mississippi ...",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://www.mdhs.ms.gov/help/tanf/",
+       "doc_type": "primary",
+       "sha256": "b622e7c2f1b4930aa2bb9c447b3e7f2b5a147223fa632f2c8f0829ae004fd0d4",
+       "retrieved_at": "2026-10-17T23:05:10.792229+00:00"
+      },
+      {
+       "id": "ydc_e40ea7bbb6fd84410828",
+       "title": "Mississippi | Peer TA Network - TANF",
+       "publisher": "peerta.acf.hhs.gov",
+       "url": "https://peerta.acf.hhs.gov/states/mississippi",
+       "doc_type": "primary",
+       "sha256": "c61ac45d155fe97459047fe08ea9eaafbbb0452693591756dcca602af507d93b",
+       "retrieved_at": "2026-10-17T23:04:32.894053+00:00"
+      },
+      {
+       "id": "ydc_91f613f70a8f9f55f988",
+       "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://mdhs.ms.gov/wp-content/uploads/2022/05/Final-MDHS-TANF-Forensic-Audit-Expanded-Email-Review-2022.04.28.pdf",
+       "doc_type": "primary",
+       "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed",
+       "retrieved_at": "2026-10-17T23:10:58.682984+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_487f3c48bd7e5d3fc6ff",
+      "title": "TANF - Temporary Assistance for Needy Families - Mississippi ...",
+      "publisher": "mdhs.ms.gov",
+      "url": "https://www.mdhs.ms.gov/help/tanf/",
+      "doc_type": "primary",
+      "sha256": "b622e7c2f1b4930aa2bb9c447b3e7f2b5a147223fa632f2c8f0829ae004fd0d4",
+      "retrieved_at": "2026-10-17T23:05:10.792229+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_66df1f67c3fea09db0cf",
+      "title": "1 WRITTEN TESTIMONY FOR THE RECORD",
+      "publisher": "waysandmeans.house.gov",
+      "url": "https://waysandmeans.house.gov/wp-content/uploads/2024/09/Dortch-Testimony.pdf",
+      "doc_type": "primary",
+      "sha256": "5281c7adc2f47b5412b94502b067a1584595d1fb4bbe21b598a5492bb09d4946",
+      "retrieved_at": "2026-10-17T23:11:05.146451+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_91f613f70a8f9f55f988",
+      "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+      "publisher": "mdhs.ms.gov",
+      "url": "https://mdhs.ms.gov/wp-content/uploads/2022/05/Final-MDHS-TANF-Forensic-Audit-Expanded-Email-Review-2022.04.28.pdf",
+      "doc_type": "primary",
+      "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed",
+      "retrieved_at": "2026-10-17T23:10:58.682984+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "supported",
+     "explanation": "The document contains references to prime award amounts ($143 million, $22.7 million, $18 million, $53 million, $94 million) and the $2.2 million subaward total paid to Priceless Ventures, which includes the $250,000 to Family Resource Center and related payments. These figures match the claim's flo",
+     "findings": [
+      {
+       "field": "prime_total",
+       "value": "$143 million",
+       "quote": "MDHS has annually transferred $30 million in TANF funds to the Department of Child Protective Services to comply with a court ordered settlement.",
+       "doc": {
+        "id": "ydc_66df1f67c3fea09db0cf",
+        "title": "1 WRITTEN TESTIMONY FOR THE RECORD",
+        "publisher": "waysandmeans.house.gov",
+        "url": "https://waysandmeans.house.gov/wp-content/uploads/2024/09/Dortch-Testimony.pdf",
+        "doc_type": "primary",
+        "sha256": "5281c7adc2f47b5412b94502b067a1584595d1fb4bbe21b598a5492bb09d4946",
+        "retrieved_at": "2026-10-17T23:11:05.146451+00:00"
+       }
+      },
+      {
+       "field": "prime_total",
+       "value": "$143 million",
+       "quote": "In 2020, Mississippi reported spending $22.7 million on \"work, education, and training services.\"",
+       "doc": {
+        "id": "ydc_66df1f67c3fea09db0cf",
+        "title": "1 WRITTEN TESTIMONY FOR THE RECORD",
+        "publisher": "waysandmeans.house.gov",
+        "url": "https://waysandmeans.house.gov/wp-content/uploads/2024/09/Dortch-Testimony.pdf",
+        "doc_type": "primary",
+        "sha256": "5281c7adc2f47b5412b94502b067a1584595d1fb4bbe21b598a5492bb09d4946",
+        "retrieved_at": "2026-10-17T23:11:05.146451+00:00"
+       }
+      },
+      {
+       "field": "prime_total",
+       "value": "$22.7 million",
+       "quote": "S o u n d s g o o d u n t i l y o o k u n d e r t h e h o o d. O ver $18 million of that sum was spent on a scholarship program, available to people with incomes up to 350 percent of the federal poverty level.",
+       "doc": {
+        "id": "ydc_66df1f67c3fea09db0cf",
+        "title": "1 WRITTEN TESTIMONY FOR THE RECORD",
+        "publisher": "waysandmeans.house.gov",
+        "url": "https://waysandmeans.house.gov/wp-content/uploads/2024/09/Dortch-Testimony.pdf",
+        "doc_type": "primary",
+        "sha256": "5281c7adc2f47b5412b94502b067a1584595d1fb4bbe21b598a5492bb09d4946",
+        "retrieved_at": "2026-10-17T23:11:05.146451+00:00"
+       }
+      },
+      {
+       "field": "prime_total",
+       "value": "$94 million",
+       "quote": "obscene levels of fraud, the Mississippi Legislature has failed to take any action address these failures. In fact, to date, no legislative committee has held a hearing on the scandal or the TANF program, in general. As a result, there are still very few families receiving assistance and little publicly accessible information on the third parties receiving TANF grants.",
+       "doc": {
+        "id": "ydc_66df1f67c3fea09db0cf",
+        "title": "1 WRITTEN TESTIMONY FOR THE RECORD",
+        "publisher": "waysandmeans.house.gov",
+        "url": "https://waysandmeans.house.gov/wp-content/uploads/2024/09/Dortch-Testimony.pdf",
+        "doc_type": "primary",
+        "sha256": "5281c7adc2f47b5412b94502b067a1584595d1fb4bbe21b598a5492bb09d4946",
+        "retrieved_at": "2026-10-17T23:11:05.146451+00:00"
+       }
+      },
+      {
+       "field": "prime_total",
+       "value": "$18 million",
+       "quote": "MDHS spent up to $18 million on scholarships for post-secondary education, available to people with incomes up to 350 percent of the federal poverty level.",
+       "doc": {
+        "id": "ydc_66df1f67c3fea09db0cf",
+        "title": "1 WRITTEN TESTIMONY FOR THE RECORD",
+        "publisher": "waysandmeans.house.gov",
+        "url": "https://waysandmeans.house.gov/wp-content/uploads/2024/09/Dortch-Testimony.pdf",
+        "doc_type": "primary",
+        "sha256": "5281c7adc2f47b5412b94502b067a1584595d1fb4bbe21b598a5492bb09d4946",
+        "retrieved_at": "2026-10-17T23:11:05.146451+00:00"
+       }
+      },
+      {
+       "field": "prime_total",
+       "value": "$53 million",
+       "quote": "The agency used the bulk of its TANF dollars to fund nonprofit organizations run by Nancy New and her initiative, Families First for Mississippi. The state directed some $53 million to New's organizations.",
+       "doc": {
+        "id": "ydc_66df1f67c3fea09db0cf",
+        "title": "1 WRITTEN TESTIMONY FOR THE RECORD",
+        "publisher": "waysandmeans.house.gov",
+        "url": "https://waysandmeans.house.gov/wp-content/uploads/2024/09/Dortch-Testimony.pdf",
+        "doc_type": "primary",
+        "sha256": "5281c7adc2f47b5412b94502b067a1584595d1fb4bbe21b598a5492bb09d4946",
+        "retrieved_at": "2026-10-17T23:11:05.146451+00:00"
+       }
+      },
+      {
+       "field": "subaward_total",
+       "value": "$2.2 million",
+       "quote": "CLA's *Findings of Possible Fraud, Waste & Abuse* report, beginning on page 38, communicated a total of $2.2 million paid to Priceless Ventures by FRC and MCEC.",
+       "doc": {
+        "id": "ydc_66df1f67c3fea09db0cf",
+        "title": "1 WRITTEN TESTIMONY FOR THE RECORD",
+        "publisher": "waysandmeans.house.gov",
+        "url": "https://waysandmeans.house.gov/wp-content/uploads/2024/09/Dortch-Testimony.pdf",
+        "doc_type": "primary",
+        "sha256": "5281c7adc2f47b5412b94502b067a1584595d1fb4bbe21b598a5492bb09d4946",
+        "retrieved_at": "2026-10-17T23:11:05.146451+00:00"
+       }
+      },
+      {
+       "field": "subaward_total",
+       "value": "$250,000",
+       "quote": "a payment of $250,000 to Ted DiBiase, Jr. by the Family Resource Center \"FRC\" on August 28, 2017.",
+       "doc": {
+        "id": "ydc_66df1f67c3fea09db0cf",
+        "title": "1 WRITTEN TESTIMONY FOR THE RECORD",
+        "publisher": "waysandmeans.house.gov",
+        "url": "https://waysandmeans.house.gov/wp-content/uploads/2024/09/Dortch-Testimony.pdf",
+        "doc_type": "primary",
+        "sha256": "5281c7adc2f47b5412b94502b067a1584595d1fb4bbe21b598a5492bb09d4946",
+        "retrieved_at": "2026-10-17T23:11:05.146451+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "quotes_verbatim",
+       "reason": "finding prime_total: value '$143 million' is not in its quote"
+      },
+      {
+       "check": "quotes_verbatim",
+       "reason": "finding prime_total: value '$143 million' is not in its quote"
+      },
+      {
+       "check": "quotes_verbatim",
+       "reason": "finding prime_total: quote not found verbatim in ydc_66df1f67c3fea09db0cf; closest line in the document: 'In doing so, Congress must stop states from exploiting TANF\u2019s broad reporting requirements. For instance, in 2020, Mississippi reported spending $22.7 million on \u201cwork, education, and training services.\u201d S o u n d s g o o d u n t i l y o u l o o k u n d e r t h e h o o d. O ver $18 million of that sum was spent on a scholarship program, available to people with incomes up to 350 percent of the federal poverty level\u2078.'"
+      },
+      {
+       "check": "quotes_verbatim",
+       "reason": "finding prime_total: value '$94 million' is not in its quote"
+      },
+      {
+       "check": "quotes_verbatim",
+       "reason": "finding subaward_total: quote not found verbatim in ydc_66df1f67c3fea09db0cf"
+      },
+      {
+       "check": "quotes_verbatim",
+       "reason": "finding subaward_total: quote not found verbatim in ydc_66df1f67c3fea09db0cf"
+      },
+      {
+       "check": "entity_match",
+       "reason": "no cited document mentions 'Contractor B'"
+      },
+      {
+       "check": "conflicts_addressed",
+       "reason": "sources disagree on prime_total: ['$143 million', '$18 million', '$22.7 million', '$53 million', '$94 million']; list it in conflicts"
+      },
+      {
+       "check": "conflicts_addressed",
+       "reason": "sources disagree on subaward_total: ['$2.2 million', '$250,000']; list it in conflicts"
+      }
+     ]
+    },
+    {
+     "type": "gate_refused",
+     "by": "Gate (code)",
+     "verdict": "supported",
+     "reason": "cannot record supported for c3: quotes_verbatim: finding prime_total: value '$143 million' is not in its quote; quotes_verbatim: finding prime_total: value '$143 million' is not in its quote; quotes_verbatim: finding prime_total: quote not found verbatim in ydc_66df1f67c3fea09db0cf; closest line in "
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "insufficient_evidence",
+     "explanation": "The documents contain quoted amounts that do not match the claimed $143 million prime total or a verified subaward_total for the named subawardee. Conflicting values appear across the sources.",
+     "findings": [
+      {
+       "field": "prime_total",
+       "value": "$22.7 million",
+       "quote": "in 2020, Mississippi reported spending $22.7 million on \"work, education, and training services.\"",
+       "doc": {
+        "id": "ydc_66df1f67c3fea09db0cf",
+        "title": "1 WRITTEN TESTIMONY FOR THE RECORD",
+        "publisher": "waysandmeans.house.gov",
+        "url": "https://waysandmeans.house.gov/wp-content/uploads/2024/09/Dortch-Testimony.pdf",
+        "doc_type": "primary",
+        "sha256": "5281c7adc2f47b5412b94502b067a1584595d1fb4bbe21b598a5492bb09d4946",
+        "retrieved_at": "2026-10-17T23:11:05.146451+00:00"
+       }
+      },
+      {
+       "field": "subaward_total",
+       "value": "$2.2 million",
+       "quote": "a total of $2.2 million paid to Priceless Ventures by FRC and MCEC",
+       "doc": {
+        "id": "ydc_91f613f70a8f9f55f988",
+        "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+        "publisher": "mdhs.ms.gov",
+        "url": "https://mdhs.ms.gov/wp-content/uploads/2022/05/Final-MDHS-TANF-Forensic-Audit-Expanded-Email-Review-2022.04.28.pdf",
+        "doc_type": "primary",
+        "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed",
+        "retrieved_at": "2026-10-17T23:10:58.682984+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "entity_match",
+       "reason": "no cited document mentions 'Contractor B'"
+      },
+      {
+       "check": "computation_correct",
+       "reason": "recomputed share 0.10; claim says >= 0 -> code expects supported, got insufficient_evidence"
+      }
+     ]
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "insufficient_evidence",
+     "explanation": "The documents do not contain any references to the Contractor B, TANF funds passing through that entity, or the named subawardee. Consequently, the required fields prime_total and subaward_total cannot be established, and the verdict is insufficient_evidence.",
+     "findings": []
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": true,
+     "failures": []
+    },
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "insufficient_evidence"
+    }
+   ],
+   "attributions": [
+    {
+     "agent": "investigator",
+     "step": "s050",
+     "category": "task_verification"
+    },
+    {
+     "agent": "investigator",
+     "step": "s052",
+     "category": "task_verification"
+    }
+   ],
+   "findings": []
+  },
+  {
+   "id": "c4",
+   "text": "Public funds were applied to construction of a university volleyball facility.",
+   "attributed_to": "Body A",
+   "claim_type": "other",
+   "verdict": "contradicted",
+   "explanation": "The document states that MCEC paid a $5 million one-time payment for a sublease of a volleyball facility at the University of Southern Mississippi Athletic Foundation. This contradicts the claim that public funds were applied to construction of a university volleyball facility, as the $5 million was for a sublease payment, not construction costs.",
+   "conflicts": [],
+   "replans": 0,
+   "refusals": [],
+   "trail": [
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "public funds university volleyball facility construction",
+     "hits": [
+      {
+       "id": "ydc_91f613f70a8f9f55f988",
+       "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://mdhs.ms.gov/wp-content/uploads/2022/05/Final-MDHS-TANF-Forensic-Audit-Expanded-Email-Review-2022.04.28.pdf",
+       "doc_type": "primary",
+       "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed",
+       "retrieved_at": "2026-10-17T23:10:58.682984+00:00"
+      },
+      {
+       "id": "ydc_c2c407ffc8e4e17be607",
+       "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://www.mdhs.ms.gov/wp-content/uploads/2023/09/tanf-forensics-email-review.pdf",
+       "doc_type": "primary",
+       "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed",
+       "retrieved_at": "2026-10-17T23:10:57.614731+00:00"
+      },
+      {
+       "id": "ydc_6f7620f9a491c12f0f11",
+       "title": "September 2024 1 The Contractor B",
+       "publisher": "acf.gov",
+       "url": "https://acf.gov/sites/default/files/documents/opre/opre-cwcc-ms-sept24.pdf",
+       "doc_type": "primary",
+       "sha256": "16995ec86a467f5e55bbb08505184a96f8c0d9663fae570cfe4302af3ddb5dbb",
+       "retrieved_at": "2026-10-17T23:04:32.215514+00:00"
+      },
+      {
+       "id": "ydc_1365fa52d23926215215",
+       "title": "https://www.osa.ms.gov/news/state-auditor-shad-white-testifies-us-house-ways-means-committee-welfare-case",
+       "publisher": "osa.ms.gov",
+       "url": "https://www.osa.ms.gov/news/state-auditor-shad-white-testifies-us-house-ways-means-committee-welfare-case",
+       "doc_type": "primary",
+       "sha256": "1da0a84f7a3daa01866d55ba44d1a6102edff9854abb6e37c0687abd4ae38fe7",
+       "retrieved_at": "2026-10-17T21:48:07.220862+00:00"
+      },
+      {
+       "id": "ydc_66df1f67c3fea09db0cf",
+       "title": "1 WRITTEN TESTIMONY FOR THE RECORD",
+       "publisher": "waysandmeans.house.gov",
+       "url": "https://waysandmeans.house.gov/wp-content/uploads/2024/09/Dortch-Testimony.pdf",
+       "doc_type": "primary",
+       "sha256": "5281c7adc2f47b5412b94502b067a1584595d1fb4bbe21b598a5492bb09d4946",
+       "retrieved_at": "2026-10-17T23:11:05.146451+00:00"
+      }
+     ]
+    },
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "university volleyball facility public funds award construction",
+     "hits": [
+      {
+       "id": "ydc_91f613f70a8f9f55f988",
+       "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://mdhs.ms.gov/wp-content/uploads/2022/05/Final-MDHS-TANF-Forensic-Audit-Expanded-Email-Review-2022.04.28.pdf",
+       "doc_type": "primary",
+       "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed",
+       "retrieved_at": "2026-10-17T23:10:58.682984+00:00"
+      },
+      {
+       "id": "ydc_c2c407ffc8e4e17be607",
+       "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://www.mdhs.ms.gov/wp-content/uploads/2023/09/tanf-forensics-email-review.pdf",
+       "doc_type": "primary",
+       "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed",
+       "retrieved_at": "2026-10-17T23:10:57.614731+00:00"
+      },
+      {
+       "id": "ydc_6f7620f9a491c12f0f11",
+       "title": "September 2024 1 The Contractor B",
+       "publisher": "acf.gov",
+       "url": "https://acf.gov/sites/default/files/documents/opre/opre-cwcc-ms-sept24.pdf",
+       "doc_type": "primary",
+       "sha256": "16995ec86a467f5e55bbb08505184a96f8c0d9663fae570cfe4302af3ddb5dbb",
+       "retrieved_at": "2026-10-17T23:04:32.215514+00:00"
+      },
+      {
+       "id": "ydc_66df1f67c3fea09db0cf",
+       "title": "1 WRITTEN TESTIMONY FOR THE RECORD",
+       "publisher": "waysandmeans.house.gov",
+       "url": "https://waysandmeans.house.gov/wp-content/uploads/2024/09/Dortch-Testimony.pdf",
+       "doc_type": "primary",
+       "sha256": "5281c7adc2f47b5412b94502b067a1584595d1fb4bbe21b598a5492bb09d4946",
+       "retrieved_at": "2026-10-17T23:11:05.146451+00:00"
+      },
+      {
+       "id": "ydc_1365fa52d23926215215",
+       "title": "https://www.osa.ms.gov/news/state-auditor-shad-white-testifies-us-house-ways-means-committee-welfare-case",
+       "publisher": "osa.ms.gov",
+       "url": "https://www.osa.ms.gov/news/state-auditor-shad-white-testifies-us-house-ways-means-committee-welfare-case",
+       "doc_type": "primary",
+       "sha256": "1da0a84f7a3daa01866d55ba44d1a6102edff9854abb6e37c0687abd4ae38fe7",
+       "retrieved_at": "2026-10-17T21:48:07.220862+00:00"
+      }
+     ]
+    },
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "university athletics facility funding public money construction",
+     "hits": [
+      {
+       "id": "ydc_91f613f70a8f9f55f988",
+       "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://mdhs.ms.gov/wp-content/uploads/2022/05/Final-MDHS-TANF-Forensic-Audit-Expanded-Email-Review-2022.04.28.pdf",
+       "doc_type": "primary",
+       "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed",
+       "retrieved_at": "2026-10-17T23:10:58.682984+00:00"
+      },
+      {
+       "id": "ydc_c2c407ffc8e4e17be607",
+       "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://www.mdhs.ms.gov/wp-content/uploads/2023/09/tanf-forensics-email-review.pdf",
+       "doc_type": "primary",
+       "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed",
+       "retrieved_at": "2026-10-17T23:10:57.614731+00:00"
+      },
+      {
+       "id": "ydc_0300a5d0e9ce32a656e2",
+       "title": "Mississippi TANF Work Program | Peer TA Network - TANF",
+       "publisher": "peerta.acf.hhs.gov",
+       "url": "https://peerta.acf.hhs.gov/upitoolkit/content/mississippi-tanf-work-program",
+       "doc_type": "primary",
+       "sha256": "85de5aa4af05d94cebbfd73d1c28aa8f14ddd54e21a306113c563d463195d0cc",
+       "retrieved_at": "2026-10-17T23:10:28.030250+00:00"
+      },
+      {
+       "id": "ydc_6f7620f9a491c12f0f11",
+       "title": "September 2024 1 The Contractor B",
+       "publisher": "acf.gov",
+       "url": "https://acf.gov/sites/default/files/documents/opre/opre-cwcc-ms-sept24.pdf",
+       "doc_type": "primary",
+       "sha256": "16995ec86a467f5e55bbb08505184a96f8c0d9663fae570cfe4302af3ddb5dbb",
+       "retrieved_at": "2026-10-17T23:04:32.215514+00:00"
+      },
+      {
+       "id": "ydc_d9f6e141f8375f72c5a6",
+       "title": "Audit of DHS Reveals Millions Wasted",
+       "publisher": "osa.ms.gov",
+       "url": "https://www.osa.ms.gov/news/audit-dhs-reveals-millions-wasted",
+       "doc_type": "primary",
+       "sha256": "388d0c0e74b966da5f16d7923cc33731aa8a0dd4b7d5bce7c4ab79f83b3439d4",
+       "retrieved_at": "2026-10-17T23:10:57.176066+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_91f613f70a8f9f55f988",
+      "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+      "publisher": "mdhs.ms.gov",
+      "url": "https://mdhs.ms.gov/wp-content/uploads/2022/05/Final-MDHS-TANF-Forensic-Audit-Expanded-Email-Review-2022.04.28.pdf",
+      "doc_type": "primary",
+      "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed",
+      "retrieved_at": "2026-10-17T23:10:58.682984+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "contradicted",
+     "explanation": "The document states that MCEC paid a $5 million one-time payment for a sublease of a volleyball facility at the University of Southern Mississippi Athletic Foundation. This contradicts the claim that public funds were applied to construction of a university volleyball facility, as the $5 million was",
+     "findings": [
+      {
+       "field": "facility_type",
+       "value": "volleyball facility",
+       "quote": "proposed construction of a new wellness center and volleyball facility",
+       "doc": {
+        "id": "ydc_91f613f70a8f9f55f988",
+        "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+        "publisher": "mdhs.ms.gov",
+        "url": "https://mdhs.ms.gov/wp-content/uploads/2022/05/Final-MDHS-TANF-Forensic-Audit-Expanded-Email-Review-2022.04.28.pdf",
+        "doc_type": "primary",
+        "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed",
+        "retrieved_at": "2026-10-17T23:10:58.682984+00:00"
+       }
+      },
+      {
+       "field": "amount",
+       "value": "$5,000,000",
+       "quote": "For and in consideration of the one\u2010time payment of the sum of Five Million Dollars ($5,000,000) Cash in hand paid due at the time of execution of this sublease (the \"Rent\").",
+       "doc": {
+        "id": "ydc_91f613f70a8f9f55f988",
+        "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+        "publisher": "mdhs.ms.gov",
+        "url": "https://mdhs.ms.gov/wp-content/uploads/2022/05/Final-MDHS-TANF-Forensic-Audit-Expanded-Email-Review-2022.04.28.pdf",
+        "doc_type": "primary",
+        "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed",
+        "retrieved_at": "2026-10-17T23:10:58.682984+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": true,
+     "failures": []
+    },
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "contradicted"
+    }
+   ],
+   "attributions": [],
+   "findings": [
+    {
+     "field": "facility_type",
+     "value": "volleyball facility",
+     "quote": "proposed construction of a new wellness center and volleyball facility",
+     "doc": {
+      "id": "ydc_91f613f70a8f9f55f988",
+      "url": "https://mdhs.ms.gov/wp-content/uploads/2022/05/Final-MDHS-TANF-Forensic-Audit-Expanded-Email-Review-2022.04.28.pdf",
+      "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+      "publisher": "mdhs.ms.gov",
+      "doc_type": "primary",
+      "retrieved_at": "2026-10-17T23:10:58.682984+00:00",
+      "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed"
+     }
+    },
+    {
+     "field": "amount",
+     "value": "$5,000,000",
+     "quote": "For and in consideration of the one\u2010time payment of the sum of Five Million Dollars ($5,000,000) Cash in hand paid due at the time of execution of this sublease (the \"Rent\").",
+     "doc": {
+      "id": "ydc_91f613f70a8f9f55f988",
+      "url": "https://mdhs.ms.gov/wp-content/uploads/2022/05/Final-MDHS-TANF-Forensic-Audit-Expanded-Email-Review-2022.04.28.pdf",
+      "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+      "publisher": "mdhs.ms.gov",
+      "doc_type": "primary",
+      "retrieved_at": "2026-10-17T23:10:58.682984+00:00",
+      "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "text": "Some contracts paid for services for which no written report, curriculum, or other deliverable was produced.",
+   "attributed_to": "Body A",
+   "claim_type": "other",
+   "verdict": "insufficient_evidence",
+   "explanation": "",
+   "conflicts": [],
+   "replans": 0,
+   "refusals": [],
+   "trail": [
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "deliverable written report curriculum produced contract services",
+     "hits": [
+      {
+       "id": "ydc_44a4bb890cb2a444e376",
+       "title": "DAS Procurement Services, Version 2 \u2013 April 2, 2018 Page 1 of 9",
+       "publisher": "oregon.gov",
+       "url": "https://www.oregon.gov/das/Procurement/Guiddoc/SOWDraftingTasks.pdf",
+       "doc_type": "primary",
+       "sha256": "306bc1ae6feeadaf3def62f528ae1c3363203a030eaf65c5c59a69bcd1cd8948",
+       "retrieved_at": "2026-10-17T23:12:20.979402+00:00"
+      },
+      {
+       "id": "ydc_91f613f70a8f9f55f988",
+       "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://mdhs.ms.gov/wp-content/uploads/2022/05/Final-MDHS-TANF-Forensic-Audit-Expanded-Email-Review-2022.04.28.pdf",
+       "doc_type": "primary",
+       "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed",
+       "retrieved_at": "2026-10-17T23:10:58.682984+00:00"
+      },
+      {
+       "id": "ydc_c2c407ffc8e4e17be607",
+       "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://www.mdhs.ms.gov/wp-content/uploads/2023/09/tanf-forensics-email-review.pdf",
+       "doc_type": "primary",
+       "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed",
+       "retrieved_at": "2026-10-17T23:10:57.614731+00:00"
+      },
+      {
+       "id": "ydc_6f7620f9a491c12f0f11",
+       "title": "September 2024 1 The Contractor B",
+       "publisher": "acf.gov",
+       "url": "https://acf.gov/sites/default/files/documents/opre/opre-cwcc-ms-sept24.pdf",
+       "doc_type": "primary",
+       "sha256": "16995ec86a467f5e55bbb08505184a96f8c0d9663fae570cfe4302af3ddb5dbb",
+       "retrieved_at": "2026-10-17T23:04:32.215514+00:00"
+      },
+      {
+       "id": "ydc_0300a5d0e9ce32a656e2",
+       "title": "Mississippi TANF Work Program | Peer TA Network - TANF",
+       "publisher": "peerta.acf.hhs.gov",
+       "url": "https://peerta.acf.hhs.gov/upitoolkit/content/mississippi-tanf-work-program",
+       "doc_type": "primary",
+       "sha256": "85de5aa4af05d94cebbfd73d1c28aa8f14ddd54e21a306113c563d463195d0cc",
+       "retrieved_at": "2026-10-17T23:10:28.030250+00:00"
+      }
+     ]
+    },
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "contract services deliverable report curriculum TANF subaward subaward_total prime_total",
+     "hits": [
+      {
+       "id": "ydc_c5e93ff1284652231877",
+       "title": "Arkansas Division of Workforce Services TANF Contracts",
+       "publisher": "humanservices.arkansas.gov",
+       "url": "https://humanservices.arkansas.gov/wp-content/uploads/710-20-0003_Appendix_E_TANF_Contract_Quarterly_and_Annual_Report_2019-2020.pdf",
+       "doc_type": "primary",
+       "sha256": "5221f7986e94d0d744e73172b521516f69ef82ef5eca4469d8731f1a8ef0ab03",
+       "retrieved_at": "2026-10-17T23:12:29.487446+00:00"
+      },
+      {
+       "id": "ydc_8d154cb1c8baa87b8ad7",
+       "title": "Subaward Reporting in SAM",
+       "publisher": "sam.gov",
+       "url": "https://sam.gov/fsrs",
+       "doc_type": "primary",
+       "sha256": "9664b455f1ee79cd35d1c393bb4fb569f560667eec558dd5a388df1c5924c69b",
+       "retrieved_at": "2026-10-17T23:12:28.007363+00:00"
+      },
+      {
+       "id": "ydc_78e4a9ecff5037704129",
+       "title": "Subrecipient Management Resources",
+       "publisher": "nsf.gov",
+       "url": "https://www.nsf.gov/awards/subrecipient-resources",
+       "doc_type": "primary",
+       "sha256": "112422ecf919c5ac1071bdd1fd6cb497b85e20187224c959a2e69acf4d6fce97",
+       "retrieved_at": "2026-10-17T23:12:28.344811+00:00"
+      },
+      {
+       "id": "ydc_13835a173fb055a71e97",
+       "title": "Subawards",
+       "publisher": "grants.nih.gov",
+       "url": "https://grants.nih.gov/policy-and-compliance/policy-topics/subawards",
+       "doc_type": "primary",
+       "sha256": "8fc9f0b4508833e217241629986ba9dce11491c830afcaca6662acb3163b717f",
+       "retrieved_at": "2026-10-17T23:05:10.621778+00:00"
+      },
+      {
+       "id": "ydc_91f613f70a8f9f55f988",
+       "title": "Microsoft Word - Final Report - Expanded Email Review 4.28.2022",
+       "publisher": "mdhs.ms.gov",
+       "url": "https://mdhs.ms.gov/wp-content/uploads/2022/05/Final-MDHS-TANF-Forensic-Audit-Expanded-Email-Review-2022.04.28.pdf",
+       "doc_type": "primary",
+       "sha256": "d57da63f6f56a00b8420f67522f7ab4fce0140cfd4e0d6f000208a8d557806ed",
+       "retrieved_at": "2026-10-17T23:10:58.682984+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_c5e93ff1284652231877",
+      "title": "Arkansas Division of Workforce Services TANF Contracts",
+      "publisher": "humanservices.arkansas.gov",
+      "url": "https://humanservices.arkansas.gov/wp-content/uploads/710-20-0003_Appendix_E_TANF_Contract_Quarterly_and_Annual_Report_2019-2020.pdf",
+      "doc_type": "primary",
+      "sha256": "5221f7986e94d0d744e73172b521516f69ef82ef5eca4469d8731f1a8ef0ab03",
+      "retrieved_at": "2026-10-17T23:12:29.487446+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_0300a5d0e9ce32a656e2",
+      "title": "Mississippi TANF Work Program | Peer TA Network - TANF",
+      "publisher": "peerta.acf.hhs.gov",
+      "url": "https://peerta.acf.hhs.gov/upitoolkit/content/mississippi-tanf-work-program",
+      "doc_type": "primary",
+      "sha256": "85de5aa4af05d94cebbfd73d1c28aa8f14ddd54e21a306113c563d463195d0cc",
+      "retrieved_at": "2026-10-17T23:10:28.030250+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "TANF contract paid services no deliverable produced written report curriculum sub award subaward",
+     "hits": [
+      {
+       "id": "ydc_a85bef2d9c1c4bb7010f",
+       "title": "\n    eCFR :: 2 CFR Part 200 Subpart E -- Cost Principles\n  ",
+       "publisher": "ecfr.gov",
+       "url": "https://www.ecfr.gov/current/title-2/subtitle-A/chapter-II/part-200/subpart-E",
+       "doc_type": "primary",
+       "sha256": "63da3fd982013477ade82282abae9b27e9821bff632f066d28b11e1eb03278c1",
+       "retrieved_at": "2026-10-17T23:12:46.515343+00:00"
+      },
+      {
+       "id": "ydc_7566037ad6a60035eb61",
+       "title": "What is the difference between a subaward and a contract?",
+       "publisher": "fundingtoolkit.sji.gov",
+       "url": "https://fundingtoolkit.sji.gov/faq/what-is-the-difference-between-a-subaward-and-a-contract/",
+       "doc_type": "primary",
+       "sha256": "6ada203c8868f374ed2f89b63a5bc607fb02f92e89288838c949636321a64ddc",
+       "retrieved_at": "2026-10-17T23:12:45.901012+00:00"
+      },
+      {
+       "id": "ydc_f4ed064dba11fd9a4d1f",
+       "title": "Instructions for Completion of TANF Form ACF-196T",
+       "publisher": "acf.gov",
+       "url": "https://acf.gov/ofa/instructions-completion-tanf-form-acf-196t",
+       "doc_type": "primary",
+       "sha256": "50a70769068c2eb33f58df0c8db55d4cf0fd6ced7ce947b2cb794c63efa9ac1e",
+       "retrieved_at": "2026-10-17T23:12:46.048186+00:00"
+      },
+      {
+       "id": "ydc_fd669f424903137b8213",
+       "title": "Performance and Outcome-Based Provisions for TANF-Funded Programs | Contract Development & Management | Office of Children and Family Services",
+       "publisher": "ocfs.ny.gov",
+       "url": "https://ocfs.ny.gov/main/contracts/tanf/",
+       "doc_type": "primary",
+       "sha256": "54584cb0e2459daced3af7e0bef2e4d5a77a83c1ff23422f6ffceb9cb25504b9",
+       "retrieved_at": "2026-10-17T23:12:47.363488+00:00"
+      },
+      {
+       "id": "ydc_78e4a9ecff5037704129",
+       "title": "Subrecipient Management Resources",
+       "publisher": "nsf.gov",
+       "url": "https://www.nsf.gov/awards/subrecipient-resources",
+       "doc_type": "primary",
+       "sha256": "112422ecf919c5ac1071bdd1fd6cb497b85e20187224c959a2e69acf4d6fce97",
+       "retrieved_at": "2026-10-17T23:12:28.344811+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_fd669f424903137b8213",
+      "title": "Performance and Outcome-Based Provisions for TANF-Funded Programs | Contract Development & Management | Office of Children and Family Services",
+      "publisher": "ocfs.ny.gov",
+      "url": "https://ocfs.ny.gov/main/contracts/tanf/",
+      "doc_type": "primary",
+      "sha256": "54584cb0e2459daced3af7e0bef2e4d5a77a83c1ff23422f6ffceb9cb25504b9",
+      "retrieved_at": "2026-10-17T23:12:47.363488+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_f4ed064dba11fd9a4d1f",
+      "title": "Instructions for Completion of TANF Form ACF-196T",
+      "publisher": "acf.gov",
+      "url": "https://acf.gov/ofa/instructions-completion-tanf-form-acf-196t",
+      "doc_type": "primary",
+      "sha256": "50a70769068c2eb33f58df0c8db55d4cf0fd6ced7ce947b2cb794c63efa9ac1e",
+      "retrieved_at": "2026-10-17T23:12:46.048186+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "TANF contract services performed no deliverable produced no written report no curriculum subaward sub award",
+     "hits": [
+      {
+       "id": "ydc_c5e93ff1284652231877",
+       "title": "Arkansas Division of Workforce Services TANF Contracts",
+       "publisher": "humanservices.arkansas.gov",
+       "url": "https://humanservices.arkansas.gov/wp-content/uploads/710-20-0003_Appendix_E_TANF_Contract_Quarterly_and_Annual_Report_2019-2020.pdf",
+       "doc_type": "primary",
+       "sha256": "5221f7986e94d0d744e73172b521516f69ef82ef5eca4469d8731f1a8ef0ab03",
+       "retrieved_at": "2026-10-17T23:12:29.487446+00:00"
+      },
+      {
+       "id": "ydc_f4ed064dba11fd9a4d1f",
+       "title": "Instructions for Completion of TANF Form ACF-196T",
+       "publisher": "acf.gov",
+       "url": "https://acf.gov/ofa/instructions-completion-tanf-form-acf-196t",
+       "doc_type": "primary",
+       "sha256": "50a70769068c2eb33f58df0c8db55d4cf0fd6ced7ce947b2cb794c63efa9ac1e",
+       "retrieved_at": "2026-10-17T23:12:46.048186+00:00"
+      },
+      {
+       "id": "ydc_13835a173fb055a71e97",
+       "title": "Subawards",
+       "publisher": "grants.nih.gov",
+       "url": "https://grants.nih.gov/policy-and-compliance/policy-topics/subawards",
+       "doc_type": "primary",
+       "sha256": "8fc9f0b4508833e217241629986ba9dce11491c830afcaca6662acb3163b717f",
+       "retrieved_at": "2026-10-17T23:05:10.621778+00:00"
+      },
+      {
+       "id": "ydc_78e4a9ecff5037704129",
+       "title": "Subrecipient Management Resources",
+       "publisher": "nsf.gov",
+       "url": "https://www.nsf.gov/awards/subrecipient-resources",
+       "doc_type": "primary",
+       "sha256": "112422ecf919c5ac1071bdd1fd6cb497b85e20187224c959a2e69acf4d6fce97",
+       "retrieved_at": "2026-10-17T23:12:28.344811+00:00"
+      },
+      {
+       "id": "ydc_a85bef2d9c1c4bb7010f",
+       "title": "\n    eCFR :: 2 CFR Part 200 Subpart E -- Cost Principles\n  ",
+       "publisher": "ecfr.gov",
+       "url": "https://www.ecfr.gov/current/title-2/subtitle-A/chapter-II/part-200/subpart-E",
+       "doc_type": "primary",
+       "sha256": "63da3fd982013477ade82282abae9b27e9821bff632f066d28b11e1eb03278c1",
+       "retrieved_at": "2026-10-17T23:12:46.515343+00:00"
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "text": "no final answer within 8 steps"
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": true,
+     "failures": []
+    },
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "insufficient_evidence"
+    }
+   ],
+   "attributions": [],
+   "findings": []
+  },
+  {
+   "id": "c6",
+   "text": "Every recipient of these funds committed embezzlement.",
+   "attributed_to": "Person A",
+   "claim_type": "legal_conclusion",
+   "verdict": "out_of_scope",
+   "explanation": "Attributed statement; not verifiable from public records.",
+   "conflicts": [],
+   "replans": 0,
+   "refusals": [],
+   "trail": [
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "out_of_scope"
+    }
+   ],
+   "attributions": [],
+   "findings": []
+  }
+ ],
+ "timeline": [
+  {
+   "step": "s001",
+   "role": "intake",
+   "kind": "llm"
+  },
+  {
+   "step": "s002",
+   "role": "intake",
+   "kind": "claims"
+  },
+  {
+   "step": "s003",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s004",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s005",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s006",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s007",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s008",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s009",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s010",
+   "role": "gate",
+   "kind": "refused"
+  },
+  {
+   "step": "s011",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s012",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s013",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s014",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s015",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s016",
+   "role": "gate",
+   "kind": "refused"
+  },
+  {
+   "step": "s017",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s018",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s019",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s020",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s021",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s022",
+   "role": "gate",
+   "kind": "refused"
+  },
+  {
+   "step": "s023",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s024",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s025",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s026",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s027",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s028",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s029",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s030",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s031",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s032",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s033",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s034",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s035",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s036",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s037",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s038",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s039",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s040",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s041",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s042",
+   "role": "investigator",
+   "kind": "stopped"
+  },
+  {
+   "step": "s043",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s044",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s045",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s046",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s047",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s048",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s049",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s050",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s051",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s052",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s053",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s054",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s055",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s056",
+   "role": "gate",
+   "kind": "refused"
+  },
+  {
+   "step": "s057",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s058",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s059",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s060",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s061",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s062",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s063",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s064",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s065",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s066",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s067",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s068",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s069",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s070",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s071",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s072",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s073",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s074",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s075",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s076",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s077",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s078",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s079",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s080",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s081",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s082",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s083",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s084",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s085",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s086",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s087",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s088",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s089",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s090",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s091",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s092",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s093",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s094",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s095",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s096",
+   "role": "investigator",
+   "kind": "stopped"
+  },
+  {
+   "step": "s097",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s098",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s099",
+   "role": "gate",
+   "kind": "commit"
+  }
+ ],
+ "retrieval": {
+  "provider": "you.com",
+  "retrieval_flow": "search_then_exact_url_contents",
+  "queries": [
+   "Mississippi TANF $77 million office demanded repayment",
+   "Mississippi Community Education Center TANF Family Resource Center North Mississippi",
+   "TANF Mississippi Community Education Center prime award amount subaward",
+   "Mississippi Community Education Center TANF subaward prime award amount",
+   "osa.ms.gov Mississippi TANF audit Community Education Center",
+   "TANF funds passed through Mississippi Community Education Center and Family Resource Center of North Mississippi",
+   "public funds university volleyball facility construction",
+   "university volleyball facility public funds award construction",
+   "university athletics facility funding public money construction",
+   "deliverable written report curriculum produced contract services",
+   "contract services deliverable report curriculum TANF subaward subaward_total prime_total",
+   "TANF contract paid services no deliverable produced written report curriculum sub award subaward",
+   "TANF contract services performed no deliverable produced no written report no curriculum subaward sub award"
+  ],
+  "accepted_urls": [
+   "https://www.osa.ms.gov/news/auditor-demands-repayment-misspent-welfare-money",
+   "https://www.osa.ms.gov/news/state-auditor-shad-white-testifies-us-house-ways-means-committee-welfare-case",
+   "https://www.osa.ms.gov/news/john-davis-pleads-guilty-welfare-scandal",
+   "https://www.wjtv.com/news/state/mississippi-state-auditor-demands-repayment-of-misspent-welfare-money/",
+   "https://wreg.com/news/mississippi-state-auditor-demands-repayment-of-misspent-welfare-money/",
+   "https://mississippitoday.org/2021/10/12/brett-favre-mississippi-welfare-demand-shad-white/",
+   "https://en.wikipedia.org/wiki/Mississippi_welfare_funds_scandal",
+   "https://grokipedia.com/page/Mississippi_welfare_funds_scandal",
+   "https://www.wtva.com/news/local/mississippi-auditor-demands-77-million-repayment-of-misspent-welfare-money/article_19fa3e77-6217-52d8-aea1-c1000df5a573.html",
+   "https://www.wtok.com/2021/10/12/auditor-demands-repayment-millions-misspent-welfare-money/",
+   "https://www.facebook.com/FRCNMS/",
+   "https://acf.gov/sites/default/files/documents/opre/opre-cwcc-ms-sept24.pdf",
+   "https://www.causeiq.com/organizations/the-family-resource-center-of-northeast-mississipp,640895266/",
+   "https://www.charitynavigator.org/ein/640895266",
+   "https://x.com/frcnms?lang=en",
+   "https://foreverywoman.org/service/The-Family-Resource-Center-of-Northeast-Mississippi/XkCvyq3RKP",
+   "https://www.mapquest.com/us/mississippi/family-resource-center-5290538",
+   "https://mentalhealth.networkofcare.org/Mississippi/services/agency?pid=FamilyResourceCenterofNortheastMississippiEducation_2_1777_1",
+   "https://www.mapquest.com/us/mississippi/family-resource-center-370878078",
+   "https://www.mdhs.ms.gov/wp-content/uploads/2021/11/FFY-2022-TANF-Sub-Grantee-Workforce-Training-Education-Programs.pdf",
+   "https://mississippitoday.org/2022/10/17/mississippi-tanf-reports/",
+   "https://www.mdhs.ms.gov/mdhs-issues-request-for-proposals-rfp-to-award-up-to-36-million-in-tanf-services-across-mississippi/",
+   "https://www.ffyf.org/states/mississippi/",
+   "https://www.tanf.us/state/mississippi",
+   "https://peerta.acf.hhs.gov/upitoolkit/content/mississippi-tanf-work-program",
+   "https://www.mdhs.ms.gov/help/tanf/",
+   "https://www.mscee.org/for-communities",
+   "https://www.peerta.acf.hhs.gov/sites/default/files/public/uploaded_files/New%20MCEC%20Gen%20+%20Halting%20the%20Poverty%20Cycle%20PPT.pdf",
+   "https://www.osa.ms.gov/news/audit-dhs-reveals-millions-wasted",
+   "https://www.osa.ms.gov/news/full-pay-half-empty-classrooms-millions-tanf-childcare-funds-spent-without-tracking-daily",
+   "https://www.mdhs.ms.gov/wp-content/uploads/2023/09/tanf-forensics-email-review.pdf",
+   "https://www.osa.ms.gov/node/18966",
+   "https://mdhs.ms.gov/wp-content/uploads/2022/05/Final-MDHS-TANF-Forensic-Audit-Expanded-Email-Review-2022.04.28.pdf",
+   "https://www.wlbt.com/2021/10/01/audit-finds-69m-unallowable-questionable-expenses-money-earmarked-needy-families/",
+   "https://www.pbs.org/newshour/nation/welfare-misuse-scandal-highlights-wealth-divide-in-mississippi",
+   "https://www.law.cornell.edu/regulations/mississippi/Miss-Code-tit-18-pt-19",
+   "https://www.mdhs.ms.gov/post/tag/tanf/",
+   "https://peerta.acf.hhs.gov/states/mississippi",
+   "https://waysandmeans.house.gov/wp-content/uploads/2024/09/Dortch-Testimony.pdf",
+   "https://www.nccp.org/wp-content/uploads/2024/08/TANF-profile-Mississippi-.pdf",
+   "https://www.utsa.edu/rpm/projects/volleyball-basketball.html",
+   "https://www.alligator.org/article/2025/05/new-sports-facilities-coming-to-campus",
+   "https://calbears.com/news/2025/5/6/cal-begins-construction-of-new-beach-volleyball-facility.aspx",
+   "https://texaslonghorns.com/news/2025/12/10/texas-athletics-ut-seeks-private-developers-for-multipurpose-arena-student-athlete-housing",
+   "https://www.unomaha.edu/news/2025/12/regents-approve-67.5m-privately-funded-capital-projects-at-uno-for-omaha-athletics.php",
+   "https://vtdigger.org/2026/04/03/uvm-wants-to-use-state-scholarship-money-to-pay-for-a-new-sports-complex-vermont-legislators-are-skeptical/",
+   "https://sportsvenuecalculator.com/knowledge/gymnasium-flooring/indoor-volleyball-court-cost/",
+   "https://www.mississippifreepress.org/in-depth-how-brett-favre-secured-6-million-in-welfare-funds-for-a-volleyball-stadium/",
+   "https://mississippitoday.org/2020/05/08/southern-miss-knew-human-services-funds-paid-for-volleyball-center-construction-auditor-found/",
+   "https://www.wdam.com/story/38482443/construction-to-begin-on-usms-new-volleyball-center/",
+   "https://www.indystar.com/story/sports/college/butler/2026/09/19/butler-athletics-donations-fund-new-tennis-facility-volleyball-taraflex-floor/91845559007/",
+   "https://www.sunherald.com/sports/college/conference-usa/university-of-southern-mississippi/article240741116.html",
+   "https://www.compassvermont.com/p/uvm-has-803-million-on-hand-but-its",
+   "https://sportsvenuecalculator.com/knowledge/sports-facility-grants-funding/",
+   "https://www.hvs.com/article/10315-how-the-nil-era-is-reshaping-stadium-development",
+   "https://journalistsresource.org/economics/sports-stadium-public-financing/",
+   "https://sportsvenuecalculator.com/knowledge/sports-facility-financing/financing-sports-facilities/",
+   "https://www.espn.com/blog/playbook/dollars/post/_/id/743/multiple-ways-to-finance-college-stadiums",
+   "https://www.ebsco.com/research-starters/sports-and-leisure/sports-facilities-and-government-funding-overview/",
+   "https://sportslitigationalert.com/public-money-private-profit-rethinking-stadium-funding/",
+   "https://www.smallcollegeathletics.com/what-you-should-know-before-you-build-it",
+   "https://jcbradbury.com/stadium-costs/",
+   "https://businessofcollegesports.com/facilities/college-athletics-construction-roundup-march-2023-part-ii/",
+   "https://www.spartnerships.com/lots-opportunities/",
+   "https://www.sirion.ai/library/contract-management/contract-deliverables/",
+   "https://www.uniccm.com/construction-project-management/contract-deliverables-1",
+   "https://www.lawinsider.com/dictionary/deliverable",
+   "https://fynk.com/en/clauses/deliverables/",
+   "https://www.hellobonsai.com/blog/project-deliverables",
+   "https://www.teamwork.com/blog/project-deliverables/",
+   "https://flag.red/contract-guides/deliverables-explained",
+   "https://www.investopedia.com/terms/d/deliverables.asp",
+   "https://www.lawinsider.com/clause/reports-and-deliverables",
+   "https://www.oregon.gov/das/Procurement/Guiddoc/SOWDraftingTasks.pdf",
+   "https://osr.ucsf.edu/subaward-proposal-toolkit",
+   "https://osp.finance.harvard.edu/subrecipient-vs-contractor-guidance",
+   "https://sam.gov/fsrs",
+   "https://resources.uta.edu/research/grants-and-contracts-services/policies-and-procedures/principal-investigator-handbook/pi-handbook-subawards-and-contracts.php",
+   "https://www.nsf.gov/awards/subrecipient-resources",
+   "https://research.oregonstate.edu/osraa/subaward-subcontract-subgrant-or-procurement",
+   "https://grants.nih.gov/policy-and-compliance/policy-topics/subawards",
+   "https://www.forvismazars.us/forsights/2025/01/subaward-executive-compensation-reporting-for-government-contractors",
+   "https://humanservices.arkansas.gov/wp-content/uploads/710-20-0003_Appendix_E_TANF_Contract_Quarterly_and_Annual_Report_2019-2020.pdf",
+   "https://fedlaws.org/filing-the-ffata-subaward-report-sam-gov-steps-deadlines-and-pitfalls/",
+   "https://fundingtoolkit.sji.gov/faq/what-is-the-difference-between-a-subaward-and-a-contract/",
+   "https://acf.gov/ofa/instructions-completion-tanf-form-acf-196t",
+   "https://grantsights.com/blog/what-is-a-subaward",
+   "https://dsp.research.uiowa.edu/subaward-or-fee-service",
+   "https://www.ecfr.gov/current/title-2/subtitle-A/chapter-II/part-200/subpart-E",
+   "https://ocfs.ny.gov/main/contracts/tanf/",
+   "https://ora.stanford.edu/resources/subaward-resources/defining-subaward"
+  ],
+  "rejected_urls": [],
+  "errors": [
+   "contents: no usable text extracted from https://www.enterprise-journal.com/crime-documents-state-press-releases/auditor-demands-repayment-misspent-welfare-money-6165f8b9c6518",
+   "contents: URL returned no extractable document: https://www2.osa.ms.gov/news/auditor-demands-repayment-of-misspent-welfare-money/",
+   "contents: URL returned no extractable document: https://www.mdhs.ms.gov/wp-content/uploads/2023/09/tanf-forensic-procedures-results.pdf",
+   "contents: URL returned no extractable document: https://www.mdhs.ms.gov/wp-content/uploads/2021/10/MDHS-Report-of-Fraud-Waste-Abuse-FINAL.pdf",
+   "contents: no usable text extracted from https://www.northsidesun.com/news-breaking-news/southern-miss-knew-human-services-funds-paid-volleyball-center-construction",
+   "contents: no usable text extracted from https://www.northsidesun.com/news-breaking-news/southern-miss-knew-human-services-funds-paid-volleyball-center-construction",
+   "contents: URL returned no extractable document: https://contracts.hhs.texas.gov/sites/default/files/documents/2024-Aug/HHS001324500007-contract.pdf",
+   "contents: URL returned no extractable document: https://www.hhs.gov/guidance/document/award-term-and-condition-subawards"
+  ]
+ }
+}

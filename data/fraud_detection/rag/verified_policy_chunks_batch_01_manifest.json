@@ -1,0 +1,22 @@
+{
+  "batch_id": "fraud-policy-batch-01",
+  "generated_from": [
+    "data/fraud_detection/research/youcom/selected_policy_contents_batch_01.json",
+    "data/fraud_detection/research/youcom/selected_policy_contents_batch_02.json"
+  ],
+  "output": "data/fraud_detection/rag/verified_policy_chunks_batch_01.jsonl",
+  "record_count": 20,
+  "review_status": "reviewed",
+  "authority_counts": {
+    "government_guidance": 9,
+    "law_or_regulation": 11
+  },
+  "source_count": 11,
+  "acceptance_gate": {
+    "contents_extracted": true,
+    "expected_phrases_verified": true,
+    "binding_status_recorded": true,
+    "applicability_recorded": true,
+    "review_evidence_not_fraud_determination": true
+  }
+}

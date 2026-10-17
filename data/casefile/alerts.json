@@ -1,0 +1,314 @@
+[
+  {
+    "alert_id": "A-104",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-10-05T04:00:00Z",
+    "customer_name": "Colton Robinson",
+    "account_hint": "colton.robinson67@example.com",
+    "summary": "wire_out 4800.00 to new payee from new device",
+    "trigger_txn": "txn_06924",
+    "window": {
+      "start": "2026-08-21T04:00:00Z",
+      "end": "2026-10-05T04:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-105",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-10-05T18:00:00Z",
+    "customer_name": "Mandy Green",
+    "account_hint": "mandy.green70@example.com",
+    "summary": "ach_out 2530.00 to new payee from new device",
+    "trigger_txn": "txn_06925",
+    "window": {
+      "start": "2026-08-21T18:00:00Z",
+      "end": "2026-10-05T18:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-106",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-10-06T02:00:00Z",
+    "customer_name": "David Leblanc",
+    "account_hint": "david.leblanc49@example.com",
+    "summary": "wire_out 15800.00 to new payee from new device",
+    "trigger_txn": "txn_06926",
+    "window": {
+      "start": "2026-08-22T02:00:00Z",
+      "end": "2026-10-06T02:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-107",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-10-07T10:00:00Z",
+    "customer_name": "Angela Sandoval",
+    "account_hint": "angela.sandoval83@example.com",
+    "summary": "card activity in JP",
+    "trigger_txn": "txn_06932",
+    "window": {
+      "start": "2026-08-23T10:00:00Z",
+      "end": "2026-10-07T10:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-108",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-10-03T05:00:00Z",
+    "customer_name": "Julie Alexander",
+    "account_hint": "julie.alexander95@example.com",
+    "summary": "wire_out 7550.00 to new payee from new device",
+    "trigger_txn": "txn_06936",
+    "window": {
+      "start": "2026-08-19T05:00:00Z",
+      "end": "2026-10-03T05:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-109",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-09-21T01:00:00Z",
+    "customer_name": "Rebecca Peterson",
+    "account_hint": "rebecca.peterson13@example.com",
+    "summary": "ach_out 1150.00 to new payee from new device",
+    "trigger_txn": "txn_06937",
+    "window": {
+      "start": "2026-08-07T01:00:00Z",
+      "end": "2026-09-21T01:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-110",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-09-16T04:00:00Z",
+    "customer_name": "Jessica Wood",
+    "account_hint": "jessica.wood91@example.com",
+    "summary": "wire_out 8350.00 to new payee from new device",
+    "trigger_txn": "txn_06941",
+    "window": {
+      "start": "2026-08-02T04:00:00Z",
+      "end": "2026-09-16T04:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-111",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-10-05T15:00:00Z",
+    "customer_name": "Victoria Roman",
+    "account_hint": "victoria.roman14@example.com",
+    "summary": "card activity in IT",
+    "trigger_txn": "txn_06947",
+    "window": {
+      "start": "2026-08-21T15:00:00Z",
+      "end": "2026-10-05T15:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-112",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-10-01T02:00:00Z",
+    "customer_name": "Edward Fuller",
+    "account_hint": "edward.fuller35@example.com",
+    "summary": "ach_out 2130.00 to new payee from new device",
+    "trigger_txn": "txn_06948",
+    "window": {
+      "start": "2026-08-17T02:00:00Z",
+      "end": "2026-10-01T02:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-113",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-10-03T10:00:00Z",
+    "customer_name": "Victoria Larson",
+    "account_hint": "victoria.larson25@example.com",
+    "summary": "wire_out 16950.00 to new payee from new device",
+    "trigger_txn": "txn_06949",
+    "window": {
+      "start": "2026-08-19T10:00:00Z",
+      "end": "2026-10-03T10:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-114",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-09-26T16:00:00Z",
+    "customer_name": "Jesse Edwards",
+    "account_hint": "jesse.edwards16@example.com",
+    "summary": "wire_out 10450.00 to new payee from new device",
+    "trigger_txn": "txn_06950",
+    "window": {
+      "start": "2026-08-12T16:00:00Z",
+      "end": "2026-09-26T16:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-115",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-09-27T02:00:00Z",
+    "customer_name": "Brandon Hayden",
+    "account_hint": "brandon.hayden72@example.com",
+    "summary": "ach_out 2250.00 to new payee from new device",
+    "trigger_txn": "txn_06951",
+    "window": {
+      "start": "2026-08-13T02:00:00Z",
+      "end": "2026-09-27T02:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-201",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-10-02T05:00:00Z",
+    "customer_name": "Erin Owens",
+    "account_hint": "erin.owens41@example.com",
+    "summary": "wire_out 5950.00 to new payee from new device",
+    "trigger_txn": "txn_06955",
+    "window": {
+      "start": "2026-08-18T05:00:00Z",
+      "end": "2026-10-02T05:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-202",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-09-29T06:00:00Z",
+    "customer_name": "Michele Nelson",
+    "account_hint": "michele.nelson98@example.com",
+    "summary": "ach_out 1190.00 to new payee from new device",
+    "trigger_txn": "txn_06956",
+    "window": {
+      "start": "2026-08-15T06:00:00Z",
+      "end": "2026-09-29T06:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-203",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-10-06T11:00:00Z",
+    "customer_name": "Sierra Johnson",
+    "account_hint": "sierra.johnson54@example.com",
+    "summary": "wire_out 11300.00 to new payee from new device",
+    "trigger_txn": "txn_06957",
+    "window": {
+      "start": "2026-08-22T11:00:00Z",
+      "end": "2026-10-06T11:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-204",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-10-07T13:00:00Z",
+    "customer_name": "Jonathan Johnson",
+    "account_hint": "jonathan.johnson87@example.com",
+    "summary": "card activity in FR",
+    "trigger_txn": "txn_06962",
+    "window": {
+      "start": "2026-08-23T13:00:00Z",
+      "end": "2026-10-07T13:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-205",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-09-25T21:00:00Z",
+    "customer_name": "Vincent Hickman",
+    "account_hint": "vincent.hickman97@example.com",
+    "summary": "wire_out 4900.00 to new payee from new device",
+    "trigger_txn": "txn_06966",
+    "window": {
+      "start": "2026-08-11T21:00:00Z",
+      "end": "2026-09-25T21:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-206",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-09-19T09:00:00Z",
+    "customer_name": "Joel Wilson",
+    "account_hint": "joel.wilson24@example.com",
+    "summary": "ach_out 1630.00 to new payee from new device",
+    "trigger_txn": "txn_06967",
+    "window": {
+      "start": "2026-08-05T09:00:00Z",
+      "end": "2026-09-19T09:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-207",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-10-06T12:00:00Z",
+    "customer_name": "Eric Oliver",
+    "account_hint": "eric.oliver53@example.com",
+    "summary": "wire_out 10800.00 to new payee from new device",
+    "trigger_txn": "txn_06971",
+    "window": {
+      "start": "2026-08-22T12:00:00Z",
+      "end": "2026-10-06T12:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-208",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-10-07T03:00:00Z",
+    "customer_name": "Eric Ortiz",
+    "account_hint": "eric.ortiz34@example.com",
+    "summary": "card activity in MX",
+    "trigger_txn": "txn_06977",
+    "window": {
+      "start": "2026-08-23T03:00:00Z",
+      "end": "2026-10-07T03:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-209",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-09-23T02:00:00Z",
+    "customer_name": "Sabrina Potter",
+    "account_hint": "sabrina.potter81@example.com",
+    "summary": "ach_out 1180.00 to new payee from new device",
+    "trigger_txn": "txn_06978",
+    "window": {
+      "start": "2026-08-09T02:00:00Z",
+      "end": "2026-09-23T02:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-210",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-09-23T00:00:00Z",
+    "customer_name": "Maureen Elliott",
+    "account_hint": "maureen.elliott05@example.com",
+    "summary": "wire_out 6400.00 to new payee from new device",
+    "trigger_txn": "txn_06979",
+    "window": {
+      "start": "2026-08-09T00:00:00Z",
+      "end": "2026-09-23T00:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-211",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-09-28T12:00:00Z",
+    "customer_name": "Brian Walker",
+    "account_hint": "brian.walker06@example.com",
+    "summary": "wire_out 5550.00 to new payee from new device",
+    "trigger_txn": "txn_06980",
+    "window": {
+      "start": "2026-08-14T12:00:00Z",
+      "end": "2026-09-28T12:00:00Z"
+    }
+  },
+  {
+    "alert_id": "A-212",
+    "tenant_id": "bank_demo",
+    "created_at": "2026-10-07T19:00:00Z",
+    "customer_name": "Jeremy Washington",
+    "account_hint": "jeremy.washington98@example.com",
+    "summary": "card activity in IT",
+    "trigger_txn": "txn_06985",
+    "window": {
+      "start": "2026-08-23T19:00:00Z",
+      "end": "2026-10-07T19:00:00Z"
+    }
+  }
+]

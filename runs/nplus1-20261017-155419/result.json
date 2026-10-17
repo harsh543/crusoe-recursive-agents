@@ -1,0 +1,404 @@
+{
+ "N_dev": {
+  "n": 4,
+  "correct": 2,
+  "correct_rate": 0.5,
+  "false_completions": 2,
+  "unnecessary_escalations": 0,
+  "cost_usd": 0.0011326
+ },
+ "N_val": {
+  "n": 10,
+  "correct": 7,
+  "correct_rate": 0.7,
+  "false_completions": 3,
+  "unnecessary_escalations": 0,
+  "cost_usd": 0.0028532
+ },
+ "N_plus_1_val": {
+  "n": 10,
+  "correct": 7,
+  "correct_rate": 0.7,
+  "false_completions": 0,
+  "unnecessary_escalations": 0,
+  "cost_usd": 0.00645385
+ },
+ "checks": {
+  "false_completions do not increase": true,
+  "correct disposition strictly improves": false,
+  "unnecessary escalations do not increase": true,
+  "cost within 3x of N": true,
+  "no write permission added": true,
+  "no mandatory completion check changed": true
+ },
+ "promoted": false,
+ "playbook": "When per-account signals look benign but multiple accounts share a device, call get_device_sharing(account_id). If shared_accounts >= 3 and the case has a new beneficiary, escalate under policy p2; do not close benign based only on per-account review. Peers paying the same beneficiary also indicate linked fraud. Verify shared_accounts count and beneficiary novelty before closing.",
+ "fallback_text": false,
+ "approver": "demo-reviewer (simulated, not a human)",
+ "rows_N": [
+  {
+   "case": "A-106-s2",
+   "expected": "escalated",
+   "outcome": "closed_benign",
+   "correct": false,
+   "false_completion": true,
+   "unnecessary_escalation": false,
+   "cost": 0.00027800000000000004,
+   "replans": 0,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "5ab9ea3d-d033-424a-8441-4688d0c06b60"
+  },
+  {
+   "case": "A-107-s2",
+   "expected": "closed_benign",
+   "outcome": "closed_benign",
+   "correct": true,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.0002767,
+   "replans": 0,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "4d18752c-ec59-4970-a2e6-4584a0277dec"
+  },
+  {
+   "case": "A-106-s3",
+   "expected": "escalated",
+   "outcome": "closed_benign",
+   "correct": false,
+   "false_completion": true,
+   "unnecessary_escalation": false,
+   "cost": 0.0002728,
+   "replans": 0,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "76785e1c-00c3-4aa8-a90b-6c0bf996296c"
+  },
+  {
+   "case": "A-107-s3",
+   "expected": "closed_benign",
+   "outcome": "closed_benign",
+   "correct": true,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.0002787,
+   "replans": 0,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "210ab5cf-b3d4-483b-b0f4-b8309c2a195e"
+  },
+  {
+   "case": "A-106-s4",
+   "expected": "escalated",
+   "outcome": "closed_benign",
+   "correct": false,
+   "false_completion": true,
+   "unnecessary_escalation": false,
+   "cost": 0.00027420000000000005,
+   "replans": 0,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "7a507378-f87e-438a-a008-e2d9631bae14"
+  },
+  {
+   "case": "A-107-s4",
+   "expected": "closed_benign",
+   "outcome": "closed_benign",
+   "correct": true,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.00028970000000000005,
+   "replans": 0,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "08b34a19-c5dd-4181-9477-c6d8d47349d3"
+  },
+  {
+   "case": "A-104-s5",
+   "expected": "escalated",
+   "outcome": "escalated",
+   "correct": true,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.00028885,
+   "replans": 0,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "8abf8c3d-d06b-4b1b-bddd-4bd6a78d154f"
+  },
+  {
+   "case": "A-105-s5",
+   "expected": "closed_benign",
+   "outcome": "closed_benign",
+   "correct": true,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.00030040000000000004,
+   "replans": 0,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "6a7960cc-eb80-4033-aa8f-387e3e12bf18"
+  },
+  {
+   "case": "A-104-s6",
+   "expected": "escalated",
+   "outcome": "escalated",
+   "correct": true,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.00030345000000000003,
+   "replans": 0,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "98cd36b3-3216-46a5-91c4-eb3621254d01"
+  },
+  {
+   "case": "A-105-s6",
+   "expected": "closed_benign",
+   "outcome": "closed_benign",
+   "correct": true,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.0002904,
+   "replans": 0,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "e8f4d4ff-3842-4cbe-8a4b-e8aff8a1ab41"
+  }
+ ],
+ "rows_N_plus_1": [
+  {
+   "case": "A-106-s2",
+   "expected": "escalated",
+   "outcome": "escalated",
+   "correct": true,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.0006331500000000001,
+   "replans": 2,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features",
+    "get_device_sharing",
+    "compute_sequence_features",
+    "resolve_account"
+   ],
+   "case_uuid": "937960e2-ad0c-419f-b7ed-0fda7fd3ec65"
+  },
+  {
+   "case": "A-107-s2",
+   "expected": "closed_benign",
+   "outcome": "insufficient_evidence",
+   "correct": false,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.0007252,
+   "replans": 2,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features",
+    "get_device_sharing",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "5ae75061-ccd5-41e3-8090-7a6b32a7f7bd"
+  },
+  {
+   "case": "A-106-s3",
+   "expected": "escalated",
+   "outcome": "escalated",
+   "correct": true,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.00053495,
+   "replans": 1,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features",
+    "get_device_sharing",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "5b8ebb6c-1101-4ca7-a444-dd605577e881"
+  },
+  {
+   "case": "A-107-s3",
+   "expected": "closed_benign",
+   "outcome": "insufficient_evidence",
+   "correct": false,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.0007056,
+   "replans": 2,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features",
+    "get_device_sharing",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "10c5abec-34fd-4cea-9eef-685024d2ca06"
+  },
+  {
+   "case": "A-106-s4",
+   "expected": "escalated",
+   "outcome": "insufficient_evidence",
+   "correct": false,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.0007144,
+   "replans": 2,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features",
+    "get_device_sharing",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "4b5b5e53-75ca-4717-bbaa-8bebdec09ed8"
+  },
+  {
+   "case": "A-107-s4",
+   "expected": "closed_benign",
+   "outcome": "closed_benign",
+   "correct": true,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.000647,
+   "replans": 2,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features",
+    "get_device_sharing",
+    "compute_sequence_features",
+    "get_transactions"
+   ],
+   "case_uuid": "210b54a4-f294-4227-8068-c4eb0fa8f2e8"
+  },
+  {
+   "case": "A-104-s5",
+   "expected": "escalated",
+   "outcome": "escalated",
+   "correct": true,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.0005624,
+   "replans": 1,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features",
+    "get_device_sharing",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "228142e1-2b68-4491-90ed-ee0b27170d21"
+  },
+  {
+   "case": "A-105-s5",
+   "expected": "closed_benign",
+   "outcome": "closed_benign",
+   "correct": true,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.0006796500000000001,
+   "replans": 2,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features",
+    "get_device_sharing",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "a72cb20a-e308-42b4-ba7e-ac3e6ef7a81c"
+  },
+  {
+   "case": "A-104-s6",
+   "expected": "escalated",
+   "outcome": "escalated",
+   "correct": true,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.0005732,
+   "replans": 1,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features",
+    "get_device_sharing",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "148f4ce8-a734-43a8-b62c-ece4f7e1b896"
+  },
+  {
+   "case": "A-105-s6",
+   "expected": "closed_benign",
+   "outcome": "closed_benign",
+   "correct": true,
+   "false_completion": false,
+   "unnecessary_escalation": false,
+   "cost": 0.0006783,
+   "replans": 2,
+   "tools": [
+    "resolve_account",
+    "get_device_history",
+    "get_transactions",
+    "compute_sequence_features",
+    "get_device_sharing",
+    "compute_sequence_features"
+   ],
+   "case_uuid": "9d967c25-ad24-4973-8771-ac272386a795"
+  }
+ ]
+}

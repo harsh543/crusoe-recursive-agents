@@ -1,0 +1,752 @@
+{
+ "case": "fat_leonard",
+ "mode": "live",
+ "seconds": 88.1,
+ "cost_usd": 0.002494,
+ "models": {
+  "intake": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+  "records_investigator": "nvidia/Nemotron-3.5-Lightning-30B-A3B"
+ },
+ "run_id": "dafee743-68cc-4fb1-b264-c0fead99efc4",
+ "case_uuid": "917e941f-e99e-40c3-8bd9-3d0e1005785d",
+ "claims": [
+  {
+   "id": "c1",
+   "text": "Official B steered maritime husbanding work to Contractor A in exchange for cash, travel, meals, hotel stays, and entertainment.",
+   "attributed_to": "The submitted case summary",
+   "claim_type": "legal_conclusion",
+   "verdict": "out_of_scope",
+   "explanation": "Attributed statement; not verifiable from public records.",
+   "conflicts": [],
+   "replans": 0,
+   "refusals": [],
+   "trail": [
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "out_of_scope"
+    }
+   ],
+   "attributions": [],
+   "findings": []
+  },
+  {
+   "id": "c2",
+   "text": "Person B calculated more than $35 million in inflated fuel, tariff, and port-service invoices.",
+   "attributed_to": "The submitted case summary",
+   "claim_type": "amount",
+   "verdict": "insufficient_evidence",
+   "explanation": "Could not be verified from the available records within the allowed attempts.",
+   "conflicts": [],
+   "replans": 2,
+   "refusals": [
+    "cannot record supported for c2: computation_correct: no award_amount findings -> code expects insufficient_evidence, got supported",
+    "cannot record contradicted for c2: computation_correct: no award_amount findings -> code expects insufficient_evidence, got contradicted; conflicts_addressed: sources disagree on amount: ['$1,232,858.07', '$108,776.43']; list it in conflicts; neutral_language: wrongdoing vocabulary outside quotes: ['fraudulent']"
+   ],
+   "trail": [
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "submitted case summary inflate fuel tariff port-service invoices inflated calculated",
+     "hits": [
+      {
+       "id": "ydc_47cef59be1131e98002b",
+       "title": "https://justice.gov/criminal/criminal-fraud/file/788861/dl?inline=",
+       "publisher": "justice.gov",
+       "url": "https://justice.gov/criminal/criminal-fraud/file/788861/dl?inline=",
+       "doc_type": "primary",
+       "sha256": "43875c1b7bc622700ab7efce4cc38a829defc48428803f31d3e95ddf5988b251",
+       "retrieved_at": "2026-10-17T22:09:19.763265+00:00"
+      },
+      {
+       "id": "ydc_b6249a7aa4dc231b3af0",
+       "title": "https://www.justice.gov/usao-sdca/pr/us-navy-admiral-sentenced-lying-feds-about-his-relationship-foreign-defense-contractor",
+       "publisher": "justice.gov",
+       "url": "https://www.justice.gov/usao-sdca/pr/us-navy-admiral-sentenced-lying-feds-about-his-relationship-foreign-defense-contractor",
+       "doc_type": "primary",
+       "sha256": "5fed64e4791d7dafa8cb63f5d92e7940cdab5dab4605fa420680c3e2ff66a3fe",
+       "retrieved_at": "2026-10-17T21:47:52.083549+00:00"
+      },
+      {
+       "id": "ydc_027edccefeb4c28b1d58",
+       "title": "Southern District of California",
+       "publisher": "justice.gov",
+       "url": "https://www.justice.gov/usao-sdca/pr/leonard-glenn-francis-sentenced-15-years-prison-massive-bribery-fraud-and",
+       "doc_type": "primary",
+       "sha256": "36c002c7bd5d37ef7cee507b8e7d04391e055fe10ca9bd9c64199bf0f42d21df",
+       "retrieved_at": "2026-10-17T21:41:28.557167+00:00"
+      },
+      {
+       "id": "ydc_81359482b65907d37a8e",
+       "title": "Southern District of California",
+       "publisher": "justice.gov",
+       "url": "https://www.justice.gov/usao-sdca/pr/malaysian-defense-contractor-leonard-francis-pleads-guilty-corruption-conspiracy",
+       "doc_type": "primary",
+       "sha256": "b3b5ee9ea6b1270a2e28792a48108f8096da986f51dc3e0f733a8d6a8a454bfc",
+       "retrieved_at": "2026-10-17T21:41:29.027526+00:00"
+      },
+      {
+       "id": "ydc_107eb2499a394d930ff3",
+       "title": "Fuel Surcharges in Trucking: How They Work, How to Calculate, and Best Practices",
+       "publisher": "freightwaves.com",
+       "url": "https://www.freightwaves.com/checkpoint/fuel-surcharge-in-trucking/",
+       "doc_type": "secondary",
+       "sha256": "e384a55c1833d81d661eafbfb357e3b1232d9b9e28b9b0dc629fb86a5081ee71",
+       "retrieved_at": "2026-10-17T23:09:48.322614+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_47cef59be1131e98002b",
+      "title": "https://justice.gov/criminal/criminal-fraud/file/788861/dl?inline=",
+      "publisher": "justice.gov",
+      "url": "https://justice.gov/criminal/criminal-fraud/file/788861/dl?inline=",
+      "doc_type": "primary",
+      "sha256": "43875c1b7bc622700ab7efce4cc38a829defc48428803f31d3e95ddf5988b251",
+      "retrieved_at": "2026-10-17T22:09:19.763265+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "supported",
+     "explanation": "The document describes systematic submission of fraudulently inflated claims covering fuel, tariff, and port services from mid\u20112009 through 2013. The narrative matches the claim of inflated invoices exceeding $35 million. The exact aggregate amount is not numerically specified, but the document conf",
+     "findings": [
+      {
+       "field": "amount",
+       "value": "more than $35 million in inflated fuel, tariff, and port-service invoices",
+       "quote": "Beginning in or about July 2009, and continuing to in or about September 2013, on the high seas and outside the jurisdiction of any particular district, FRANCIS and GDMA knowingly and intentionally combined, conspired, and agreed with GDMA employees and others to defraud the United States, that is, FRANCIS and GDMA knowingly and intentionally agreed with GDMA employees and others to defraud the United States by obstructing the lawful functions of the Official A through deceitful and dishonest means, namely, by submitting fraudulently inflated claims for payment to the Official A, and false and fraudulent documentation in support of those claims for payment",
+       "doc": {
+        "id": "ydc_47cef59be1131e98002b",
+        "title": "https://justice.gov/criminal/criminal-fraud/file/788861/dl?inline=",
+        "publisher": "justice.gov",
+        "url": "https://justice.gov/criminal/criminal-fraud/file/788861/dl?inline=",
+        "doc_type": "primary",
+        "sha256": "43875c1b7bc622700ab7efce4cc38a829defc48428803f31d3e95ddf5988b251",
+        "retrieved_at": "2026-10-17T22:09:19.763265+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "computation_correct",
+       "reason": "no award_amount findings -> code expects insufficient_evidence, got supported"
+      }
+     ]
+    },
+    {
+     "type": "gate_refused",
+     "by": "Gate (code)",
+     "verdict": "supported",
+     "reason": "cannot record supported for c2: computation_correct: no award_amount findings -> code expects insufficient_evidence, got supported"
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "insufficient_evidence",
+     "explanation": "The Case Information does not contain any specific dollar amounts for inflated fuel, tariff, or port-service invoices beyond the two example fraudulent claims ($108,776.43 and $1,232,858.07). The claim of 'more than $35 million in inflated fuel, tariff, and port-service invoices' is not supported by",
+     "findings": []
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "neutral_language",
+       "reason": "wrongdoing vocabulary outside quotes: ['fraudulent']"
+      }
+     ]
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "contradicted",
+     "explanation": "The document lists two specific fraudulent claim amounts ($108,776.43 and $1,232,858.07) but does not state a total of \"more than $35 million\" in inflated invoices.",
+     "findings": [
+      {
+       "field": "amount",
+       "value": "$108,776.43",
+       "quote": "On or about October 6, 2011, GDMA submitted to the Official A a fraudulent claim in the amount of approximately $108,776.43 in connection with services rendered to the USS Defender.",
+       "doc": {
+        "id": "ydc_47cef59be1131e98002b",
+        "title": "https://justice.gov/criminal/criminal-fraud/file/788861/dl?inline=",
+        "publisher": "justice.gov",
+        "url": "https://justice.gov/criminal/criminal-fraud/file/788861/dl?inline=",
+        "doc_type": "primary",
+        "sha256": "43875c1b7bc622700ab7efce4cc38a829defc48428803f31d3e95ddf5988b251",
+        "retrieved_at": "2026-10-17T22:09:19.763265+00:00"
+       }
+      },
+      {
+       "field": "amount",
+       "value": "$1,232,858.07",
+       "quote": "On or about October 26, 2012, GDMA submitted to the Official A a fraudulent claim in the amount of approximately $1,232,858.07 in connection with services rendered to the USS Bonhomme Richard.",
+       "doc": {
+        "id": "ydc_47cef59be1131e98002b",
+        "title": "https://justice.gov/criminal/criminal-fraud/file/788861/dl?inline=",
+        "publisher": "justice.gov",
+        "url": "https://justice.gov/criminal/criminal-fraud/file/788861/dl?inline=",
+        "doc_type": "primary",
+        "sha256": "43875c1b7bc622700ab7efce4cc38a829defc48428803f31d3e95ddf5988b251",
+        "retrieved_at": "2026-10-17T22:09:19.763265+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "computation_correct",
+       "reason": "no award_amount findings -> code expects insufficient_evidence, got contradicted"
+      },
+      {
+       "check": "conflicts_addressed",
+       "reason": "sources disagree on amount: ['$1,232,858.07', '$108,776.43']; list it in conflicts"
+      },
+      {
+       "check": "neutral_language",
+       "reason": "wrongdoing vocabulary outside quotes: ['fraudulent']"
+      }
+     ]
+    },
+    {
+     "type": "gate_refused",
+     "by": "Gate (code)",
+     "verdict": "contradicted",
+     "reason": "cannot record contradicted for c2: computation_correct: no award_amount findings -> code expects insufficient_evidence, got contradicted; conflicts_addressed: sources disagree on amount: ['$1,232,858.07', '$108,776.43']; list it in conflicts; neutral_language: wrongdoing vocabulary outside quotes: ["
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "insufficient_evidence"
+    }
+   ],
+   "attributions": [
+    {
+     "agent": "investigator",
+     "step": "s009",
+     "category": "task_verification"
+    },
+    {
+     "agent": "investigator",
+     "step": "s005",
+     "category": "task_verification"
+    },
+    {
+     "agent": "investigator",
+     "step": "s005",
+     "category": "task_verification"
+    }
+   ],
+   "findings": []
+  },
+  {
+   "id": "c3",
+   "text": "Official B provided confidential ship-schedule and competitor-pricing information to Person A.",
+   "attributed_to": "The submitted case summary",
+   "claim_type": "other",
+   "verdict": "contradicted",
+   "explanation": "The document does not contain the phrase 'confidential ship-schedule and competitor-pricing information' or equivalent explicit wording about competitor pricing. Dusek delivered ship schedules, but no mention of competitor pricing is present.",
+   "conflicts": [],
+   "replans": 1,
+   "refusals": [
+    "cannot record supported for c3: quotes_verbatim: finding confidential_ship_schedule_and_competitor_pricing: quote not found verbatim in ydc_81359482b65907d37a8e"
+   ],
+   "trail": [
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "Official B confidential ship-schedule competitor-pricing Person A",
+     "hits": [
+      {
+       "id": "ydc_027edccefeb4c28b1d58",
+       "title": "Southern District of California",
+       "publisher": "justice.gov",
+       "url": "https://www.justice.gov/usao-sdca/pr/leonard-glenn-francis-sentenced-15-years-prison-massive-bribery-fraud-and",
+       "doc_type": "primary",
+       "sha256": "36c002c7bd5d37ef7cee507b8e7d04391e055fe10ca9bd9c64199bf0f42d21df",
+       "retrieved_at": "2026-10-17T21:41:28.557167+00:00"
+      },
+      {
+       "id": "ydc_47cef59be1131e98002b",
+       "title": "https://justice.gov/criminal/criminal-fraud/file/788861/dl?inline=",
+       "publisher": "justice.gov",
+       "url": "https://justice.gov/criminal/criminal-fraud/file/788861/dl?inline=",
+       "doc_type": "primary",
+       "sha256": "43875c1b7bc622700ab7efce4cc38a829defc48428803f31d3e95ddf5988b251",
+       "retrieved_at": "2026-10-17T22:09:19.763265+00:00"
+      },
+      {
+       "id": "ydc_81359482b65907d37a8e",
+       "title": "Southern District of California",
+       "publisher": "justice.gov",
+       "url": "https://www.justice.gov/usao-sdca/pr/malaysian-defense-contractor-leonard-francis-pleads-guilty-corruption-conspiracy",
+       "doc_type": "primary",
+       "sha256": "b3b5ee9ea6b1270a2e28792a48108f8096da986f51dc3e0f733a8d6a8a454bfc",
+       "retrieved_at": "2026-10-17T21:41:29.027526+00:00"
+      },
+      {
+       "id": "ydc_b6249a7aa4dc231b3af0",
+       "title": "https://www.justice.gov/usao-sdca/pr/us-navy-admiral-sentenced-lying-feds-about-his-relationship-foreign-defense-contractor",
+       "publisher": "justice.gov",
+       "url": "https://www.justice.gov/usao-sdca/pr/us-navy-admiral-sentenced-lying-feds-about-his-relationship-foreign-defense-contractor",
+       "doc_type": "primary",
+       "sha256": "5fed64e4791d7dafa8cb63f5d92e7940cdab5dab4605fa420680c3e2ff66a3fe",
+       "retrieved_at": "2026-10-17T21:47:52.083549+00:00"
+      },
+      {
+       "id": "ydc_98617d68c2fa4de5cfb5",
+       "title": "Person A\uff08Mastermind of the largest corruption scandal ...",
+       "publisher": "baike.baidu.com",
+       "url": "https://baike.baidu.com/en/item/Leonard%20Glenn%20Francis/3440087",
+       "doc_type": "secondary",
+       "sha256": "b20c6714ee87979086370b882e8e9b281be971e32670a29d0b64d2e00f2df9d5",
+       "retrieved_at": "2026-10-17T23:04:55.895326+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_81359482b65907d37a8e",
+      "title": "Southern District of California",
+      "publisher": "justice.gov",
+      "url": "https://www.justice.gov/usao-sdca/pr/malaysian-defense-contractor-leonard-francis-pleads-guilty-corruption-conspiracy",
+      "doc_type": "primary",
+      "sha256": "b3b5ee9ea6b1270a2e28792a48108f8096da986f51dc3e0f733a8d6a8a454bfc",
+      "retrieved_at": "2026-10-17T21:41:29.027526+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "supported",
+     "explanation": "The document confirms that Navy officials, including Captain Dusek and NCIS Special Agent Beliveau, provided confidential ship schedules and other sensitive information to Francis, supporting the claim.",
+     "findings": [
+      {
+       "field": "confidential_ship_schedule_and_competitor_pricing",
+       "value": "Official B provided confidential ship-schedule and competitor-pricing information to Person A",
+       "quote": "Dusek admitted that he used his influence... to benefit Francis and GDMA... Francis also admitted that Beliveau gave him... the identities of subjects of these investigations; the information provided by witnesses and documents, including identifying information about cooperating witnesses and their testimony; the aspects of GDMA\u0019s billings that were of concern to the investigations...",
+       "doc": {
+        "id": "ydc_81359482b65907d37a8e",
+        "title": "Southern District of California",
+        "publisher": "justice.gov",
+        "url": "https://www.justice.gov/usao-sdca/pr/malaysian-defense-contractor-leonard-francis-pleads-guilty-corruption-conspiracy",
+        "doc_type": "primary",
+        "sha256": "b3b5ee9ea6b1270a2e28792a48108f8096da986f51dc3e0f733a8d6a8a454bfc",
+        "retrieved_at": "2026-10-17T21:41:29.027526+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "quotes_verbatim",
+       "reason": "finding confidential_ship_schedule_and_competitor_pricing: quote not found verbatim in ydc_81359482b65907d37a8e"
+      }
+     ]
+    },
+    {
+     "type": "gate_refused",
+     "by": "Gate (code)",
+     "verdict": "supported",
+     "reason": "cannot record supported for c3: quotes_verbatim: finding confidential_ship_schedule_and_competitor_pricing: quote not found verbatim in ydc_81359482b65907d37a8e"
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_81359482b65907d37a8e",
+      "title": "Southern District of California",
+      "publisher": "justice.gov",
+      "url": "https://www.justice.gov/usao-sdca/pr/malaysian-defense-contractor-leonard-francis-pleads-guilty-corruption-conspiracy",
+      "doc_type": "primary",
+      "sha256": "b3b5ee9ea6b1270a2e28792a48108f8096da986f51dc3e0f733a8d6a8a454bfc",
+      "retrieved_at": "2026-10-17T21:41:29.027526+00:00"
+     },
+     "status": "ok",
+     "note": "already in context"
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "contradicted",
+     "explanation": "The document does not contain the phrase 'confidential ship-schedule and competitor-pricing information' or equivalent explicit wording about competitor pricing. Dusek delivered ship schedules, but no mention of competitor pricing is present.",
+     "findings": [
+      {
+       "field": "confidential_ship_schedule_and_competitor_pricing",
+       "value": "no evidence found",
+       "quote": "",
+       "doc": {
+        "id": "ydc_81359482b65907d37a8e",
+        "title": "Southern District of California",
+        "publisher": "justice.gov",
+        "url": "https://www.justice.gov/usao-sdca/pr/malaysian-defense-contractor-leonard-francis-pleads-guilty-corruption-conspiracy",
+        "doc_type": "primary",
+        "sha256": "b3b5ee9ea6b1270a2e28792a48108f8096da986f51dc3e0f733a8d6a8a454bfc",
+        "retrieved_at": "2026-10-17T21:41:29.027526+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": true,
+     "failures": []
+    },
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "contradicted"
+    }
+   ],
+   "attributions": [
+    {
+     "agent": "investigator",
+     "step": "s031",
+     "category": "task_verification"
+    }
+   ],
+   "findings": [
+    {
+     "field": "confidential_ship_schedule_and_competitor_pricing",
+     "value": "no evidence found",
+     "quote": "",
+     "doc": {
+      "id": "ydc_81359482b65907d37a8e",
+      "url": "https://www.justice.gov/usao-sdca/pr/malaysian-defense-contractor-leonard-francis-pleads-guilty-corruption-conspiracy",
+      "title": "Southern District of California",
+      "publisher": "justice.gov",
+      "doc_type": "primary",
+      "retrieved_at": "2026-10-17T21:41:29.027526+00:00",
+      "sha256": "b3b5ee9ea6b1270a2e28792a48108f8096da986f51dc3e0f733a8d6a8a454bfc"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "text": "This proves that every Navy official involved committed bribery and fraud.",
+   "attributed_to": "Person C",
+   "claim_type": "legal_conclusion",
+   "verdict": "out_of_scope",
+   "explanation": "Attributed statement; not verifiable from public records.",
+   "conflicts": [],
+   "replans": 0,
+   "refusals": [],
+   "trail": [
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "out_of_scope"
+    }
+   ],
+   "attributions": [],
+   "findings": []
+  }
+ ],
+ "timeline": [
+  {
+   "step": "s001",
+   "role": "intake",
+   "kind": "llm"
+  },
+  {
+   "step": "s002",
+   "role": "intake",
+   "kind": "claims"
+  },
+  {
+   "step": "s003",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s004",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s005",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s006",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s007",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s008",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s009",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s010",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s011",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s012",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s013",
+   "role": "gate",
+   "kind": "refused"
+  },
+  {
+   "step": "s014",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s015",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s016",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s017",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s018",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s019",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s020",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s021",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s022",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s023",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s024",
+   "role": "gate",
+   "kind": "refused"
+  },
+  {
+   "step": "s025",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s026",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s027",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s028",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s029",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s030",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s031",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s032",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s033",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s034",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s035",
+   "role": "gate",
+   "kind": "refused"
+  },
+  {
+   "step": "s036",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s037",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s038",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s039",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s040",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s041",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s042",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s043",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s044",
+   "role": "gate",
+   "kind": "commit"
+  }
+ ],
+ "retrieval": {
+  "provider": "you.com",
+  "retrieval_flow": "search_then_exact_url_contents",
+  "queries": [
+   "submitted case summary inflate fuel tariff port-service invoices inflated calculated",
+   "Navy personnel confidential ship-schedule competitor-pricing Leonard Glenn Francis"
+  ],
+  "accepted_urls": [
+   "https://www.justice.gov/usao-sdca/pr/leonard-glenn-francis-sentenced-15-years-prison-massive-bribery-fraud-and",
+   "https://www.justice.gov/usao-sdca/pr/malaysian-defense-contractor-leonard-francis-pleads-guilty-corruption-conspiracy",
+   "https://www.justice.gov/usao-sdca/pr/us-navy-admiral-sentenced-lying-feds-about-his-relationship-foreign-defense-contractor",
+   "https://justice.gov/criminal/criminal-fraud/file/788861/dl?inline=",
+   "https://www.freightwaves.com/checkpoint/fuel-surcharge-in-trucking/",
+   "https://www.ooida.com/trucking-tools/fuel-surcharge-calculator/",
+   "https://www.shippypro.com/blog/en/fuel-surcharge-shipping-what-it-is-how-it-works-and-how-to-stop-overpaying",
+   "https://www.whyloyalty.com/blog/how-to-calculate-fuel-surcharge/",
+   "https://contractorplus.app/blog/essential-fuel-surcharge-tactics-for-invoices",
+   "https://owlery.ai/blogs/4-ways-shippers-can-fight-rising-fuel-surcharges",
+   "https://www.wwex.com/shipping-resources/getting-to-know-your-freight-fuel-surcharges",
+   "https://www.lawinsider.com/clause/fuel-surcharge",
+   "https://allpronow.net/blog/what-is-a-fuel-surcharge-in-shipping-and-how-is-it-calculated/",
+   "https://baike.baidu.com/en/item/Leonard%20Glenn%20Francis/3440087",
+   "https://en.wikipedia.org/wiki/Fat_Leonard_scandal",
+   "https://www.washingtonpost.com/graphics/investigations/seducing-the-seventh-fleet/",
+   "https://www.civilbeat.org/2026/09/fat-leonard-corrupted-the-navy-will-trump-pardon-him/",
+   "https://corruption-tracker.org/case/glenn-defense-marine-asia-and-the-us-7th-fleet-the-fat-leonard-scandal",
+   "https://foreignpolicy.com/2024/05/11/fat-leonard-scandal-us-navy-malaysian-defense-contractor-scam-venezuela-pacific-security/",
+   "https://nationalsecurityjournal.org/35000000-gone-fat-leonard-bribed-60-u-s-navy-admirals-with-prostitutes-and-michelin-dinners/",
+   "https://www.hbs.edu/faculty/Pages/item.aspx?num=56821",
+   "https://www.cato.org/blog/navy-corruption-scandal"
+  ],
+  "rejected_urls": [],
+  "errors": [
+   "contents: URL returned no extractable document: https://www.efis.psc.mo.gov/Document/Display/158054"
+  ]
+ }
+}

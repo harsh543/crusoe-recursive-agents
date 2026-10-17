@@ -1,0 +1,12 @@
+{"step": "s001", "role": "investigator", "kind": "llm", "model": "nvidia/Nemotron-3.5-Lightning-30B-A3B", "input_tokens": 466, "cached_tokens": 0, "output_tokens": 24, "latency_ms": 470, "cost_usd": 2.8100000000000002e-05, "finish_reason": "stop", "attempt": 0}
+{"step": "s002", "role": "investigator", "kind": "tool", "tool": "resolve_account", "args": {"email": "customer105s0@example.test"}, "status": "ok", "error": null}
+{"step": "s003", "role": "investigator", "kind": "llm", "model": "nvidia/Nemotron-3.5-Lightning-30B-A3B", "input_tokens": 536, "cached_tokens": 0, "output_tokens": 31, "latency_ms": 6906, "cost_usd": 3.3e-05, "finish_reason": "stop", "attempt": 0}
+{"step": "s004", "role": "investigator", "kind": "tool", "tool": "get_device_history", "args": {"account_id": "acct_1050"}, "status": "error", "error": "device_history expects account_id (acct_...), got 'customer105s0@example.test'"}
+{"step": "s005", "role": "investigator", "kind": "llm", "model": "nvidia/Nemotron-3.5-Lightning-30B-A3B", "input_tokens": 644, "cached_tokens": 0, "output_tokens": 31, "latency_ms": 529, "cost_usd": 3.8400000000000005e-05, "finish_reason": "stop", "attempt": 0}
+{"step": "s006", "role": "investigator", "kind": "tool", "tool": "get_device_history", "args": {"account_id": "acct_1050"}, "status": "ok", "error": null}
+{"step": "s007", "role": "investigator", "kind": "llm", "model": "nvidia/Nemotron-3.5-Lightning-30B-A3B", "input_tokens": 840, "cached_tokens": 0, "output_tokens": 31, "latency_ms": 1156, "cost_usd": 4.8200000000000006e-05, "finish_reason": "stop", "attempt": 0}
+{"step": "s008", "role": "investigator", "kind": "tool", "tool": "get_transactions", "args": {"account_id": "acct_1050"}, "status": "ok", "error": null}
+{"step": "s009", "role": "investigator", "kind": "llm", "model": "nvidia/Nemotron-3.5-Lightning-30B-A3B", "input_tokens": 1048, "cached_tokens": 0, "output_tokens": 20, "latency_ms": 1295, "cost_usd": 5.640000000000001e-05, "finish_reason": "stop", "attempt": 0}
+{"step": "s010", "role": "investigator", "kind": "tool", "tool": "compute_sequence_features", "args": {}, "status": "ok", "error": null}
+{"step": "s011", "role": "investigator", "kind": "llm", "model": "nvidia/Nemotron-3.5-Lightning-30B-A3B", "input_tokens": 1152, "cached_tokens": 0, "output_tokens": 168, "latency_ms": 2246, "cost_usd": 9.120000000000001e-05, "finish_reason": "stop", "attempt": 0}
+{"step": "s012", "role": "investigator", "kind": "final", "outcome": "closed_benign", "claims": 1}

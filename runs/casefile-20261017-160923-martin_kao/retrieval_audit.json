@@ -1,0 +1,30 @@
+{
+  "provider": "you.com",
+  "retrieval_flow": "search_then_exact_url_contents",
+  "queries": [
+    "ProPublica $32 million naval contract commitment internal company email",
+    "ProPublica $32 million naval contract commitment internal company email defense contractor sentenced bribery"
+  ],
+  "accepted_urls": [
+    "https://www.justice.gov/archives/opa/pr/former-government-contractor-executives-indicted-unlawful-campaign-contributions",
+    "https://www.justice.gov/opa/press-release/file/1470801/dl",
+    "https://www.propublica.org/article/fbi-susan-collins-navatek-campaign-donations-investigation",
+    "https://www.propublica.org/article/debunking-susan-collins-fbi-navatek-investigation-claims",
+    "https://www.wmtw.com/article/susan-collins-propublica-allegations-corruption-bribery/73836588",
+    "https://www.ms.now/rachel-maddow-show/maddowblog/susan-collins-fbi-navatek-navy-contract-corruption-allegations",
+    "https://www.propublica.org/article/donald-trump-jr-vulcan-deal-white-house",
+    "https://www.linkedin.com/posts/propublica_the-inside-story-of-how-the-navy-spent-billions-activity-7180760995303235586-2s96",
+    "https://www.sba.gov/article/2025/11/14/defense-contractor-executive-sentenced-bribery-scheme",
+    "https://www.propublica.org/article/how-navy-spent-billions-littoral-combat-ship",
+    "https://www.war.gov/News/Contracts/Contract/Article/4349976/",
+    "https://www.war.gov/News/Contracts/Contract/Article/4612013/contracts-for-sept-25-2026/",
+    "https://www.defenseone.com/threats/2026/09/fbi-defense-bribery-investigation/416138/",
+    "https://www.mainepublic.org/politics/2026-09-22/the-fbi-anti-corruption-squad-was-circling-susan-collins-until-trump-got-in-the-way",
+    "https://www.pressherald.com/2026/09/22/what-to-know-about-the-pay-to-play-allegations-against-susan-collins/",
+    "https://propublica.org/article/fbi-susan-collins-navatek-campaign-donations-investigation?amp=&amp=",
+    "https://www.justice.gov/usao-sdca/pr/defense-contractor-executive-sentenced-bribery-scheme",
+    "https://www.irs.gov/compliance/criminal-investigation/defense-contractor-executive-sentenced-in-bribery-scheme"
+  ],
+  "rejected_urls": [],
+  "errors": []
+}

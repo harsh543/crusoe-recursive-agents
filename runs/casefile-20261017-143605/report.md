@@ -1,0 +1,17 @@
+# Case file report: martin_kao
+
+**Not a legal finding.** This report checks individual, attributed statements against cited records. It does not assess anyone's intent or conduct.
+
+| # | Claim (as stated) | Attributed to | Verdict | Evidence |
+|---|---|---|---|---|
+| c1 | Person A and other contractor executives created a shell company and used contractor funds for a $150,000 political contribution | Official A | **insufficient_evidence** | Entity checked: Contractor A<br>Could not be verified from the available records within the allowed attempts. |
+| c2 | After the contribution, an internal company email described a commitment involving $32 million in naval contracts | Contractor B | **insufficient_evidence** | Entity checked: Contractor A<br>Could not be verified from the available records within the allowed attempts. |
+| c3 | Kao falsified employee counts to obtain $13 million in federal loans and transferred money to personal accounts | submitted case summary | **contradicted** | award_amount = $10,000,000: "In his first PPP loan application Kao falsely tripled the number of employees at his company and thereby obtained the maximum loan of $10,000,000 from a Hawaii bank." (Former Hawaii CEO sentenced to 87 months imprisonment on COVID relief fraud and bank fraud, irs.gov, retrieved 2026-10-17, https://www.irs.gov/compliance/criminal-investigation/former-hawaii-ceo-sentenced-to-87-months-imprisonment-on-covid-relief-fraud-and-bank-fraud)<br>award_amount = $2,841,490: "In his second PPP loan application Kao falsely claimed eligibility for another $2,841,490 and obtained that loan from an Internet-based mainland bank by concealing his company's receipt of the first PPP loan." (Former Hawaii CEO sentenced to 87 months imprisonment on COVID relief fraud and bank fraud, irs.gov, retrieved 2026-10-17, https://www.irs.gov/compliance/criminal-investigation/former-hawaii-ceo-sentenced-to-87-months-imprisonment-on-covid-relief-fraud-and-bank-fraud)<br>award_amount = $2,852,839: "In his third PPP application to a different Hawaii-based bank, Kao again falsely claimed eligibility for another $2,852,839 by concealing his company's receipt of the first and second PPP loans." (Former Hawaii CEO sentenced to 87 months imprisonment on COVID relief fraud and bank fraud, irs.gov, retrieved 2026-10-17, https://www.irs.gov/compliance/criminal-investigation/former-hawaii-ceo-sentenced-to-87-months-imprisonment-on-covid-relief-fraud-and-bank-fraud)<br>The documents describe Person A obtaining three PPP loans totaling $15,694,329 ($10M + $2,841,490 + $2,852,839), with the maximum single loan being $10M. The claim specifies $13 million in federal loans, which does not match the documented amounts. |
+| c4 | The contribution proves that the recipient of the campaign support committed bribery | Person B | **out_of_scope** | Attributed, not verified (outside what public records can establish).<br>Attributed statement; not verifiable from public records. |
+
+## What the record does and does not establish
+
+- Verdict counts: contradicted: 1, insufficient_evidence: 2, out_of_scope: 1
+- `supported` / `contradicted` mean the quoted records match or do not match the specific statement, as recomputed by code.
+- `insufficient_evidence` means the cited records do not settle the statement.
+- 1 statement(s) are conclusions or concern private individuals and were attributed but not researched.

@@ -1,0 +1,22 @@
+{
+ "A-104-s0:none": "escalated",
+ "A-104-s0:wrong_identifier": "escalated",
+ "A-104-s0:device_error_once": "escalated",
+ "A-104-s0:device_empty": "insufficient_evidence",
+ "A-104-s0:device_stale": "insufficient_evidence",
+ "A-105-s0:none": "closed_benign",
+ "A-105-s0:wrong_identifier": "closed_benign",
+ "A-105-s0:device_error_once": "closed_benign",
+ "A-105-s0:device_empty": "insufficient_evidence",
+ "A-105-s0:device_stale": "insufficient_evidence",
+ "A-104-s1:none": "escalated",
+ "A-104-s1:wrong_identifier": "escalated",
+ "A-104-s1:device_error_once": "escalated",
+ "A-104-s1:device_empty": "insufficient_evidence",
+ "A-104-s1:device_stale": "insufficient_evidence",
+ "A-105-s1:none": "closed_benign",
+ "A-105-s1:wrong_identifier": "closed_benign",
+ "A-105-s1:device_error_once": "closed_benign",
+ "A-105-s1:device_empty": "insufficient_evidence",
+ "A-105-s1:device_stale": "insufficient_evidence"
+}

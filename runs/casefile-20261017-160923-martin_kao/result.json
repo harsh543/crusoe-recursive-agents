@@ -1,0 +1,495 @@
+{
+ "case": "martin_kao",
+ "mode": "live",
+ "seconds": 32.3,
+ "cost_usd": 0.000749,
+ "models": {
+  "intake": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+  "records_investigator": "nvidia/Nemotron-3.5-Lightning-30B-A3B"
+ },
+ "run_id": "18618fe1-88e2-4248-8512-bde7c9146e8a",
+ "case_uuid": "8deeb68c-2158-42d4-a680-f0e68081a6e6",
+ "claims": [
+  {
+   "id": "c1",
+   "text": "Person A and other contractor executives created a shell company and used contractor funds for a $150,000 political contribution.",
+   "attributed_to": "Department of Justice indictment",
+   "claim_type": "legal_conclusion",
+   "verdict": "out_of_scope",
+   "explanation": "Attributed statement; not verifiable from public records.",
+   "conflicts": [],
+   "replans": 0,
+   "refusals": [],
+   "trail": [
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "out_of_scope"
+    }
+   ],
+   "attributions": [],
+   "findings": []
+  },
+  {
+   "id": "c2",
+   "text": "After the contribution, an internal company email described a commitment involving $32 million in naval contracts.",
+   "attributed_to": "ProPublica",
+   "claim_type": "other",
+   "verdict": "contradicted",
+   "explanation": "The document presents two different award amounts: one task order received more than $32 million, and the other received over $100 million.",
+   "conflicts": [
+    "award_amount"
+   ],
+   "replans": 1,
+   "refusals": [
+    "cannot record supported for c2: conflicts_addressed: sources disagree on award_amount: ['$32 million', 'over $100 million']; list it in conflicts"
+   ],
+   "trail": [
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "ProPublica $32 million naval contract commitment internal company email",
+     "hits": [
+      {
+       "id": "ydc_5e22b80853950d3bc8c2",
+       "title": "Defense Contractor Executive Sentenced in Bribery Scheme",
+       "publisher": "sba.gov",
+       "url": "https://www.sba.gov/article/2025/11/14/defense-contractor-executive-sentenced-bribery-scheme",
+       "doc_type": "primary",
+       "sha256": "d755dea10bc4106d126b38bb398f81714683656c0a0dc6995201162db63754d4",
+       "retrieved_at": "2026-10-17T23:04:51.347697+00:00"
+      },
+      {
+       "id": "ydc_3f504598368131fc5661",
+       "title": "U.S. Department of War",
+       "publisher": "war.gov",
+       "url": "https://www.war.gov/News/Contracts/Contract/Article/4349976/",
+       "doc_type": "primary",
+       "sha256": "6749135b373b8a6e919bdc951844221a156b17f5d372480293f57123dbdc741a",
+       "retrieved_at": "2026-10-17T23:04:20.432006+00:00"
+      },
+      {
+       "id": "ydc_b739d44c089634ed5ad8",
+       "title": "A2A",
+       "publisher": "war.gov",
+       "url": "https://www.war.gov/News/Contracts/Contract/Article/4612013/contracts-for-sept-25-2026/",
+       "doc_type": "primary",
+       "sha256": "78a545a22f09f32b624b52c3ae3d1ad2d9a0ad800edf07e9124154f2292b2495",
+       "retrieved_at": "2026-10-17T23:04:19.763935+00:00"
+      },
+      {
+       "id": "ydc_dec60f70ebbf81d3d481",
+       "title": "https://www.justice.gov/opa/press-release/file/1470801/dl",
+       "publisher": "justice.gov",
+       "url": "https://www.justice.gov/opa/press-release/file/1470801/dl",
+       "doc_type": "primary",
+       "sha256": "bfd9483c65f7643c82aa16aecae972beb88ca5e36d5f22ea25ffe695ca1510d7",
+       "retrieved_at": "2026-10-17T21:48:14.199329+00:00"
+      },
+      {
+       "id": "ydc_856618bdb2e83be1450b",
+       "title": "Office of Public Affairs",
+       "publisher": "justice.gov",
+       "url": "https://www.justice.gov/archives/opa/pr/former-government-contractor-executives-indicted-unlawful-campaign-contributions",
+       "doc_type": "primary",
+       "sha256": "6fc5a4850ac9ceae707558fd1473404c72e870d8e82fb3117af8447021443731",
+       "retrieved_at": "2026-10-17T21:40:25.675860+00:00"
+      }
+     ]
+    },
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "ProPublica $32 million naval contract commitment internal company email defense contractor sentenced bribery",
+     "hits": [
+      {
+       "id": "ydc_5e22b80853950d3bc8c2",
+       "title": "Defense Contractor Executive Sentenced in Bribery Scheme",
+       "publisher": "sba.gov",
+       "url": "https://www.sba.gov/article/2025/11/14/defense-contractor-executive-sentenced-bribery-scheme",
+       "doc_type": "primary",
+       "sha256": "d755dea10bc4106d126b38bb398f81714683656c0a0dc6995201162db63754d4",
+       "retrieved_at": "2026-10-17T23:04:51.347697+00:00"
+      },
+      {
+       "id": "ydc_684e4536a202dd87ad91",
+       "title": "Southern District of California",
+       "publisher": "justice.gov",
+       "url": "https://www.justice.gov/usao-sdca/pr/defense-contractor-executive-sentenced-bribery-scheme",
+       "doc_type": "primary",
+       "sha256": "e033f129dc4cbc01b92dfba244b47242b6a2347b16697ee4c377198580865e8a",
+       "retrieved_at": "2026-10-17T23:09:38.598395+00:00"
+      },
+      {
+       "id": "ydc_a40420c3c09f81907f28",
+       "title": "Defense contractor executive sentenced in bribery scheme",
+       "publisher": "irs.gov",
+       "url": "https://www.irs.gov/compliance/criminal-investigation/defense-contractor-executive-sentenced-in-bribery-scheme",
+       "doc_type": "primary",
+       "sha256": "67192ef3443724915df535234d7da581c98791b729e677eb3910e840756fe161",
+       "retrieved_at": "2026-10-17T23:09:38.728543+00:00"
+      },
+      {
+       "id": "ydc_b739d44c089634ed5ad8",
+       "title": "A2A",
+       "publisher": "war.gov",
+       "url": "https://www.war.gov/News/Contracts/Contract/Article/4612013/contracts-for-sept-25-2026/",
+       "doc_type": "primary",
+       "sha256": "78a545a22f09f32b624b52c3ae3d1ad2d9a0ad800edf07e9124154f2292b2495",
+       "retrieved_at": "2026-10-17T23:04:19.763935+00:00"
+      },
+      {
+       "id": "ydc_dec60f70ebbf81d3d481",
+       "title": "https://www.justice.gov/opa/press-release/file/1470801/dl",
+       "publisher": "justice.gov",
+       "url": "https://www.justice.gov/opa/press-release/file/1470801/dl",
+       "doc_type": "primary",
+       "sha256": "bfd9483c65f7643c82aa16aecae972beb88ca5e36d5f22ea25ffe695ca1510d7",
+       "retrieved_at": "2026-10-17T21:48:14.199329+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_5e22b80853950d3bc8c2",
+      "title": "Defense Contractor Executive Sentenced in Bribery Scheme",
+      "publisher": "sba.gov",
+      "url": "https://www.sba.gov/article/2025/11/14/defense-contractor-executive-sentenced-bribery-scheme",
+      "doc_type": "primary",
+      "sha256": "d755dea10bc4106d126b38bb398f81714683656c0a0dc6995201162db63754d4",
+      "retrieved_at": "2026-10-17T23:04:51.347697+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "supported",
+     "explanation": "The DOJ press release confirms that Cambridge International Systems received government obligations of more than $32 million on one task order, which matches the $32 million figure in the statement.",
+     "findings": [
+      {
+       "field": "award_amount",
+       "value": "$32 million",
+       "quote": "the government obligated more than $32 million on one of the task orders",
+       "doc": {
+        "id": "ydc_5e22b80853950d3bc8c2",
+        "title": "Defense Contractor Executive Sentenced in Bribery Scheme",
+        "publisher": "sba.gov",
+        "url": "https://www.sba.gov/article/2025/11/14/defense-contractor-executive-sentenced-bribery-scheme",
+        "doc_type": "primary",
+        "sha256": "d755dea10bc4106d126b38bb398f81714683656c0a0dc6995201162db63754d4",
+        "retrieved_at": "2026-10-17T23:04:51.347697+00:00"
+       }
+      },
+      {
+       "field": "award_amount",
+       "value": "over $100 million",
+       "quote": "over $100 million on the other",
+       "doc": {
+        "id": "ydc_5e22b80853950d3bc8c2",
+        "title": "Defense Contractor Executive Sentenced in Bribery Scheme",
+        "publisher": "sba.gov",
+        "url": "https://www.sba.gov/article/2025/11/14/defense-contractor-executive-sentenced-bribery-scheme",
+        "doc_type": "primary",
+        "sha256": "d755dea10bc4106d126b38bb398f81714683656c0a0dc6995201162db63754d4",
+        "retrieved_at": "2026-10-17T23:04:51.347697+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "conflicts_addressed",
+       "reason": "sources disagree on award_amount: ['$32 million', 'over $100 million']; list it in conflicts"
+      }
+     ]
+    },
+    {
+     "type": "gate_refused",
+     "by": "Gate (code)",
+     "verdict": "supported",
+     "reason": "cannot record supported for c2: conflicts_addressed: sources disagree on award_amount: ['$32 million', 'over $100 million']; list it in conflicts"
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "contradicted",
+     "explanation": "The document presents two different award amounts: one task order received more than $32 million, and the other received over $100 million.",
+     "findings": [
+      {
+       "field": "award_amount",
+       "value": "$32 million",
+       "quote": "the government obligated more than $32 million on one of the task orders",
+       "doc": {
+        "id": "ydc_5e22b80853950d3bc8c2",
+        "title": "Defense Contractor Executive Sentenced in Bribery Scheme",
+        "publisher": "sba.gov",
+        "url": "https://www.sba.gov/article/2025/11/14/defense-contractor-executive-sentenced-bribery-scheme",
+        "doc_type": "primary",
+        "sha256": "d755dea10bc4106d126b38bb398f81714683656c0a0dc6995201162db63754d4",
+        "retrieved_at": "2026-10-17T23:04:51.347697+00:00"
+       }
+      },
+      {
+       "field": "award_amount",
+       "value": "over $100 million",
+       "quote": "over $100 million on the other",
+       "doc": {
+        "id": "ydc_5e22b80853950d3bc8c2",
+        "title": "Defense Contractor Executive Sentenced in Bribery Scheme",
+        "publisher": "sba.gov",
+        "url": "https://www.sba.gov/article/2025/11/14/defense-contractor-executive-sentenced-bribery-scheme",
+        "doc_type": "primary",
+        "sha256": "d755dea10bc4106d126b38bb398f81714683656c0a0dc6995201162db63754d4",
+        "retrieved_at": "2026-10-17T23:04:51.347697+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": true,
+     "failures": []
+    },
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "contradicted"
+    }
+   ],
+   "attributions": [
+    {
+     "agent": "investigator",
+     "step": "s009",
+     "category": "task_verification"
+    }
+   ],
+   "findings": [
+    {
+     "field": "award_amount",
+     "value": "$32 million",
+     "quote": "the government obligated more than $32 million on one of the task orders",
+     "doc": {
+      "id": "ydc_5e22b80853950d3bc8c2",
+      "url": "https://www.sba.gov/article/2025/11/14/defense-contractor-executive-sentenced-bribery-scheme",
+      "title": "Defense Contractor Executive Sentenced in Bribery Scheme",
+      "publisher": "sba.gov",
+      "doc_type": "primary",
+      "retrieved_at": "2026-10-17T23:04:51.347697+00:00",
+      "sha256": "d755dea10bc4106d126b38bb398f81714683656c0a0dc6995201162db63754d4"
+     }
+    },
+    {
+     "field": "award_amount",
+     "value": "over $100 million",
+     "quote": "over $100 million on the other",
+     "doc": {
+      "id": "ydc_5e22b80853950d3bc8c2",
+      "url": "https://www.sba.gov/article/2025/11/14/defense-contractor-executive-sentenced-bribery-scheme",
+      "title": "Defense Contractor Executive Sentenced in Bribery Scheme",
+      "publisher": "sba.gov",
+      "doc_type": "primary",
+      "retrieved_at": "2026-10-17T23:04:51.347697+00:00",
+      "sha256": "d755dea10bc4106d126b38bb398f81714683656c0a0dc6995201162db63754d4"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "text": "Kao falsified employee counts to obtain $13 million in federal loans and transferred money to personal accounts.",
+   "attributed_to": "submitted case summary",
+   "claim_type": "legal_conclusion",
+   "verdict": "out_of_scope",
+   "explanation": "Attributed statement; not verifiable from public records.",
+   "conflicts": [],
+   "replans": 0,
+   "refusals": [],
+   "trail": [
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "out_of_scope"
+    }
+   ],
+   "attributions": [],
+   "findings": []
+  },
+  {
+   "id": "c4",
+   "text": "The contribution proves that the recipient of the campaign support committed bribery.",
+   "attributed_to": "a commentator",
+   "claim_type": "legal_conclusion",
+   "verdict": "out_of_scope",
+   "explanation": "Attributed statement; not verifiable from public records.",
+   "conflicts": [],
+   "replans": 0,
+   "refusals": [],
+   "trail": [
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "out_of_scope"
+    }
+   ],
+   "attributions": [],
+   "findings": []
+  }
+ ],
+ "timeline": [
+  {
+   "step": "s001",
+   "role": "intake",
+   "kind": "llm"
+  },
+  {
+   "step": "s002",
+   "role": "intake",
+   "kind": "claims"
+  },
+  {
+   "step": "s003",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s004",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s005",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s006",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s007",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s008",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s009",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s010",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s011",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s012",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s013",
+   "role": "gate",
+   "kind": "refused"
+  },
+  {
+   "step": "s014",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s015",
+   "role": "attributor_escalate",
+   "kind": "llm"
+  },
+  {
+   "step": "s016",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s017",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s018",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s019",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s020",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s021",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s022",
+   "role": "gate",
+   "kind": "commit"
+  }
+ ],
+ "retrieval": {
+  "provider": "you.com",
+  "retrieval_flow": "search_then_exact_url_contents",
+  "queries": [
+   "ProPublica $32 million naval contract commitment internal company email",
+   "ProPublica $32 million naval contract commitment internal company email defense contractor sentenced bribery"
+  ],
+  "accepted_urls": [
+   "https://www.justice.gov/archives/opa/pr/former-government-contractor-executives-indicted-unlawful-campaign-contributions",
+   "https://www.justice.gov/opa/press-release/file/1470801/dl",
+   "https://www.propublica.org/article/fbi-susan-collins-navatek-campaign-donations-investigation",
+   "https://www.propublica.org/article/debunking-susan-collins-fbi-navatek-investigation-claims",
+   "https://www.wmtw.com/article/susan-collins-propublica-allegations-corruption-bribery/73836588",
+   "https://www.ms.now/rachel-maddow-show/maddowblog/susan-collins-fbi-navatek-navy-contract-corruption-allegations",
+   "https://www.propublica.org/article/donald-trump-jr-vulcan-deal-white-house",
+   "https://www.linkedin.com/posts/propublica_the-inside-story-of-how-the-navy-spent-billions-activity-7180760995303235586-2s96",
+   "https://www.sba.gov/article/2025/11/14/defense-contractor-executive-sentenced-bribery-scheme",
+   "https://www.propublica.org/article/how-navy-spent-billions-littoral-combat-ship",
+   "https://www.war.gov/News/Contracts/Contract/Article/4349976/",
+   "https://www.war.gov/News/Contracts/Contract/Article/4612013/contracts-for-sept-25-2026/",
+   "https://www.defenseone.com/threats/2026/09/fbi-defense-bribery-investigation/416138/",
+   "https://www.mainepublic.org/politics/2026-09-22/the-fbi-anti-corruption-squad-was-circling-susan-collins-until-trump-got-in-the-way",
+   "https://www.pressherald.com/2026/09/22/what-to-know-about-the-pay-to-play-allegations-against-susan-collins/",
+   "https://propublica.org/article/fbi-susan-collins-navatek-campaign-donations-investigation?amp=&amp=",
+   "https://www.justice.gov/usao-sdca/pr/defense-contractor-executive-sentenced-bribery-scheme",
+   "https://www.irs.gov/compliance/criminal-investigation/defense-contractor-executive-sentenced-in-bribery-scheme"
+  ],
+  "rejected_urls": [],
+  "errors": []
+ }
+}

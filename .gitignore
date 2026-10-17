@@ -1,0 +1,23 @@
+.env.local
+.env.youcom
+.venv/
+__pycache__/
+*.pyc
+
+# local/generated, not for the public repo
+.pytest_cache/
+.claude/
+.vercel/
+frontend/.vercel/
+data/store/
+output/
+runs/*
+!runs/casefile-20261017-143419/
+!runs/casefile-20261017-143605/
+!runs/dev-20261017-143607/
+!runs/casefile-20261017-160923-*/
+!runs/nplus1-20261017-155419/
+runs/**/procedural.jsonl
+
+# vendored upstream clone (has its own .git); see README
+third_party/sparkov/

@@ -1,0 +1,232 @@
+{
+  "provenance": {
+    "retrieved_at": "2026-10-17T20:52:46.703021+00:00",
+    "endpoint": "https://ydc-index.io/v1/search",
+    "request": {
+      "query": "vendor invoice price analysis procurement integrity payment controls",
+      "count": 12,
+      "include_domains": [
+        "acquisition.gov",
+        "paymentaccuracy.gov"
+      ],
+      "extraction": {
+        "extraction_mode": "highlights"
+      }
+    }
+  },
+  "response": {
+    "results": {
+      "web": [
+        {
+          "url": "https://www.acquisition.gov/far/subpart-15.4",
+          "contents": {
+            "highlights": [
+              "# Subpart 15.4 - Contract Pricing\n## 15.402 Pricing policy.\n(3) Obtain the type and quantity of data necessary to establish a fair and reasonable *price*, but not more data than is necessary. Requesting unnecessary data can lead to increased proposal preparation costs, generally extend *acquisition* lead time, and consume additional contractor and Government resources. Use techniques such as, but not limited to, *price* analysis, cost analysis, and/or *cost realism* analysis to establish a fair and reasonable *price*.",
+              "## 15.403 Obtaining certified cost or pricing data.\n### 15.403-1 Prohibition on obtaining certified cost or pricing data (10 U.S.C. chapter 271 and 41 U.S.C. CHAPTER 35).\n(B) *Price* analysis clearly demonstrates that the proposed *price* is reasonable in comparison with current or recent *prices* for the same or similar items, adjusted to reflect changes in market conditions, economic conditions, quantities, or terms and conditions under contracts that resulted from",
+              "### 15.403-3 Requiring data other than certified cost or pricing data.\nHowever, if there are unusual circumstances where it is concluded that additional data are necessary to determine the reasonableness of *price*, the *contracting officer* *shall*, to the maximum extent practicable, obtain the additional data from sources other than the *offeror*.",
+              "If the *contracting officer* cannot determine whether an offered *price* is fair and reasonable, even after obtaining additional data from sources other than the *offeror*, then the *contracting officer* *shall* require the *offeror* to submit *data other than certified cost or pricing data* to support further analysis (see",
+              "### 15.403-4 Requiring certified cost or pricing data (10 U.S.C. chapter 271 and 41 U.S.C. chapter 35).\n(1) The *certified cost or pricing data* and *data other than certified cost or pricing data* required by the *contracting officer* to determine that the *price* is fair and reasonable.",
+              "## 15.407 Special cost or pricing areas.\n### 15.407-1 Defective certified cost or pricing data.\n(i) In addition to the *price* adjustment, the Government is entitled to recovery of any overpayment plus interest on the overpayments. The Government is also entitled to penalty amounts on certain of these overpayments. Overpayment occurs only when payment is made for *supplies* or services accepted by the Government.",
+              "(B) Consider the date of each overpayment (the date of overpayment for this interest calculation *shall* be the date payment was made for the related completed and accepted contract items; or for *subcontract* defective *pricing*, the date payment was made to the prime contractor, based on prime contract progress billings or deliveries, which included payments for a completed and accepted *subcontract* item); and",
+              "## 15.408 Solicitation provisions and contract clauses.\nProvide a consolidated priced summary of individual material quantities included in the various tasks, orders, or line items being proposed and the basis for pricing (vendor quotes, invoice prices, etc.). Include raw materials, parts, components, assemblies, and services to be produced or performed by others. For all items proposed, identify the item and show the source, quantity, and price. Conduct price analyses of all subcontractor proposals."
+            ]
+          },
+          "title": "Subpart 15.4 - Contract Pricing",
+          "description": "",
+          "page_age": "2026-07-28T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=www.acquisition.gov&size=128"
+        },
+        {
+          "url": "https://www.acquisition.gov/far/part-3",
+          "contents": {
+            "highlights": [
+              "# Part 3 - Improper Business Practices and Personal Conflicts of Interest\n## Subpart 3.1 - Safeguards\n### 3.104 Procurement integrity.\n#### 3.104-1 Definitions.\n(1) *Cost or pricing data* (as defined by 10 U.S.C. 3701(1) with respect to *procurements* subject to that section, and 41 U.S.C. 3501(a)(1), with respect to *procurements* subject to that section.",
+              "#### 3.104-3 Statutory and related prohibitions, restrictions, and requirements.\n(C) Approve issuance of a contract payment or payments *in excess of $10,000,000* to that contractor; or\n\n(D) Pay or settle a *claim* *in excess of $10,000,000* with that contractor.",
+              "## Subpart 3.10 - Contractor Code of Business Ethics and Conduct\n### 3.1003 Requirements.\n(3) The Payment clauses at FAR 52.212-4(i)(5), 52.232-25(d), 52.232-26(c), and 52.232-27(l) require that, if the contractor becomes aware that the Government has overpaid on a contract financing or *invoice* payment, the contractor"
+            ]
+          },
+          "title": "Part 3 - Improper Business Practices and Personal Conflicts of Interest",
+          "description": "",
+          "page_age": "2026-07-28T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=www.acquisition.gov&size=128"
+        },
+        {
+          "url": "https://www.acquisition.gov/node/36764/printable/pdf",
+          "contents": {
+            "highlights": [
+              "“Purchasing system” means the Contractor’s system or systems for purchasing and subcontracting,\n\nincluding make-or-buy decisions, the selection of vendors, analysis of quoted prices, negotiation of\n\nprices with vendors, placing and administering of orders, and expediting delivery of materials.\n\n The Contractor shall establish and maintain an acceptable purchasing system. Failure to\n\nmaintain an acceptable purchasing system, as defined in this clause, may result in disapproval of the\n\nsystem by the Contracting Officer and/or withholding of payments.",
+              "accurate history of purchase transactions to support vendor selected, price paid, and document the\n\nsubcontract/purchase order files which are subject to Government review;\n\n(5) Establish and maintain adequate documentation to provide a complete and accurate history of\n\npurchase transactions to support vendors selected and prices paid;\n\n(7) Use competitive sourcing to the maximum extent practicable, and ensure debarred or suspended\n\ncontractors are properly excluded from contract award;",
+              "(8) Evaluate price, quality, delivery, technical capabilities, and financial capabilities of competing\n\nvendors to ensure fair and reasonable prices;\n\n(9) Require management level justification and adequate cost or price analysis, as applicable, for any\n\nsole or single source award;\n\n(10) Perform timely and adequate cost or price analysis and technical evaluation for each\n\nsubcontractor and supplier proposal or quote to ensure fair and reasonable subcontract prices;",
+              "(18) Perform internal audits or management reviews, training, and maintain policies and procedures\n\nfor the purchasing department to ensure the integrity of the purchasing system;",
+              "(22) Establish and maintain procedures to ensure performance of adequate price or cost analysis on\n\npurchasing actions;\n\n(23) Establish and maintain procedures to ensure that proper types of subcontracts are selected, and\n\nthat there are controls over subcontracting, including oversight and surveillance of subcontracted\n\neffort; and",
+              "Business Systems, the Contracting Officer will withhold payments in accordance with that clause.",
+              "“Purchasing system” means the Contractor’s system or systems for purchasing and subcontracting,\n\nincluding make-or-buy decisions, the selection of vendors, analysis of quoted prices, negotiation of\n\nprices with vendors, placing and administering of orders, and expediting delivery of materials.\n\n(b) *Acceptable purchasing system.*The Contractor shall establish and maintain an acceptable\n\npurchasing system. Failure to maintain an acceptable purchasing system, as defined in this clause,",
+              "eliminate the weaknesses.\n\n(f) *Withholding payments*."
+            ]
+          },
+          "title": "252.244-7001 Contractor Purchasing System Administration.",
+          "description": "",
+          "favicon_url": "https://you.com/favicon?domain=www.acquisition.gov&size=128"
+        },
+        {
+          "url": "https://login.acquisition.gov/sites/default/files/archives/afars/epub/2022-0824.epub",
+          "contents": {
+            "highlights": [
+              "# Part 5103 - Improper Business Practices and Personal Conflicts of Interest\n- Subpart 5103.1 - Safeguards\n  - 5103.104 Procurement integrity.",
+              "# 5113.306-90 Standard form 44, purchase order - invoice - voucher.\nIf the supplier does not agree to use this procedure, or if a time payment discount offered is not possible because of this procedure, the contracting officer must process the individual Standard Form 44 without delay to take the time payment discount.",
+              "# 5115.403-3-90 Process and Reporting Requirements Pertaining to Contractor Denials of Contracting Officer Requests for Data Other Than Certified Cost or Pricing Data.\n(b) Subcontractor name and DUNS number (e.g., OEM/actual manufacturer).\n\n(c) Contract number, modification or order number, if applicable.\n\n(d) Date and amount of the contract action.\n\n(e) Steps taken to attempt price analysis without requiring cost data.",
+              "# 3.1 Evaluation Activities\n| | | | | | --- | --- | --- | --- | | | **Price Analysis** | **Cost Analysis** | **Cost Realism Analysis** | | **What is it?** | The process of examining and evaluating an offeror’s proposed price to determine if it is fair and reasonable without evaluating its separate cost elements and proposed profit/fee.",
+              "# 3-6. Separation of Duties\nTo protect the integrity of the procurement process, no one person is responsible for an entire purchase card transaction. Key purchase card functions must be handled by different individuals. Inadequate separation of duties could allow errors and fraud to occur without detection. Key duties, such as making purchases–CH, authorizing payments–BO, certifying funding–RM, and reviewing transactions–Level 4 A/OPCs and PBOs must be assigned to different individuals in order to minimize the risk of loss to the Government to the greatest extent possible.",
+              "# 3-12. Confirm and Pay\na. The Army certifies invoices for payment after all purchased items have been confirmed. This procedure has been called “Confirm and Pay”. Each BO must establish a system to flag and track all transactions certified for payment with proof of receipt and acceptance. This procedure ensures all transactions reconciled and approved for payment have receipt verified.",
+              "b. Under the following condition, the Army has adopted the following process in order to allow the Servicing Bank to be paid for items that have been shipped by the merchant but not received by the organization to prevent withholding payment of the entire billing statement for a few transactions. Transactions that have been reconciled and approved for payment will have receipt verified no later than 45 days after the date of the original invoice. If receipt and acceptance cannot be verified, the CH shall protect the Government’s rights by disputing the transaction prior to the end of the dispute period.",
+              "# 3-13. File Retention\nc. Receipts are considered supporting documents for the certified billing statement and in accordance with the DOD FMR, Volume 1, Chapter 9, must be retained for six years and three months after final payment. Original receipts are preferred; however, printed electronic forms or copies of an itemized receipt are acceptable. The receipt must be legible; goods must be itemized/detailed with the item description, quantity, price, and extended price; indicate vendor’s name and address; date of the purchase; and must indicate paid by credit card or zero amount due.",
+              "# 4-1. Management Controls\n(10) **Invoice Integrity:** An electronic certification process ensures the original electronic invoice is traceable from the vendor through the certification and entitlement processes and retained in a Government record. Should the original invoice submitted by the contractor be in paper form, the Certifying Officer shall determine if the invoice is proper for payment and affix his/her signature in accordance with the governing provisions of the DoDFMR. If appropriate, the Certifying Officer makes any required “pen and ink” changes on the original invoice to reallocate the payment to different funding lines from those reflected on the original invoice.",
+              "# Appendix J: Glossary - Sections I and II Table Of Contents\nIn addition, the vendor may provide the cardholder with an email copy of the receipt. The receipt includes basic information about the nature of the sale. This essential detail includes the date of the transaction, a list of the prices of the items purchased, subtotal, applicable taxes, and a final total. Some receipts will provide unit prices and extended prices when multiple units of the same item are purchased, as well as a detailed description of each item."
+            ]
+          },
+          "title": "Army Federal Acquisition Regulation SupplementAFARS",
+          "description": "",
+          "favicon_url": "https://you.com/favicon?domain=login.acquisition.gov&size=128"
+        },
+        {
+          "url": "https://www.acquisition.gov/far-overhaul/far-part-deviation-guide/far-overhaul-part-15",
+          "contents": {
+            "highlights": [
+              "# Part 15 - Contracting by Negotiation\n15.403-2 Prohibitions on obtaining certified cost or pricing data.\n\n15.403-3 Certified cost or pricing data.\n\n15.403-4 Certificate of current cost or pricing data.\n\n15.404 Cost and/or price analysis.\n\n15.404-1 Price analysis.\n\n15.404-2 Cost analysis.\n\n15.404-3 Cost realism analysis.",
+              "## Subpart 15.4 - Contract Pricing\n### 15.402 General.\n(b) *Obtaining data*. Contracting officers must obtain the type and quantity of data necessary to establish a fair and reasonable price, but not more data than is needed. Contracting officers must require the submission of additional data sufficient for the contracting officer to support the determination of the fair and reasonable price, if the contracting officer cannot establish a fair and reasonable price from an analysis of the data obtained or submitted to date.",
+              "### 15.403 Obtaining cost or pricing data.\n#### 15.403-1 Data other than certified cost or pricing data.\n(f) *Data for commercial products and commercial services*. When acquiring a commercial product or commercial service, contracting officers must—\n\n(1) Use price analysis to determine whether the price is fair and reasonable;",
+              "#### 15.403-2 Prohibitions on obtaining certified cost or pricing data.\nU.S.C. chapter 271 for truth in negotiations) only if the contracting officer determines in writing that the offeror has submitted sufficient information to evaluate, through price analysis, the reasonableness of the price of such services.",
+              "### 15.404 Cost and/or price analysis.\n(2) Price analysis must be used when certified cost or pricing data are not required. When a fair and reasonable price cannot be determined through price analysis alone, cost analysis may also be used to evaluate data other than certified cost or pricing data to determine cost reasonableness or cost realism.",
+              "(b) *Advice and assistance*. Contracting officers may request the advice and assistance of other experts to ensure that an appropriate analysis is performed. Recommendations or conclusions regarding the Government's review or analysis of an offeror's or contractor's proposal must not be disclosed to the offeror or contractor without the concurrence of the contracting officer.",
+              "(c) *Mistakes and discrepancies in data*. Any discrepancy or mistake of fact (such as duplications, omissions, and errors in computation) contained in the certified cost or pricing data or data other than certified cost or pricing data submitted in support of a proposal must be brought to the contracting officer's attention.",
+              "#### 15.404-1 Price analysis.\n(1) Comparison of proposed prices received in response to the RFP.\n\n(2) Comparison of the proposed prices to historical prices paid, whether by the Government or other than the Government, for the same or similar items. This method may be used for commercial products or commercial services including those “of a type” or when requiring minor modifications for commercial products.",
+              "(ii) The prior price must be adjusted to account for materially differing terms and conditions, quantities and market and economic factors. For similar items, the contracting officer must also adjust the prior price to account for material differences between the similar item and the item being procured.",
+              "#### 15.404-6 Unbalanced pricing.\n(a) *General.*\n\n(1) Unbalanced pricing may increase performance risk and could result in payment of unreasonably high prices. Unbalanced pricing exists when, despite an acceptable total evaluated price, the price of one or more line items is significantly over or understated as indicated by the application of cost or price analysis techniques.",
+              "### 15.408 Documentation.\n#### 15.408-2 Documenting the negotiation.\nInclude raw materials, parts, components, assemblies, and services to be produced or performed by others."
+            ]
+          },
+          "title": "FAR Overhaul - Part 15",
+          "description": "",
+          "page_age": "2026-07-28T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=www.acquisition.gov&size=128"
+        },
+        {
+          "url": "https://www.acquisition.gov/far/part-4",
+          "contents": {
+            "highlights": [
+              "# Part 4 - Administrative and Information Matters\n## Subpart 4.8 - Government Contract Files\n### 4.803 Contents of contract files.\n(iv) Certificates of Current *Cost or Pricing Data*.\n\n(19) Cost or price analysis.",
+              "(4) *Certified cost or pricing data*, Certificates of Current *Cost or Pricing Data*, or *data other than certified cost or pricing data*; cost or price analysis; and other documentation supporting contractual actions executed by the *contract administration office*.",
+              "## Subpart 4.10 - Uniform Use of Line Items\n### 4.1001 Policy.\n(a) *Line items* are established to define deliverables or organize information about deliverables. Each *line item* describes characteristics for the item purchased, *e.g.*, *pricing*, delivery, and funding information."
+            ]
+          },
+          "title": "Part 4 - Administrative and Information Matters",
+          "description": "",
+          "page_age": "2025-02-18T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=www.acquisition.gov&size=128"
+        },
+        {
+          "url": "https://login.acquisition.gov/dfars/252.244-7001-contractor-purchasing-system-administration.",
+          "contents": {
+            "highlights": [
+              "# 252.244-7001 Contractor Purchasing System Administration.\n(3) Maintain an organization plan that establishes clear lines of authority and responsibility;\n\n(4) Ensure all purchase orders are based on authorized requisitions and include a complete and accurate history of purchase transactions to support vendor selected, price paid, and document the subcontract/purchase order files which are subject to Government review;\n\n(5) Establish and maintain adequate documentation to provide a complete and accurate history of purchase transactions to support vendors selected and prices paid;",
+              "(6) Apply a consistent make-or-buy policy that is in the best interest of the Government;\n\n(7) Use competitive sourcing to the maximum extent practicable, and ensure debarred or suspended contractors are properly excluded from contract award;\n\n(8) Evaluate price, quality, delivery, technical capabilities, and financial capabilities of competing vendors to ensure fair and reasonable prices;\n\n(9) Require management level justification and adequate cost or price analysis, as applicable, for any sole or single source award;",
+              "(10) Perform timely and adequate cost or price analysis and technical evaluation for each subcontractor and supplier proposal or quote to ensure fair and reasonable subcontract prices;\n\n(11) Document negotiations in accordance with FAR 15.406-3;\n\n(12) Seek, take, and document economically feasible purchase discounts, including cash discounts, trade discounts, quantity discounts, rebates, freight allowances, and company-wide volume discounts;",
+              "(22) Establish and maintain procedures to ensure performance of adequate price or cost analysis on purchasing actions;",
+              "(f) *Withholding payments*. If the Contracting Officer makes a final determination to disapprove the Contractor’s purchasing system, and the contract includes the clause at 252.242-7005 , Contractor Business Systems, the Contracting Officer will withhold payments in accordance with that clause."
+            ]
+          },
+          "title": "252.244-7001 Contractor Purchasing System Administration.",
+          "description": "",
+          "favicon_url": "https://you.com/favicon?domain=login.acquisition.gov&size=128"
+        },
+        {
+          "url": "https://www.acquisition.gov/afars/appendix-ee-table-contents",
+          "contents": {
+            "highlights": [
+              "# Appendix - EE DEPARTMENT OF THE ARMY GOVERNMENT PURCHASE CARD OPERATING PROCEDURES\n## CHAPTER 3 - GPC ELECTRONIC SYSTEMS\n### 3-1. System Requirements\nd. **Invoice Integrity**. An electronic certification process will be used to ensure that the official (i.e., original, unaltered) electronic invoice is traceable from the card-issuing bank through the certification and entitlement processes and retained in a government record.",
+              "## CHAPTER 6 - OPERATIONAL GUIDANCE AND PROCEDURES\n### 6-9. Payments of Monthly Invoices\nThe Army goal is to pay all accounts on time. The Army maintains a zero tolerance for any percentage of receivables over 180 days past due.",
+              "c. The Certifying Officer’s minimum qualifications and eligibility are discussed in DoD FMR Volume 5, Chapter 33. Certifying Officers are responsible for the accuracy of payments, including designation of the proper appropriation(s) or other funds certified to the paying office and disbursing officer.",
+              "d. **Cardholder Statement Reconciliation and Certification**. The Army certifies invoices for payment after all purchased items have been confirmed. This procedure is called “Confirm and Pay.” Any transactions that cannot be reconciled and approved for payment, will not be approved in the bank’s EAS by the BO.",
+              "ANG and certain other Army accounts supporting the Air Force certify invoices for payment following the “Pay and Confirm” model. Cardholders must match and approve transactions throughout the month to ensure accuracy and identify and resolve any funding errors. If a charged amount is incorrect, the CH must contact the vendor to resolve the discrepancy and may dispute the transaction, if necessary.",
+              "2) Ensure all supporting documentation is obtained and correct. Billing officials should review the uploaded transaction documentation in AXOL to confirm all transactions are reconciled and approved for payment, receipt is verified, and all supporting documentation is loaded in the bank’s EAS prior to certification.\n\n3) Ensure CH reviews have been completed properly.\n\n4) Ensure receipt of all accountable property has been properly documented.",
+              "Payments of Monthly Invoices is the authoritative source of guidance related to application of credits. As stated in the FMR, transaction credits are funds sent back to DoD from the contracted bank resulting from returned items, billing errors, overpayments, duplicate payments, or erroneous payments.",
+              "### 6-13. File Retention\nh. Receipts are considered supporting documents for the certified billing statement.  The receipt must be legible and indicate vendor’s name and address, date of the purchase, and paid by credit card or zero amount due. Goods must be itemized/detailed with the item description, quantity, price, and extended price.",
+              "## CHAPTER 10 - CONVENIENCE CHECKS\n### 10-3. Convenience Check Reporting (IRS Form 1099)\n(g) Vendor’s Country\n\n(h) Indicate the payment amount in **one** of the following fields, as applicable:\n\n(1) Check paid for Rents, Rentals, Leases\n\n(2) Check paid for Royalties\n\n(3) Check paid to individual for medical research\n\n(4) Check Paid for Medical/Dental Services"
+            ]
+          },
+          "title": "Appendix - EE Table Of Contents",
+          "description": "",
+          "page_age": "2024-10-01T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=www.acquisition.gov&size=128"
+        },
+        {
+          "url": "https://www.acquisition.gov/dfars/part-252-solicitation-provisions-and-contract-clauses",
+          "contents": {
+            "highlights": [
+              "# Part 252 - SOLICITATION PROVISIONS AND CONTRACT CLAUSES\n## Subpart 252.2 - TEXT OF PROVISIONS AND CLAUSES\n### 252.215 RESERVED\n#### 252.215-7002 Cost Estimating System Requirements.\n(ix) Provide for the use of historical experience, including historical vendor pricing data, where appropriate.\n\n(x) Require use of appropriate analytical methods.\n\n(xi) Integrate data and information available from other management systems.",
+              "### 252.217 RESERVED\n#### 252.217-7007 Payments.\n(1) Generally, the Contractor may submit invoices on a semi-monthly basis, unless expenditures justify a more frequent submission.\n\n(2) The Government need not make progress payments for invoices aggregating less than $5,000.",
+              "### 252.232 RESERVED\n(i) Payment will be made as soon as possible once a proper invoice is received and matched with the contract and the receiving/acceptance report.\n\n(ii) If the contract does not require submission of an invoice for payment (e.g., periodic lease payments), the due date will be as specified in the contract.",
+              "(ii) Invoice date and invoice number. (The Contractor should date invoices as close as possible to the date of the mailing or transmission.)\n\n(iii) Contract number or other authorization for supplies delivered or services performed (including order number and contract line item number).\n\n(iv) Description, quantity, unit of measure, unit price, and extended price of supplies delivered or services performed.",
+              "(vi) Name and address of Contractor official to whom payment is to be sent (must be the same as that in the contract or in a proper notice of assignment).\n\n(vii) Name (where practicable), title, phone number, and mailing address of person to notify in the event of a defective invoice.",
+              "### 252.236 RESERVED\n(e)(1) Payments will continue to be made for item no. _____________, and all payments will be deducted from the contract price for this item, until the total deductions reduce this item to zero, after which no further payments will be made under this item."
+            ]
+          },
+          "title": "Part 252 - SOLICITATION PROVISIONS AND CONTRACT CLAUSES",
+          "description": "",
+          "page_age": "2025-08-15T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=www.acquisition.gov&size=128"
+        },
+        {
+          "url": "https://www.acquisition.gov/dfarspgi/pgi-part-204-administrative-and-information-matters",
+          "contents": {
+            "highlights": [
+              "# PGI Part 204 - ADMINISTRATIVE AND INFORMATION MATTERS\n## PGI 204.6 -CONTRACT REPORTING\n### PGI 204.606 Reporting data.\nDo not enter a generic UEI, used for reporting to FPDS, nor a generic CAGE code that corresponds to a generic UEI, on any contractual document. Using the generic codes on actual contract actions masks the true identity of the vendor and makes any accurate electronic processing of invoices, receiving reports, and payments impossible; and it can, in fact, result in misdirected payments.",
+              "## PGI 204.71 -UNIFORM CONTRACT LINE ITEM NUMBERING SYSTEM\n### PGI 204.7108 Payment instructions.\nsubline item (see FAR 4.1005-1).\n\n| For Government Use Only / Contract/Order Payment Clause | For Government Use Only / Type of Payment Request | For Government Use Only / Supply | For Government Use Only / Service | For Government Use Only / Construction | For Government Use Only / Payment Office Allocation Method |\n| --- | --- | --- | --- | --- | --- |\n| 52.212-4 (Alt I), Contract Terms and Conditions—Commercial Products and Commercial Services; 52.216-7, Allowable Cost and Payment; 52.232-7, Payments Under Time-and-Materials and Labor-Hour Contracts | Cost Voucher | X | X | N/A | Line item specific proration. If there is more than one ACRN within a deliverable contract line item, the funds will be allocated in the same proportion as the amount of funding currently unliquidated for each ACRN on the line item billed. |\n| 52.232-1, Payments; 252.217-7007, Payments (vessel repair and alterations) | Navy Shipbuilding Invoice (Fixed Price) | X | X | N/A | Line item specific by fiscal year. If there is more than one ACRN within a deliverable line or deliverable subline item, the funds will be allocated using the oldest funds first. In the event of a deliverable line or deliverable subline item with two or more ACRNs with the same fiscal year, those amounts will be prorated to the available unliquidated funds for that year. |\n| 52.232-1, Payments; 52.232-2, Payments under Fixed-Price Research and Development Contracts; 52.232-3, Payments under Personal Services Contracts; 52.232-4, Payments under Transportation Contracts and Transportation-Related Services Contracts; and 52.232-6, Payments under Communication Service Contracts with Common Carriers | Invoice | X | X | N/A | Line item specific proration. If there is more than one ACRN within a deliverable line item or deliverable subline item, the funds will be allocated in the same proportion as the amount of funding currently unliquidated for each ACRN on the deliverable line or deliverable subline item for which payment is requested. |\n| 52.232-5, Payments Under Fixed-Price Construction Contracts | Construction and Facilities Management Invoice | N/A | N/A | X | Line item specific by fiscal year. If there is more than one ACRN within a deliverable line or deliverable subline item, the funds will be allocated using the oldest funds first. In the event of a deliverable line or deliverable subline item with two or more ACRNs with the same fiscal year, those amounts will be prorated to the available unliquidated funds for that year. |\n| 52.232-16, Progress Payments (excluding contracts with multiple lot progress payments) | Progress Payment\\* | X | X | N/A | Contract-wide proration. Funds shall be allocated in the same proportion as the amount of funding currently unliquidated for each ACRN. Progress payments are considered contract level financing, and the “contract price” shall reflect the fixed-price portion of the contract per FAR 32.501-3. |\n| 52.232-16, Progress Payments 252.232-7018, Progress Payments- Multiple Lots | Progress Payment\\* | X | X | N/A | Lot-wide proration (applies to lots specifically identified in the contract). If there is more than one ACRN within a lot, the funds will be allocated in the same proportion as the amount of funding currently unliquidated for each ACRN on the lot for which payment is requested. See paragraph (c) of this section for multiple lot CLIN structure. |\n| 52.232-29, Terms for Financing of Purchases of Commercial Products and Commercial Services;; 52.232-30, Installment Payments for Commercial Products and Commercial Services | Commercial Product and Commercial Service; Financing\\* | X | X | N/A | Specified in approved payment. The contracting officer shall specify the amount to be paid and the account(s) to be charged for each payment approval in accordance with FAR 32.207(b)(2). |\n| 52.232-32, Performance-Based Payments | Performance-Based Payments\\* | X | X | N/A | Specified in approved payment. The contracting officer shall specify the amount to be paid and the account(s) to be charged for each payment approval in accordance with FAR 32.1007(b)(2). |\n| 252.232-7002, Progress Payments for Foreign Military Sales Acquisitions | Progress Payment\\* | X | X | N/A | Allocate costs among line items and countries in a manner acceptable to the Administrative Contracting Officer. |\n| \\*Liquidation of Financing Payments. Liquidation will be applied by the payment office against those ACRNs which are identified by the payment instructions for the delivery payment and in keeping with the liquidation provision of the applicable contract financing clause (i.e., progress payment, performance-based payment, or commercial product and commercial service financing). |  |  |  |  |  |",
+              "Section B – Supplies or services and prices/costs.\n\n| ITEM NO. | SUPPLIES/SERVICE | QUANTITY | UNIT | UNIT PRICE | AMOUNT |\n| --- | --- | --- | --- | --- | --- |\n| 0001AA | Lot 1 ABC Vehicles, Army (Procurement)  | 19 | EA | $300,000 | $5,700,000 |\n| 0001AB | Lot 1 ABC Vehicles, Marine Corps (Procurement) | 11 | EA | $300,000 | $3,300,000 |\n| 0004 | Lot 1 System Engineering and Program Management (CPFF) | 1 | Lot |  | Est. Cost: $167,400 Fixed Fee: $12,600  |\n| 1001AA | Lot 2 ABC Vehicles, Army (Procurement) | 25 | EA | $303,000 | $7,575,000 |\n| 1001AB | Lot 2 ABC Vehicles, Marine Corps (Procurement) | 15 | EA | $307,500 | $4,545,000 |\n| 1004 | Lot 2 System Engineering and Program Management (CPFF) | 1 | Lot |  | Est. Cost: $225,432 Fixed Fee: $16,968  |",
+              "## PGI 204.76 -SUPPLIER PERFORMANCE RISK SYSTEM\n### PGI 204.7603 Procedures.\n(b) *Price risk.* SPRS provides the contracting officer warning of possible over- or under-payment risks based on historical purchase data.\n\n(c) *Supplier risk.* SPRS provides the contracting officer a score for the assessment of the contractor’s performance. The supplier risk score includes data associated with the contractor’s quality and delivery data."
+            ]
+          },
+          "title": "PGI Part 204 - ADMINISTRATIVE AND INFORMATION MATTERS",
+          "description": "",
+          "page_age": "2026-03-30T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=www.acquisition.gov&size=128"
+        },
+        {
+          "url": "https://www.acquisition.gov/sites/default/files/page_file_uploads/RFO.pdf",
+          "contents": {
+            "highlights": [
+              "(3) The resulting contract would otherwise have been proper if made by an authorized contracting officer;\n\n(4) The contracting officer reviewing the unauthorized commitment determines the price to be fair and reasonable;\n\n(5) The contracting officer recommends payment and legal counsel concurs with the recommendation; and\n\n(6) Funds are available and were available at the time the unauthorized commitment was made.",
+              "states that, to the best of the person’s knowledge and belief, the cost or pricing data is accurate, complete, and current as of a\n\ndate certain before contract award. Cost or pricing data is required to be certified in certain procurements (10 U.S.C. chapter",
+              "$100,000 is not a claim under 41 U.S.C. chapter 71, Contract Disputes, until certified as required by the statute. A voucher,\n\ninvoice, or other routine request for payment that is not in dispute when submitted is not a claim. The submission may be\n\nconverted to a claim, by written notice to the contracting officer as provided in 33.206(a), if it is disputed either as to liability\n\nor amount or is not acted upon in a reasonable time.",
+              "manufacturing, production, or performance of appropriate services in labor surplus areas exceed 50 percent of the contract\n\nprice.\n\n*Latent defect* means a defect that exists at the time of acceptance but cannot be discovered by a reasonable inspection.\n\n*Line item* means the basic structural element in a procurement instrument that describes and organizes the required product\n\nor service for pricing, delivery, inspection, acceptance, invoicing, and payment. The use of the term \"line item\" includes"
+            ]
+          },
+          "title": "VOLUME I-PARTS 1 TO 51 REVOLUTIONARY FEDERAL ACQUISITION REGULATION OVERHAUL",
+          "description": "",
+          "page_age": "2024-01-01T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=www.acquisition.gov&size=128"
+        },
+        {
+          "url": "https://www.acquisition.gov/far/part-13",
+          "contents": {
+            "highlights": [
+              "# Part 13 - Simplified Acquisition Procedures\n## Subpart 13.3 - Simplified Acquisition Methods\n### 13.302 Purchase orders.\n#### 13.302-2 Unpriced purchase orders.\nThe *contracting office* *shall* follow up on each order to ensure timely *pricing*. The *contracting officer* or the *contracting officer*’s designated representative *shall* review the *invoice* price and, if reasonable (see 13.106-3(a)), process the *invoice* for payment.",
+              "### 13.305 Imprest funds and third party drafts.\n#### 13.305-4 Procedures.\n(2) Require the supplier to include with delivery of the *supplies* an *invoice*, packing slip, or other sales instrument giving-\n\n(i) The supplier’s name and address;\n\n(ii) List and quantity of items supplied;\n\n(iii) Unit prices and extensions; and\n\n(iv) Cash discount, if any.",
+              "## Subpart 13.4 - Fast Payment Procedure\n### 13.401 General.\n(a) The fast payment procedure allows payment under limited conditions to a contractor prior to the Government’s verification that *supplies* have been received and accepted. The procedure provides for payment for *supplies* based on the contractor’s submission of an *invoice* that constitutes a certification that the contractor-",
+              "### 13.402 Conditions for use.\n(1) Documentation of evidence of contractor performance under fast payment purchases;\n\n(2) Timely feedback to the *contracting officer* in case of contractor deficiencies; and"
+            ]
+          },
+          "title": "Part 13 - Simplified Acquisition Procedures",
+          "description": "",
+          "page_age": "2026-05-02T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=www.acquisition.gov&size=128"
+        }
+      ]
+    },
+    "metadata": {
+      "query": "vendor invoice price analysis procurement integrity payment controls",
+      "search_uuid": "d53187d8-b3c8-42ad-bf71-ffee32d98fa6",
+      "latency": 1.1107811339898035
+    }
+  }
+}

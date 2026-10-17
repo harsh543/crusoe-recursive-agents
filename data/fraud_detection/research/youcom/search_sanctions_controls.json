@@ -1,0 +1,232 @@
+{
+  "provenance": {
+    "retrieved_at": "2026-10-17T20:52:46.703145+00:00",
+    "endpoint": "https://ydc-index.io/v1/search",
+    "request": {
+      "query": "sanctions compliance vendor payment screening framework",
+      "count": 12,
+      "include_domains": [
+        "ofac.treasury.gov",
+        "treasury.gov"
+      ],
+      "extraction": {
+        "extraction_mode": "highlights"
+      }
+    }
+  },
+  "response": {
+    "results": {
+      "web": [
+        {
+          "url": "https://ofac.treasury.gov/system/files/126/instant_payment_systems_compliance_guidance_brochure.pdf",
+          "contents": {
+            "highlights": [
+              "2 A Framework for OFAC Compliance Commitments, U.S. Department of the Treasury, Office of Foreign Assets Control (2019), available at: https://\n\nhome.treasury.gov/system/files/126/framework_ofac_cc.pdf.\n\n**Risk Factors and Considerations**\n\n**for Instant Payment Systems**\n\n**Compliance**\n\n**Sanctions Compliance Guidance for Instant Payment Systems**\n\n**RISK ASSESSMENT**",
+              "OFAC recognizes that not all U.S. financial institutions screening their customers to identify a potential\n\nare similarly situated, nor do all financial products or sanctions nexus. Accordingly, solely domestic instant\n\ninstant payment systems present the same sanctions payment transactions generally pose a lower sanctions\n\nrisks. Accordingly, there is no one-size-fits-all approach risk than those involving accounts maintained at non-U.S.",
+              "to managing sanctions risks with regard to instant banks, which may not be subject to similar regulatory\n\npayment systems. Each financial institution’s sanctions requirements and examinations.\n\ncompliance controls, including decisions on whether\n\nand how to screen transactions conducted using instant\n\npayment systems, should be based on that institution’s\n\nassessment of its own risk. While a payment of any amount could result in a\n\nA financial institution may consider a variety of a payment may be relevant in\n\nfactors in assessing and mitigating the sanctions risks assessing the relative sanctions\n\nassociated with participating in an instant payment risks of payments made via an",
+              "For example, OFAC is aware of artificial intelligence tools Similarly, instant payment systems that allow for\n\nand other innovative compliance solutions, such as those exception processing—i.e., allowing a transaction to\n\nthat leverage information sharing mechanisms across be removed from the automated process to provide\n\nfinancial institutions, which may enhance sanctions sufficient time for a financial institution to investigate\n\nscreening functions and reduce false positives. Where potential sanctions concerns—also help their participants\n\nappropriate, based on an institution’s assessment mitigate sanctions risks. Exception processing can help",
+              "of risk, OFAC encourages the use of such tools and enable screening and review of payments that may\n\nother emerging technologies and solutions to manage involve a sanctions nexus. OFAC recognizes that a key\n\nsanctions risks that could arise in the context of instant feature of instant payment systems is the near real-",
+              "funds be made available to the payee in real time may setting expectations for members regarding customer\n\npose challenges for members seeking to comply with onboarding and ongoing due diligence or norms for\n\nsanctions regulations and prevent violations. To facilitate screening transaction parties or details, as appropriate\n\nsuch compliance, OFAC encourages developers of instant based on risk. Establishing such minimum expectations\n\npayment systems to incorporate sanctions compliance helps all members understand how other members are\n\nduring the design and development process so that complying with sanctions requirements, which could be a",
+              "sanctions compliance controls are accounted for as new relevant factor to consider in determining one’s own risk.\n\npayment technologies are being developed. OFAC also\n\nencourages such developers to incorporate sanctions\n\ncompliance features, tools, and contractual clauses\n\nthat allow system participants to maintain a sanctions As instant payments continue to evolve, OFAC is\n\ncompliance program commensurate with the risks committed to continuing its engagement with users,\n\npresented by the particular instant payment system. developers, and others involved in this industry to\n\nFor example, instant payment systems can facilitate sanctions requirements."
+            ]
+          },
+          "title": "Sanctions Compliance Guidance for Instant Payment Systems",
+          "description": "",
+          "page_age": "2022-09-30T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=ofac.treasury.gov&size=128"
+        },
+        {
+          "url": "https://ofac.treasury.gov/media/937231/download?inline=",
+          "contents": {
+            "highlights": [
+              "Pursuant to the process, Bank of America’s systems consulted a “routing directory” of banks\n\nprovided by a third-party vendor, then automatically routed each payment via one or more\n\nintermediary banks. In some instances, Bank of America’s systems were unable to map the routing\n\nautomatically, and routing was input manually by a bank employee. Bank of America’s customers\n\ncould also manually identify banks (e.g., intermediary banks) when inputting payment details.\n\nOnce payment details were generated, they were screened by Bank of America for compliance with\n\nOFAC-administered sanctions.",
+              "In March 2022, following the imposition of sanctions in connection with Russia’s February 2022\n\ninvasion of Ukraine, Bank of America became aware that the routing directory included banks that\n\nhad been blocked by OFAC pursuant to the Russian Harmful Foreign Activities Sanctions\n\nRegulations (“RuHSR”), 31 C.F.R. part 587, and that although it was screening these payments,\n\nincluding the details of the banks involved in the payments, for compliance with OFAC-administered sanctions, it was nevertheless processing certain payments to or through blocked",
+              "banks. This generally occurred because:\n\n1. The payments were processed shortly after the relevant bank was blocked by OFAC and\n\nbefore Bank of America updated its sanctions screening filter to reflect the bank’s\n\nblocked status;\n\n2. Due to human error, the payments were identified as false positives and approved for\n\nprocessing by analysts in the sanctions screening or payments teams; or\n\n3. D espite alerting in Bank of America’s system, the payments were released automatically\n\ndue to an “alert suppression rule,” a screening function used by Bank of America that",
+              "after the issue was initially identified, in February 2024, Bank of America fully implemented\n\nadjustments to its sanctions screening filter to correct this deficiency and reclassified as high-priority customers with exact name- and date of birth-matches to blocked persons.\n\n*Delays in Watchlist Updates Following OFAC Designations*\n\nBetween May 24 and June 28, 2023, due to human error by a third-party vendor, the sanctions\n\nwatchlist file Bank of America used to perform sanctions screening was not updated to reflect",
+              "The dismissal of the alert, which identified the\n\nindividual as the beneficial owner of a business, was a result of human error, and the business’s\n\nBank of America account remained unrestricted despite the business being blocked. Bank of\n\nAmerica rescreened the account in September 2023 during its transition to a new sanctions\n\nscreening platform, but it did not review the alert or identify the blocked interest associated with the\n\nblocked individual’s business account until approximately July 2024, 14 months after the individual",
+              "on OFAC’s consideration of the General Factors under the Enforcement Guidelines.\n\nOFAC determined the following to be **aggravating factors**:\n\n(1) Bank of America acted recklessly by failing to (i) promptly implement needed screening\n\nenhancements with respect to payment processing involving blocked banks; (ii) update its\n\nsanctions watchlist for over a month; (iii) appropriately prioritize alerts for exact name- and\n\ndate of birth-matches in its sanctions screening system for an extended period of time; and\n\n(iv) ensure that its sanctions compliance analysts and other bank staff were adequately",
+              "States, with OFAC’s perspective on the essential components of a sanctions compliance program.\n\nThe *Framework* also outlines how OFAC may incorporate these components into its evaluation of\n\napparent violations and resolution of investigations resulting in settlements. The *Framework*\n\nincludes an appendix that offers a brief analysis of some of the root causes of apparent violations of"
+            ]
+          },
+          "title": "DEPARTMENT OF THE TREASURY OFFICE OF FOREIGN ASSETS CONTROL",
+          "description": "",
+          "page_age": "2026-10-13T22:11:09",
+          "favicon_url": "https://you.com/favicon?domain=ofac.treasury.gov&size=128"
+        },
+        {
+          "url": "https://ofac.treasury.gov/media/924506/download?inline=",
+          "contents": {
+            "highlights": [
+              "maintaining accounts for and processing of 34 payments on behalf of two individuals added to\n\nOFAC’s List of Specially Designated Nationals and Blocked Persons (the “SDN List”) for 14 days\n\npost-designation. The violations stemmed from MidFirst’s misunderstanding of the frequency of its\n\nvendor’s screening of new names added to the SDN List against its existing customer base. OFAC\n\ndetermined that the appropriate administrative action in this matter was an FOV in lieu of a civil\n\nmonetary penalty. This FOV reaffirms that financial institutions should take a risk-based approach",
+              "Ninety-eight percent of the value of the post-designation transactions\n\noccurred within six hours of designation.\n\nMidFirst reported to OFAC that its sanctions screening vendor notified MidFirst that the blocked\n\npersons had been added to the SDN list on October 5, 2020, 14 days after their addition. MidFirst\n\nthen promptly blocked accounts belonging to the blocked persons.\n\nThe agreement between MidFirst and its vendor provided for periodic screening of MidFirst’s\n\ncustomers against the SDN List. Although the vendor conducted daily screenings of new customers",
+              "and of existing customers with certain account changes (e.g., chang es to a customer’s name or\n\naddress), the vendor only screened MidFirst’s entire existing customer base once a month. MidFirst\n\nmisunderstood the scope of the contract with its vendor, mistakenly believing that the daily\n\nscreenings would screen its entire customer base against additions and changes to the SDN List.\n\n2\n\nAs a result, depending on the timing of additions to the SDN List in relation to the monthly\n\nscreening, MidFirst could be unaware for up to 30 days that it was maintaining an account for a",
+              "In this case, the customers matching two of the September 21, 2020 designations\n\nwere not discovered until the vendor generated its monthly report on October 5, 2020.\n\nAlthough MidFirst maintained its own process to screen existing customers, this process also\n\nscreened on a monthly basis only. The first such monthly screening following the subject\n\ndesignations was conducted on October 5, 2021, the same day the vendor flagged the matches for\n\nMidFirst.",
+              "(1) MidFirst had reason to know that it maintained the accounts for the blocked persons, and\n\nthat its vendor was re-screening MidFirst’s existing accounts against changes to the SDN\n\nList on a monthly basis only.\n\n(2) By allowing the accounts to operate for two weeks post-designation, there was harm to the\n\nobjectives of the sanctions program, and potential for significant harm as it could have aided\n\nasset flight.\n\nOFAC determined the following to be **mitigating factors**:\n\n(1) The violations occurred within two weeks of the designations, and the overwhelming",
+              "majority (98 percent) of the value associated with the violations relates to transactions that\n\ntook place within hours of designation.\n\n(2) The sanctions harm was substantially less than the face amount of the violations as two of\n\nthe largest transactions were internal book transfers between a blocked person’s accounts at\n\nMidFirst.\n\n(3) After discovering the violations, the vendor began re-screening existing accounts more\n\nfrequently, and “MidFirst implemented a manual process to be notified “of all OFAC list",
+              "**Compliance Considerations**\n\nAs explained in OFAC’s A Framework for OFAC Compliance Commitments, financial institutions\n\nshould take a risk-based approach when developing their sanctions compliance program, including\n\nwith respect to screening accounts and transactions for potential violations of OFAC regulations."
+            ]
+          },
+          "title": "Enforcement Release: July 21, 2022",
+          "description": "",
+          "page_age": "2022-07-21T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=ofac.treasury.gov&size=128"
+        },
+        {
+          "url": "https://ofac.treasury.gov/media/914416/download?inline=",
+          "contents": {
+            "highlights": [
+              "the involvement of U.S.-sanctioned parties in specific payments, a fact that would have allowed\n\nU.S. intermediary financial institutions involved in processing those payments to, at a minimum,\n\ninterdict those payments.\n\n(3) Some senior-level Mashreq branch employees had actual knowledge of the conduct giving rise to\n\nthe violations.\n\n(4) The bank’s internal controls did not ensure that the payments it processed on behalf of U.S.-sanctioned parties complied with applicable U.S. sanctions laws.\n\nOFAC determined the following to be **mitigating factors**:",
+              "• Closed all USD accounts of Sudanese banks on January 15, 2009.\n\n• Centralized the compliance function at the head office in Dubai to risk-rate customers and\n\nestablished the level of due diligence required for each customer relationship based on this\n\nrisk rating beginning in 2008.\n\n• Established a requirement organization-wide for originating bank and customer\n\ninformation to be included in payment messages starting in 2008.\n\n• Transitioned from manual screening to automated screening of customer names, beneficial\n\nowners, and directors of entities beginning in 2011.",
+              "• Processed USD payments only through the United States beginning in September 2013.\n\n• Retained a law firm to conduct an OFAC risk assessment and gap analysis to identify\n\nwhere internal controls are needed to address the sanctions risks in 2014.\n\n• Installed an upgraded vendor sanctions screening software for Mashreq New York and\n\nMashreq Dubai in 2016.\n\n• In addition, Mashreq represented to OFAC that over the past four years it spent more than\n\n$122 million on compliance enhancements, including through the implementation on new",
+              "On May 2, 2019, OFAC published *A Framework for OFAC Compliance Commitments*\n\nhttps://home.treasury.gov/system/files/126/framework_ofac_cc.pdf in order to provide organizations",
+              "U.S. persons, or that use goods or services exported from the United States, with OFAC’s perspective on\n\nthe essential components of a sanctions compliance program. The *Framework* also outlines how OFAC\n\nmay incorporate these components into its evaluation of apparent violations and resolution of investigations\n\nresulting in settlements. The *Framework* includes an appendix that offers a brief analysis of some of the\n\nroot causes of apparent violations of U.S. economic and trade sanctions programs OFAC has identified\n\nduring its investigative process."
+            ]
+          },
+          "title": "OFAC Issues a Finding of Violation to Mashreqbank psc for ...",
+          "description": "",
+          "page_age": "2021-11-09T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=ofac.treasury.gov&size=128"
+        },
+        {
+          "url": "https://ofac.treasury.gov/media/97356/download?inline=",
+          "contents": {
+            "highlights": [
+              "inmates in federal prison was not expected under the BOP program. MoneyGram identified the issue as\n\npart of a compliance improvement program.\n\nOnce MoneyGram began screening these transactions, it nonetheless continued to process transactions on\n\nbehalf of blocked persons in federal prisons due to other screening, technology, and fuzzy logic failures,\n\nas well as limited instances of human error. Similar screening and technology failures also led\n\nMoneyGram to process a limited number of transactions for an additional blocked person. In addition,\n\nMoneyGram processed commercial transactions related to Syria due to human error, specifically when",
+              "MoneyGram analysts improperly determined that the commercial transactions qualified as noncommercial, personal remittances. As further described below, MoneyGram subsequently undertook\n\nadditional measures to address these failures and improve its sanctions compliance program.\n\nIn total, between March 12, 2013 and June 21, 2020, MoneyGram processed 359 transactions totaling\n\n$105,627 on behalf of approximately 40 individuals on the SDN List, as well as for two individuals who",
+              "payments into their commissary accounts, but did not screen the beneficiaries of the\n\ntransactions against the SDN List because of an erroneous misunderstanding of its\n\nobligations; and\n\n(2) MoneyGram is a large and commercially sophisticated international financial institution.\n\nOFAC determined the following to be **mitigating factors**:\n\n(1) The majority of the transactions were destined for blocked persons in custody in the United\n\nStates and would likely have been eligible for a license;\n\n(2) MoneyGram has not received a penalty notice or Finding of Violation from OFAC in the five",
+              "years preceding the earliest date of the transactions giving rise to the Apparent Violations;\n\n(3) MoneyGram cooperated with OFAC’s investigation into these Apparent Violations;\n\n(4) MoneyGram discovered the Apparent Violations as part of its ongoing efforts to improve its\n\ncompliance program, and MoneyGram voluntarily self-disclosed the Apparent Violations.\n\nMoneyGram represented that it has taken strong remedial action in response to the Apparent\n\nViolations, including:\n\n• MoneyGram retired its legacy screening system and launched a new system that",
+              "contains substantially more features to screen, monitor, and resolve sanctions and\n\nother compliance-related alerts arising from transactions processed by MoneyGram;\n\n• MoneyGram implemented screening for all BOP-related transactions and denies\n\nservices to commissary accounts that belong to known blocked persons based on a\n\ndaily batch screen of all inmates in federal prison. In addition, MoneyGram now\n\nrequires that the inmate name, rather than just the inmate account number, is included\n\nin the transaction data so that this information is caught during compliance screening;\n\n• MoneyGram implemented additional training to its agent network to increase the\n\nquality of data collected by agents; and",
+              "to U.S. sanctions — like all financial service providers — should understand the sanctions risks\n\nassociated with those services and should take steps necessary to mitigate those risks. In addition, this\n\naction highlights the importance of maintaining robust sanctions screening software and processes,\n\nespecially for U.S. companies that operate globally.\n\n**OFAC Enforcement and Compliance Resources**\n\nOn May 2, 2019, OFAC published *A Framework for OFAC Compliance Commitments* in order to\n\nprovide organizations subject to U.S. jurisdiction, as well as foreign entities that conduct business in or",
+              "with the United States or U.S. persons, or that use U.S.-origin goods or services, with OFAC’s\n\nperspective on the essential components of a sanctions compliance program."
+            ]
+          },
+          "title": "DEPARTMENT OF THE TREASURY WASHINGTON, D.C.",
+          "description": "",
+          "page_age": "2021-04-29T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=ofac.treasury.gov&size=128"
+        },
+        {
+          "url": "https://ofac.treasury.gov/media/54341/download?inline=",
+          "contents": {
+            "highlights": [
+              "Specifically, BitPay received digital currency payments on behalf of its merchant\n\ncustomers from those merchants’ buyers who were located in sanctioned jurisdictions, converted the\n\ndigital currency to fiat currency, and then relayed that currency to its merchants.\n\nWhile BitPay screened its direct customers—the merchants— against OFAC’s List of Specially\n\nDesignated Nationals and Blocked Persons (the “SDN List”) and conducted due diligence on them to\n\nensure they were not located in sanctioned jurisdictions, BitPay failed to screen location data that it",
+              "General Factors under the Enforcement Guidelines.\n\nOFAC determined the following to be **aggravating factors**:\n\n(1) BitPay failed to exercise due caution or care for its sanctions compliance obligations when it\n\nallowed persons in sanctioned jurisdictions to transact with BitPay’s merchants using digital\n\ncurrency for approximately five years, even though BitPay had sufficient information to\n\nscreen those customers; and\n\n(2) BitPay conveyed a total of $128,582.61 in economic benefit to individuals in several\n\njurisdictions subject to OFAC sanctions, thereby harming the integrity of those sanctions",
+              "OFAC determined the following to be **mitigating factors**:\n\n(1) BitPay had implemented certain sanctions compliance controls as early as 2013, including\n\nconducting due diligence and sanctions screening on its merchant customers, and formalized\n\nits sanctions compliance program in 2014;\n\n(2) BitPay made clear in its training to all employees, including senior management, that BitPay\n\nprohibited merchant sign-ups from Cuba, Iran, Syria, Sudan, North Korea, and Crimea, as\n\nwell as trade with sanctioned individuals and entities;",
+              "apparent violations of the SSR arising from activities that occurred prior to October 12, 2017.\n\n• Blocking IP addresses that appear to originate in Cuba, Iran, North Korea, and Syria from\n\nconnecting to the BitPay website or from viewing any instructions on how to make\n\npayment;\n\n• Checking physical and email addresses of merchants’ buyers when provided by the\n\nmerchants to prevent completion of an invoice from the merchant if BitPay identifies a\n\nsanctioned jurisdiction address or email top-level domain; and",
+              "service providers—should understand the sanctions risks associated with providing digital currency\n\nservices and should take steps necessary to mitigate those risks. Companies that facilitate or engage in\n\nonline commerce or process transactions using digital currency are responsible for ensuring that they do\n\nnot engage in unauthorized transactions prohibited by OFAC sanctions, such as dealings with blocked\n\npersons or property, or engaging in prohibited trade or investment-related transactions.\n\nTo mitigate such risks, administrators, exchangers, and other companies involved in using digital\n\ncurrencies should develop a tailored, risk-based sanctions compliance program. OFAC’s *Framework for*",
+              "*OFAC Compliance Commitments* notes that each risk-based sanctions compliance program will vary\n\ndepending on a variety of factors, including the company’s size and sophistication, products and services,\n\ncustomers and counterparties, and geographic locations, but should be predicated on and incorporate at\n\nleast five essential components of compliance: (1) management commitment; (2) risk assessment;\n\n(3) internal controls; (4) testing and auditing; and (5) training. Within that framework, this enforcement\n\naction emphasizes the importance of screening all available information, including IP addresses and other",
+              "location data of customers and counterparties, to mitigate sanctions risks in connection with digital\n\ncurrency services.\n\n**OFAC Enforcement and Compliance Resources**\n\nOn May 2, 2019, OFAC published *A Framework for OFAC Compliance Commitments* in order to",
+              "with the United States or U.S. persons, or that use U.S.-origin goods or services, with OFAC’s\n\nperspective on the essential components of a sanctions compliance program. The *Framework* also\n\noutlines how OFAC may incorporate these components into its evaluation of apparent violations and\n\nresolution of investigations resulting in settlements. The *Framework* includes an appendix that offers a\n\nbrief analysis of some of the root causes of apparent violations of U.S. economic and trade sanctions\n\n4\n\nprograms OFAC has identified during its investigative process."
+            ]
+          },
+          "title": "Enforcement Release: February 18, 2021 OFAC Enters Into ...",
+          "description": "",
+          "page_age": "2021-02-18T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=ofac.treasury.gov&size=128"
+        },
+        {
+          "url": "https://ofac.treasury.gov/media/913571/download?inline=",
+          "contents": {
+            "highlights": [
+              "*\u0007 \u0007*^*Initial Blocked Property Reports*^ must be filed within 10 business days following the date that property is blocked.\n\n*\u0007 \u0007*^*Annual Blocked Property Reports*^ on all blocked property held as of June 30 of the current year must be filed annually no later\n\nthan September 30 of each year.\n\n*\u0007 \u0007*^*Rejected Transaction Reports* ^must be filed within 10 business days of the date the transaction was rejected due to sanctions\n\nrequirements.",
+              "The Framework also includes an appendix that highlights\n\nseveral of the most common root causes of sanctions violations\n\nthat OFAC has identified.\n\nAll companies in the virtual currency industry, including\n\ntechnology companies, exchangers, administrators, miners,\n\nand wallet providers, as well as more traditional financial\n\ninstitutions that may have exposure to virtual currencies or their\n\nservice providers, are encouraged to develop, implement, and\n\nroutinely update, a tailored, risk-based sanctions compliance\n\nprogram. Such compliance programs generally should include\n\nsanctions list and geographic screening and other appropriate",
+              "OFAC encourages members of the virtual currency industry to evaluate\n\ntheir exposure to OFAC sanctions and take steps to minimize their risks —\n\nincluding through development of an appropriate sanctions compliance\n\nprogram — prior to providing services or products to customers. A virtual\n\ncurrency company’s risk assessment process should be tailored to the types\n\nof products and services offered and the locations in which such products\n\nand services are offered. Appropriately customized risk assessments should\n\nreflect a company’s customer or client base, products, services, supply chain,\n\ncounterparties, transactions, and geographic locations, and may also include",
+              "evaluating whether counterparties and partners have adequate\n\ncompliance procedures.\n\n**Diagnosing Risky Relationships**\n\nIn 2021, OFAC entered into a settlement agreement with a U.S.\n\nvirtual currency payment service provider for processing virtual\n\ncurrency transactions between the company’s customers and\n\npersons located in sanctioned jurisdictions. While the company’s\n\nsanctions compliance controls included screening its direct\n\ncustomers — merchants in the United States and elsewhere —\n\nfor a potential nexus to sanctions, the company failed to screen\n\navailable information about the individuals who used its payment\n\nprocessing platform to buy products from those merchants.",
+              "often involve the use of industry-specific tools, such as\n\nscreening, investigation, and transaction monitoring.\n\nWhile OFAC does not require the virtual currency industry\n\nto use any particular in-house or third-party software,\n\nthese can be helpful tools for an effective sanctions\n\ncompliance program.\n\n**Double-Duty Data**\n\nOne sanctions risk that members of the virtual currency industry face is from\n\nusers located in sanctioned jurisdictions who try to access virtual currency\n\nproducts and services. Depending on the circumstances, this may result in a",
+              "sanctions violation. In 2020, a U.S. company that offers digital asset custody,\n\ntrading, and financing services internationally entered into a settlement\n\nagreement with OFAC for processing virtual currency transactions on behalf\n\nof individuals who appeared to be located in sanctioned jurisdictions.\n\nAlthough the company tracked its users’ IP addresses when users logged in\n\nfor security purposes, the company did not use the IP address information it\n\ncollected to screen for and prevent potential sanctions violations. As a result,\n\nthe company failed to prevent use of its non-custodial secure digital wallet",
+              "*Know Your Customer (KYC) Procedures* Obtain information about customers during onboarding and throughout the lifecycle of the\n\ncustomer relationship and use such information to conduct due diligence sufficient to mitigate potential sanctions-related risk. This\n\ninformation can be utilized in the sanctions screening process to prevent violations. For example, information gathering may include the\n\nfollowing elements at onboarding, during periodic reviews, and when processing customer transactions:",
+              "*\u0007Individuals:* legal name, date of birth, physical and email address, nationality, IP addresses associated with transactions and logins,\n\nbank information, and government identification and residency documents\n\nSanctions Compliance Guidance for the Virtual Currency Industry U.S. Department of the Treasury | **OFAC** **15**\n\n*\u0007Entities:* entity name (including trade and legal name), line of business, ownership information, physical and email address,\n\nlocation information, IP addresses associated with transactions and logins, information about where the entity does business, bank\n\ninformation, and any relevant government documents",
+              "involving virtual currency addresses or other identifying information (e.g., originator, beneficiary, originating and beneficiary exchanges, and\n\nunderlying transactional data) associated with sanctioned individuals and entities listed on the SDN List or other sanctions lists, or located\n\nin sanctioned jurisdictions. This internal control helps equip virtual currency companies with the ability to prevent transfers to addresses\n\nassociated with sanctioned persons and avoid violations of U.S. sanctions. Those in the virtual currency industry may also employ transaction\n\nmonitoring and investigation tools to continually review historical information for such addresses or other identifying information to better",
+              "*Sanctions Screening:* Screening can be an essential part of a virtual currency company’s internal controls, and may include geolocation,\n\ncustomer identification, transaction screening, and more. Virtual currency companies should consider implementing the following\n\nscreening-related best practices into their sanctions compliance programs:\n\n Screening customer information against OFAC-administered sanctions lists, including the SDN List, at the time of onboarding\n\n \u0007Screening transactions to identify addresses, including physical, digital wallet, and IP addresses, and other relevant information with\n\npotential links to sanctioned persons or jurisdictions",
+              " Utilizing screening tools’ fuzzy logic capabilities to account for common name variations and misspellings, for example:\n\n Misspellings or alternative spellings related to sanctioned jurisdictions (e.g., “Yalta, Krimea”)\n\n \u0007Variations on capitalization, spacing, or punctuation for names of persons listed on OFAC sanctions lists (e.g., “Krayinvestbank” may\n\nappear on the SDN List, but “Krajinvestbank” or “Kray Invest Bank” may appear in the transaction information provided to a virtual\n\ncurrency company)",
+              " \u0007Ongoing sanctions screening and risk-based re-screening (for example, related to a historical lookback) to account for updated customer\n\ninformation, updates to OFAC sanctions lists, or changes in regulatory requirements\n\nSanctions Compliance Guidance for the Virtual Currency Industry U.S. Department of the Treasury | **OFAC** **17**\n\n*Remediating the Root Causes of Violations* In response to OFAC enforcement actions, virtual currency companies have taken action to\n\nremediate the root causes of their apparent violations, to identify weaknesses in their internal controls, and to implement new controls to",
+              " \u0007Conducting retroactive batch screening of all users\n\n*Risk Indicators or Red Flags:* In addition to screening transaction and other KYC identifying information, virtual currency\n\ncompanies should also consider monitoring transactions and users for risk indicators or “red flags” that may indicate a\n\nsanctions nexus. Examples of risk indicators may be individuals or entities who:\n\nProvide inaccurate or incomplete customer identification or KYC information when attempting to open an account\n\nAttempt to access a virtual currency exchange from an IP address or VPN connected to a sanctioned jurisdiction\n\nAre non-responsive or refuse to provide updated customer identification or KYC information",
+              "*\u0007Sanctions List Screening* Ensure screening of the SDN List and other sanctions lists is functioning effectively and is appropriately\n\nflagging transactions for further review\n\n*\u0007Keyword Screening* Ensure that screening tools are appropriately flagging geographic keywords in connection with KYC-related\n\nscreening or other transaction screening\n\n*\u0007IP Blocking* Ensure IP address software is properly preventing users from sanctioned jurisdictions from accessing its products and\n\nservices\n\n*\u0007Investigation and Reporting* Review procedures for investigating transactions identified through the screening process as having a"
+            ]
+          },
+          "title": "Sanctions Compliance Guidance for the Virtual Currency",
+          "description": "",
+          "page_age": "2021-09-21T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=ofac.treasury.gov&size=128"
+        },
+        {
+          "url": "https://ofac.treasury.gov/media/932436/download?inline=",
+          "contents": {
+            "highlights": [
+              "This includes:\n\n**»** offering to set up alternative or non-transparent payment mechanisms,",
+              "in significant trade with Russia may present a particularly high risk of providing services involving Russia’s\n\nmilitary-industrial base. OFAC recommends that such financial institutions carefully review the examples\n\nof controls identified below to assess whether implementing one or more of these controls may assist in\n\nidentifying and mitigating this risk.\n\nExamples of controls to mitigate sanctions risk may include:^3\n\n►Screening transactions, customers, counterparties, and associated parties against relevant\n\nsanctions lists, such as OFAC’s Specially Designated Nationals and Blocked Persons List"
+            ]
+          },
+          "title": "D Updated Guidance for Foreign Financial Institutions on OFAC Sanctions",
+          "description": "",
+          "page_age": "2024-06-12T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=ofac.treasury.gov&size=128"
+        },
+        {
+          "url": "https://ofac.treasury.gov/media/911571/download",
+          "contents": {
+            "highlights": [
+              "Payoneer’s sanctions compliance program deficiencies at the relevant times—including with\n\nrespect to screening, testing, auditing, and transaction review procedures—enabled persons in\n\nthese jurisdictions and regions and on the SDN List to engage in approximately $793,950.70\n\nworth of transactions. The settlement amount reflects OFAC’s determination that 2,201 of\n\nPayoneer’s apparent violations were not voluntarily self-disclosed, 19 were voluntarily self-disclosed, and all transactions were non-egregious.",
+              "testing and auditing conducted to verify that these policies and procedures were being\n\nimplemented failed to identify the compliance deficiencies that led to the Apparent Violations.\n\nThe Apparent Violations, which related to commercial transactions processed by Payoneer on\n\nbehalf of its corporate customers and card-issuing financial institutions, resulted from multiple\n\nsanctions compliance control breakdowns, including (i) weak algorithms that allowed close\n\nmatches to SDN List entries not to be flagged by its filter, (ii) failure to screen for Business",
+              "Identifier Codes (BICs) even when SDN List entries contained them, (iii) during backlog\n\nperiods, allowing flagged and pended payments to be automatically released without review, and\n\n(iv) lack of focus on sanctioned locations, especially Crimea, because it was not monitoring IP\n\naddresses or flagging addresses in sanctioned locations.\n\nThese compliance deficiencies resulted in apparent violations of Section 1(a)(iii) and Section 2\n\nof Executive Order 13685 of December 19, 2014, “Blocking Property of Certain Persons and",
+              "• Replacing its Chief Compliance Officer, retraining all compliance employees, and\n\nhiring new compliance positions focused specifically on testing;\n\n• Enhancing its screening software to include financial institution alias names and BIC\n\ncodes and automatically triggering a manual review of payments or accounts that\n\nmatch persons on the SDN List;\n\n• Enabling the screening of names, shipping and billing addresses, and IP information",
+              "associated with account holders to identify jurisdictions and regions subject to\n\nsanctions;\n\n• Pending transactions flagged by its filter instead of allowing them to complete during\n\na backlog; and\n\n• A daily review of identification documents uploaded to Payoneer, and a rule engine\n\nthat stops payments with identification indicating jurisdictions and regions subject to\n\nsanctions.\n\n4) As part of its agreement with OFAC, Payoneer has undertaken to continue its\n\nimplementation of these and other compliance commitments.",
+              "responsible for ensuring that they do not engage in unauthorized transactions prohibited by\n\nOFAC sanctions, such as dealings with blocked persons or property, or engaging in prohibited\n\ntrade-related transactions with jurisdictions and regions subject to sanctions. To mitigate such\n\nrisks, money services businesses should develop a tailored, risk-based sanctions compliance\n\nprogram. OFAC’s *Framework for OFAC Compliance Commitments* notes that each risk-based\n\nsanctions compliance program will vary depending on a variety of factors, including the\n\ncompany’s size and sophistication, products and services, customers and counterparties, and",
+              "geographic locations, but should be predicated on and incorporate at least five essential\n\ncomponents of compliance: (1) management commitment; (2) risk assessment; (3) internal\n\ncontrols; (4) testing and auditing; and (5) training.\n\nWithin that framework, this enforcement action emphasizes the importance of effective\n\nscreening not only for persons on the SDN List but also for sanctioned locations; ensuring that\n\naudits of OFAC compliance programs focus not only on persons on the SDN List but also on",
+              "sanctioned locations; performing algorithm testing to be sure filters are flagging payments within\n\nexpected parameters; screening for BIC codes, especially when OFAC includes them in SDN\n\nList entries; and holding flagged payments until they have been reviewed.\n\nOn May 2, 2019, OFAC published *A Framework for OFAC Compliance Commitments* in order\n\nto provide organizations subject to U.S. jurisdiction, as well as foreign entities that conduct"
+            ]
+          },
+          "title": "Enforcement Release: July 23, 2021* OFAC Enters Into ...",
+          "description": "",
+          "page_age": "2021-07-23T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=ofac.treasury.gov&size=128"
+        },
+        {
+          "url": "https://ofac.treasury.gov/media/932276/download?inline=",
+          "contents": {
+            "highlights": [
+              "containing a token to each authorized user, inviting each to redeem the token for a prepaid card.\n\nTo redeem the token, users would go to daVinci’s website and provide their names, addresses,\n\nand email addresses. Users could not enter an address in a sanctioned jurisdiction and were\n\nscreened against sanctions lists. Once screened and verified, funds would be released by the\n\nissuing bank to the users’ prepaid cards and the cards would be issued by daVinci to the users,\n\nwho could then use the cards with merchants who accepted cards via third party credit card\n\nnetworks.",
+              "On May 2, 2019, OFAC published A Framework for OFAC Compliance Commitments\n\n(Framework) in order to provide persons subject to U.S. jurisdiction, as well as foreign entities",
+              "that conduct business in or with the United States or U.S. persons, or that use goods or services\n\nexported from the United States, with OFAC’s perspective on the essential components of a\n\nsanctions compliance program. The Framework also outlines how OFAC may incorporate these\n\ncomponents into its evaluation of apparent violations and resolution of investigations resulting in\n\nsettlements. The Framework includes an appendix that offers a brief analysis of some of the root\n\ncauses of apparent violations of U.S. economic and trade sanctions programs OFAC has\n\nidentified during its investigative process."
+            ]
+          },
+          "title": "November 6, 2023 OFAC Settles with daVinci Payments for ...",
+          "description": "",
+          "page_age": "2023-11-06T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=ofac.treasury.gov&size=128"
+        },
+        {
+          "url": "https://ofac.treasury.gov/media/934456/download?inline=",
+          "contents": {
+            "highlights": [
+              "automatic continuous screening of each shipment for compliance with U.S. sanctions and export\n\ncontrols.",
+              "(3) Upon discovery of Key Colombia’s shipments to Cuba, Key Holding U.S. ceased taking\n\norders for shipments to Cuba and issued its first trade sanctions and export control\n\ncompliance policy. Key Holding U.S. also implemented mandatory company-wide\n\nsanctions training and adopted use of a platform that allows for automatic continuous\n\nscreening of each shipment for compliance with U.S. sanctions and export controls.",
+              "On May 2, 2019, OFAC published A Framework for OFAC Compliance Commitments in order to\n\nprovide organizations subject to U.S. jurisdiction, as well as foreign entities that conduct business in\n\nor with the United States or U.S. persons, or that use goods or services exported from the United\n\nStates, with OFAC’s perspective on the essential components of a sanctions compliance program.\n\nThe *Framework* also outlines how OFAC may incorporate these components into its evaluation of\n\napparent violations and resolution of investigations resulting in settlements."
+            ]
+          },
+          "title": "U.S. DEPARTMENT OF THE TREASURY OFFICE OF FOREIGN ASSETS CONTROL",
+          "description": "",
+          "page_age": "2025-07-02T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=ofac.treasury.gov&size=128"
+        },
+        {
+          "url": "https://ofac.treasury.gov/faqs/445",
+          "contents": {
+            "highlights": [
+              "# 445. What are my compliance obligations with respect to E.O. 13694, as amended?\nAs a general matter, U.S. persons, including firms that facilitate or engage in online commerce, are responsible for ensuring that they do not engage in unauthorized transactions or dealings with persons named on any of OFAC’s sanctions lists or operate in jurisdictions targeted by comprehensive sanctions programs. Such persons, including technology companies, should develop a tailored, risk-based compliance program, which may include sanctions list screening or other appropriate measures.",
+              "The names of, and identifying information for, all individuals and entities included on OFAC’s sanctions lists may be located via OFAC’s free, online search engine at the following URL: http://sanctionssearch.ofac.treas.gov. In addition, OFAC offers text and PDF versions of these lists for manual review and a number of data file versions of its lists that are designed to facilitate automated screening."
+            ]
+          },
+          "title": "445",
+          "description": "",
+          "favicon_url": "https://you.com/favicon?domain=ofac.treasury.gov&size=128"
+        }
+      ]
+    },
+    "metadata": {
+      "query": "sanctions compliance vendor payment screening framework",
+      "search_uuid": "a9157675-305a-49c4-9d3e-aa533653b158",
+      "latency": 0.6872090069809929
+    }
+  }
+}

@@ -1,0 +1,718 @@
+{
+ "split": "dev",
+ "models": {
+  "planner": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+  "investigator": "nvidia/Nemotron-3.5-Lightning-30B-A3B",
+  "attributor": "nvidia/Nemotron-3.5-Lightning-30B-A3B",
+  "attributor_escalate": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+  "critic": "nvidia/Nemotron-3.5-Lightning-30B-A3B",
+  "intake": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+  "records_investigator": "nvidia/Nemotron-3.5-Lightning-30B-A3B"
+ },
+ "summary": {
+  "C1": {
+   "name": "single investigator",
+   "runs": 10,
+   "errors": 0,
+   "false_completion_rate": 0.3333333333333333,
+   "claimed_completions": 6,
+   "correct_disposition_rate": 0.6,
+   "recovery_rate": 0.5,
+   "unnecessary_escalation_rate": 0.0,
+   "attribution_accuracy": null,
+   "attributions_scored": 0,
+   "cost_per_correct_usd": 0.000400325,
+   "total_cost_usd": 0.00240195,
+   "latency_p50_s": 11.86404912499711,
+   "latency_p95_s": 17.864195666043088
+  },
+  "C2": {
+   "name": "investigator + LLM critic",
+   "runs": 10,
+   "errors": 0,
+   "false_completion_rate": 0.2,
+   "claimed_completions": 5,
+   "correct_disposition_rate": 0.7,
+   "recovery_rate": 0.75,
+   "unnecessary_escalation_rate": 0.0,
+   "attribution_accuracy": null,
+   "attributions_scored": 0,
+   "cost_per_correct_usd": 0.0005834428571428572,
+   "total_cost_usd": 0.0040841,
+   "latency_p50_s": 18.31377016706392,
+   "latency_p95_s": 24.014789624954574
+  },
+  "C3": {
+   "name": "Casefile",
+   "runs": 10,
+   "errors": 0,
+   "false_completion_rate": 0.0,
+   "claimed_completions": 6,
+   "correct_disposition_rate": 1.0,
+   "recovery_rate": 1.0,
+   "unnecessary_escalation_rate": 0.0,
+   "attribution_accuracy": 0.625,
+   "attributions_scored": 8,
+   "cost_per_correct_usd": 0.00051553,
+   "total_cost_usd": 0.005155300000000001,
+   "latency_p50_s": 25.235069832997397,
+   "latency_p95_s": 63.23029941599816
+  }
+ },
+ "rows": [
+  {
+   "config": "C1",
+   "case": "A-104-s0",
+   "fault": "none",
+   "expected": "escalated",
+   "outcome": "escalated",
+   "claimed_complete": true,
+   "oracle_complete": true,
+   "cost_usd": 0.00023855000000000003,
+   "latency_s": 17.864195666043088,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": null,
+   "attribution_correct": null,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C2",
+   "case": "A-104-s0",
+   "fault": "none",
+   "expected": "escalated",
+   "outcome": "escalated",
+   "claimed_complete": true,
+   "oracle_complete": true,
+   "cost_usd": 0.00043599999999999997,
+   "latency_s": 18.31377016706392,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": null,
+   "attribution_correct": null,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C3",
+   "case": "A-104-s0",
+   "fault": "none",
+   "expected": "escalated",
+   "outcome": "escalated",
+   "claimed_complete": true,
+   "oracle_complete": true,
+   "cost_usd": 0.0002846,
+   "latency_s": 41.36089675000403,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": null,
+   "attribution_correct": null,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C1",
+   "case": "A-104-s0",
+   "fault": "wrong_identifier",
+   "expected": "escalated",
+   "outcome": "escalated",
+   "claimed_complete": true,
+   "oracle_complete": true,
+   "cost_usd": 0.00030875,
+   "latency_s": 11.86404912499711,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s004"
+   },
+   "attribution_correct": null,
+   "recoverable": true,
+   "error": null
+  },
+  {
+   "config": "C2",
+   "case": "A-104-s0",
+   "fault": "wrong_identifier",
+   "expected": "escalated",
+   "outcome": "escalated",
+   "claimed_complete": true,
+   "oracle_complete": true,
+   "cost_usd": 0.0003987,
+   "latency_s": 19.325355249922723,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s004"
+   },
+   "attribution_correct": null,
+   "recoverable": true,
+   "error": null
+  },
+  {
+   "config": "C3",
+   "case": "A-104-s0",
+   "fault": "wrong_identifier",
+   "expected": "escalated",
+   "outcome": "escalated",
+   "claimed_complete": true,
+   "oracle_complete": true,
+   "cost_usd": 0.00059015,
+   "latency_s": 22.87544391595293,
+   "replans": 2,
+   "refusals": [
+    "cannot close case A-104-s0 as escalated: required_evidence: device_history status=error; re-collect device_history (an error, empty or partial result is not evidence of nothing suspicious); policy_followed: cannot evaluate policy: device_history status=missing"
+   ],
+   "attribution": {
+    "agent": "investigator",
+    "step": "s006",
+    "category": "specification"
+   },
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s006"
+   },
+   "attribution_correct": true,
+   "recoverable": true,
+   "error": null
+  },
+  {
+   "config": "C1",
+   "case": "A-104-s0",
+   "fault": "device_error_once",
+   "expected": "escalated",
+   "outcome": "insufficient_evidence",
+   "claimed_complete": false,
+   "oracle_complete": false,
+   "cost_usd": 0.00023295000000000002,
+   "latency_s": 10.259014790994115,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s004"
+   },
+   "attribution_correct": null,
+   "recoverable": true,
+   "error": null
+  },
+  {
+   "config": "C2",
+   "case": "A-104-s0",
+   "fault": "device_error_once",
+   "expected": "escalated",
+   "outcome": "escalated",
+   "claimed_complete": true,
+   "oracle_complete": true,
+   "cost_usd": 0.0004996000000000001,
+   "latency_s": 18.57544212497305,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s004"
+   },
+   "attribution_correct": null,
+   "recoverable": true,
+   "error": null
+  },
+  {
+   "config": "C3",
+   "case": "A-104-s0",
+   "fault": "device_error_once",
+   "expected": "escalated",
+   "outcome": "escalated",
+   "claimed_complete": true,
+   "oracle_complete": true,
+   "cost_usd": 0.0005939000000000001,
+   "latency_s": 31.57361179101281,
+   "replans": 2,
+   "refusals": [],
+   "attribution": {
+    "agent": "investigator",
+    "step": "s006",
+    "category": "task_verification"
+   },
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s006"
+   },
+   "attribution_correct": true,
+   "recoverable": true,
+   "error": null
+  },
+  {
+   "config": "C1",
+   "case": "A-104-s0",
+   "fault": "device_empty",
+   "expected": "insufficient_evidence",
+   "outcome": "escalated",
+   "claimed_complete": true,
+   "oracle_complete": false,
+   "cost_usd": 0.00021470000000000001,
+   "latency_s": 9.57105670904275,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s004"
+   },
+   "attribution_correct": null,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C2",
+   "case": "A-104-s0",
+   "fault": "device_empty",
+   "expected": "insufficient_evidence",
+   "outcome": "insufficient_evidence",
+   "claimed_complete": false,
+   "oracle_complete": true,
+   "cost_usd": 0.0003711,
+   "latency_s": 14.585649291053414,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s004"
+   },
+   "attribution_correct": null,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C3",
+   "case": "A-104-s0",
+   "fault": "device_empty",
+   "expected": "insufficient_evidence",
+   "outcome": "insufficient_evidence",
+   "claimed_complete": false,
+   "oracle_complete": true,
+   "cost_usd": 0.0005732000000000001,
+   "latency_s": 30.242125042015687,
+   "replans": 2,
+   "refusals": [],
+   "attribution": {
+    "agent": "investigator",
+    "step": "s010",
+    "category": "task_verification"
+   },
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s006"
+   },
+   "attribution_correct": false,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C1",
+   "case": "A-104-s0",
+   "fault": "device_stale",
+   "expected": "insufficient_evidence",
+   "outcome": "escalated",
+   "claimed_complete": true,
+   "oracle_complete": false,
+   "cost_usd": 0.00024819999999999996,
+   "latency_s": 11.876005625003017,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s004"
+   },
+   "attribution_correct": null,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C2",
+   "case": "A-104-s0",
+   "fault": "device_stale",
+   "expected": "insufficient_evidence",
+   "outcome": "escalated",
+   "claimed_complete": true,
+   "oracle_complete": false,
+   "cost_usd": 0.00035255,
+   "latency_s": 24.014789624954574,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s004"
+   },
+   "attribution_correct": null,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C3",
+   "case": "A-104-s0",
+   "fault": "device_stale",
+   "expected": "insufficient_evidence",
+   "outcome": "insufficient_evidence",
+   "claimed_complete": false,
+   "oracle_complete": true,
+   "cost_usd": 0.0006332500000000001,
+   "latency_s": 63.23029941599816,
+   "replans": 2,
+   "refusals": [
+    "cannot close case A-104-s0 as escalated: required_evidence: device_history status=stale; re-collect device_history (an error, empty or partial result is not evidence of nothing suspicious); claims_supported: claim c1 cites ev_dev (device_history) with status=stale; policy_followed: cannot evaluate policy: device_history status=missing"
+   ],
+   "attribution": {
+    "agent": "investigator",
+    "step": "s006",
+    "category": "task_verification"
+   },
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s006"
+   },
+   "attribution_correct": true,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C1",
+   "case": "A-105-s0",
+   "fault": "none",
+   "expected": "closed_benign",
+   "outcome": "closed_benign",
+   "claimed_complete": true,
+   "oracle_complete": true,
+   "cost_usd": 0.00022850000000000002,
+   "latency_s": 9.494921083096415,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": null,
+   "attribution_correct": null,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C2",
+   "case": "A-105-s0",
+   "fault": "none",
+   "expected": "closed_benign",
+   "outcome": "insufficient_evidence",
+   "claimed_complete": false,
+   "oracle_complete": false,
+   "cost_usd": 0.00043840000000000003,
+   "latency_s": 15.34988491598051,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": null,
+   "attribution_correct": null,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C3",
+   "case": "A-105-s0",
+   "fault": "none",
+   "expected": "closed_benign",
+   "outcome": "closed_benign",
+   "claimed_complete": true,
+   "oracle_complete": true,
+   "cost_usd": 0.00028535,
+   "latency_s": 11.289224124979228,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": null,
+   "attribution_correct": null,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C1",
+   "case": "A-105-s0",
+   "fault": "wrong_identifier",
+   "expected": "closed_benign",
+   "outcome": "closed_benign",
+   "claimed_complete": true,
+   "oracle_complete": true,
+   "cost_usd": 0.0002953,
+   "latency_s": 17.175071957986802,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s004"
+   },
+   "attribution_correct": null,
+   "recoverable": true,
+   "error": null
+  },
+  {
+   "config": "C2",
+   "case": "A-105-s0",
+   "fault": "wrong_identifier",
+   "expected": "closed_benign",
+   "outcome": "closed_benign",
+   "claimed_complete": true,
+   "oracle_complete": true,
+   "cost_usd": 0.00037920000000000006,
+   "latency_s": 18.356378708034754,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s004"
+   },
+   "attribution_correct": null,
+   "recoverable": true,
+   "error": null
+  },
+  {
+   "config": "C3",
+   "case": "A-105-s0",
+   "fault": "wrong_identifier",
+   "expected": "closed_benign",
+   "outcome": "closed_benign",
+   "claimed_complete": true,
+   "oracle_complete": true,
+   "cost_usd": 0.00047250000000000005,
+   "latency_s": 46.879538667039014,
+   "replans": 1,
+   "refusals": [
+    "cannot close case A-105-s0 as escalated: claims_supported: claim c1 cites unknown evidence compute_features; policy_followed: policy p1 gives closed_benign, recommendation is escalated"
+   ],
+   "attribution": {
+    "agent": "investigator",
+    "step": "s006",
+    "category": "task_verification"
+   },
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s006"
+   },
+   "attribution_correct": true,
+   "recoverable": true,
+   "error": null
+  },
+  {
+   "config": "C1",
+   "case": "A-105-s0",
+   "fault": "device_error_once",
+   "expected": "closed_benign",
+   "outcome": "insufficient_evidence",
+   "claimed_complete": false,
+   "oracle_complete": false,
+   "cost_usd": 0.00020265000000000002,
+   "latency_s": 8.780439375084825,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s004"
+   },
+   "attribution_correct": null,
+   "recoverable": true,
+   "error": null
+  },
+  {
+   "config": "C2",
+   "case": "A-105-s0",
+   "fault": "device_error_once",
+   "expected": "closed_benign",
+   "outcome": "insufficient_evidence",
+   "claimed_complete": false,
+   "oracle_complete": false,
+   "cost_usd": 0.0004271000000000001,
+   "latency_s": 19.386420750059187,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s004"
+   },
+   "attribution_correct": null,
+   "recoverable": true,
+   "error": null
+  },
+  {
+   "config": "C3",
+   "case": "A-105-s0",
+   "fault": "device_error_once",
+   "expected": "closed_benign",
+   "outcome": "closed_benign",
+   "claimed_complete": true,
+   "oracle_complete": true,
+   "cost_usd": 0.0005829,
+   "latency_s": 25.235069832997397,
+   "replans": 2,
+   "refusals": [
+    "cannot close case A-105-s0 as escalated: required_evidence: device_history status=error; re-collect device_history (an error, empty or partial result is not evidence of nothing suspicious); claims_supported: claim c1 cites ev_dev (device_history) with status=error; policy_followed: cannot evaluate policy: device_history status=missing"
+   ],
+   "attribution": {
+    "agent": "investigator",
+    "step": "s006",
+    "category": "task_verification"
+   },
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s006"
+   },
+   "attribution_correct": true,
+   "recoverable": true,
+   "error": null
+  },
+  {
+   "config": "C1",
+   "case": "A-105-s0",
+   "fault": "device_empty",
+   "expected": "insufficient_evidence",
+   "outcome": "insufficient_evidence",
+   "claimed_complete": false,
+   "oracle_complete": true,
+   "cost_usd": 0.00021500000000000002,
+   "latency_s": 13.33236462494824,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s004"
+   },
+   "attribution_correct": null,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C2",
+   "case": "A-105-s0",
+   "fault": "device_empty",
+   "expected": "insufficient_evidence",
+   "outcome": "insufficient_evidence",
+   "claimed_complete": false,
+   "oracle_complete": true,
+   "cost_usd": 0.00037275000000000003,
+   "latency_s": 16.138748625060543,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s004"
+   },
+   "attribution_correct": null,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C3",
+   "case": "A-105-s0",
+   "fault": "device_empty",
+   "expected": "insufficient_evidence",
+   "outcome": "insufficient_evidence",
+   "claimed_complete": false,
+   "oracle_complete": true,
+   "cost_usd": 0.0005489000000000001,
+   "latency_s": 23.48745700006839,
+   "replans": 2,
+   "refusals": [
+    "cannot close case A-105-s0 as escalated: required_evidence: device_history status=empty; re-collect device_history (an error, empty or partial result is not evidence of nothing suspicious); claims_supported: claim c1 cites ev_dev (device_history) with status=empty; policy_followed: cannot evaluate policy: device_history status=missing"
+   ],
+   "attribution": {
+    "agent": "investigator",
+    "step": "s010",
+    "category": "task_verification"
+   },
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s006"
+   },
+   "attribution_correct": false,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C1",
+   "case": "A-105-s0",
+   "fault": "device_stale",
+   "expected": "insufficient_evidence",
+   "outcome": "insufficient_evidence",
+   "claimed_complete": false,
+   "oracle_complete": true,
+   "cost_usd": 0.00021735000000000002,
+   "latency_s": 12.128000083030201,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s004"
+   },
+   "attribution_correct": null,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C2",
+   "case": "A-105-s0",
+   "fault": "device_stale",
+   "expected": "insufficient_evidence",
+   "outcome": "insufficient_evidence",
+   "claimed_complete": false,
+   "oracle_complete": true,
+   "cost_usd": 0.00040870000000000007,
+   "latency_s": 14.603610374964774,
+   "replans": 0,
+   "refusals": [],
+   "attribution": null,
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s004"
+   },
+   "attribution_correct": null,
+   "recoverable": false,
+   "error": null
+  },
+  {
+   "config": "C3",
+   "case": "A-105-s0",
+   "fault": "device_stale",
+   "expected": "insufficient_evidence",
+   "outcome": "insufficient_evidence",
+   "claimed_complete": false,
+   "oracle_complete": true,
+   "cost_usd": 0.0005905500000000001,
+   "latency_s": 23.095616334001534,
+   "replans": 2,
+   "refusals": [],
+   "attribution": {
+    "agent": "investigator",
+    "step": "s010",
+    "category": "task_verification"
+   },
+   "attribution_truth": {
+    "agent": "investigator",
+    "step": "s006"
+   },
+   "attribution_correct": false,
+   "recoverable": false,
+   "error": null
+  }
+ ]
+}

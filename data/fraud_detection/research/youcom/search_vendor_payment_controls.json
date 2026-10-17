@@ -1,0 +1,226 @@
+{
+  "provenance": {
+    "retrieved_at": "2026-10-17T20:52:47.254231+00:00",
+    "endpoint": "https://ydc-index.io/v1/search",
+    "request": {
+      "query": "third-party vendor payments invoices compliance due diligence",
+      "count": 12,
+      "include_domains": [
+        "justice.gov",
+        "sec.gov"
+      ],
+      "extraction": {
+        "extraction_mode": "highlights"
+      }
+    }
+  },
+  "response": {
+    "results": {
+      "web": [
+        {
+          "url": "https://www.justice.gov/criminal/criminal-fraud/page/file/937501/dl",
+          "contents": {
+            "highlights": [
+              "**E.** **Third Party Management**\n\nA well-designed compliance program should apply risk-based due diligence to its third-party relationships. Although the need for, and degree of, appropriate due diligence may vary\n\nbased on the size and nature of the company, transaction, and third party, prosecutors should assess\n\nthe extent to which the company has an understanding of the qualifications and associations of\n\nthird-party partners, including the agents, consultants, and distributors that are commonly used to\n\nconceal misconduct, such as the payment of bribes to foreign officials in international business\n\ntransactions.",
+              "Prosecutors should also assess whether the company knows the business rationale for\n\nneeding the third party in the transaction, and the risks posed by third-party partners, including the\n\nthird-party partners’ reputations and relationships, if any, with foreign officials. For example, a\n\nprosecutor should analyze whether the company has ensured that contract terms with third parties\n\nspecifically describe the services to be performed, that the third party is actually performing the\n\nwork, and that its compensation is commensurate with the work being provided in that industry\n\nand geographical region. Prosecutors should further assess whether the company engaged in",
+              "ongoing monitoring of the third-party relationships, be it through updated due diligence, training,\n\naudits, and/or annual compliance certifications by the third party.\n\nIn sum, a company’s third-party management practices are a factor that prosecutors should\n\nassess to determine whether a compliance program is in fact able to “detect [and prevent] the\n\nparticular types of misconduct most likely to occur in a particular corporation’s line of business.”\n\n **Risk-Based and Integrated Processes** – How has the company’s third-party",
+              "management process corresponded to the nature and level of the enterprise risk\n\nidentified by the company? How has this process been integrated into the relevant\n\nprocurement and vendor management processes? Does the third-party management\n\nprocess function allow for the review of vendors in a timely manner? How is the\n\ncompany leveraging available data to evaluate vendor risk during the course of the\n\nrelationship with the vendor?",
+              " **Appropriate Controls** – How does the company ensure there is an appropriate\n\nbusiness rationale for the use of third parties? If third parties were involved in the\n\nunderlying misconduct, what was the business rationale for using those third parties?\n\nWhat mechanisms exist to ensure that the contract terms specifically describe the\n\nservices to be performed, that the payment terms are appropriate, that the described\n\ncontractual work is performed, and that compensation is commensurate with the\n\nservices rendered?\n\n **Management of Relationships** – How has the company considered and analyzed the\n\ncompensation and incentive structures for third parties against compliance risks? How",
+              "at the target company, causing resulting harm to a business’s profitability and reputation and\n\nrisking civil and criminal liability.\n\n**U.S. Department of Justice**\n\n**Criminal Division**\n\n**Evaluation of Corporate Compliance Programs**\n\n**(Updated September 2024)**\n\n10\n\nThe extent to which a company subjects its acquisition targets to appropriate scrutiny is\n\nindicative of whether its compliance program is, as implemented, able to effectively enforce its\n\ninternal controls and remediate misconduct at all levels of the organization.\n\n **Due Diligence Process** – Was the company able to complete pre-acquisition due",
+              "Prosecutors should also evaluate “[t]he resources the company has dedicated to compliance,”\n\n“[t]he quality and experience of the personnel involved in compliance, such that they can\n\nunderstand and identify the transactions and activities that pose a potential risk,” and “[t]he\n\nauthority and independence of the compliance function and the availability of compliance",
+              "company’s compliance program had a track record of preventing or detecting other instances of\n\nmisconduct, and whether the company exercised due diligence to prevent and detect criminal\n\nconduct. *See* U.S.S.G. § 8B2.1(a)(1).\n\nTo determine whether a company’s compliance program is working effectively at the time\n\nof a charging decision or resolution, prosecutors should consider whether the program evolved\n\nover time to address existing and changing compliance risks. Prosecutors should also consider\n\nwhether the company undertook an adequate and honest root cause analysis to understand both",
+              "The actual implementation of controls in practice will necessarily reveal areas of risk and potential\n\nadjustment. A company’s business changes over time, as do the environments in which it operates,\n\nthe nature of its customers, the laws that govern its actions, and the applicable industry standards.\n\nAccordingly, prosecutors should consider whether the company has engaged in meaningful efforts\n\nto review its compliance program and ensure that it is not stale. Some companies survey\n\nemployees to gauge the compliance culture and evaluate the strength of controls, and/or conduct\n\nperiodic audits to ensure that controls are functioning well, though the nature and frequency of",
+              "to the misconduct? Did those audits occur and what were the findings? What types of\n\nrelevant audit findings and remediation progress have been reported to management\n\nand the board on a regular basis? How have management and the board followed up?\n\nHow often does internal audit conduct assessments in high-risk areas?\n\n **Control Testing** – Has the company reviewed and audited its compliance program in\n\nthe area relating to the misconduct? More generally, what testing of controls, collection\n\nand analysis of compliance data, and interviews of employees and third parties does\n\nthe company undertake? How are the results reported and action items tracked?",
+              " **Prior Weaknesses** – What controls failed? If policies or procedures should have\n\nprohibited the misconduct, were they effectively implemented, and have functions that\n\nhad ownership of these policies and procedures been held accountable?\n\n **Payment Systems** – How was the misconduct in question funded (*e.g.*, purchase\n\norders, employee reimbursements, discounts, petty cash)? What processes could have\n\nprevented or detected improper access to these funds? Have those processes been\n\nimproved?\n\n **Vendor Management** – If vendors were involved in the misconduct, what was the"
+            ]
+          },
+          "title": "Evaluation of Corporate Compliance Programs (Updated ...",
+          "description": "",
+          "page_age": "2023-03-01T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=www.justice.gov&size=128"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1731388/000091957418003321/d7873138_ex14-1.htm",
+          "contents": {
+            "highlights": [
+              "Indirect bribery (bribery committed on the Company's behalf by third parties) is also caught by the Code. The Company will strive to deal only with reputable third parties and will do necessary due diligence on third parties where appropriate i.e., where circumstances may indicate a higher risk for bribery (for example, conducting business with a third party located in a jurisdiction with a reputation for bribery and corruption).",
+              "· · Unusual Payment Patterns or Financial Arrangements",
+              "Improper payments made to government officials or other third parties are frequently accompanied by unusual payment arrangements. Employees should use increased vigilance when asked, for example, to make payments in a bank account not located within the country where the services were rendered or the country where the recipient of funds is located. Be cautious when conducting business in a country with a reputation of corruption. A list of high risk jurisdictions can be found on the Transparency International website.",
+              "Commissions historically have been a vehicle through which bribes have been funneled to government officials or other third parties. Accordingly, a request to pay unusually high commissions, where the payment is not commensurate with the service being provided, is a warning sign of possible corruption. Be careful when a government official recommends hiring a consultant, and adequate diligence should be conducted on consultants generally to ensure the legitimate provision of services.\n\n· · Lack of Transparency in Expenses and Accounting Records",
+              "A reluctance to share expense statements and accounting records of joint activity by a foreign business partner, vague descriptions or over-invoicing generally should serve as possible indicators of corrupt activity. The underlying business purpose of each payment should be clear. Pay particular attention that a reimbursement of an expense is a disguised payment to a government official or otherwise. Facilitation payments must not be made in countries where they are illegal."
+            ]
+          },
+          "title": "code of ethics & anti-bribery policy",
+          "description": "",
+          "favicon_url": "https://you.com/favicon?domain=www.sec.gov&size=128"
+        },
+        {
+          "url": "https://oig.justice.gov/archives/reports/OBD/a0407/findings.htm",
+          "contents": {
+            "highlights": [
+              "ACQUISITION AND PAYMENT PROCEDURES Overall, the procurement and payment directives issued by EOUSA and other authorities set forth a system, that if complied with, is sufficient to prevent or detect fraud, loss, or error in payments to vendors. We found an overall low error rate in our tests of the procurement and payment system, indicating that the USAOs generally complied with the directives. Nonetheless, we did find instances of noncompliance that would occur less often by implementing our recommendations.",
+              "At the District of Utah, two disbursing officers had not been designated as third-party payment disbursing officers on the Form OBD-234.^9 The two disbursing officers had signed 116 third-party drafts totaling $41,548. The absence of a signed Form OBD-234 increases the risk of purchasing unnecessary and unallowable goods or services. We believe that the EARS reviewers should increase their scrutiny of the Form OBD-234 in their triennial audits.",
+              "We also identified two additional transactions at the Eastern District of New York, one at the District of Utah, and four in the District of Oregon that had no supporting documentation at all. These seven transactions totaled $2,741. The administrative staff at those offices could not provide any documents supporting these seven purchases. We expected to find, at a minimum, a procurement form and a vendor invoice or a purchase card slip. Missing procurement forms and supporting documents were evident in the two previous OIG investigations of fraud in the District of Oregon and the Central District of California. Procurement Without Written Approval.",
+              "In the sample at EOUSA, we found 6 procurements out of a sample of 222, totaling $3,569, not documented with a separate procurement authorization form. We observed the payment of invoices for purchases with no more support than the budget officer's initials on the invoice. In addition, there was no separate documentation of an approving officer's authorization. For these procurements, a blanket-funding document was created for minor repairs and alterations to occupied leased space.",
+              "At EOUSA, three Treasury checks were issued by JMD for EOUSA for dollar amounts in excess of the amounts EOUSA requested. In response to our inquiry in June 2003, EOUSA staff reviewed the transactions, determined the cause, and obtained a prompt refund of $6,332.51. In five other transactions in the sample, a difference was observed between the amount paid and the amount billed by the vendor. The dollar amounts of the errors found were small, but they show the need for careful review of the documents before making the payments. Delegated Payment Limits Exceeded.",
+              "Because of this excessive procurement authority, we believe that the wording on the Certificates of Appointment needs to be restated, establishing a reasonable dollar limitation for purchases from UNICOR, NIB/NISH, and FEDSTRIP. Missing Invoices. Of the purchase card transactions sampled, we found 50 purchases ($36,664) out of a total of 427, or 12 percent, that were not supported by an invoice. One contracting officer explained that if orders with a government agency are placed over the Internet, the vendor would not transmit an invoice.",
+              "According to the Third Party Payment Policies and Procedures Handbook, Section 6.e(3)(b), the payment clerk should record the draft number and draft date on the invoice or supporting documentation and mark the documentation \"PAID\" when purchases are paid by a third-party draft. This procedure eliminates duplicate payments and provides an audit trail to the third-party draft when questions arise about payments. This audit identified six purchases at the District of Utah, the District of Oregon, the Eastern District of New York, and the Eastern District of Tennessee where the draft number was not included on the supporting documents.",
+              "In addition to the sample of 730 paid third-party drafts, our testing included reviewing 127 voided drafts to determine if the drafts were voided in compliance with the Third Party Payment Policies and Procedures Handbook. Voided third-party drafts were written only at the USAOs. No drafts were written by EOUSA, as those were written by JMD. The audit tests revealed a total of 109 deficiencies at the District of Oregon, the District of Utah, the District of New Mexico, the Eastern District of Tennessee, and the Eastern District of New York.",
+              "When looking at each sampled payment, our audit procedures compared the information in the output from the four data sources to the associated invoice and supporting documentation. We looked for consistency in the vendor name and amount paid, determined if alterations were made on supporting documents, and looked for a \"PAID\" indication on the documents to prevent duplicate payments. We found several instances where the dollar amounts, quantities, or other details on the supporting documentation were altered on the procurement documents. In that situation, auditors could not determine if the alterations were made before or after the approving officer had signed the document because there was no signature nor date next to the changes.",
+              "transactions.\n\nAccountable Property Part of our audit tests for vendor payments involved physically locating accountable property when the transactions in the samples included accountable items. Sampling from the reverse direction, we also selected and located a maximum of 20 items from the ARGIS Property Management System that were procured in FY 2002.^14 At EOUSA, five accountable property items, including computer and communications equipment, could not be located because the documentation did not contain the location of the items. The following table documents the results of the property records tests.",
+              "Conclusion Overall, the USAOs' system of procurement and payment controls and procedures was generally adequate to reduce the risk of fraud, loss, or undetected error. Further, the number of instances of noncompliance with established acquisition and payment procedures at the seven offices tested was relatively low. Nonetheless, noncompliance with established procedures and inadequate management oversight can lead to fraudulent activity, as demonstrated by the two recent fraud cases. We believe that EOUSA should review the EARS acquisition management audit program to ensure that tests are included that will detect and deter the same types of deficiencies identified in this audit."
+            ]
+          },
+          "title": "Audit Report",
+          "description": "",
+          "favicon_url": "https://you.com/favicon?domain=oig.justice.gov&size=128"
+        },
+        {
+          "url": "https://www.sec.gov/oiea/Article/billinginstructions.pdf",
+          "contents": {
+            "highlights": [
+              "reimbursement only for the amount billed to the Applicant by the third-party vendor and paid by the Applicant to such vendor. If such\n\nservices are performed by the receiver, the receiver will certify that\n\nit is not making a profit on such reimbursable service.\n\n2. At least 30 days prior to the filing of the Application with the Court, the\n\nApplicant will provide to SEC Counsel a complete copy of the proposed Application,\n\ntogether with all exhibits and relevant billing information in a format to be provided by SEC\n\nstaff."
+            ]
+          },
+          "title": "BILLING INSTRUCTIONS FOR RECEIVERS IN CIVIL ACTIONS",
+          "description": "",
+          "page_age": "2020-12-16T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=www.sec.gov&size=128"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1940372/000149315222028154/ex10-6.htm",
+          "contents": {
+            "highlights": [
+              "**4.** **INVOICES; CLAIM FORM**.\n\n**4.1 Invoices**. On the date any Product is shipped, Supplier shall submit an EDI invoice to Costco in compliance with Costco’s EDI standards. Actual scale weights must be shown on all bills of lading and other shipping documents that must accompany the Product to the shipping destination.\n\n**4.2 Claims**. Supplier must submit any payment dispute (invoices, returns, rebates, post payment audit deductions, etc.) on a Costco Standard Supplier Claim Form.",
+              "**6.** **PAYMENT**. Unless otherwise agreed in writing, Costco shall not be obligated to pay any undisputed invoice until 30 days after delivery is completed under Section 8 (Delivery) below. Supplier must submit all invoices to Costco within six months after the date the services, deliverables, Products or goods covered by the invoice were supplied to Costco. In the event of a disputed invoice, Costco will pay the entire undisputed amount of the invoice and include standard remittance information and supporting documentation regarding the disputed invoice amount,",
+              "**10.8 Conflict Minerals**. Pursuant to Section 1502 of the Dodd-Frank Wall Street Reform, Consumer Protection Act and any similar Laws, Supplier represents and warrants that, based on a good faith inquiry and except as otherwise separately disclosed in writing, the Product does not contain any Conflict Minerals. Upon Costco’s request, Supplier shall produce to Costco evidence of its due diligence supporting this representation and warranty.",
+              "(e) allegedly contains any defect or inadequate warnings, labeling, instructions, or safety guards;\n\n(f) allegedly violates any Laws or fails to meet any applicable governmental or industry standards;\n\n(g) allegedly fails to comply with any Customs requirements; or\n\n(h) allegedly infringes any patent, trade name, trade secret, trade dress, trademark, copyright, privacy rights or other right of any third party.\n\nPayment of any invoice does not limit Costco’s right to reject or revoke acceptance.",
+              "**19.** **TAXES**. Costco’s purchase is for resale unless Costco otherwise states in writing. Supplier’s pricing invoice should be exclusive of all retail sales, use and like taxes. If claiming the resale sales tax exemption, Costco will provide Supplier, upon Supplier’s request, with valid tax exemption (resale) certificates for those states where Costco has nexus and deliveries are to be made. Supplier’s invoicing Costco for any tax or fee shall constitute a warranty that Supplier is duly registered with the agency which levies the tax or fee.",
+              "For all shipments to Customers, Costco’s receipt of shipment notification will initiate the payment terms in Section 7(i) below; Supplier shall not submit a separate invoice.",
+              "Upon request by Costco, Supplier shall, at Supplier’s expense, promptly obtain and provide to Costco evidence of Supplier’s compliance with the terms of this Addendum, including without limitation: (a) all certifications, guaranties and other documents regarding and verifying compliance with applicable laws and regulations, including any Safety Data Sheet (“SDS”) as required by OSHA regulations; (b) an annual Good Manufacturing Practices (“GMP”) Audit conducted by a Costco-approved independent third-party auditor; (c) complete copies of third-party audits pertaining in any way to Supplier or any Product, including without limitation food safety audits, quality audits, corporate social",
+              "responsibility audits, HACCP audits, and any other current or future third-party audits; and (d) all certifications, guaranties and other documents regarding and verifying Supplier’s compliance with operational requirements, instructions to carriers and 3PLs (if applicable), and/or privacy and data security requirements under this Addendum."
+            ]
+          },
+          "title": "Costco Wholesale Basic Supplier Agreement, dated ...",
+          "description": "",
+          "favicon_url": "https://you.com/favicon?domain=www.sec.gov&size=128"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/21212/000090655508000004/ex101aastandardpurchaseagree.htm",
+          "contents": {
+            "highlights": [
+              "Vendor may supply designated carrier for delivery of check to be charged to Vendors account. **Vendor will supply account numbers for any carrier service designated for delivery.** **Invoices rendered for goods hereunder shall be regarded as due seven (7) days following receipt of collected funds paid to The WARRIOR GROUP by the Prime Contractor under the Prime Contract.** If any act or omission of Vendor shall cause or contribute to a delay in the receipt by WARRIOR GROUP of periodic or final payment under the Contract, Vendor further agrees that no payment hereunder shall be considered due until and unless delivery of the good for which invoices are rendered has been accomplished",
+              "The Vendor, having stated or acknowledged the required delivery date or dates called for on the face of this Agreement, shall be responsible for the necessary execution of orders; planning and scheduling; correlation of Contract Documents; preparation, submission and approval of shop drawings, samples, schedules, templates and other required submittals; expediting or shipping procedures; to guarantee delivery of this order by the stipulated date or dates, barring circumstances beyond control of the Vendor. Vendor agrees to exercise due diligence, and to cause each of its authorized agents or representatives to exercise due diligence, in executing and processing this order in all of its terms.",
+              "It is agreed that the Vendor shall not assign or sublet this Agreement or any part hereof, including payments hereunder without first obtaining the written consent of WARRIOR GROUP. Unless specifically waived in writing by WARRIOR GROUP, WARRIOR GROUP shall have a prior claim and offset right against payments due or to become due under this Agreement between the parties in the event Vendor fails to comply or shall become disabled from complying with the terms of this Agreement between the parties.",
+              "**Payroll and Employment Compliance:**\n\n(a) Vendor shall comply with all requirements of the Contract Documents pertaining to payroll reports, payroll affidavits, payment of prevailing wages, benefits and contributions, anti-kickback clauses, fair labor practices, nondiscrimination clauses, equal employment opportunity laws, orders and directives and other labor arrangement requirements insofar as such matters pertain to its work under this Agreement. Failure of Vendor to observe any of the aforesaid requirements, including the prompt submission to WARRIOR GROUP of required reports and affidavits, shall constitute cause for withholding progress payments until such requirements are met."
+            ]
+          },
+          "title": "STANDARD PURCHASE AGREEMENT",
+          "description": "",
+          "favicon_url": "https://you.com/favicon?domain=www.sec.gov&size=128"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1620179/000110465922072794/tm2218700d1_ex10-1.htm",
+          "contents": {
+            "highlights": [
+              "68\n\nSection 4.02.                       Payments and Computations, Etc. All amounts to be paid by the Seller or the Servicer to the Administrative Agent, any Purchaser Party, any Affected Person or any Seller Indemnified Party hereunder shall be paid in U.S. Dollars no later than noon (New York City time) on the day when due in same day funds to the applicable Purchaser’s Account.",
+              "103\n\n(i)            Transaction Documents. Comply with each of its covenants and agreements under each Transaction Document to which it is a party in any capacity.\n\n(k)            Frequency of Billing. Prepare and deliver (or cause to be prepared or delivered) invoices with respect to each Pool Receivable in accordance with the Credit and Collection Policy, but in any event no less frequently than as required under the Contract related to such Pool Receivable.",
+              "(iii)            Compliance Certificate. Together with the financial statements required hereunder, a compliance certificate in substantially the form of Exhibit F signed by a Financial Officer of Parent and dated the date of such annual financial statement or such quarterly financial statement, as the case may be."
+            ]
+          },
+          "title": "Document 2 - file: tm2218700d1_ex10-1.htm",
+          "description": "",
+          "favicon_url": "https://you.com/favicon?domain=www.sec.gov&size=128"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1766367/000188852424003199/dma19b10_33-3.htm",
+          "contents": {
+            "highlights": [
+              "2. ASC has engaged certain vendors, which are not servicers as defined in Item 1101(j) of Regulation AB (the “Vendors”), to perform specific, limited or scripted activities, and ASC elects to take responsibility for assessing compliance with the servicing criteria or portion of the servicing criteria applicable to such Vendors’ activities as permitted by the United States Securities and Exchange Commission *Compliance and Disclosure Interpretation 200.06, Vendors Engaged by Servicers* (formerly SEC Division of Corporation Finance Manual of Publicly Available Telephone Interpretations (Interpretation 17.06))",
+              "5.      ASC has complied, in all material respects, with the applicable servicing criteria as of December 31, 2023 and for the Reporting Period with respect to the Platform taken as a whole;\n\n6.      ASC has not identified and is not aware of any material instance of noncompliance by the Vendors with the applicable servicing criteria as of December 31, 2023 and for the Reporting Period with respect to the Platform taken as a whole;",
+              "7.      ASC has not identified any material deficiency in its policies and procedures to monitor the compliance by the Vendors with the applicable servicing criteria as of December 31, 2023 and for the Reporting Period with respect to the Platform taken as a whole; and\n\n8.      A registered public accounting firm that is a member of the American Institute of Certified Public Accountants has issued an attestation report on ASC’s assessment of compliance with the applicable servicing criteria as of December 31, 2023 and for the Reporting Period.",
+              "**Footnote**s:\n\nX^1 - Primary responsibility for processing borrower payments rests with the Master Servicer, however, Argentic Services Company LP (\"ASC\") may from time to time receive payments on an exception basis which are forwarded to the Master Servicer in accordance with such criteria.\n\nX^2 - ASC performs the activities pertaining to this criteria, except for specific, limited activities performed by third party property managers related to REO Property, if any. ASC has elected to take responsibility for assessing compliance with these servicing criteria with respect to the activities of its third party property managers."
+            ]
+          },
+          "title": "dma19b10_33-3.htm - Generated by SEC Publisher for SEC Filing",
+          "description": "",
+          "favicon_url": "https://you.com/favicon?domain=www.sec.gov&size=128"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1071371/000110465920051519/tm206804d3_20f.htm",
+          "contents": {
+            "highlights": [
+              "While the Bank conducts due diligence prior to engaging with third party service providers and performs ongoing monitoring of vendor controls, it does not control their operations. If any of our key service providers fails to fulfill any of their contractual obligations or cause disruptions in services (including as a result of a cyberattack, other information security event or a natural or health disaster (such as COVID-19 or other epidemics), failure to handle current or higher volumes, poor performance of services and failure to comply with applicable laws and regulations), the Bank’s ability to conduct its businesses could be adversely affected and could also negatively impact its results of operations and financial position.",
+              "The CRS, approved by the OECD Council in 2014, is applicable to signatory countries of the Multilateral Competent Authority Agreement (“MCAA”) and requires signatory countries to obtain information from their financial institutions and automatically exchange that information with other jurisdictions on an annual basis. The CRS defines (i) which financial institutions are required to report; (ii) the types of accounts covered; and (iii) the due diligence procedures that financial institutions must follow to identify the reporting information.",
+              "The Bank evaluates the contracts and commitments established with customers, identifying compliance with the five steps established in IFRS 15 as follows:\n\n1\\. · Identifying the contract: the parties' rights, payment conditions, evaluation of the commercial basis and characteristics of the compensations are identified, and the Bank evaluates if there are modifications or combinations that apply.\n\n · Identifying performance obligations: The Bank evaluates the commitments included in the entity's contracts to identify when the customer makes use of the service and whether the obligations are identifiable separately."
+            ]
+          },
+          "title": "Sec",
+          "description": "",
+          "page_age": "2020-04-27T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=www.sec.gov&size=128"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1644419/000158064220003548/ex99pvii.htm",
+          "contents": {
+            "highlights": [
+              "The firm will require that a “marked up” copy of the original submission and corrected materials be retained in a permanent file as evidence of review and comment and approval by the firm.",
+              "disbursement hold and immunity provisions for discussing the client with a third party, it is imperative that reporting and disbursement timeframes of the regulations be adhered to. As such, the firm will maintain a record, in a spreadsheet form, for monitoring each of the timeframes for initial reporting of disbursement holds (2-5 days), initial disbursement hold periods (10-15 days) and extended (maximum) disbursement hold periods (25 to 30 days).",
+              "To monitor its liquidity risk, records will be periodically reviewed that demonstrate its cash position, its borrowing capacity, and its need for liquidity (such as historical drawdowns). To address its operational risk, the CCO shall perform periodic random spot checks of its electronic systems and shall maintain a single consolidated data set including the contingency plans for responding to failures.\n\nAdditionally, the CCO shall ensure that each third party service provider has adequately demonstrated operational soundness by conducting due diligence at the onset of the relationship and periodic monitoring on an ongoing basis.",
+              "· · Driver’s license number or state-issued identification card number; or\n\n· · Financial account number, credit or debit card number, with or without any required security code, access code, personal identification number or password that would permit access to a resident’s financial account.\n\n· · Client Profiles\n\n· · Account Applications\n\n· · Client Asset Allocation Questionnaire\n\n· · Subscription Documents\n\n· · Trust, Organizational records, and other documents used to conduct due diligence, among other purposes\n\n· · Other internal documentation",
+              "· · Verify that the Firm has adequate procedures in place to dispose of non-public information (i.e. Does the firm shred information and if so, what employee or third party is responsible)\n\n· · Verify that the Firm has performed adequate due diligence on the third service providers\n\n· · Determine if employee(s) are adequately trained on Regulation SP procedures\n\n· · Verify that the Privacy Policy has been distributed to customers and employees\n\n· · Verify that any all Firm procedures on Regulation SP are being followed\n\n12\\.20. · Firm Procedures",
+              "In conducting the annual review of the Firm, FFI will either utilize the CCO or hire an outside third party to assist in this review. FFI’s annual review looks at any compliance issues that have arisen throughout the past year, changes in the business, and regulatory changes and updates. More frequent interim reviews, based upon a risk analysis, are conducted throughout the year by the Firm.\n\nThe inspection shall cover the primary business areas of the firm, including but not limited to:\n\n· · Sales practices\n\n· · Billing practices\n\n· · Trading practices\n\n· · General compliance and record-keeping",
+              "**Service Providers:** Service Providers are obliged to have business continuity capabilities in place to ensure continuity of services provided to FFI if the ordinary operation of the Service Provider is disrupted and to modify their work stream in order to adapt with the business continuity organization of Formula Folios. A very robust and thorough vendor risk management process is in place to ensure compliance."
+            ]
+          },
+          "title": "written supervisory procedures",
+          "description": "",
+          "page_age": "2021-01-25T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=www.sec.gov&size=128"
+        },
+        {
+          "url": "https://www.sec.gov/files/rules/final/2014/34-72936.pdf",
+          "contents": {
+            "highlights": [
+              "**SUMMARY:** In accordance with the Dodd-Frank Wall Street Reform and Consumer Protection\n\nAct (“Dodd-Frank Act”) and to enhance oversight, the Securities and Exchange Commission\n\n(“Commission”) is: adopting amendments to existing rules and new rules that apply to credit\n\nrating agencies registered with the Commission as nationally recognized statistical rating\n\norganizations (“NRSROs”); adopting a new rule and form that apply to providers of third-party\n\ndue diligence services for asset-backed securities; and adopting amendments to existing rules and\n\na new rule that implement a requirement added by the Dodd-Frank Act that issuers and",
+              "underwriters of asset-backed securities make publicly available the findings and conclusions of\n\nany third-party due diligence report obtained by the issuer or underwriter. The Commission also\n\nis adopting certain technical amendments to existing rules.\n\n**DATES:** This rule is effective November 14, 2014; except the amendments to § 240.17g-3(a)(7)\n\nand (b)(2) and Form NRSRO, which are effective on January 1, 2015; and the amendments to §",
+              "(“Rule 17g-7”), and 17 CFR 249b.300 (“Form NRSRO”); and is adopting new rules 17 CFR\n\n240.17g-8 (“Rule 17g-8”) and 17 CFR 240.17g-9 (“Rule 17g-9”).\n\nIn addition, the Commission, with respect to providers of third-party due diligence",
+              "· Paragraph (a) of Rule 17g-7 – Prefatory Text\n2\\. · Paragraph (a)(1)(i) of Rule 17g-7 – Format of the Form\n3\\. · Paragraph (a)(1)(ii) of Rule 17g-7 – Content of the Form\n\n4\n\n4\\. · Paragraph (a)(1)(iii) of Rule 17g-7 – Attestation\n5\\. · Paragraph (a)(2) of Rule 17g-7 – Third-Party Due Diligence Certification\n6\\.",
+              "the Commission under the Exchange Act, as amended by the Rating Agency Act of 2006.^4 Title\n\nIX, Subtitle C of the Dodd-Frank Act also provides that the Commission shall prescribe the\n\nformat of a certification that providers of third-party due diligence services must provide to each\n\nNRSRO producing a credit rating for an asset-backed security to which the due diligence\n\nthese proposals ultimately was adopted and codified at 17 CFR 240.17g-7 in January 2011.",
+              "8\n\nservices relate.^5 Finally, Title IX, Subtitle C of the Dodd-Frank Act establishes a new\n\nrequirement for issuers and underwriters of asset-backed securities to make publicly available the\n\nfindings and conclusions of any third-party due diligence report obtained by the issuer or\n\nunderwriter.^6\n\nOn May 18, 2011, the Commission proposed for comment amendments to existing rules\n\nand new rules in accordance with Title IX, Subtitle C of the Dodd-Frank Act and to enhance\n\noversight of NRSROs.^7 The Commission received a number of comment letters in response to",
+              "exception of section 932(s)(4) (which focuses on third-party due diligence services with respect to asset-backed securities).\n\ninformation about the performance and history of credit ratings for subclasses of structured\n\nfinance products and requirements for NRSROs, issuers, underwriters, and providers of third-party due diligence services to disclose information about due diligence services performed with\n\nrespect to asset-backed securities.^55",
+              "The amendments and new rules being adopted today primarily affect NRSROs, issuers,\n\nand underwriters of asset-backed securities, and providers of third-party due diligence services\n\nfor asset-backed securities.",
+              "Mortgage Alert websites, publicly available at http://www.abalert.com/ranks.php and http://www.cmalert.com/ranks.php.\n\n**b.** **Asset-Backed Security Issuers, Underwriters, and Third-Party**\n\n**Due Diligence Providers**\n\nThe asset-backed security market that existed in the United States as of the end of 2013\n\ndiffered significantly from the market prior to the crisis. In 2004, issuing entities of non-agency",
+              "Only non-agency asset-backed security offerings and underwriters of such deals are counted.\n\nFinally, providers of third-party due diligence services with respect to asset-backed\n\nsecurities are significantly affected by the amendments and new rules being adopted today. The\n\nCommission has little information about these firms and the characteristics of the industry. The\n\nCommission estimates that there are approximately fifteen providers of third-party due diligence",
+              "rating process. See Testimony of Vicki Beal, Senior Vice President of Clayton Holdings before the\n\nFinancial Crisis Inquiry Commission, (Sept. 23, 2010), available at http://fcicstatic.law.stanford.edu/cdn_media/fcic-testimony/2010-0923-Beal.pdf (“Clayton Testimony”). S&P’s\n\nupdated list of third-party due diligence firms reviewed for U.S. RMBS is available at",
+              "Asset-backed security issuers and underwriters may use third-party due diligence services\n\nto identify issues with loans, to negotiate better prices on pools of loans they are considering for\n\npurchase, and to negotiate expanded representations and warranties in purchase and sale\n\nagreements from sellers.^88 The reviews of third-party due diligence providers are performed on\n\nan adverse or random sample of loans consistent with the guidelines of clients. Compensation is\n\nlikely not contingent on due diligence findings or the ultimate performance of the loans\n\nreviewed. Instead, third-party due diligence providers may be paid a standard service fee for\n\neach loan reviewed.^89",
+              "significant costs to NRSROs.^105 The amendments and rules also impose burdens on issuers and\n\nunderwriters of asset-backed securities and providers of third-party due diligence services with\n\nrespect to asset-backed securities. As discussed throughout the economic analysis, the\n\nCommission believes that the new requirements should result in substantial benefits and should\n\nnot impose a burden on competition that is not necessary or appropriate in furtherance of the\n\npurposes of the Exchange Act.\n\nIn particular, the amendments and new rules being adopted today are designed to\n\n103"
+            ]
+          },
+          "title": "Final Rule: Nationally Recognized Statistical Rating ... - SEC.gov",
+          "description": "",
+          "page_age": "2015-06-15T00:00:00",
+          "favicon_url": "https://you.com/favicon?domain=www.sec.gov&size=128"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1141197/000110313204000040/exhibit10x2.pdf",
+          "contents": {
+            "highlights": [
+              "2.3 All work or services rendered or performed by Contractor shall be done with due\n\ndiligence in a good and workmanlike manner, using skilled, competent and\n\nexperienced workmen and supervisors, and in accordance with good oilfield servicing\n\npractices.",
+              "**3.0** **PAYMENT**\n\n3.1 Once credit is established, normal terms will be net thirty (30) days after receipt of an\n\ninvoice. The Company shall pay Contractor at the rate stipulated in the Work Agreement\n\nprovided for herein, subject to same being accepted by Company as fully complying with\n\nall the terms, conditions, specifications and requirements of this Contract. Should",
+              "company not meet Contractor’s credit criteria, prepayment may be required.\n\n3.2 Company shall have the right to audit Contractor’s books and records relating to all\n\ninvoices issued pursuant to this agreement. Contractor agrees to maintain such books\n\nand records for a period of two (2) years from the date such costs were incurred and to\n\nmake such books and records available to Company at any time or times within such\n\ntwo (2) year period.\n\n3.3 In the event that Company’s account with Contractor becomes delinquent, Contractor"
+            ]
+          },
+          "title": "THIS CONTRACT CONTAINS RELEASE AND INDEMNITY OBLIGATIONS",
+          "description": "",
+          "favicon_url": "https://you.com/favicon?domain=www.sec.gov&size=128"
+        }
+      ]
+    },
+    "metadata": {
+      "query": "third-party vendor payments invoices compliance due diligence",
+      "search_uuid": "3989e9e0-5ca9-4a66-bb9a-b3667617100e",
+      "latency": 1.3958380689728074
+    }
+  }
+}

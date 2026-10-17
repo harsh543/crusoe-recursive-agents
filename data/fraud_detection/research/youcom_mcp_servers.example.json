@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "you-docs": {
+      "type": "http",
+      "url": "https://you.com/docs/_mcp/server"
+    },
+    "you-web": {
+      "type": "http",
+      "url": "https://api.you.com/mcp?tools=you-search,you-contents",
+      "headers": {
+        "Authorization": "Bearer <YDC_API_KEY>"
+      }
+    },
+    "you-research": {
+      "type": "http",
+      "url": "https://api.you.com/mcp/research",
+      "headers": {
+        "Authorization": "Bearer <YDC_API_KEY>"
+      }
+    },
+    "you-finance": {
+      "type": "http",
+      "url": "https://api.you.com/mcp/finance",
+      "headers": {
+        "Authorization": "Bearer <YDC_API_KEY>"
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+[
+ {
+  "id": "d_reg",
+  "url": "https://registry.example.test/entities/NS-7788",
+  "doc_type": "primary",
+  "publisher": "State Business Registry",
+  "title": "SYNTHETIC entity record: Northwind Signal Media LLC",
+  "retrieved_at": "2026-10-17T00:00:00+00:00",
+  "text": "Entity: Northwind Signal Media LLC\nFile number: NS-7788\nDate of formation: 2025-02-03\nStatus: Active",
+  "sha256": "4ef5c7aa5d935587fc8808ac96f0a03bb1d3e2045ab684056d5e570d1f8b49f8"
+ },
+ {
+  "id": "d_award",
+  "url": "https://awards.example.test/award/AW-001",
+  "doc_type": "primary",
+  "publisher": "Federal Award Database",
+  "title": "SYNTHETIC award record AW-001",
+  "retrieved_at": "2026-10-17T00:00:00+00:00",
+  "text": "Recipient: Northwind Signal Media LLC\nAward date: 2025-02-14\nAward amount: $143,000,000\nExtent competed: NOT COMPETED\nJustification: urgent need exception cited",
+  "sha256": "ae9518151c06f2fc70926fd6d894b31d117ee760b9cef482f7eaeab62ef92d12"
+ },
+ {
+  "id": "d_award2",
+  "url": "https://awards.example.test/award/AW-002",
+  "doc_type": "primary",
+  "publisher": "Federal Award Database",
+  "title": "SYNTHETIC award record AW-002",
+  "retrieved_at": "2026-10-17T00:00:00+00:00",
+  "text": "Recipient: Lakeshore Ads Inc.\nAward date: 2025-02-14\nAward amount: $77,000,000\nExtent competed: LIMITED COMPETITION",
+  "sha256": "37445d597fa8f05ed5dc51e35719c01bcd17013bd457f177c10d3477a4065101"
+ },
+ {
+  "id": "d_sub",
+  "url": "https://awards.example.test/subaward/SA-001",
+  "doc_type": "primary",
+  "publisher": "Federal Subaward Database",
+  "title": "SYNTHETIC subaward report SA-001",
+  "retrieved_at": "2026-10-17T00:00:00+00:00",
+  "text": "Prime recipient: Northwind Signal Media LLC\nPrime award total: $143,000,000\nSubawardee: Harbor Strategy Group LLC\nSubaward total: $91,000,000",
+  "sha256": "fc074d2cb9f950d88d7c04441d15eb815be34f8bd772feb60dd087c4464fafaf"
+ },
+ {
+  "id": "d_rule",
+  "url": "https://rules.example.test/part6/urgency",
+  "doc_type": "primary",
+  "publisher": "Acquisition Regulation (synthetic excerpt)",
+  "title": "SYNTHETIC rule excerpt: unusual and compelling urgency",
+  "retrieved_at": "2026-10-17T00:00:00+00:00",
+  "text": "Unusual and compelling urgency. Full and open competition need not be provided when the agency's need for the supplies or services is of such an unusual and compelling urgency that the Government would be seriously injured unless the agency is permitted to limit the number of sources solicited.",
+  "sha256": "c75b259c99877f0d61d2326de9ec79405c74b28b547ccc487bd1034066730987"
+ },
+ {
+  "id": "d_n1",
+  "url": "https://outlet-one.example.test/story/1",
+  "doc_type": "secondary",
+  "publisher": "Outlet One",
+  "title": "SYNTHETIC news report (Outlet One)",
+  "retrieved_at": "2026-10-17T00:00:00+00:00",
+  "text": "Outlet One reports that Northwind Signal Media LLC was a newly formed company when it received the award.",
+  "sha256": "0ebf89c70a4ee07272f089a64140f8044991b3a35f61aba277c2766f2253c831"
+ },
+ {
+  "id": "d_n2",
+  "url": "https://outlet-two.example.test/story/9",
+  "doc_type": "secondary",
+  "publisher": "Outlet Two",
+  "title": "SYNTHETIC news report (Outlet Two)",
+  "retrieved_at": "2026-10-17T00:00:00+00:00",
+  "text": "Outlet Two reports that Harbor Strategy Group LLC received most of the subaward funds.",
+  "sha256": "61489b6d6317b4cda6aadc3fe57dd1883244630b35e5d4056c36675c05ceed46"
+ }
+]

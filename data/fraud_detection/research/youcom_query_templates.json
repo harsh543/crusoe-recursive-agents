@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "templates": [
+    {
+      "id": "official_policy_discovery",
+      "command": "research",
+      "effort": "deep",
+      "query_template": "As of {as_of_date}, identify the official government rules, regulator guidance, enforcement guidance, and primary-source publications relevant to detecting potentially improper third-party vendor invoices and payments for {jurisdiction} and {industry}. Cover vendor due diligence, beneficial ownership, conflicts of interest, anti-bribery, sanctions, false invoices, procurement integrity, recordkeeping, and escalation. Prefer current primary government sources. For every finding provide the exact source URL, issuing authority, publication/effective date, applicability, and the evidence fields a transaction-review system would need. Clearly separate binding law or regulation from nonbinding guidance, and list unresolved jurisdictional questions.",
+      "recommended_source_domains": [
+        "justice.gov",
+        "sec.gov",
+        "treasury.gov",
+        "ofac.treasury.gov",
+        "ftc.gov",
+        "acquisition.gov"
+      ]
+    },
+    {
+      "id": "company_financial_risk_profile",
+      "command": "finance",
+      "effort": "deep",
+      "query_template": "Prepare a citation-backed financial and counterparty-risk profile for {company_name} ({ticker_or_identifier}) as of {as_of_date}. Use filings and other primary sources where available. Report legal entity and reporting scope, recent revenue and cash-flow trends, liquidity and leverage, material weaknesses, auditor or going-concern language, restatements, unusual related-party transactions, major acquisitions or divestitures, regulatory or litigation disclosures, and any sharp market or credit changes that could affect vendor-payment risk. Give the date and period for every number. Treat findings as review signals, not allegations, and identify every data gap or source conflict."
+    },
+    {
+      "id": "company_vendor_policy_discovery",
+      "command": "search",
+      "count": 20,
+      "extract": "highlights",
+      "query_template": "\"{company_name}\" (supplier code OR vendor policy OR procurement policy OR purchase order terms OR quality manual OR product specification OR price list OR anti-bribery policy) filetype:pdf"
+    },
+    {
+      "id": "price_and_quality_benchmark",
+      "command": "research",
+      "effort": "deep",
+      "query_template": "For {product_or_service} purchased by {company_name} in {geography} during {time_period}, find defensible price and quality benchmarks from manufacturer specifications, public contracts, catalogs, regulator standards, or recognized industry standards. Return the unit of measure, currency, geography, effective date, observed price range, required technical attributes, tolerances, warranty or inspection criteria, and source URL. Explain comparability limits such as volume, incoterms, grade, configuration, tax, freight, and inflation. Do not infer fraud from a price variance alone."
+    },
+    {
+      "id": "selected_url_extraction",
+      "command": "contents",
+      "formats": [
+        "markdown",
+        "metadata"
+      ],
+      "workflow": "After human review selects authoritative URLs from search or research citations, extract no more than 10 URLs per request and retain each response's provenance envelope."
+    }
+  ]
+}

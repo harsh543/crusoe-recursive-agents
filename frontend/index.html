@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casefile Console</title>
+<style>
+:root{--bg:#0b0f17;--panel:#121826;--panel2:#171f31;--line:#243049;--text:#e6ebf5;--mute:#8d9ab5;--accent:#6ea8ff;
+--ok:#3ecf8e;--bad:#ff6b6b;--warn:#f5b84a;--scope:#a78bfa;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+:root[data-theme=light]{--bg:#f4f6fb;--panel:#fff;--panel2:#f0f3fa;--line:#d9dfec;--text:#141a29;--mute:#5d6b86;--accent:#2f6fe4}
+@media (prefers-color-scheme:light){:root:not([data-theme=dark]){--bg:#f4f6fb;--panel:#fff;--panel2:#f0f3fa;--line:#d9dfec;--text:#141a29;--mute:#5d6b86;--accent:#2f6fe4}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+h1{font-size:18px;margin:0}h1 small{color:var(--mute);font-weight:400;margin-left:8px}
+.badges{display:flex;flex-wrap:wrap;gap:6px}.b{border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--mute);background:var(--panel)}
+.b.rec{color:var(--warn);border-color:var(--warn)}.b b{color:var(--text);font-weight:600}
+main{display:grid;grid-template-columns:240px 1fr;gap:16px;padding:16px 20px;max-width:1400px;margin:auto}
+@media(max-width:860px){main{grid-template-columns:1fr}}
+nav{display:flex;flex-direction:column;gap:6px}nav button{all:unset;cursor:pointer;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+nav button:focus-visible,.claim:focus-visible,button.act:focus-visible{outline:2px solid var(--accent)}
+nav button[aria-pressed=true]{border-color:var(--accent);background:var(--panel2)}nav small{display:block;color:var(--mute)}
+section{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:16px}
+h2{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin:0 0 12px}
+.pipe{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.stage{flex:1;min-width:110px;border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--panel2);opacity:.35;transition:.3s}
+.stage.on{opacity:1;border-color:var(--accent)}.stage b{display:block;font-size:13px}.stage span{font-size:12px;color:var(--mute)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+button.act{all:unset;cursor:pointer;border:1px solid var(--accent);color:var(--accent);padding:6px 12px;border-radius:8px;font-size:13px}
+.claims{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.claim{all:unset;cursor:pointer;display:block;border:1px solid var(--line);border-left-width:4px;border-radius:10px;padding:12px;background:var(--panel2)}
+.claim[aria-pressed=true]{outline:2px solid var(--accent)}.claim p{margin:6px 0 4px}.claim small{color:var(--mute)}
+.v-supported{border-left-color:var(--ok)}.v-contradicted{border-left-color:var(--bad)}.v-insufficient_evidence{border-left-color:var(--warn)}.v-out_of_scope{border-left-color:var(--scope)}
+.chip{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:6px;color:#0b0f17}
+.c-supported{background:var(--ok)}.c-contradicted{background:var(--bad)}.c-insufficient_evidence{background:var(--warn)}.c-out_of_scope{background:var(--scope)}
+.drawer{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:860px){.drawer{grid-template-columns:1fr}}
+blockquote{margin:6px 0;padding:8px 12px;border-left:3px solid var(--accent);background:var(--panel2);border-radius:0 8px 8px 0;font-size:14px}
+.trail{list-style:none;margin:0;padding:0 0 0 14px;border-left:2px solid var(--line)}.trail li{position:relative;padding:8px 0 8px 14px}
+.trail li::before{content:"";position:absolute;left:-21px;top:14px;width:12px;height:12px;border-radius:50%;background:var(--line);border:2px solid var(--panel)}
+.trail .t-search::before,.trail .t-read::before{background:var(--accent)}.trail .t-propose::before{background:var(--scope)}.trail .t-gate_commit::before{background:var(--ok)}
+.trail .t-verify.fail::before,.trail .t-gate_refused::before{background:var(--bad)}.trail .t-verify.pass::before{background:var(--ok)}.trail .t-attribution::before,.trail .t-note::before{background:var(--warn)}
+.who{font-size:11px;color:var(--mute);border:1px solid var(--line);border-radius:6px;padding:0 6px;margin-left:6px;white-space:nowrap}
+.trail details{margin-top:4px}.trail summary{cursor:pointer;color:var(--mute);font-size:12px}.trail ul.hits{margin:6px 0;padding-left:18px;font-size:13px}
+.kv{font-size:13px;color:var(--mute);word-break:break-all}.kv b{color:var(--text)}.mono{font-family:var(--mono);font-size:12px}
+.chk{list-style:none;padding:0;margin:0}.chk li{display:flex;gap:10px;padding:6px 0;border-bottom:1px dashed var(--line);opacity:0;transform:translateY(4px);animation:in .35s forwards}
+@keyframes in{to{opacity:1;transform:none}}@media(prefers-reduced-motion:reduce){.chk li{animation:none;opacity:1;transform:none}.stage{transition:none}}
+.dot{width:18px;height:18px;border-radius:50%;flex:none;display:grid;place-items:center;font-size:11px;color:#0b0f17;font-weight:700}
+.d-ok{background:var(--ok)}.d-no{background:var(--warn)}.d-na{background:var(--line);color:var(--mute)}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}.stat{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px}
+.stat b{font-size:22px;display:block}.stat span{font-size:12px;color:var(--mute)}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}th{color:var(--mute);font-weight:600}
+.rej{color:var(--bad);font-weight:700}.pass{color:var(--ok)}.fail{color:var(--bad)}
+footer{max-width:1400px;margin:0 auto;padding:0 20px 30px;color:var(--mute);font-size:12px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Casefile <small>Investigation Console</small></h1>
+  <div class="badges" id="badges"></div>
+</header>
+<main>
+  <nav id="cases" aria-label="Case selector"></nav>
+  <div>
+    <section><div class="row"><h2 id="ctitle">Investigation</h2><button class="act" id="replay">▶ Replay run</button></div>
+      <div class="pipe" id="pipe"></div></section>
+    <section><h2>Claims</h2><div class="claims" id="claims"></div></section>
+    <section><h2>Evidence &amp; verifier</h2><div class="drawer"><div id="evidence"></div><div><div class="kv" style="margin-bottom:6px">Verifier checklist (code, not a model)</div><ul class="chk" id="checks"></ul></div></div></section>
+    <section><h2>Reasoning &amp; grounding trail — what each model proposed and what the code accepted</h2><div class="kv" id="trailhead"></div><ol class="trail" id="trail"></ol></section>
+    <section><h2>Persistence &amp; audit — Supabase</h2><div class="grid3" id="supa"></div><p class="kv" id="supanote"></p></section>
+    <section><h2>Version N → N+1 — governed improvement (synthetic mule-ring data)</h2><div id="nplus"></div></section>
+  </div>
+</main>
+<footer id="foot"></footer>
+<script src="data.js"></script>
+<script>
+const D = window.CASEFILE_DATA || {cases:[],n_plus_1:null};
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const LABEL = {supported:"supported",contradicted:"contradicted",insufficient_evidence:"insufficient",out_of_scope:"out of scope"};
+let cur = null, sel = null, timer = null;
+
+$("badges").innerHTML = `<span class="b rec" title="Replay of real persisted run artifacts. No model call is made in the browser.">● RECORDED RUN</span>
+ <span class="b">Inference <b>Crusoe Managed Inference</b></span><span class="b">Models <b>NVIDIA Nemotron</b></span>
+ <span class="b">Retrieval <b>You.com</b></span><span class="b">Memory <b>Supabase</b></span>`;
+
+$("cases").innerHTML = D.cases.map((c,i) => `<button aria-pressed="false" data-i="${i}">${esc(c.title)}<small>${c.claims.length} claims · ${esc(c.recorded_at)}</small></button>`).join("");
+$("cases").onclick = e => { const b = e.target.closest("button"); if (b) pick(+b.dataset.i); };
+$("replay").onclick = () => play(true);
+
+function stages(c) {
+  const k = {}; c.timeline.forEach(t => k[t.kind] = (k[t.kind]||0)+1);
+  const n = (...ks) => ks.reduce((a,x)=>a+(k[x]||0),0);
+  const refusals = c.claims.reduce((a,x)=>a+x.refusals.length,0), replans = c.claims.reduce((a,x)=>a+x.replans,0);
+  const docs = new Set(c.claims.flatMap(x=>x.findings.map(f=>f.doc.url))).size;
+  return [["Intake",`${c.claims.length} atomic claims`],["Search",`${(c.retrieval&&c.retrieval.queries||[]).length} You.com queries`],
+          ["Evidence",`${docs} cited documents`],["Verify",`${n("verify")||c.claims.length} code checks`],["Replan",`${replans} replans · ${refusals} refusals`],
+          ["Gate",`${c.claims.filter(x=>["supported","contradicted"].includes(x.verdict)).length} closed · ${c.claims.filter(x=>x.verdict!=="supported"&&x.verdict!=="contradicted").length} not closed`]];
+}
+function pick(i) {
+  cur = D.cases[i]; sel = null;
+  document.querySelectorAll("#cases button").forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.i === i)));
+  $("ctitle").textContent = cur.title + " — " + cur.claims.length + " claims";
+  $("claims").innerHTML = cur.claims.map((c,j) => `<button class="claim v-${c.verdict}" aria-pressed="false" data-j="${j}">
+    <span class="chip c-${c.verdict}">${LABEL[c.verdict]}</span> <small>${esc(c.claim_type)} · ${esc(c.id)}</small>
+    <p>${esc(c.text)}</p><small>attributed to ${esc(c.attributed_to)}</small></button>`).join("");
+  $("claims").onclick = e => { const b = e.target.closest(".claim"); if (b) select(+b.dataset.j); };
+  const s = cur.supabase;
+  $("supa").innerHTML = s ? [["claims",s.claims],["events",s.events],["dispositions",s.dispositions],["You.com requests linked",s.grounding_requests]]
+     .map(([k,v]) => `<div class="stat"><b>${v}</b><span>${k}</span></div>`).join("") : `<div class="stat"><b>—</b><span>not persisted</span></div>`;
+  $("supanote").innerHTML = s ? `Case row <span class="mono">${esc(cur.case_uuid)}…</span> in Supabase · ${cur.seconds}s · $${cur.cost_usd.toFixed(4)} model cost · intake ${esc(cur.models.intake.split("/").pop())}, investigator ${esc(cur.models.records_investigator.split("/").pop())}` : "";
+  select(0); play(false);
+}
+function play(animate) {
+  clearInterval(timer); const st = stages(cur);
+  $("pipe").innerHTML = st.map(([a,b],i) => `<div class="stage${animate?"":" on"}" data-i="${i}"><b>${i+1}. ${a}</b><span>${esc(b)}</span></div>`).join("");
+  if (!animate) return; let i = 0;
+  timer = setInterval(() => { const el = document.querySelector(`.stage[data-i="${i}"]`); if (el) el.classList.add("on"); if (++i >= st.length) clearInterval(timer); }, 450);
+}
+function select(j) {
+  const c = cur.claims[j]; sel = c; trail(c);
+  document.querySelectorAll(".claim").forEach((b,k) => b.setAttribute("aria-pressed", String(k === j)));
+  const f = c.findings;
+  $("evidence").innerHTML = `<div><span class="chip c-${c.verdict}">${LABEL[c.verdict]}</span></div><p>${esc(c.text)}</p>` +
+   (f.length ? f.map(x => `<div class="kv"><b>${esc(x.field)}</b> = ${esc(x.value)}</div><blockquote>“${esc(x.quote)}”</blockquote>
+     <div class="kv">Publisher <b>${esc(x.doc.publisher)}</b> · ${esc(x.doc.doc_type)} · retrieved <b>${esc(x.doc.retrieved_at.slice(0,10))}</b><br>
+     URL <a href="${esc(x.doc.url)}" rel="noopener noreferrer" target="_blank">${esc(x.doc.url)}</a><br>sha256 <span class="mono">${esc(x.doc.sha256)}</span></div><hr style="border:0;border-top:1px solid var(--line)">`).join("")
+    : `<div class="kv">${c.verdict === "out_of_scope" ? "Attributed, not verified: this is a conclusion that public records cannot establish, so nothing was researched." : "No cited document settles this statement."}</div>`) +
+   (c.explanation ? `<div class="kv">${esc(c.explanation)}</div>` : "") + (c.conflicts.length ? `<div class="kv">Sources disagree on: <b>${esc(c.conflicts.join(", "))}</b></div>` : "");
+  const closed = ["supported","contradicted"].includes(c.verdict), has = f.length > 0, researched = c.verdict !== "out_of_scope";
+  const items = [
+    ["Exact URL fetched via You.com Contents", researched ? (has ? "ok" : "no") : "na"],
+    ["Quote is verbatim in the cached document", has ? "ok" : (researched ? "no" : "na")],
+    ["Document hash recorded (sha256)", has ? "ok" : (researched ? "no" : "na")],
+    ["Numbers and dates recomputed by code", researched ? (has ? "ok" : "no") : "na"],
+    [`Gate: closure ${closed ? "allowed" : (researched ? "refused (not enough verified evidence)" : "not attempted (out of scope)")}`, closed ? "ok" : (researched ? "no" : "na")],
+    [`Replans ${c.replans} · refusals ${c.refusals.length}`, "na"]];
+  $("checks").innerHTML = items.map(([t,s],i) => `<li style="animation-delay:${i*220}ms"><span class="dot d-${s}">${s==="ok"?"✓":s==="no"?"!":"–"}</span><span>${esc(t)}</span></li>`).join("");
+}
+function docLine(d) { return d.url ? `<a href="${esc(d.url)}" rel="noopener noreferrer" target="_blank">${esc(d.title || d.url)}</a> <span class="kv">· ${esc(d.publisher)} · ${esc(d.doc_type)} · sha256 <span class="mono">${esc((d.sha256||"").slice(0,12))}…</span></span>` : `<span class="mono">${esc(d.id)}</span>`; }
+function trail(c) {
+  const T = c.trail || [], who = b => `<span class="who">${esc(b)}</span>`;
+  $("trailhead").innerHTML = T.length ? `${T.filter(x=>x.type==="search").length} searches · ${T.filter(x=>x.type==="read").length} documents read · ${T.filter(x=>x.type==="propose").length} proposals by the model · ${T.filter(x=>x.type==="verify"&&!x.passed).length} rejected by the code verifier` : "Nothing was researched for this claim (decided by code).";
+  $("trail").innerHTML = T.map(x => {
+    if (x.type === "search") return `<li class="t-search"><b>You.com Search</b>${who(x.by + " wrote the query")}<div class="kv">“${esc(x.query)}”</div>
+      <details><summary>${x.hits.length} candidate documents returned</summary><ul class="hits">${x.hits.map(h => `<li>${docLine(h)}</li>`).join("")}</ul></details></li>`;
+    if (x.type === "read") return `<li class="t-read"><b>Document inspected</b>${who("You.com Contents · exact URL")}<div>${docLine(x.doc)}</div>${x.note ? `<div class="kv">${esc(x.note)}</div>` : ""}</li>`;
+    if (x.type === "propose") return `<li class="t-propose"><b>Model proposed <span class="chip c-${x.verdict}">${LABEL[x.verdict] || x.verdict}</span></b>${who(x.by)}
+      ${x.findings.map(f => `<blockquote>“${esc(f.quote)}”<div class="kv">${esc(f.field)} = ${esc(f.value)} · ${docLine(f.doc)}</div></blockquote>`).join("")}${x.explanation ? `<div class="kv">${esc(x.explanation)}</div>` : ""}</li>`;
+    if (x.type === "verify") return `<li class="t-verify ${x.passed ? "pass" : "fail"}"><b>${x.passed ? "Verifier accepted" : "Verifier rejected"}</b>${who(x.by)}
+      ${x.failures.map(f => `<div class="kv"><b class="fail">${esc(f.check)}</b>: ${esc(f.reason)}</div>`).join("")}</li>`;
+    if (x.type === "gate_refused") return `<li class="t-gate_refused"><b>Gate refused to record “${esc(LABEL[x.verdict] || x.verdict)}”</b>${who(x.by)}</li>`;
+    if (x.type === "attribution") return `<li class="t-attribution"><b>Failure attributed to ${esc(x.agent)}</b>${who(x.by)}<div class="kv">${esc(x.category)}</div></li>`;
+    if (x.type === "gate_commit") return `<li class="t-gate_commit"><b>Gate committed <span class="chip c-${x.verdict}">${LABEL[x.verdict] || x.verdict}</span></b>${who(x.by + " · idempotent")}</li>`;
+    return `<li class="t-note"><b>Note</b>${who(x.by)}<div class="kv">${esc(x.text)}</div></li>`;
+  }).join("") || "<li class='t-note'><b>Out of scope</b><div class='kv'>Conclusion about wrongdoing or a private individual: attributed, never researched, never verified.</div></li>";
+}
+function nplus() {
+  const n = D.n_plus_1; if (!n) { $("nplus").innerHTML = "<p class='kv'>No N+1 run recorded.</p>"; return; }
+  const a = n.N_val, b = n.N_plus_1_val;
+  const rows = n.rows_N.map((r,i) => { const q = n.rows_N_plus_1[i]; return `<tr><td>${esc(r.case)}</td><td>${esc(r.expected)}</td><td class="${r.correct?"pass":"fail"}">${esc(r.outcome)}</td><td class="${q.correct?"pass":"fail"}">${esc(q.outcome)}</td></tr>`; }).join("");
+  $("nplus").innerHTML = `<div class="grid3">
+    <div class="stat"><b>${a.correct}/${a.n}</b><span>N correct · ${a.false_completions} false completions</span></div>
+    <div class="stat"><b>${b.correct}/${b.n}</b><span>N+1 correct · ${b.false_completions} false completions</span></div>
+    <div class="stat"><b class="${n.promoted?"pass":"rej"}">${n.promoted?"PROMOTED":"REJECTED"}</b><span>promotion gate · approver ${esc(n.promoted?n.approver:"none")}</span></div></div>
+    <p class="kv"><b>Candidate playbook</b> (${n.fallback_text?"fallback text":"drafted by the improver agent from audited failures of N"}): ${esc(n.playbook)}</p>
+    <p class="kv"><b>Gate checks:</b> ${Object.entries(n.checks).map(([k,v]) => `<span class="${v?"pass":"fail"}">${v?"✓":"✗"} ${esc(k)}</span>`).join(" · ")}</p>
+    <p class="kv">Result: N+1 removed every false completion (${a.false_completions} → ${b.false_completions}) by using the new read-only device-sharing tool, but it also answered <i>insufficient_evidence</i> on cases N got right, so correct dispositions did not strictly improve. The gate therefore kept N certified. The edit changes only investigator prompt text plus a read-only tool; completion checks, Gate rules and masking are untouched, and policy p1→p2 needs separate policy-owner sign-off.</p>
+    <table><thead><tr><th>validation case</th><th>expected</th><th>N</th><th>N+1</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+nplus();
+$("foot").innerHTML = "Replays real persisted artifacts from the 2026-10-17 runs (public-records cases via You.com Search → exact-URL Contents; names pseudonymized by default). Not a legal finding: Casefile checks attributed statements against cited records and never concludes wrongdoing. N+1 section uses synthetic mock data, not a held-out benchmark.";
+if (D.cases.length) pick(0);
+</script>
+</body>
+</html>

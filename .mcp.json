@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "casefile-gate": {
+      "type": "stdio",
+      "command": ".venv/bin/python",
+      "args": ["-m", "casefile.gate_mcp.server"],
+      "env": { "PYTHONPATH": "src", "CASEFILE_GATE_AUDIT": "runs/gate_audit.jsonl" }
+    },
+    "you-finance": {
+      "type": "http",
+      "url": "https://api.you.com/mcp/finance"
+    }
+  }
+}

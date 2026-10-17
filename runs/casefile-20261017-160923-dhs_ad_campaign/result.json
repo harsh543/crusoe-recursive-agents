@@ -1,0 +1,2195 @@
+{
+ "case": "dhs_ad_campaign",
+ "mode": "live",
+ "seconds": 255.3,
+ "cost_usd": 0.008663,
+ "models": {
+  "intake": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+  "records_investigator": "nvidia/Nemotron-3.5-Lightning-30B-A3B"
+ },
+ "run_id": "9717a941-6c3c-4b63-b23e-d8bd666d4903",
+ "case_uuid": "c2ee259a-05f7-4d13-afe2-75a635638c57",
+ "claims": [
+  {
+   "id": "c1",
+   "text": "Body A spent $220 million on television advertising featuring Person B.",
+   "attributed_to": "Person A",
+   "claim_type": "amount",
+   "verdict": "contradicted",
+   "explanation": "The documents report three different totals for the Body A advertising campaign: $143 million in no\u2011bid contracts to Contractor A, $200 million total ad spending, and $220 million cited as the improper award amount. These figures are not consistent across the documents.",
+   "conflicts": [
+    "award_amount"
+   ],
+   "replans": 0,
+   "refusals": [],
+   "trail": [
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "Body A television advertising $220 million Secretary",
+     "hits": [
+      {
+       "id": "ydc_5de2c7d69360d851450d",
+       "title": "Welch Calls on Body A to Investigate Secretary Noem\u2019s $220 Million Ad Campaign",
+       "publisher": "welch.senate.gov",
+       "url": "https://www.welch.senate.gov/welch-calls-on-dhs-to-investigate-secretary-noems-220-million-ad-campaign/",
+       "doc_type": "primary",
+       "sha256": "41e5c250836472c410b64626bc34e5cea197ca5a01502b2fd7457452005f8e6f",
+       "retrieved_at": "2026-10-17T21:40:37.279767+00:00"
+      },
+      {
+       "id": "ydc_f1a9885e7105a26e9296",
+       "title": "Gallego Leads Colleagues in Calling for Investigation into Secretary Noem\u2019s $220 Million Ad Campaign",
+       "publisher": "gallego.senate.gov",
+       "url": "https://www.gallego.senate.gov/news/press-releases/gallego-leads-colleagues-in-calling-for-investigation-into-secretary-noems-220-million-ad-campaign/",
+       "doc_type": "primary",
+       "sha256": "f32e41eeb4ec8f832370ad21ffffe5a6bb6b220c97f8a3be53577ac66ec1e0e4",
+       "retrieved_at": "2026-10-17T21:40:37.621769+00:00"
+      },
+      {
+       "id": "ydc_c7d2763e55e2995311ee",
+       "title": "Welch, Blumenthal\u00a0Demand\u00a0Answers from\u00a0Companies\u00a0on Potential\u00a0Corruption in\u00a0$220 Million Taxpayer-Funded Body A Ad Campaign\u00a0",
+       "publisher": "welch.senate.gov",
+       "url": "https://www.welch.senate.gov/welch-blumenthal-demand-answers-from-companies-on-potential-corruption-in-220-million-taxpayer-funded-dhs-ad-campaign/",
+       "doc_type": "primary",
+       "sha256": "3366daf80836f1d7792dafada824fa61fb8cfa2161c25adc820490e97bcec61b",
+       "retrieved_at": "2026-10-17T21:40:29.369627+00:00"
+      },
+      {
+       "id": "ydc_2da762c9a99ac551824c",
+       "title": "https://www.judiciary.senate.gov/imo/media/doc/2026-3-16%20Letter%20to%20DOJ%20re%20Noem%20Criminal%20Referral.pdf",
+       "publisher": "judiciary.senate.gov",
+       "url": "https://www.judiciary.senate.gov/imo/media/doc/2026-3-16%20Letter%20to%20DOJ%20re%20Noem%20Criminal%20Referral.pdf",
+       "doc_type": "primary",
+       "sha256": "d7af3f8dfe82aa6aee02b3ed31999cb7503affddb4f950035c6e98e4d49b5fa7",
+       "retrieved_at": "2026-10-17T21:40:28.819258+00:00"
+      },
+      {
+       "id": "ydc_267925ea44c98e70a7d2",
+       "title": "Exclusive: Trump tells Reuters he did not sign off on ad campaign ...",
+       "publisher": "reuters.com",
+       "url": "https://www.reuters.com/world/us/trump-says-he-didnt-sign-off-200-million-border-security-ad-campaign-2026-03-05/",
+       "doc_type": "secondary",
+       "sha256": "2d2009f5544410b391c56bf1369e32101d1dfe3323cd89fe5cb3694712441930",
+       "retrieved_at": "2026-10-17T23:09:32.492932+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_5de2c7d69360d851450d",
+      "title": "Welch Calls on Body A to Investigate Secretary Noem\u2019s $220 Million Ad Campaign",
+      "publisher": "welch.senate.gov",
+      "url": "https://www.welch.senate.gov/welch-calls-on-dhs-to-investigate-secretary-noems-220-million-ad-campaign/",
+      "doc_type": "primary",
+      "sha256": "41e5c250836472c410b64626bc34e5cea197ca5a01502b2fd7457452005f8e6f",
+      "retrieved_at": "2026-10-17T21:40:37.279767+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_f1a9885e7105a26e9296",
+      "title": "Gallego Leads Colleagues in Calling for Investigation into Secretary Noem\u2019s $220 Million Ad Campaign",
+      "publisher": "gallego.senate.gov",
+      "url": "https://www.gallego.senate.gov/news/press-releases/gallego-leads-colleagues-in-calling-for-investigation-into-secretary-noems-220-million-ad-campaign/",
+      "doc_type": "primary",
+      "sha256": "f32e41eeb4ec8f832370ad21ffffe5a6bb6b220c97f8a3be53577ac66ec1e0e4",
+      "retrieved_at": "2026-10-17T21:40:37.621769+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "contradicted",
+     "explanation": "The documents report three different totals for the Body A advertising campaign: $143 million in no\u2011bid contracts to Contractor A, $200 million total ad spending, and $220 million cited as the improper award amount. These figures are not consistent across the documents.",
+     "findings": [
+      {
+       "field": "award_amount",
+       "value": "$143 million",
+       "quote": "Body A awarded $143 million in no bid contracts to a company called Contractor A, which was incorporated 11 days before the initial contract solicitation.",
+       "doc": {
+        "id": "ydc_5de2c7d69360d851450d",
+        "title": "Welch Calls on Body A to Investigate Secretary Noem\u2019s $220 Million Ad Campaign",
+        "publisher": "welch.senate.gov",
+        "url": "https://www.welch.senate.gov/welch-calls-on-dhs-to-investigate-secretary-noems-220-million-ad-campaign/",
+        "doc_type": "primary",
+        "sha256": "41e5c250836472c410b64626bc34e5cea197ca5a01502b2fd7457452005f8e6f",
+        "retrieved_at": "2026-10-17T21:40:37.279767+00:00"
+       }
+      },
+      {
+       "field": "award_amount",
+       "value": "$200 million",
+       "quote": "Body A has spent more than $200 million this year on an advertising campaign purportedly designed to reduce illegal immigration. Of that, $143 million was awarded to Contractor A",
+       "doc": {
+        "id": "ydc_f1a9885e7105a26e9296",
+        "title": "Gallego Leads Colleagues in Calling for Investigation into Secretary Noem\u2019s $220 Million Ad Campaign",
+        "publisher": "gallego.senate.gov",
+        "url": "https://www.gallego.senate.gov/news/press-releases/gallego-leads-colleagues-in-calling-for-investigation-into-secretary-noems-220-million-ad-campaign/",
+        "doc_type": "primary",
+        "sha256": "f32e41eeb4ec8f832370ad21ffffe5a6bb6b220c97f8a3be53577ac66ec1e0e4",
+        "retrieved_at": "2026-10-17T21:40:37.621769+00:00"
+       }
+      },
+      {
+       "field": "award_amount",
+       "value": "$220 million",
+       "quote": "improperly awarded $220 million for a taxpayer-funded advertising campaign to companies with close ties to Secretary Kristi Noem",
+       "doc": {
+        "id": "ydc_f1a9885e7105a26e9296",
+        "title": "Gallego Leads Colleagues in Calling for Investigation into Secretary Noem\u2019s $220 Million Ad Campaign",
+        "publisher": "gallego.senate.gov",
+        "url": "https://www.gallego.senate.gov/news/press-releases/gallego-leads-colleagues-in-calling-for-investigation-into-secretary-noems-220-million-ad-campaign/",
+        "doc_type": "primary",
+        "sha256": "f32e41eeb4ec8f832370ad21ffffe5a6bb6b220c97f8a3be53577ac66ec1e0e4",
+        "retrieved_at": "2026-10-17T21:40:37.621769+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": true,
+     "failures": []
+    },
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "contradicted"
+    }
+   ],
+   "attributions": [],
+   "findings": [
+    {
+     "field": "award_amount",
+     "value": "$143 million",
+     "quote": "Body A awarded $143 million in no bid contracts to a company called Contractor A, which was incorporated 11 days before the initial contract solicitation.",
+     "doc": {
+      "id": "ydc_5de2c7d69360d851450d",
+      "url": "https://www.welch.senate.gov/welch-calls-on-dhs-to-investigate-secretary-noems-220-million-ad-campaign/",
+      "title": "Welch Calls on Body A to Investigate Secretary Noem\u2019s $220 Million Ad Campaign",
+      "publisher": "welch.senate.gov",
+      "doc_type": "primary",
+      "retrieved_at": "2026-10-17T21:40:37.279767+00:00",
+      "sha256": "41e5c250836472c410b64626bc34e5cea197ca5a01502b2fd7457452005f8e6f"
+     }
+    },
+    {
+     "field": "award_amount",
+     "value": "$200 million",
+     "quote": "Body A has spent more than $200 million this year on an advertising campaign purportedly designed to reduce illegal immigration. Of that, $143 million was awarded to Contractor A",
+     "doc": {
+      "id": "ydc_f1a9885e7105a26e9296",
+      "url": "https://www.gallego.senate.gov/news/press-releases/gallego-leads-colleagues-in-calling-for-investigation-into-secretary-noems-220-million-ad-campaign/",
+      "title": "Gallego Leads Colleagues in Calling for Investigation into Secretary Noem\u2019s $220 Million Ad Campaign",
+      "publisher": "gallego.senate.gov",
+      "doc_type": "primary",
+      "retrieved_at": "2026-10-17T21:40:37.621769+00:00",
+      "sha256": "f32e41eeb4ec8f832370ad21ffffe5a6bb6b220c97f8a3be53577ac66ec1e0e4"
+     }
+    },
+    {
+     "field": "award_amount",
+     "value": "$220 million",
+     "quote": "improperly awarded $220 million for a taxpayer-funded advertising campaign to companies with close ties to Secretary Kristi Noem",
+     "doc": {
+      "id": "ydc_f1a9885e7105a26e9296",
+      "url": "https://www.gallego.senate.gov/news/press-releases/gallego-leads-colleagues-in-calling-for-investigation-into-secretary-noems-220-million-ad-campaign/",
+      "title": "Gallego Leads Colleagues in Calling for Investigation into Secretary Noem\u2019s $220 Million Ad Campaign",
+      "publisher": "gallego.senate.gov",
+      "doc_type": "primary",
+      "retrieved_at": "2026-10-17T21:40:37.621769+00:00",
+      "sha256": "f32e41eeb4ec8f832370ad21ffffe5a6bb6b220c97f8a3be53577ac66ec1e0e4"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "text": "Contractor C were not put through a competitive bid.",
+   "attributed_to": "Person A",
+   "claim_type": "competition_status",
+   "verdict": "insufficient_evidence",
+   "explanation": "Could not be verified from the available records within the allowed attempts.",
+   "conflicts": [],
+   "replans": 2,
+   "refusals": [
+    "cannot record supported for c2: entity_match: no cited document mentions 'Contractor C'",
+    "cannot record contradicted for c2: entity_match: no cited document mentions 'Contractor C'; computation_correct: record says not_competed; claim says not_competed -> code expects supported, got contradicted"
+   ],
+   "trail": [
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "USAID subaward competition status service contract competed not competed award document",
+     "hits": [
+      {
+       "id": "ydc_62a1375ca5353afddae0",
+       "title": "Extent Competed",
+       "publisher": "fpds.gov",
+       "url": "https://www.fpds.gov/help/Extent_Competed.htm",
+       "doc_type": "primary",
+       "sha256": "c6f45f8fd0635ef3d45b2277d20f5e930f4c83b4f10c3ba58c577446dc6b87df",
+       "retrieved_at": "2026-10-17T21:41:19.140819+00:00"
+      },
+      {
+       "id": "ydc_843240929aea4527e793",
+       "title": "ADMINISTRATION OF ASSISTANCE AWARDS TO U.S. NON-GOVERNMENTAL ...",
+       "publisher": "govinfo.gov",
+       "url": "https://govinfo.gov/content/pkg/CFR-2011-title22-vol1/xml/CFR-2011-title22-vol1-part226.xml",
+       "doc_type": "primary",
+       "sha256": "99f74bc96bb23286af004d58d3323d4adea3bd91bf0c8753a7cddb80f040846b",
+       "retrieved_at": "2026-10-17T23:10:12.891120+00:00"
+      },
+      {
+       "id": "ydc_2a88914af0a751021bad",
+       "title": "U.S. Agency for International Development",
+       "publisher": "usaid.gov",
+       "url": "https://usaid.gov/india/partner-resources/infographic-usaid-approval-required-subaward",
+       "doc_type": "primary",
+       "sha256": "3f88b7da2e0ff061585bfb79fa8ee5b71437b96c631c857c7640f3356d5f4bfb",
+       "retrieved_at": "2026-10-17T23:10:13.785745+00:00"
+      },
+      {
+       "id": "ydc_e9b496909678097a20fc",
+       "title": "U.S. Agency for International Development",
+       "publisher": "usaid.gov",
+       "url": "https://usaid.gov/sites/default/files/2022-05/India_RFIP_USAID-approval-Contract.pdf",
+       "doc_type": "primary",
+       "sha256": "3f88b7da2e0ff061585bfb79fa8ee5b71437b96c631c857c7640f3356d5f4bfb",
+       "retrieved_at": "2026-10-17T23:10:13.949913+00:00"
+      },
+      {
+       "id": "ydc_2da762c9a99ac551824c",
+       "title": "https://www.judiciary.senate.gov/imo/media/doc/2026-3-16%20Letter%20to%20DOJ%20re%20Noem%20Criminal%20Referral.pdf",
+       "publisher": "judiciary.senate.gov",
+       "url": "https://www.judiciary.senate.gov/imo/media/doc/2026-3-16%20Letter%20to%20DOJ%20re%20Noem%20Criminal%20Referral.pdf",
+       "doc_type": "primary",
+       "sha256": "d7af3f8dfe82aa6aee02b3ed31999cb7503affddb4f950035c6e98e4d49b5fa7",
+       "retrieved_at": "2026-10-17T21:40:28.819258+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_62a1375ca5353afddae0",
+      "title": "Extent Competed",
+      "publisher": "fpds.gov",
+      "url": "https://www.fpds.gov/help/Extent_Competed.htm",
+      "doc_type": "primary",
+      "sha256": "c6f45f8fd0635ef3d45b2277d20f5e930f4c83b4f10c3ba58c577446dc6b87df",
+      "retrieved_at": "2026-10-17T21:41:19.140819+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "supported",
+     "explanation": "The document defines code C as 'Not Competed: Select this code when the contract is not competed.'",
+     "findings": [
+      {
+       "field": "extent_competed",
+       "value": "Not Competed",
+       "quote": "C Not Competed: Select this code when the contract is not competed.",
+       "doc": {
+        "id": "ydc_62a1375ca5353afddae0",
+        "title": "Extent Competed",
+        "publisher": "fpds.gov",
+        "url": "https://www.fpds.gov/help/Extent_Competed.htm",
+        "doc_type": "primary",
+        "sha256": "c6f45f8fd0635ef3d45b2277d20f5e930f4c83b4f10c3ba58c577446dc6b87df",
+        "retrieved_at": "2026-10-17T21:41:19.140819+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "entity_match",
+       "reason": "no cited document mentions 'Contractor C'"
+      }
+     ]
+    },
+    {
+     "type": "gate_refused",
+     "by": "Gate (code)",
+     "verdict": "supported",
+     "reason": "cannot record supported for c2: entity_match: no cited document mentions 'Contractor C'"
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "service contracts competitive bid NASA",
+     "hits": [
+      {
+       "id": "ydc_5e841dd03ea9670426d2",
+       "title": "NASA Awards Solutions for Federal Enterprise Procurement Contracts",
+       "publisher": "nasa.gov",
+       "url": "https://www.nasa.gov/news-release/nasa-awards-solutions-for-federal-enterprise-procurement-contracts/",
+       "doc_type": "primary",
+       "sha256": "78f834b1cf7835b786a1ae4a6567b210e9866d8a4af55895bfd47c3aa6329a51",
+       "retrieved_at": "2026-10-17T23:10:34.933829+00:00"
+      },
+      {
+       "id": "ydc_c82566f2d03ca70993b0",
+       "title": "NASA Office of Inspector General Office of Audits Report No. IG-19-014",
+       "publisher": "oig.nasa.gov",
+       "url": "https://oig.nasa.gov/docs/IG-19-014.pdf",
+       "doc_type": "primary",
+       "sha256": "a71d490689ffd0971412c25b46e0dd3515cb784d609533d3a11f0175e4f87ad7",
+       "retrieved_at": "2026-10-17T23:10:36.501258+00:00"
+      },
+      {
+       "id": "ydc_08e87333a6fbee408d08",
+       "title": "NASA Acquisition Forecast",
+       "publisher": "hq.nasa.gov",
+       "url": "https://www.hq.nasa.gov/office/procurement/forecast/",
+       "doc_type": "primary",
+       "sha256": "c4507ef38eac34b9162bb3b91bc4008604758870dd9c17e8042ba0798658a064",
+       "retrieved_at": "2026-10-17T23:10:35.149761+00:00"
+      },
+      {
+       "id": "ydc_bc13489be435e8ffde42",
+       "title": "Contract, Clauses & SOW",
+       "publisher": "sewp.nasa.gov",
+       "url": "https://www.sewp.nasa.gov/contract_info.shtml",
+       "doc_type": "primary",
+       "sha256": "7cbfe98cc8415d0d2587e89ef4d1cb6f2e840d6f28740d5102bf86cef4aeeea5",
+       "retrieved_at": "2026-10-17T23:10:35.496475+00:00"
+      },
+      {
+       "id": "ydc_5f61a4cb156486111f5f",
+       "title": "Procurement",
+       "publisher": "nasa.gov",
+       "url": "https://www.nasa.gov/procurement/",
+       "doc_type": "primary",
+       "sha256": "6ea3375a4e92dfe36acb4b2d7f045e4ef79e18b1e170416401a393b13fc7dc69",
+       "retrieved_at": "2026-10-17T23:10:36.148115+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_5e841dd03ea9670426d2",
+      "title": "NASA Awards Solutions for Federal Enterprise Procurement Contracts",
+      "publisher": "nasa.gov",
+      "url": "https://www.nasa.gov/news-release/nasa-awards-solutions-for-federal-enterprise-procurement-contracts/",
+      "doc_type": "primary",
+      "sha256": "78f834b1cf7835b786a1ae4a6567b210e9866d8a4af55895bfd47c3aa6329a51",
+      "retrieved_at": "2026-10-17T23:10:34.933829+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_c82566f2d03ca70993b0",
+      "title": "NASA Office of Inspector General Office of Audits Report No. IG-19-014",
+      "publisher": "oig.nasa.gov",
+      "url": "https://oig.nasa.gov/docs/IG-19-014.pdf",
+      "doc_type": "primary",
+      "sha256": "a71d490689ffd0971412c25b46e0dd3515cb784d609533d3a11f0175e4f87ad7",
+      "retrieved_at": "2026-10-17T23:10:36.501258+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "insufficient_evidence",
+     "explanation": "The documents do not contain evidence about whether the specific service contracts referenced by Senator Kennedy were competed or not. The extent_competed field describes the competitive nature of a contract code, but no contract in the cited materials is linked to the claim's entity 'The relevant s",
+     "findings": [
+      {
+       "field": "extent_competed",
+       "value": "C Not Competed",
+       "quote": "C Not Competed: Select this code when the contract is not competed.",
+       "doc": {
+        "id": "ydc_62a1375ca5353afddae0",
+        "title": "Extent Competed",
+        "publisher": "fpds.gov",
+        "url": "https://www.fpds.gov/help/Extent_Competed.htm",
+        "doc_type": "primary",
+        "sha256": "c6f45f8fd0635ef3d45b2277d20f5e930f4c83b4f10c3ba58c577446dc6b87df",
+        "retrieved_at": "2026-10-17T21:41:19.140819+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "entity_match",
+       "reason": "no cited document mentions 'Contractor C'"
+      },
+      {
+       "check": "computation_correct",
+       "reason": "record says not_competed; claim says not_competed -> code expects supported, got insufficient_evidence"
+      }
+     ]
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "contradicted",
+     "explanation": "The document explicitly defines the FPDS code 'C' as 'Not Competed: Select this code when the contract is not competed.' Senator Kennedy's claim that the contracts were 'not_competed' matches this definition. However, the claim is attributed to a statement about competition_status being 'not_compete",
+     "findings": [
+      {
+       "field": "extent_competed",
+       "value": "not competed",
+       "quote": "C Not Competed: Select this code when the contract is not competed.",
+       "doc": {
+        "id": "ydc_62a1375ca5353afddae0",
+        "title": "Extent Competed",
+        "publisher": "fpds.gov",
+        "url": "https://www.fpds.gov/help/Extent_Competed.htm",
+        "doc_type": "primary",
+        "sha256": "c6f45f8fd0635ef3d45b2277d20f5e930f4c83b4f10c3ba58c577446dc6b87df",
+        "retrieved_at": "2026-10-17T21:41:19.140819+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "entity_match",
+       "reason": "no cited document mentions 'Contractor C'"
+      },
+      {
+       "check": "computation_correct",
+       "reason": "record says not_competed; claim says not_competed -> code expects supported, got contradicted"
+      }
+     ]
+    },
+    {
+     "type": "gate_refused",
+     "by": "Gate (code)",
+     "verdict": "contradicted",
+     "reason": "cannot record contradicted for c2: entity_match: no cited document mentions 'Contractor C'; computation_correct: record says not_competed; claim says not_competed -> code expects supported, got contradicted"
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "insufficient_evidence"
+    }
+   ],
+   "attributions": [
+    {
+     "agent": "investigator",
+     "step": "s016",
+     "category": "task_verification"
+    },
+    {
+     "agent": "investigator",
+     "step": "s016",
+     "category": "task_verification"
+    },
+    {
+     "agent": "investigator",
+     "step": "s035",
+     "category": "task_verification"
+    }
+   ],
+   "findings": []
+  },
+  {
+   "id": "c3",
+   "text": "Contractor A was formed 11 days before it was selected.",
+   "attributed_to": "Person A",
+   "claim_type": "date_gap",
+   "verdict": "insufficient_evidence",
+   "explanation": "Could not be verified from the available records within the allowed attempts.",
+   "conflicts": [],
+   "replans": 2,
+   "refusals": [
+    "cannot record supported for c3: computation_correct: inputs not computable (ValueError: unsupported date value 'incorporated just seven days before it signed a non-competitive contract') -> code expects insufficient_evidence, got supported",
+    "cannot record supported for c3: quotes_verbatim: finding award_date: value '2025-02-13' is not in its quote; computation_correct: inputs not computable (ValueError: unsupported date value 'incorporated just seven days before it signed a non-competitive contract') -> code expects insufficient_evidence, got supported"
+   ],
+   "trail": [
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "Contractor A formation award contract",
+     "hits": [
+      {
+       "id": "ydc_cd1d5e1a51344bd5bbff",
+       "title": "Letter-to-Safe-America-Media.pdf - Senator Welch",
+       "publisher": "welch.senate.gov",
+       "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-Safe-America-Media.pdf",
+       "doc_type": "primary",
+       "sha256": "b96e9c3d2e0b353fe3dff8fe5a3cba4bfb4affd7d9ec3828d4dcb59c796d18bc",
+       "retrieved_at": "2026-10-17T21:41:23.193957+00:00"
+      },
+      {
+       "id": "ydc_c7d2763e55e2995311ee",
+       "title": "Welch, Blumenthal\u00a0Demand\u00a0Answers from\u00a0Companies\u00a0on Potential\u00a0Corruption in\u00a0$220 Million Taxpayer-Funded Body A Ad Campaign\u00a0",
+       "publisher": "welch.senate.gov",
+       "url": "https://www.welch.senate.gov/welch-blumenthal-demand-answers-from-companies-on-potential-corruption-in-220-million-taxpayer-funded-dhs-ad-campaign/",
+       "doc_type": "primary",
+       "sha256": "3366daf80836f1d7792dafada824fa61fb8cfa2161c25adc820490e97bcec61b",
+       "retrieved_at": "2026-10-17T21:40:29.369627+00:00"
+      },
+      {
+       "id": "ydc_5de2c7d69360d851450d",
+       "title": "Welch Calls on Body A to Investigate Secretary Noem\u2019s $220 Million Ad Campaign",
+       "publisher": "welch.senate.gov",
+       "url": "https://www.welch.senate.gov/welch-calls-on-dhs-to-investigate-secretary-noems-220-million-ad-campaign/",
+       "doc_type": "primary",
+       "sha256": "41e5c250836472c410b64626bc34e5cea197ca5a01502b2fd7457452005f8e6f",
+       "retrieved_at": "2026-10-17T21:40:37.279767+00:00"
+      },
+      {
+       "id": "ydc_f1a9885e7105a26e9296",
+       "title": "Gallego Leads Colleagues in Calling for Investigation into Secretary Noem\u2019s $220 Million Ad Campaign",
+       "publisher": "gallego.senate.gov",
+       "url": "https://www.gallego.senate.gov/news/press-releases/gallego-leads-colleagues-in-calling-for-investigation-into-secretary-noems-220-million-ad-campaign/",
+       "doc_type": "primary",
+       "sha256": "f32e41eeb4ec8f832370ad21ffffe5a6bb6b220c97f8a3be53577ac66ec1e0e4",
+       "retrieved_at": "2026-10-17T21:40:37.621769+00:00"
+      },
+      {
+       "id": "ydc_2da762c9a99ac551824c",
+       "title": "https://www.judiciary.senate.gov/imo/media/doc/2026-3-16%20Letter%20to%20DOJ%20re%20Noem%20Criminal%20Referral.pdf",
+       "publisher": "judiciary.senate.gov",
+       "url": "https://www.judiciary.senate.gov/imo/media/doc/2026-3-16%20Letter%20to%20DOJ%20re%20Noem%20Criminal%20Referral.pdf",
+       "doc_type": "primary",
+       "sha256": "d7af3f8dfe82aa6aee02b3ed31999cb7503affddb4f950035c6e98e4d49b5fa7",
+       "retrieved_at": "2026-10-17T21:40:28.819258+00:00"
+      }
+     ]
+    },
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "Contractor A corporation filing date incorporation",
+     "hits": [
+      {
+       "id": "ydc_ce3b104fca940db15435",
+       "title": "Incorporation Status - Company & Industry Research - Commerce ...",
+       "publisher": "library.doc.gov",
+       "url": "https://library.doc.gov/company/incorporation",
+       "doc_type": "primary",
+       "sha256": "90488698834352fc20c5b36e4c49d6a37fe940a1ecbf100f63b53dce20fb0265",
+       "retrieved_at": "2026-10-17T23:11:24.649589+00:00"
+      },
+      {
+       "id": "ydc_5197397d05ae673c8468",
+       "title": "The new EDGAR advanced search gives you access",
+       "publisher": "sec.gov",
+       "url": "https://www.sec.gov/edgar/search/",
+       "doc_type": "primary",
+       "sha256": "3d87218a7790fc51465b1e8713465b5f3c97493d19b06bb8917704bfa1b37172",
+       "retrieved_at": "2026-10-17T23:11:24.836435+00:00"
+      },
+      {
+       "id": "ydc_8137487ee6c2570516b8",
+       "title": "Division of Corporations",
+       "publisher": "icis.corp.delaware.gov",
+       "url": "https://icis.corp.delaware.gov/ecorp/entitysearch/namesearch.aspx",
+       "doc_type": "primary",
+       "sha256": "930e152c196ddcd5937b4452f5acee75256b7624e274924386b38da3a67154ce",
+       "retrieved_at": "2026-10-17T23:11:24.980359+00:00"
+      },
+      {
+       "id": "ydc_19bbe050ca6005ceb09e",
+       "title": "FAQs: Corporations & Business Entities",
+       "publisher": "dos.ny.gov",
+       "url": "https://dos.ny.gov/faqs-corporations-business-entities",
+       "doc_type": "primary",
+       "sha256": "75e487d6e6cf73747ce10dceaa14eaa1bee1665ea4cea9fbd272286d9abafa77",
+       "retrieved_at": "2026-10-17T23:11:25.242189+00:00"
+      },
+      {
+       "id": "ydc_207f2f4654bf3d9f1ff4",
+       "title": "Forms, Samples and Fees :: California Secretary of State",
+       "publisher": "sos.ca.gov",
+       "url": "https://www.sos.ca.gov/business-programs/business-entities/forms",
+       "doc_type": "primary",
+       "sha256": "213c00031ba218a5685f137926b7f519ef5a28375b92cc60bbed9b50c042815f",
+       "retrieved_at": "2026-10-17T23:11:26.016749+00:00"
+      }
+     ]
+    },
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "\"Contractor A\" LLC formed incorporated date",
+     "hits": [
+      {
+       "id": "ydc_cd1d5e1a51344bd5bbff",
+       "title": "Letter-to-Safe-America-Media.pdf - Senator Welch",
+       "publisher": "welch.senate.gov",
+       "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-Safe-America-Media.pdf",
+       "doc_type": "primary",
+       "sha256": "b96e9c3d2e0b353fe3dff8fe5a3cba4bfb4affd7d9ec3828d4dcb59c796d18bc",
+       "retrieved_at": "2026-10-17T21:41:23.193957+00:00"
+      },
+      {
+       "id": "ydc_2da762c9a99ac551824c",
+       "title": "https://www.judiciary.senate.gov/imo/media/doc/2026-3-16%20Letter%20to%20DOJ%20re%20Noem%20Criminal%20Referral.pdf",
+       "publisher": "judiciary.senate.gov",
+       "url": "https://www.judiciary.senate.gov/imo/media/doc/2026-3-16%20Letter%20to%20DOJ%20re%20Noem%20Criminal%20Referral.pdf",
+       "doc_type": "primary",
+       "sha256": "d7af3f8dfe82aa6aee02b3ed31999cb7503affddb4f950035c6e98e4d49b5fa7",
+       "retrieved_at": "2026-10-17T21:40:28.819258+00:00"
+      },
+      {
+       "id": "ydc_5de2c7d69360d851450d",
+       "title": "Welch Calls on Body A to Investigate Secretary Noem\u2019s $220 Million Ad Campaign",
+       "publisher": "welch.senate.gov",
+       "url": "https://www.welch.senate.gov/welch-calls-on-dhs-to-investigate-secretary-noems-220-million-ad-campaign/",
+       "doc_type": "primary",
+       "sha256": "41e5c250836472c410b64626bc34e5cea197ca5a01502b2fd7457452005f8e6f",
+       "retrieved_at": "2026-10-17T21:40:37.279767+00:00"
+      },
+      {
+       "id": "ydc_c7d2763e55e2995311ee",
+       "title": "Welch, Blumenthal\u00a0Demand\u00a0Answers from\u00a0Companies\u00a0on Potential\u00a0Corruption in\u00a0$220 Million Taxpayer-Funded Body A Ad Campaign\u00a0",
+       "publisher": "welch.senate.gov",
+       "url": "https://www.welch.senate.gov/welch-blumenthal-demand-answers-from-companies-on-potential-corruption-in-220-million-taxpayer-funded-dhs-ad-campaign/",
+       "doc_type": "primary",
+       "sha256": "3366daf80836f1d7792dafada824fa61fb8cfa2161c25adc820490e97bcec61b",
+       "retrieved_at": "2026-10-17T21:40:29.369627+00:00"
+      },
+      {
+       "id": "ydc_19bbe050ca6005ceb09e",
+       "title": "FAQs: Corporations & Business Entities",
+       "publisher": "dos.ny.gov",
+       "url": "https://dos.ny.gov/faqs-corporations-business-entities",
+       "doc_type": "primary",
+       "sha256": "75e487d6e6cf73747ce10dceaa14eaa1bee1665ea4cea9fbd272286d9abafa77",
+       "retrieved_at": "2026-10-17T23:11:25.242189+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_cd1d5e1a51344bd5bbff",
+      "title": "Letter-to-Safe-America-Media.pdf - Senator Welch",
+      "publisher": "welch.senate.gov",
+      "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-Safe-America-Media.pdf",
+      "doc_type": "primary",
+      "sha256": "b96e9c3d2e0b353fe3dff8fe5a3cba4bfb4affd7d9ec3828d4dcb59c796d18bc",
+      "retrieved_at": "2026-10-17T21:41:23.193957+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_c7d2763e55e2995311ee",
+      "title": "Welch, Blumenthal\u00a0Demand\u00a0Answers from\u00a0Companies\u00a0on Potential\u00a0Corruption in\u00a0$220 Million Taxpayer-Funded Body A Ad Campaign\u00a0",
+      "publisher": "welch.senate.gov",
+      "url": "https://www.welch.senate.gov/welch-blumenthal-demand-answers-from-companies-on-potential-corruption-in-220-million-taxpayer-funded-dhs-ad-campaign/",
+      "doc_type": "primary",
+      "sha256": "3366daf80836f1d7792dafada824fa61fb8cfa2161c25adc820490e97bcec61b",
+      "retrieved_at": "2026-10-17T21:40:29.369627+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "supported",
+     "explanation": "Both the formation date (incorporated seven days before the contract) and the award date (February 13, 2025) are directly stated in the Welch letter document. The claim that they were formed 11 days before selection is slightly different from the documents (which say seven days), but the finding of ",
+     "findings": [
+      {
+       "field": "formation_date",
+       "value": "incorporated just seven days before it signed a non-competitive contract",
+       "quote": "According to public records, Contractor A is registered to your home address and was incorporated just seven days before it signed a non-competitive contract worth $143 million for the production of several advertisements starring Body A Secretary Kristi Noem.",
+       "doc": {
+        "id": "ydc_cd1d5e1a51344bd5bbff",
+        "title": "Letter-to-Safe-America-Media.pdf - Senator Welch",
+        "publisher": "welch.senate.gov",
+        "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-Safe-America-Media.pdf",
+        "doc_type": "primary",
+        "sha256": "b96e9c3d2e0b353fe3dff8fe5a3cba4bfb4affd7d9ec3828d4dcb59c796d18bc",
+        "retrieved_at": "2026-10-17T21:41:23.193957+00:00"
+       }
+      },
+      {
+       "field": "award_date",
+       "value": "February 13, 2025",
+       "quote": "On February 13, 2025, Contractor A (Contractor A) signed a no-bid contract worth $143 million to produce an advertising campaign for the U.S. Body B of Homeland Security (Body A).",
+       "doc": {
+        "id": "ydc_cd1d5e1a51344bd5bbff",
+        "title": "Letter-to-Safe-America-Media.pdf - Senator Welch",
+        "publisher": "welch.senate.gov",
+        "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-Safe-America-Media.pdf",
+        "doc_type": "primary",
+        "sha256": "b96e9c3d2e0b353fe3dff8fe5a3cba4bfb4affd7d9ec3828d4dcb59c796d18bc",
+        "retrieved_at": "2026-10-17T21:41:23.193957+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "computation_correct",
+       "reason": "inputs not computable (ValueError: unsupported date value 'incorporated just seven days before it signed a non-competitive contract') -> code expects insufficient_evidence, got supported"
+      }
+     ]
+    },
+    {
+     "type": "gate_refused",
+     "by": "Gate (code)",
+     "verdict": "supported",
+     "reason": "cannot record supported for c3: computation_correct: inputs not computable (ValueError: unsupported date value 'incorporated just seven days before it signed a non-competitive contract') -> code expects insufficient_evidence, got supported"
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "supported",
+     "explanation": "The document states Contractor A was incorporated just seven days before signing the contract on February 13, 2025. The formation date is therefore seven days prior to the award date. The claim of 11 days is not supported by the text.",
+     "findings": [
+      {
+       "field": "formation_date",
+       "value": "incorporated just seven days before it signed a non-competitive contract",
+       "quote": "According to public records, Contractor A is registered to your home address and was incorporated just seven days before it signed a non-competitive contract worth $143 million for the production of several advertisements starring Body A Secretary Kristi Noem.",
+       "doc": {
+        "id": "ydc_cd1d5e1a51344bd5bbff",
+        "title": "Letter-to-Safe-America-Media.pdf - Senator Welch",
+        "publisher": "welch.senate.gov",
+        "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-Safe-America-Media.pdf",
+        "doc_type": "primary",
+        "sha256": "b96e9c3d2e0b353fe3dff8fe5a3cba4bfb4affd7d9ec3828d4dcb59c796d18bc",
+        "retrieved_at": "2026-10-17T21:41:23.193957+00:00"
+       }
+      },
+      {
+       "field": "award_date",
+       "value": "2025-02-13",
+       "quote": "On February 13, 2025, Contractor A (Contractor A) signed a no-bid contract worth $143 million to produce an advertising campaign for the U.S. Body B of Homeland Security (Body A).",
+       "doc": {
+        "id": "ydc_cd1d5e1a51344bd5bbff",
+        "title": "Letter-to-Safe-America-Media.pdf - Senator Welch",
+        "publisher": "welch.senate.gov",
+        "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-Safe-America-Media.pdf",
+        "doc_type": "primary",
+        "sha256": "b96e9c3d2e0b353fe3dff8fe5a3cba4bfb4affd7d9ec3828d4dcb59c796d18bc",
+        "retrieved_at": "2026-10-17T21:41:23.193957+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "quotes_verbatim",
+       "reason": "finding award_date: value '2025-02-13' is not in its quote"
+      },
+      {
+       "check": "computation_correct",
+       "reason": "inputs not computable (ValueError: unsupported date value 'incorporated just seven days before it signed a non-competitive contract') -> code expects insufficient_evidence, got supported"
+      }
+     ]
+    },
+    {
+     "type": "gate_refused",
+     "by": "Gate (code)",
+     "verdict": "supported",
+     "reason": "cannot record supported for c3: quotes_verbatim: finding award_date: value '2025-02-13' is not in its quote; computation_correct: inputs not computable (ValueError: unsupported date value 'incorporated just seven days before it signed a non-competitive contract') -> code expects insufficient_evidenc"
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "insufficient_evidence",
+     "explanation": "The document states that Contractor A was incorporated seven days before signing the non-competitive contract. The contract was signed on February 13, 2025. However, the exact formation_date is not given as a specific date; it is only described relative to the award_date. The claim that the en",
+     "findings": [
+      {
+       "field": "formation_date",
+       "value": "incorporated just seven days before it signed a non-competitive contract worth $143 million",
+       "quote": "Contractor A is registered to your home address and was incorporated just seven days before it signed a non-competitive contract worth $143 million for the production of several advertisements starring former Body A Secretary Kristi Noem.",
+       "doc": {
+        "id": "ydc_cd1d5e1a51344bd5bbff",
+        "title": "Letter-to-Safe-America-Media.pdf - Senator Welch",
+        "publisher": "welch.senate.gov",
+        "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-Safe-America-Media.pdf",
+        "doc_type": "primary",
+        "sha256": "b96e9c3d2e0b353fe3dff8fe5a3cba4bfb4affd7d9ec3828d4dcb59c796d18bc",
+        "retrieved_at": "2026-10-17T21:41:23.193957+00:00"
+       }
+      },
+      {
+       "field": "award_date",
+       "value": "February 13, 2025",
+       "quote": "On February 13, 2025, Contractor A (Contractor A) signed a no-bid contract worth $143 million to produce an advertising campaign for the U.S. Body B of Homeland Security (Body A).",
+       "doc": {
+        "id": "ydc_cd1d5e1a51344bd5bbff",
+        "title": "Letter-to-Safe-America-Media.pdf - Senator Welch",
+        "publisher": "welch.senate.gov",
+        "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-Safe-America-Media.pdf",
+        "doc_type": "primary",
+        "sha256": "b96e9c3d2e0b353fe3dff8fe5a3cba4bfb4affd7d9ec3828d4dcb59c796d18bc",
+        "retrieved_at": "2026-10-17T21:41:23.193957+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "quotes_verbatim",
+       "reason": "finding formation_date: quote not found verbatim in ydc_cd1d5e1a51344bd5bbff; closest line in the document: 'According to public records, Contractor A is registered to your home address and was incorporated just seven days before it signed a non-competitive contract worth $143 million for the production of several advertisements starring Body A Secretary Kristi Noem.\u00b2 As far as we can tell, Contractor A has no office, no website, and no social media presence.'"
+      }
+     ]
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "insufficient_evidence"
+    }
+   ],
+   "attributions": [
+    {
+     "agent": "investigator",
+     "step": "s035",
+     "category": "task_verification"
+    },
+    {
+     "agent": "investigator",
+     "step": "s035",
+     "category": "task_verification"
+    },
+    {
+     "agent": "investigator",
+     "step": "s050",
+     "category": "task_verification"
+    }
+   ],
+   "findings": []
+  },
+  {
+   "id": "c4",
+   "text": "Contractor B received most of the money.",
+   "attributed_to": "Person A",
+   "claim_type": "flow_through",
+   "verdict": "contradicted",
+   "explanation": "The Strategy Group confirmed receiving a subcontract from Contractor A under the $143 million prime award. The subaward total paid to Strategy Group was $226,137.17. The claim that the company received most of the money (>= 0.5 share) is contradicted because $226,137.17 is a small fraction of $143 million (approximately 0.16%).",
+   "conflicts": [],
+   "replans": 1,
+   "refusals": [
+    "cannot record supported for c4: quotes_verbatim: finding subaward_total: quote not found verbatim in ydc_c7d2763e55e2995311ee; computation_correct: recomputed share 0.00; claim says >= 0.5 -> code expects contradicted, got supported"
+   ],
+   "trail": [
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "Contractor B subaward prime award flow through",
+     "hits": [
+      {
+       "id": "ydc_ab3542d6f94b7f7871d3",
+       "title": "Prime and subcontracting",
+       "publisher": "sba.gov",
+       "url": "https://www.sba.gov/counseling/prime-and-subcontracting/",
+       "doc_type": "primary",
+       "sha256": "0d9c5b7b2db4b1640e549e2c2d0dc85b8387dac2e5d512be8ab7c07d198cc6df",
+       "retrieved_at": "2026-10-17T23:06:38.039365+00:00"
+      },
+      {
+       "id": "ydc_b95dea71b822db72de9c",
+       "title": "USAspending.gov",
+       "publisher": "usaspending.gov",
+       "url": "https://www.usaspending.gov/award/CONT_AWD_91990024F0345_9100_91990023D0029_9100",
+       "doc_type": "primary",
+       "sha256": "5b4d26d7701c15043457963a5816d2761d3f76dad59cbf8f5a7bc2704e329a3f",
+       "retrieved_at": "2026-10-17T21:40:51.718097+00:00"
+      },
+      {
+       "id": "ydc_13835a173fb055a71e97",
+       "title": "Subawards",
+       "publisher": "grants.nih.gov",
+       "url": "https://grants.nih.gov/policy-and-compliance/policy-topics/subawards",
+       "doc_type": "primary",
+       "sha256": "8fc9f0b4508833e217241629986ba9dce11491c830afcaca6662acb3163b717f",
+       "retrieved_at": "2026-10-17T23:05:10.621778+00:00"
+      },
+      {
+       "id": "ydc_843240929aea4527e793",
+       "title": "ADMINISTRATION OF ASSISTANCE AWARDS TO U.S. NON-GOVERNMENTAL ...",
+       "publisher": "govinfo.gov",
+       "url": "https://govinfo.gov/content/pkg/CFR-2011-title22-vol1/xml/CFR-2011-title22-vol1-part226.xml",
+       "doc_type": "primary",
+       "sha256": "99f74bc96bb23286af004d58d3323d4adea3bd91bf0c8753a7cddb80f040846b",
+       "retrieved_at": "2026-10-17T23:10:12.891120+00:00"
+      },
+      {
+       "id": "ydc_c7d2763e55e2995311ee",
+       "title": "Welch, Blumenthal\u00a0Demand\u00a0Answers from\u00a0Companies\u00a0on Potential\u00a0Corruption in\u00a0$220 Million Taxpayer-Funded Body A Ad Campaign\u00a0",
+       "publisher": "welch.senate.gov",
+       "url": "https://www.welch.senate.gov/welch-blumenthal-demand-answers-from-companies-on-potential-corruption-in-220-million-taxpayer-funded-dhs-ad-campaign/",
+       "doc_type": "primary",
+       "sha256": "3366daf80836f1d7792dafada824fa61fb8cfa2161c25adc820490e97bcec61b",
+       "retrieved_at": "2026-10-17T21:40:29.369627+00:00"
+      }
+     ]
+    },
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "Strategy Group USAspending subaward",
+     "hits": [
+      {
+       "id": "ydc_dac8056ad371c8942d6f",
+       "title": "USAspending.gov",
+       "publisher": "usaspending.gov",
+       "url": "https://www.usaspending.gov/award/CONT_AWD_1605C226C0012_1605_-NONE-_-NONE-",
+       "doc_type": "primary",
+       "sha256": "5b4d26d7701c15043457963a5816d2761d3f76dad59cbf8f5a7bc2704e329a3f",
+       "retrieved_at": "2026-10-17T23:12:26.405424+00:00"
+      },
+      {
+       "id": "ydc_38765dfd1456df1af4e4",
+       "title": "USAspending.gov Federal Award, Subaward, and Account Data",
+       "publisher": "catalog.data.gov",
+       "url": "https://catalog.data.gov/dataset/usaspending-gov-federal-award-subaward-and-account-data/resource/fca3f814-7665-4043-b654-b1924ea1afa5",
+       "doc_type": "primary",
+       "sha256": "152ef0d4014d745c144abd584bd52437c1f1143cf0f1a8ecd2c781d6da97c861",
+       "retrieved_at": "2026-10-17T23:12:26.672278+00:00"
+      },
+      {
+       "id": "ydc_845e258d74e51350fc12",
+       "title": "Tracking Federal Awards: USAspending.gov and",
+       "publisher": "congress.gov",
+       "url": "https://www.congress.gov/crs-product/R44027",
+       "doc_type": "primary",
+       "sha256": "b4ea1150cfe4c61ea76605ea95540acc7c6908e0770abd6b1c29238739f2ca1c",
+       "retrieved_at": "2026-10-17T23:12:26.870906+00:00"
+      },
+      {
+       "id": "ydc_803e9be603558cb055a4",
+       "title": "USAspending.gov",
+       "publisher": "usaspending.gov",
+       "url": "https://www.usaspending.gov/",
+       "doc_type": "primary",
+       "sha256": "5b4d26d7701c15043457963a5816d2761d3f76dad59cbf8f5a7bc2704e329a3f",
+       "retrieved_at": "2026-10-17T21:40:55.599851+00:00"
+      },
+      {
+       "id": "ydc_843240929aea4527e793",
+       "title": "ADMINISTRATION OF ASSISTANCE AWARDS TO U.S. NON-GOVERNMENTAL ...",
+       "publisher": "govinfo.gov",
+       "url": "https://govinfo.gov/content/pkg/CFR-2011-title22-vol1/xml/CFR-2011-title22-vol1-part226.xml",
+       "doc_type": "primary",
+       "sha256": "99f74bc96bb23286af004d58d3323d4adea3bd91bf0c8753a7cddb80f040846b",
+       "retrieved_at": "2026-10-17T23:10:12.891120+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_b95dea71b822db72de9c",
+      "title": "USAspending.gov",
+      "publisher": "usaspending.gov",
+      "url": "https://www.usaspending.gov/award/CONT_AWD_91990024F0345_9100_91990023D0029_9100",
+      "doc_type": "primary",
+      "sha256": "5b4d26d7701c15043457963a5816d2761d3f76dad59cbf8f5a7bc2704e329a3f",
+      "retrieved_at": "2026-10-17T21:40:51.718097+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "Strategy Group Company subaward amount",
+     "hits": [
+      {
+       "id": "ydc_b95dea71b822db72de9c",
+       "title": "USAspending.gov",
+       "publisher": "usaspending.gov",
+       "url": "https://www.usaspending.gov/award/CONT_AWD_91990024F0345_9100_91990023D0029_9100",
+       "doc_type": "primary",
+       "sha256": "5b4d26d7701c15043457963a5816d2761d3f76dad59cbf8f5a7bc2704e329a3f",
+       "retrieved_at": "2026-10-17T21:40:51.718097+00:00"
+      },
+      {
+       "id": "ydc_ab3542d6f94b7f7871d3",
+       "title": "Prime and subcontracting",
+       "publisher": "sba.gov",
+       "url": "https://www.sba.gov/counseling/prime-and-subcontracting/",
+       "doc_type": "primary",
+       "sha256": "0d9c5b7b2db4b1640e549e2c2d0dc85b8387dac2e5d512be8ab7c07d198cc6df",
+       "retrieved_at": "2026-10-17T23:06:38.039365+00:00"
+      },
+      {
+       "id": "ydc_843240929aea4527e793",
+       "title": "ADMINISTRATION OF ASSISTANCE AWARDS TO U.S. NON-GOVERNMENTAL ...",
+       "publisher": "govinfo.gov",
+       "url": "https://govinfo.gov/content/pkg/CFR-2011-title22-vol1/xml/CFR-2011-title22-vol1-part226.xml",
+       "doc_type": "primary",
+       "sha256": "99f74bc96bb23286af004d58d3323d4adea3bd91bf0c8753a7cddb80f040846b",
+       "retrieved_at": "2026-10-17T23:10:12.891120+00:00"
+      },
+      {
+       "id": "ydc_5de2c7d69360d851450d",
+       "title": "Welch Calls on Body A to Investigate Secretary Noem\u2019s $220 Million Ad Campaign",
+       "publisher": "welch.senate.gov",
+       "url": "https://www.welch.senate.gov/welch-calls-on-dhs-to-investigate-secretary-noems-220-million-ad-campaign/",
+       "doc_type": "primary",
+       "sha256": "41e5c250836472c410b64626bc34e5cea197ca5a01502b2fd7457452005f8e6f",
+       "retrieved_at": "2026-10-17T21:40:37.279767+00:00"
+      },
+      {
+       "id": "ydc_845e258d74e51350fc12",
+       "title": "Tracking Federal Awards: USAspending.gov and",
+       "publisher": "congress.gov",
+       "url": "https://www.congress.gov/crs-product/R44027",
+       "doc_type": "primary",
+       "sha256": "b4ea1150cfe4c61ea76605ea95540acc7c6908e0770abd6b1c29238739f2ca1c",
+       "retrieved_at": "2026-10-17T23:12:26.870906+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_ab3542d6f94b7f7871d3",
+      "title": "Prime and subcontracting",
+      "publisher": "sba.gov",
+      "url": "https://www.sba.gov/counseling/prime-and-subcontracting/",
+      "doc_type": "primary",
+      "sha256": "0d9c5b7b2db4b1640e549e2c2d0dc85b8387dac2e5d512be8ab7c07d198cc6df",
+      "retrieved_at": "2026-10-17T23:06:38.039365+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_c7d2763e55e2995311ee",
+      "title": "Welch, Blumenthal\u00a0Demand\u00a0Answers from\u00a0Companies\u00a0on Potential\u00a0Corruption in\u00a0$220 Million Taxpayer-Funded Body A Ad Campaign\u00a0",
+      "publisher": "welch.senate.gov",
+      "url": "https://www.welch.senate.gov/welch-blumenthal-demand-answers-from-companies-on-potential-corruption-in-220-million-taxpayer-funded-dhs-ad-campaign/",
+      "doc_type": "primary",
+      "sha256": "3366daf80836f1d7792dafada824fa61fb8cfa2161c25adc820490e97bcec61b",
+      "retrieved_at": "2026-10-17T21:40:29.369627+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "supported",
+     "explanation": "Senator Kennedy's statement that Strategy Group received most of the money is supported: Contractor A received a $143 million no-bid prime contract; Strategy Group received a $226,137.17 subcontract from Contractor A. In relative terms, the subcontract is a small portion of the prime tot",
+     "findings": [
+      {
+       "field": "prime_total",
+       "value": "$220 million",
+       "quote": "The contracts, which totaled more than $220 million in taxpayer dollars, were awarded to produce an advertising campaign featuring recently-ousted Secretary of Homeland Security Kristi Noem.",
+       "doc": {
+        "id": "ydc_c7d2763e55e2995311ee",
+        "title": "Welch, Blumenthal\u00a0Demand\u00a0Answers from\u00a0Companies\u00a0on Potential\u00a0Corruption in\u00a0$220 Million Taxpayer-Funded Body A Ad Campaign\u00a0",
+        "publisher": "welch.senate.gov",
+        "url": "https://www.welch.senate.gov/welch-blumenthal-demand-answers-from-companies-on-potential-corruption-in-220-million-taxpayer-funded-dhs-ad-campaign/",
+        "doc_type": "primary",
+        "sha256": "3366daf80836f1d7792dafada824fa61fb8cfa2161c25adc820490e97bcec61b",
+        "retrieved_at": "2026-10-17T21:40:29.369627+00:00"
+       }
+      },
+      {
+       "field": "subaward_total",
+       "value": "$226,137.17",
+       "quote": "The Strategy Group confirmed this week that it did receive a subcontract to work on the no-bid ad campaign awarded to Contractor A, that it was paid '226,137.17 total for 5 film shoots, 45 produced video advertisements and 6 produced radio advertisements.'",
+       "doc": {
+        "id": "ydc_c7d2763e55e2995311ee",
+        "title": "Welch, Blumenthal\u00a0Demand\u00a0Answers from\u00a0Companies\u00a0on Potential\u00a0Corruption in\u00a0$220 Million Taxpayer-Funded Body A Ad Campaign\u00a0",
+        "publisher": "welch.senate.gov",
+        "url": "https://www.welch.senate.gov/welch-blumenthal-demand-answers-from-companies-on-potential-corruption-in-220-million-taxpayer-funded-dhs-ad-campaign/",
+        "doc_type": "primary",
+        "sha256": "3366daf80836f1d7792dafada824fa61fb8cfa2161c25adc820490e97bcec61b",
+        "retrieved_at": "2026-10-17T21:40:29.369627+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": false,
+     "failures": [
+      {
+       "check": "quotes_verbatim",
+       "reason": "finding subaward_total: quote not found verbatim in ydc_c7d2763e55e2995311ee"
+      },
+      {
+       "check": "computation_correct",
+       "reason": "recomputed share 0.00; claim says >= 0.5 -> code expects contradicted, got supported"
+      }
+     ]
+    },
+    {
+     "type": "gate_refused",
+     "by": "Gate (code)",
+     "verdict": "supported",
+     "reason": "cannot record supported for c4: quotes_verbatim: finding subaward_total: quote not found verbatim in ydc_c7d2763e55e2995311ee; computation_correct: recomputed share 0.00; claim says >= 0.5 -> code expects contradicted, got supported"
+    },
+    {
+     "type": "attribution",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "agent": "investigator",
+     "category": "task_verification"
+    },
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "Strategy Group Company subcontract Contractor A Body A award amount subaward paid",
+     "hits": [
+      {
+       "id": "ydc_c7d2763e55e2995311ee",
+       "title": "Welch, Blumenthal\u00a0Demand\u00a0Answers from\u00a0Companies\u00a0on Potential\u00a0Corruption in\u00a0$220 Million Taxpayer-Funded Body A Ad Campaign\u00a0",
+       "publisher": "welch.senate.gov",
+       "url": "https://www.welch.senate.gov/welch-blumenthal-demand-answers-from-companies-on-potential-corruption-in-220-million-taxpayer-funded-dhs-ad-campaign/",
+       "doc_type": "primary",
+       "sha256": "3366daf80836f1d7792dafada824fa61fb8cfa2161c25adc820490e97bcec61b",
+       "retrieved_at": "2026-10-17T21:40:29.369627+00:00"
+      },
+      {
+       "id": "ydc_706fbda55e2b10568995",
+       "title": "Letter-to-The-Strategy-Group.pdf - Senator Welch",
+       "publisher": "welch.senate.gov",
+       "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-The-Strategy-Group.pdf",
+       "doc_type": "primary",
+       "sha256": "992acf4806b29f45900f6795f730596b03b509a56c084d21cfcf57cb787ee2d1",
+       "retrieved_at": "2026-10-17T21:41:23.694360+00:00"
+      },
+      {
+       "id": "ydc_cd1d5e1a51344bd5bbff",
+       "title": "Letter-to-Safe-America-Media.pdf - Senator Welch",
+       "publisher": "welch.senate.gov",
+       "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-Safe-America-Media.pdf",
+       "doc_type": "primary",
+       "sha256": "b96e9c3d2e0b353fe3dff8fe5a3cba4bfb4affd7d9ec3828d4dcb59c796d18bc",
+       "retrieved_at": "2026-10-17T21:41:23.193957+00:00"
+      },
+      {
+       "id": "ydc_f1a9885e7105a26e9296",
+       "title": "Gallego Leads Colleagues in Calling for Investigation into Secretary Noem\u2019s $220 Million Ad Campaign",
+       "publisher": "gallego.senate.gov",
+       "url": "https://www.gallego.senate.gov/news/press-releases/gallego-leads-colleagues-in-calling-for-investigation-into-secretary-noems-220-million-ad-campaign/",
+       "doc_type": "primary",
+       "sha256": "f32e41eeb4ec8f832370ad21ffffe5a6bb6b220c97f8a3be53577ac66ec1e0e4",
+       "retrieved_at": "2026-10-17T21:40:37.621769+00:00"
+      },
+      {
+       "id": "ydc_843240929aea4527e793",
+       "title": "ADMINISTRATION OF ASSISTANCE AWARDS TO U.S. NON-GOVERNMENTAL ...",
+       "publisher": "govinfo.gov",
+       "url": "https://govinfo.gov/content/pkg/CFR-2011-title22-vol1/xml/CFR-2011-title22-vol1-part226.xml",
+       "doc_type": "primary",
+       "sha256": "99f74bc96bb23286af004d58d3323d4adea3bd91bf0c8753a7cddb80f040846b",
+       "retrieved_at": "2026-10-17T23:10:12.891120+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_706fbda55e2b10568995",
+      "title": "Letter-to-The-Strategy-Group.pdf - Senator Welch",
+      "publisher": "welch.senate.gov",
+      "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-The-Strategy-Group.pdf",
+      "doc_type": "primary",
+      "sha256": "992acf4806b29f45900f6795f730596b03b509a56c084d21cfcf57cb787ee2d1",
+      "retrieved_at": "2026-10-17T21:41:23.694360+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "contradicted",
+     "explanation": "The Strategy Group confirmed receiving a subcontract from Contractor A under the $143 million prime award. The subaward total paid to Strategy Group was $226,137.17. The claim that the company received most of the money (>= 0.5 share) is contradicted because $226,137.17 is a small fraction of ",
+     "findings": [
+      {
+       "field": "prime_total",
+       "value": "$143 million",
+       "quote": "the Strategy Group publicly confirmed that it subcontracted with Contractor A (Contractor A) to help produce an advertising campaign for the U.S. Body B of Homeland Security (Body A) worth $143 million",
+       "doc": {
+        "id": "ydc_706fbda55e2b10568995",
+        "title": "Letter-to-The-Strategy-Group.pdf - Senator Welch",
+        "publisher": "welch.senate.gov",
+        "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-The-Strategy-Group.pdf",
+        "doc_type": "primary",
+        "sha256": "992acf4806b29f45900f6795f730596b03b509a56c084d21cfcf57cb787ee2d1",
+        "retrieved_at": "2026-10-17T21:41:23.694360+00:00"
+       }
+      },
+      {
+       "field": "subaward_total",
+       "value": "$226,137.17",
+       "quote": "it was paid \"$226,137.17 total for 5 film shoots, 45 produced video advertisements and 6 produced radio advertisements.\"",
+       "doc": {
+        "id": "ydc_706fbda55e2b10568995",
+        "title": "Letter-to-The-Strategy-Group.pdf - Senator Welch",
+        "publisher": "welch.senate.gov",
+        "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-The-Strategy-Group.pdf",
+        "doc_type": "primary",
+        "sha256": "992acf4806b29f45900f6795f730596b03b509a56c084d21cfcf57cb787ee2d1",
+        "retrieved_at": "2026-10-17T21:41:23.694360+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": true,
+     "failures": []
+    },
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "contradicted"
+    }
+   ],
+   "attributions": [
+    {
+     "agent": "investigator",
+     "step": "s035",
+     "category": "task_verification"
+    }
+   ],
+   "findings": [
+    {
+     "field": "prime_total",
+     "value": "$143 million",
+     "quote": "the Strategy Group publicly confirmed that it subcontracted with Contractor A (Contractor A) to help produce an advertising campaign for the U.S. Body B of Homeland Security (Body A) worth $143 million",
+     "doc": {
+      "id": "ydc_706fbda55e2b10568995",
+      "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-The-Strategy-Group.pdf",
+      "title": "Letter-to-The-Strategy-Group.pdf - Senator Welch",
+      "publisher": "welch.senate.gov",
+      "doc_type": "primary",
+      "retrieved_at": "2026-10-17T21:41:23.694360+00:00",
+      "sha256": "992acf4806b29f45900f6795f730596b03b509a56c084d21cfcf57cb787ee2d1"
+     }
+    },
+    {
+     "field": "subaward_total",
+     "value": "$226,137.17",
+     "quote": "it was paid \"$226,137.17 total for 5 film shoots, 45 produced video advertisements and 6 produced radio advertisements.\"",
+     "doc": {
+      "id": "ydc_706fbda55e2b10568995",
+      "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-The-Strategy-Group.pdf",
+      "title": "Letter-to-The-Strategy-Group.pdf - Senator Welch",
+      "publisher": "welch.senate.gov",
+      "doc_type": "primary",
+      "retrieved_at": "2026-10-17T21:41:23.694360+00:00",
+      "sha256": "992acf4806b29f45900f6795f730596b03b509a56c084d21cfcf57cb787ee2d1"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "text": "Body B policy required Person B to approve every contract over $100 million.",
+   "attributed_to": "Person A",
+   "claim_type": "rule_text",
+   "verdict": "contradicted",
+   "explanation": "The document states the Administration's policy favors fixed-price contracts; it does not state a blanket rule that Person B must approve every contract over $100 million as claimed.",
+   "conflicts": [],
+   "replans": 0,
+   "refusals": [],
+   "trail": [
+    {
+     "type": "search",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "query": "Secretary policy contract over $100 million approval Body B",
+     "hits": [
+      {
+       "id": "ydc_0a9d507d658e8d686048",
+       "title": "Promoting Efficiency, Accountability, and Performance in Federal Contracting",
+       "publisher": "whitehouse.gov",
+       "url": "https://www.whitehouse.gov/presidential-actions/2026/04/promoting-efficiency-accountability-and-performance-in-federal-contracting/",
+       "doc_type": "primary",
+       "sha256": "825673d9e82cedf0b77b50e1942f8063476b8885a168370c9b6066b20d0a21ef",
+       "retrieved_at": "2026-10-17T21:41:02.261182+00:00"
+      },
+      {
+       "id": "ydc_2da762c9a99ac551824c",
+       "title": "https://www.judiciary.senate.gov/imo/media/doc/2026-3-16%20Letter%20to%20DOJ%20re%20Noem%20Criminal%20Referral.pdf",
+       "publisher": "judiciary.senate.gov",
+       "url": "https://www.judiciary.senate.gov/imo/media/doc/2026-3-16%20Letter%20to%20DOJ%20re%20Noem%20Criminal%20Referral.pdf",
+       "doc_type": "primary",
+       "sha256": "d7af3f8dfe82aa6aee02b3ed31999cb7503affddb4f950035c6e98e4d49b5fa7",
+       "retrieved_at": "2026-10-17T21:40:28.819258+00:00"
+      },
+      {
+       "id": "ydc_843240929aea4527e793",
+       "title": "ADMINISTRATION OF ASSISTANCE AWARDS TO U.S. NON-GOVERNMENTAL ...",
+       "publisher": "govinfo.gov",
+       "url": "https://govinfo.gov/content/pkg/CFR-2011-title22-vol1/xml/CFR-2011-title22-vol1-part226.xml",
+       "doc_type": "primary",
+       "sha256": "99f74bc96bb23286af004d58d3323d4adea3bd91bf0c8753a7cddb80f040846b",
+       "retrieved_at": "2026-10-17T23:10:12.891120+00:00"
+      },
+      {
+       "id": "ydc_5de2c7d69360d851450d",
+       "title": "Welch Calls on Body A to Investigate Secretary Noem\u2019s $220 Million Ad Campaign",
+       "publisher": "welch.senate.gov",
+       "url": "https://www.welch.senate.gov/welch-calls-on-dhs-to-investigate-secretary-noems-220-million-ad-campaign/",
+       "doc_type": "primary",
+       "sha256": "41e5c250836472c410b64626bc34e5cea197ca5a01502b2fd7457452005f8e6f",
+       "retrieved_at": "2026-10-17T21:40:37.279767+00:00"
+      },
+      {
+       "id": "ydc_706fbda55e2b10568995",
+       "title": "Letter-to-The-Strategy-Group.pdf - Senator Welch",
+       "publisher": "welch.senate.gov",
+       "url": "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-The-Strategy-Group.pdf",
+       "doc_type": "primary",
+       "sha256": "992acf4806b29f45900f6795f730596b03b509a56c084d21cfcf57cb787ee2d1",
+       "retrieved_at": "2026-10-17T21:41:23.694360+00:00"
+      }
+     ]
+    },
+    {
+     "type": "read",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "doc": {
+      "id": "ydc_0a9d507d658e8d686048",
+      "title": "Promoting Efficiency, Accountability, and Performance in Federal Contracting",
+      "publisher": "whitehouse.gov",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/04/promoting-efficiency-accountability-and-performance-in-federal-contracting/",
+      "doc_type": "primary",
+      "sha256": "825673d9e82cedf0b77b50e1942f8063476b8885a168370c9b6066b20d0a21ef",
+      "retrieved_at": "2026-10-17T21:41:02.261182+00:00"
+     },
+     "status": "ok",
+     "note": null
+    },
+    {
+     "type": "propose",
+     "by": "Nemotron-3.5-Lightning-30B-A3B",
+     "verdict": "contradicted",
+     "explanation": "The document states the Administration's policy favors fixed-price contracts; it does not state a blanket rule that Person B must approve every contract over $100 million as claimed.",
+     "findings": [
+      {
+       "field": "department_policy",
+       "value": "policy of my Administration that fixed-price contracts with performance-based considerations should serve as the default and preferred method of procurement",
+       "quote": "To ensure that Government contracts incentivize performance rather than cost inflation, it is the policy of my Administration that fixed-price contracts with performance-based considerations should serve as the default and preferred method of procurement in order to advance cost predictability and budget discipline, appropriate contractor incentives and accountability, and streamlined procurement and contract administration.",
+       "doc": {
+        "id": "ydc_0a9d507d658e8d686048",
+        "title": "Promoting Efficiency, Accountability, and Performance in Federal Contracting",
+        "publisher": "whitehouse.gov",
+        "url": "https://www.whitehouse.gov/presidential-actions/2026/04/promoting-efficiency-accountability-and-performance-in-federal-contracting/",
+        "doc_type": "primary",
+        "sha256": "825673d9e82cedf0b77b50e1942f8063476b8885a168370c9b6066b20d0a21ef",
+        "retrieved_at": "2026-10-17T21:41:02.261182+00:00"
+       }
+      }
+     ]
+    },
+    {
+     "type": "verify",
+     "by": "code (no model)",
+     "passed": true,
+     "failures": []
+    },
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "contradicted"
+    }
+   ],
+   "attributions": [],
+   "findings": [
+    {
+     "field": "department_policy",
+     "value": "policy of my Administration that fixed-price contracts with performance-based considerations should serve as the default and preferred method of procurement",
+     "quote": "To ensure that Government contracts incentivize performance rather than cost inflation, it is the policy of my Administration that fixed-price contracts with performance-based considerations should serve as the default and preferred method of procurement in order to advance cost predictability and budget discipline, appropriate contractor incentives and accountability, and streamlined procurement and contract administration.",
+     "doc": {
+      "id": "ydc_0a9d507d658e8d686048",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/04/promoting-efficiency-accountability-and-performance-in-federal-contracting/",
+      "title": "Promoting Efficiency, Accountability, and Performance in Federal Contracting",
+      "publisher": "whitehouse.gov",
+      "doc_type": "primary",
+      "retrieved_at": "2026-10-17T21:41:02.261182+00:00",
+      "sha256": "825673d9e82cedf0b77b50e1942f8063476b8885a168370c9b6066b20d0a21ef"
+     }
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "text": "Contractor D is married to Person B's former spokesperson.",
+   "attributed_to": "Person A",
+   "claim_type": "relationship",
+   "verdict": "out_of_scope",
+   "explanation": "Attributed statement; not verifiable from public records.",
+   "conflicts": [],
+   "replans": 0,
+   "refusals": [],
+   "trail": [
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "out_of_scope"
+    }
+   ],
+   "attributions": [],
+   "findings": []
+  },
+  {
+   "id": "c7",
+   "text": "The advertising campaign was a corrupt scheme.",
+   "attributed_to": "Person C",
+   "claim_type": "legal_conclusion",
+   "verdict": "out_of_scope",
+   "explanation": "Attributed statement; not verifiable from public records.",
+   "conflicts": [],
+   "replans": 0,
+   "refusals": [],
+   "trail": [
+    {
+     "type": "gate_commit",
+     "by": "Gate (code)",
+     "verdict": "out_of_scope"
+    }
+   ],
+   "attributions": [],
+   "findings": []
+  }
+ ],
+ "timeline": [
+  {
+   "step": "s001",
+   "role": "intake",
+   "kind": "llm"
+  },
+  {
+   "step": "s002",
+   "role": "intake",
+   "kind": "claims"
+  },
+  {
+   "step": "s003",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s004",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s005",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s006",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s007",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s008",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s009",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s010",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s011",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s012",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s013",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s014",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s015",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s016",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s017",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s018",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s019",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s020",
+   "role": "gate",
+   "kind": "refused"
+  },
+  {
+   "step": "s021",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s022",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s023",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s024",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s025",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s026",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s027",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s028",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s029",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s030",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s031",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s032",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s033",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s034",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s035",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s036",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s037",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s038",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s039",
+   "role": "gate",
+   "kind": "refused"
+  },
+  {
+   "step": "s040",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s041",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s042",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s043",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s044",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s045",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s046",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s047",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s048",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s049",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s050",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s051",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s052",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s053",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s054",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s055",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s056",
+   "role": "gate",
+   "kind": "refused"
+  },
+  {
+   "step": "s057",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s058",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s059",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s060",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s061",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s062",
+   "role": "gate",
+   "kind": "refused"
+  },
+  {
+   "step": "s063",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s064",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s065",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s066",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s067",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s068",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s069",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s070",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s071",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s072",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s073",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s074",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s075",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s076",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s077",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s078",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s079",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s080",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s081",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s082",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s083",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s084",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s085",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s086",
+   "role": "gate",
+   "kind": "refused"
+  },
+  {
+   "step": "s087",
+   "role": "attributor",
+   "kind": "llm"
+  },
+  {
+   "step": "s088",
+   "role": "attributor",
+   "kind": "attribution"
+  },
+  {
+   "step": "s089",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s090",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s091",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s092",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s093",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s094",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s095",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s096",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s097",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s098",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s099",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s100",
+   "role": "investigator",
+   "kind": "tool"
+  },
+  {
+   "step": "s101",
+   "role": "records_investigator",
+   "kind": "llm"
+  },
+  {
+   "step": "s102",
+   "role": "investigator",
+   "kind": "final"
+  },
+  {
+   "step": "s103",
+   "role": "verifier",
+   "kind": "verify"
+  },
+  {
+   "step": "s104",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s105",
+   "role": "gate",
+   "kind": "commit"
+  },
+  {
+   "step": "s106",
+   "role": "gate",
+   "kind": "commit"
+  }
+ ],
+ "retrieval": {
+  "provider": "you.com",
+  "retrieval_flow": "search_then_exact_url_contents",
+  "queries": [
+   "DHS television advertising $220 million Secretary",
+   "USAID subaward competition status service contract competed not competed award document",
+   "service contracts competitive bid NASA",
+   "Safe America Media LLC formation award contract",
+   "Safe America Media LLC corporation filing date incorporation",
+   "\"Safe America Media\" LLC formed incorporated date",
+   "The Strategy Group Company subaward prime award flow through",
+   "Strategy Group USAspending subaward",
+   "Strategy Group Company subaward amount",
+   "Strategy Group Company subcontract Safe America Media DHS award amount subaward paid",
+   "Secretary policy contract over $100 million approval Department"
+  ],
+  "accepted_urls": [
+   "https://www.judiciary.senate.gov/imo/media/doc/2026-3-16%20Letter%20to%20DOJ%20re%20Noem%20Criminal%20Referral.pdf",
+   "https://www.welch.senate.gov/welch-blumenthal-demand-answers-from-companies-on-potential-corruption-in-220-million-taxpayer-funded-dhs-ad-campaign/",
+   "https://www.youtube.com/watch?v=qRq31S45erU",
+   "https://www.reuters.com/world/us/trump-says-he-didnt-sign-off-200-million-border-security-ad-campaign-2026-03-05/",
+   "https://thehill.com/homenews/senate/5764784-kristi-noem-kennedy-ad-campaign/",
+   "https://www.welch.senate.gov/welch-calls-on-dhs-to-investigate-secretary-noems-220-million-ad-campaign/",
+   "https://www.yahoo.com/news/articles/dhs-spent-220-million-ads-154025702.html",
+   "https://www.newsnationnow.com/politics/kristi-noem-horseback-ad-dhs/",
+   "https://www.gallego.senate.gov/news/press-releases/gallego-leads-colleagues-in-calling-for-investigation-into-secretary-noems-220-million-ad-campaign/",
+   "https://southdakotasearchlight.com/2025/11/14/firm-tied-to-kristi-noem-secretly-got-money-from-220-million-dhs-ad-contracts/",
+   "https://www.propublica.org/article/kristi-noem-dhs-ad-campaign-strategy-group",
+   "https://journalrecord.com/2026/09/30/trump-tv-ads-funded-20-million-homeland-security/",
+   "https://www.fpds.gov/help/Extent_Competed.htm",
+   "https://grantsights.com/blog/usaid-grants-guide",
+   "https://govinfo.gov/content/pkg/CFR-2011-title22-vol1/xml/CFR-2011-title22-vol1-part226.xml",
+   "https://www.ngoconnect.net/sites/default/files/resources/Program%20Management%20-%20Managing%20Subrecipients%20Under%20USAID%20CoAg.pdf",
+   "https://usaid.gov/india/partner-resources/infographic-usaid-approval-required-subaward",
+   "https://usaid.gov/sites/default/files/2022-05/India_RFIP_USAID-approval-Contract.pdf",
+   "https://www.potomacofficersclub.com/articles/nasa-contract-opportunities-2026/",
+   "https://www.washingtontechnology.com/contracts/2026/02/nasa-opens-bidding-18b-engineering-support-contract/411297/",
+   "https://www.nasa.gov/news-release/nasa-awards-solutions-for-federal-enterprise-procurement-contracts/",
+   "https://www.hq.nasa.gov/office/procurement/forecast/",
+   "https://www.9001simplified.com/learn/how-to-bid-on-federal-contracts-before-iso-9001-certification.php",
+   "https://www.sewp.nasa.gov/contract_info.shtml",
+   "https://www.nasa.gov/procurement/",
+   "https://oig.nasa.gov/docs/IG-19-014.pdf",
+   "https://www.quora.com/What-is-the-process-for-commercial-space-companies-to-bid-for-NASA-contracts",
+   "https://safe-america-media.com/",
+   "https://www.alxnow.com/2025/10/22/firm-using-alexandria-address-wins-220m-federal-contract-for-trump-immigration-ads/",
+   "https://www.quiverquant.com/news/Senators+Launch+Inquiry+Into+$143+Million+DHS+Ad+Contract+Awarded+to+Newly+Formed+Firm",
+   "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-Safe-America-Media.pdf",
+   "https://www.highergov.com/awardee/safe-america-media-llc-1060344119/",
+   "https://www.reddit.com/r/1102/comments/1iye71o/noncompetitive_16m_award_to_safe_america_media_llc/",
+   "https://www.foxnews.com/politics/dhs-defends-ad-blitz-senate-scrutiny-campaign-drove-self-deportations-taxpayers-billions",
+   "https://orangeslices.ai/dhs-awards-200m-dhs-opa-stronger-borders-stronger-america-outreach-support-idiq/",
+   "https://www.the-independent.com/news/world/americas/us-politics/kristi-noem-strategy-group-safe-america-media-contracts-b2932752.html",
+   "https://library.doc.gov/company/incorporation",
+   "https://www.sec.gov/edgar/search/",
+   "https://icis.corp.delaware.gov/ecorp/entitysearch/namesearch.aspx",
+   "https://dos.ny.gov/faqs-corporations-business-entities",
+   "https://www.sos.ca.gov/business-programs/business-entities/forms",
+   "https://businessregistration.utah.gov/",
+   "https://dos.ny.gov/certificate-incorporation-domestic-business-corporation",
+   "https://corp.delaware.gov/",
+   "https://www.sos.ca.gov/business-programs/business-entities",
+   "https://www.reuters.com/legal/government/noem-defends-220-million-ad-campaign-amid-lawmaker-scrutiny-2026-03-04/",
+   "https://www.latimes.com/politics/story/2025-03-10/dhs-expedites-process-to-award-two-republican-linked-firms-part-of-its-200-million-ad-campaign",
+   "https://www.foxnews.com/politics/dhs-defends-mclaughlin-allegations-husbands-company-profited-millions-ad-contracts",
+   "https://casrai.org/guides/subaward-agreement-negotiation-how-it-works",
+   "https://www.sba.gov/counseling/prime-and-subcontracting/",
+   "https://casrai.org/dictionary/term/prime-award",
+   "https://www.usaspending.gov/award/CONT_AWD_91990024F0345_9100_91990023D0029_9100",
+   "https://grantsights.com/blog/what-is-a-subaward",
+   "https://www.stonybrook.edu/commcms/osp-ogm/post_award_management/Post_Award_Management_Administrative_OSP/subawards",
+   "https://grants.nih.gov/policy-and-compliance/policy-topics/subawards",
+   "https://raf.rpi.edu/administration-awards/subawardsubcontract-process",
+   "https://casrai.org/dictionary/term/subaward",
+   "https://primerfp.com/intel/company/redwood-strategy-group",
+   "https://www.usaspending.gov/award/CONT_AWD_1605C226C0012_1605_-NONE-_-NONE-",
+   "https://catalog.data.gov/dataset/usaspending-gov-federal-award-subaward-and-account-data/resource/fca3f814-7665-4043-b654-b1924ea1afa5",
+   "https://www.congress.gov/crs-product/R44027",
+   "https://www.usaspending.gov/",
+   "https://researchadmin.asu.edu/subawards",
+   "https://osp.gatech.edu/subawards",
+   "https://www.hackingthecaseinterview.com/pages/strategy-and-salary",
+   "https://www.glassdoor.com/Salary/The-Strategy-Group-Company-Salaries-E1438507.htm",
+   "https://www.crunchbase.com/organization/the-strategy-group-company",
+   "https://vermontbiz.com/news/2026/march/09/potential-corruption-220-million-taxpayer-funded-dhs-ad-campaign",
+   "https://www.welch.senate.gov/wp-content/uploads/2026/03/Letter-to-The-Strategy-Group.pdf",
+   "https://evrimagaci.org/gpt/kristi-noem-allies-secretly-benefited-from-220m-dhs-ad-deal-516658",
+   "https://www.dailywire.com/news/docs-show-dhs-specifically-steered-200m-ad-contracts-raising-questions-about-noems-testimony",
+   "https://www.techdirt.com/company/safe-america-media/",
+   "https://www.reuters.com/legal/litigation/dhs-cancels-policy-requiring-secretary-review-contracts-over-100000-2026-04-02/",
+   "https://www.cbsnews.com/news/dhs-scraps-noem-policy-approval-100000-contracts/",
+   "https://www.politico.com/news/2026/04/01/dhs-reverses-noems-controversial-contract-approval-policy-00854915",
+   "https://www.usnews.com/news/politics/articles/2026-04-01/dhs-cancels-policy-requiring-secretary-to-review-contracts-over-100-000",
+   "https://www.executivegov.com/articles/kristi-noem-dhs-secretary-5-day-review-contracts-grants-over-100000",
+   "https://apnews.com/article/homeland-security-fema-mullin-moem-8b03d9240b267422d6fadf3f7d12f0eb",
+   "https://www.whitehouse.gov/presidential-actions/2026/04/promoting-efficiency-accountability-and-performance-in-federal-contracting/",
+   "https://www.investing.com/news/commodities-news/dhs-cancels-policy-requiring-secretary-to-review-contracts-over-100000-4594575",
+   "https://www.nbcnews.com/politics/trump-administration/dhs-markwayne-mullin-approval-fema-aid-disaster-response-rcna266354"
+  ],
+  "rejected_urls": [],
+  "errors": [
+   "contents: no usable text extracted from https://www.usaspending.gov/award/CONT_AWD_70RDA225FR0000009_7001_70RDA225D00000004_7001",
+   "contents: no usable text extracted from https://usaid.gov/sites/default/files/2022-12/UnderstandingUSAIDAwards-Slide-Deck.pdf",
+   "contents: URL returned no extractable document: https://pdf.usaid.gov/pdf_docs/PA00N3K7.pdf",
+   "contents: URL returned no extractable document: https://2017-2020.usaid.gov/india/partner-resources/implementing-partners-guide-competition-requirements-assistance-awards",
+   "contents: URL returned no extractable document: https://pdf.usaid.gov/pdf_docs/PA00KZ85.pdf",
+   "contents: URL returned no extractable document: https://code200-external.gsfc.nasa.gov/210/content/procurement-process",
+   "contents: no usable text extracted from https://www.usaspending.gov/award/CONT_AWD_70RDA225FR0000009_7001_70RDA225D00000004_7001",
+   "contents: no usable text extracted from https://www.usaspending.gov/award/CONT_AWD_70RDA225FR0000009_7001_70RDA225D00000004_7001",
+   "contents: no usable text extracted from https://www.usaspending.gov/award/CONT_AWD_15PJDP22F00000004_1550_47QTCA18D00KV_4732",
+   "contents: no usable text extracted from https://www.usaspending.gov/award/CONT_IDV_1630DC18A0003_1605",
+   "contents: no usable text extracted from https://www.usaspending.gov/recipient/4849d0d1-8e80-6b44-950b-c586dd725c40-P/latest",
+   "contents: no usable text extracted from https://www.usaspending.gov/recipient/84c18461-37c9-1c98-13d0-775b7a34ab05-C/latest",
+   "contents: no usable text extracted from https://www.usaspending.gov/award/CONT_AWD_FA857121P0087_9700_-NONE-_-NONE-",
+   "contents: no usable text extracted from https://www.usaspending.gov/recipient/9f9bf400-c934-7fc8-0e9e-7ed247a94f99-P/latest",
+   "contents: no usable text extracted from https://www.usaspending.gov/recipient/4849d0d1-8e80-6b44-950b-c586dd725c40-P/latest",
+   "contents: no usable text extracted from https://www.usaspending.gov/award/CONT_AWD_15JPSS24F00000319_1501_15JPSS21A00000053_1501",
+   "contents: no usable text extracted from https://www.usaspending.gov/award/CONT_AWD_70RDA225FR0000009_7001_70RDA225D00000004_7001",
+   "contents: URL returned no extractable document: https://www.nytimes.com/2025/08/21/us/kristi-noem-spending-contracts-homeland-security-department.html"
+  ]
+ }
+}
