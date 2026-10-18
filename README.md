@@ -88,6 +88,12 @@ These are retrieval demonstrations, not benchmark accuracy claims. The conservat
 
 ## Architecture
 
+![Casefile architecture: transaction mode and records mode share one investigate, verify, gate loop on Crusoe Nemotron models; account data and the run record are stored in Supabase](docs/images/casefile-architecture.jpg)
+
+*Amber boxes are Nemotron calls on Crusoe Managed Inference, teal boxes are plain code with no model, violet is the human analyst, and the blue panel is Supabase. The sample rows and row counts in that panel were read from the project's synthetic data on Oct 17 2026. Full-resolution version: [`docs/casefile_architecture_dark.svg`](docs/casefile_architecture_dark.svg).*
+
+The same flow as a Mermaid diagram:
+
 ```mermaid
 flowchart TB
     subgraph Inputs
