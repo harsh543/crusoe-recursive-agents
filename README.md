@@ -92,58 +92,6 @@ These are retrieval demonstrations, not benchmark accuracy claims. The conservat
 
 *Amber boxes are Nemotron calls on Crusoe Managed Inference, teal boxes are plain code with no model, violet is the human analyst, and the blue panel is Supabase. The sample rows and row counts in that panel were read from the project's synthetic data on Oct 17 2026. Full-resolution version: [`docs/casefile_architecture_dark.svg`](docs/casefile_architecture_dark.svg).*
 
-The same flow as a Mermaid diagram:
-
-```mermaid
-flowchart TB
-    subgraph Inputs
-        T[Transaction alert + account data]
-        R[Public-record case file]
-    end
-
-    subgraph PolicyBoundary[Governance and intake]
-        G[Governance + required-field gates<br/>plain code]
-        P[Planner / records intake<br/>Nemotron Super VL]
-        C[Frozen completion contract<br/>plain code]
-        S[Scope enforcement<br/>plain code]
-    end
-
-    subgraph Investigation[Bounded recursive investigation]
-        I[Investigator<br/>Nemotron Lightning]
-        V[Verifier<br/>plain code]
-        A[Failure attributor<br/>Lightning, escalates when needed]
-        L[LoopGuard<br/>deadline, tool-call and replan caps]
-        D[Disposition Gate<br/>only writer]
-    end
-
-    subgraph Evidence[Evidence and systems of record]
-        TX[Accounts, devices and transactions]
-        YS[You.com Search]
-        YC[Exact-URL You.com Contents]
-        DB[(Supabase<br/>evidence, claims, checks,<br/>events, audit, dispositions)]
-    end
-
-    subgraph Learning[Governed Version N+1]
-        E[Episodic traces]
-        F[Deterministic failure clusters]
-        N[One bounded playbook proposal]
-        Q[N vs N+1 validation]
-        H[Independent certification]
-        M[Certified procedural memory]
-    end
-
-    T --> G --> P --> C --> I
-    R --> P --> S --> I
-    I --> TX
-    I --> YS --> YC --> I
-    I --> V
-    V -- pass --> D --> DB
-    V -- fail --> A --> L --> I
-    L -- retry budget exhausted --> D
-    DB --> E --> F --> N --> Q --> H --> M
-    M -. approved procedures only .-> P
-```
-
 ### Models propose; code decides
 
 | Responsibility | Implementation |
