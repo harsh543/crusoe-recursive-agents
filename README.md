@@ -1,5 +1,7 @@
 # Casefile
 
+> **Live demo for judges: https://frontend-five-fawn-54.vercel.app/** (added after the build; replays recorded runs, no setup needed)
+
 > **An agent that cannot prove it is done does not get to say it is done.**
 
 Casefile is a governed recursive-agent system for verifying complex public-record claims and investigating suspicious transaction alerts. It was built for the **Crusoe x Cerebral Valley Recursive Agents Hackathon** and targets the **Done Means Done** problem statement, with a governed **Version N+1** learning loop as an extension.
